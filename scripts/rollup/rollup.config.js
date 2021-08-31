@@ -29,7 +29,6 @@ const plugins =  [
 ];
 
 const external = [
-  // ...Object.keys(pkg.peerDependencies),
   ...Object.keys(pkg.devDependencies),
 ];
 
