@@ -1,0 +1,23 @@
+{
+  "name": "skynex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:skynexui/core.git",
+  "author": "Mario Souto <soutomarios@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+    "react-native-web": "~0.13.12",
+    "expo": "42.0.0",
+    "expo-status-bar": "~1.0.4",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/react-native": "~0.63.2",
+    "@types/react": "~17.0.19",
+    "@types/styled-components": "^5.1.12",
+    "@types/styled-components-react-native": "^5.1.1"
+  }
+}
