@@ -2,6 +2,9 @@
 
 A set of components writen on top of React and React Native (with Expo) made for you deliver code for mobile devices and for the web using the best structures that the React ecossystem can provide with a seamless and standardized API.
 
+## Get Started
+This repo exports 2 packages `@skynexui/web` and `@skynexui/native`
+
 
 ## But why?
 Recently I see that there's many people trying to use FlutterWeb for web development, and based in it's current perfomance and support for breakpoints I truly believe that we already have nice structures and this repo starts with the idea to prove that we have tooling for delivery the great part of the apps that we have in today's development with high quality developer experience considering tools like [NextJS](https://nextjs.org/) for the web and [Expo](https://expo.dev/) for mobile development.  
