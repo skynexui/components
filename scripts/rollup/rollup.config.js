@@ -1,28 +1,35 @@
-import dts from 'rollup-plugin-dts'
-// import esbuild from 'rollup-plugin-esbuild';
+// https://github.com/alexjoverm/typescript-library-starter/blob/master/rollup.config.ts
+import babel from "@rollup/plugin-babel";
 import commonjs from '@rollup/plugin-commonjs';
-import resolve from '@rollup/plugin-node-resolve';
-import ts from 'rollup-plugin-typescript2';
-import flatDts from 'rollup-plugin-flat-dts';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import resolve from "@rollup/plugin-node-resolve";
 
 import pkg from '../../package.json';
 
+const EXTENSIONS = [".ts", ".tsx"];
+
 const filePaths = [
   './src/components/Text/styles.ts',
-  // './src/components/Text/web/index.tsx',
-  // './src/components/Text/native/index.tsx',
+  './src/components/Text/web/index.tsx',
+  './src/components/Text/native/index.tsx',
 ];
 
 const plugins =  [
+  peerDepsExternal(),
   commonjs(),
-  ts(),
   resolve({
     preferBuiltins: true,
+    extensions: EXTENSIONS,
+  }),
+  babel({
+    extensions: EXTENSIONS,  // Compile our TypeScript files
+    babelHelpers: 'inline',
+    include: EXTENSIONS.map(ext => `src/**/*${ext}`)
   }),
 ];
 
 const external = [
-  ...Object.keys(pkg.peerDependencies),
+  // ...Object.keys(pkg.peerDependencies),
   ...Object.keys(pkg.devDependencies),
 ];
 
@@ -48,9 +55,6 @@ export default {
       format: 'cjs',
       exports: 'named',
       sourcemap: true,
-      plugins: [
-        flatDts(),
-      ],
     },
   ],
   external,
