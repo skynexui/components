@@ -6,7 +6,7 @@
   "author": "Mario Souto <soutomarios@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ./dist && rollup -c ./scripts/rollup/rollup.config.js"
+    "build": "rm -rf ./dist && rollup -c ./scripts/rollup/rollup.config.js && git clean -df"
   },
   "peerDependencies": {
     "expo": "42.0.0",
