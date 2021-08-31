@@ -21,7 +21,7 @@ Right now the project is not open for contributors but soon will be. For now, [l
 - [RefactoringUI](https://www.refactoringui.com/)
 
 
-## Suporters
+## Supporters
 
 | Companies that trust in this project |
 | --- |
