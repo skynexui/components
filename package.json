@@ -1,7 +1,7 @@
 {
   "name": "@skynexui/web",
   "private": true,
-  "version": "1.6.0",
+  "version": "10.0.0",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
@@ -71,7 +71,7 @@
       [
         "@semantic-release/npm",
         {
-          "pkgRoot": "./"
+          "pkgRoot": "dist-web"
         }
       ],
       "@semantic-release/changelog",
