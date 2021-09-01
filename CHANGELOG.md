@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/skynexui/core/compare/v1.0.0...v1.1.0) (2021-09-01)
+
+
+### Features
+
+* Gogo ([badd73c](https://github.com/skynexui/core/commit/badd73cc474d4276eeaa97cadb56dab4dea962c2))
+
 # 1.0.0 (2021-09-01)
 
 
