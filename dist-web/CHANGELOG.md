@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/skynexui/core/compare/v1.2.2...v1.3.0) (2021-09-01)
+
+
+### Features
+
+* test bump ([3543bf8](https://github.com/skynexui/core/commit/3543bf897c282aab84c08d53d9689813d5e95025))
+
 ## [1.2.2](https://github.com/skynexui/core/compare/v1.2.1...v1.2.2) (2021-09-01)
 
 
