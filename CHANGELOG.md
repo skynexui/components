@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/skynexui/core/compare/v1.1.0...v1.1.1) (2021-09-01)
+
+
+### Bug Fixes
+
+* text component not rendering text ([206ac07](https://github.com/skynexui/core/commit/206ac07b4f474d372ca357b8cf7c416fd5ad89d7))
+
 # [1.1.0](https://github.com/skynexui/core/compare/v1.0.0...v1.1.0) (2021-09-01)
 
 
