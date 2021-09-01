@@ -67,7 +67,7 @@
       [
         "@semantic-release/npm",
         {
-          "pkgRoot": "dist"
+          "pkgRoot": "./"
         }
       ],
       "@semantic-release/changelog",
