@@ -28,5 +28,6 @@ jobs:
         run: |
           npx semantic-release
           echo "//npm.pkg.github.com/:_authToken=$GH_TOKEN" > ~/.npmrc
-          cd ./dist-native
+          yarn scripts ./scripts/release/createWebPackageJson.js
+          cd ./dist-web
           npm publish

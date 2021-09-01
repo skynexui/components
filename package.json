@@ -1,7 +1,7 @@
 {
-  "name": "@skynexui/web",
+  "name": "@skynexui/native",
   "private": true,
-  "version": "1.7.2",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
   "author": "Mario Souto <soutomarios@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ./dist && rollup -c ./scripts/rollup/rollup.config.js && yarn scripts ./scripts/release/createProdPackageJson.js",
+    "build": "rm -rf ./dist && rollup -c ./scripts/rollup/rollup.config.js && yarn scripts ./scripts/release/createNativePackageJson.js",
     "release": "semantic-release",
     "scripts": "node -r esm",
     "postversion": "cd ../ && yarn scripts ./scripts/release/postVersionBump.js"
@@ -71,7 +71,7 @@
       [
         "@semantic-release/npm",
         {
-          "pkgRoot": "dist-web"
+          "pkgRoot": "dist-native"
         }
       ],
       "@semantic-release/changelog",

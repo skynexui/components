@@ -9,30 +9,15 @@ const { log } = console;
 log(chalk`{bgMagenta.white.bold [postVersionBump] Moving package.json to root - [START]}`);
 
 const packageJSON = {
-  web: {
-    ...pkg,
-    name: '@skynexui/web',
-    private: false,
-  }, 
-  native: {
-    ...pkg,
-    name: '@skynexui/native',
-    private: false,
-  }
-}
-
-const distNativePath = join(__dirname, '..', '..', './dist-native', 'package.json');
-writeFileSync(
-  distNativePath,
-  `${JSON.stringify({
-    ...packageJSON.native,
-  }, null, 2)}\n`,
-);
+  ...pkg,
+  name: '@skynexui/web',
+  private: false,
+};
 
 const distWebPath = join(__dirname, '..', '..', './dist-web', 'package.json');
 writeFileSync(
   distWebPath,
   `${JSON.stringify({
-    ...packageJSON.web,
+    ...packageJSON,
   }, null, 2)}\n`,
 );
