@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/skynexui/core/compare/v1.2.1...v1.3.0) (2021-09-01)
+
+
+### Features
+
+* try to force the deploy ([83f7f5e](https://github.com/skynexui/core/commit/83f7f5e5f36120d01764031067ecaa5475753310))
+
 ## [1.2.1](https://github.com/skynexui/core/compare/v1.2.0...v1.2.1) (2021-09-01)
 
 
