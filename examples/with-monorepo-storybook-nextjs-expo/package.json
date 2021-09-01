@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "skynexuiexamples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": []
+  },
+  "scripts": {
+    "web": "yarn workspace @skynexuiexamples/web",
+    "dev:web": "yarn web dev",
+    "native": "yarn workspace @skynexuiexamples/native",
+    "dev:native": "yarn native start"
+  },
+  "dependencies": {
+    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz"
+  }
+}
