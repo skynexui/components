@@ -58,7 +58,7 @@ export default [
       {
         dir: 'dist-web',
         entryFileNames: '[name].js',
-        format: 'esm',
+        format: 'cjs',
         exports: 'named',
         sourcemap: true
       },
@@ -72,7 +72,7 @@ export default [
       {
         dir: 'dist-native',
         entryFileNames: '[name].js',
-        format: 'esm',
+        format: 'cjs',
         exports: 'named',
         sourcemap: true
       },

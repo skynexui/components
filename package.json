@@ -10,7 +10,7 @@
   "author": "Mario Souto <soutomarios@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ./dist && rollup -c ./scripts/rollup/rollup.config.js && git clean -df && cp ./package-web.json ./dist-web/package.json && cp ./.gitignore ./dist-web/ && cp ./package-native.json ./dist-native/package.json  && cp ./.gitignore ./dist-native/",
+    "build": "rm -rf ./dist && rollup -c ./scripts/rollup/rollup.config.js && yarn scripts ./scripts/release/createProdPackageJson.js",
     "release": "semantic-release",
     "scripts": "node -r esm",
     "postversion": "cd ../ && yarn scripts ./scripts/release/postVersionBump.js"
