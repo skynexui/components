@@ -1,3 +1,11 @@
+## [1.4.3](https://github.com/skynexui/core/compare/v1.4.2...v1.4.3) (2021-09-01)
+
+
+### Bug Fixes
+
+* deploy to npm ([ff02381](https://github.com/skynexui/core/commit/ff023810681326777b0db00c62fde385c3475f63))
+* deploy to npm 2 ([9453bd4](https://github.com/skynexui/core/commit/9453bd4ccc6406e8aaf576e1196aec7aba4577e3))
+
 ## [1.4.2](https://github.com/skynexui/core/compare/v1.4.1...v1.4.2) (2021-09-01)
 
 
