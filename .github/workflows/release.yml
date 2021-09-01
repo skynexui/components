@@ -23,6 +23,6 @@ jobs:
         run: yarn build
       - name: Release
         env:
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.DEPLOY_DEMO }}
         run: |
           npx semantic-release
