@@ -3,9 +3,11 @@ import { join } from 'path';
 
 import chalk from 'chalk';
 
+import spawnSyncWrapper from '../infra/spawnSyncWrapper';
+
 const { log } = console;
 
-const pkgPublished = JSON.parse(readFileSync(join(__dirname, '..', '..', 'dist', 'package.json')).toString());
+const pkgPublished = JSON.parse(readFileSync(join(__dirname, '..', '..', 'lib', 'package.json')).toString());
 
 log(chalk`{bgMagenta.white.bold [postVersionBump] Moving package.json to root - [START]}`);
 

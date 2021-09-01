@@ -11,7 +11,9 @@
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c ./scripts/rollup/rollup.config.js && git clean -df && cp ./package-web.json ./dist-web/package.json && cp ./.gitignore ./dist-web/ && cp ./package-native.json ./dist-native/package.json  && cp ./.gitignore ./dist-native/",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "scripts": "node -r esm",
+    "postversion": "cd ../ && yarn scripts ./scripts/release/postVersionBump.js"
   },
   "peerDependencies": {
     "expo": "42.0.0",
@@ -40,6 +42,7 @@
     "babel-plugin-styled-components": "^1.13.2",
     "chalk": "^4.1.2",
     "esbuild": "^0.12.24",
+    "esm": "^3.2.25",
     "rollup": "2.56.3",
     "rollup-plugin-dts": "^4.0.0",
     "rollup-plugin-esbuild": "^4.5.0",
