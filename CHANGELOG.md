@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/skynexui/core/compare/v1.2.0...v1.2.1) (2021-09-01)
+
+
+### Bug Fixes
+
+* not added expo project ([c2e3ce3](https://github.com/skynexui/core/commit/c2e3ce3bc6852a8c0d109f54d38b701161e298cc))
+
 # [1.2.0](https://github.com/skynexui/core/compare/v1.1.2...v1.2.0) (2021-09-01)
 
 
