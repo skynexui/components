@@ -25,4 +25,4 @@ Right now the project is not open for contributors but soon will be. For now, [l
 
 | Companies that trust in this project |
 | --- |
-| [<img src="https://www.likeaboss.com.br/wp-content/uploads/2016/02/alura-dark.svg" width="100px" />](https://alura.com.br) |
+| [<img src="https://www.likeaboss.com.br/wp-content/uploads/2016/02/alura-dark.svg" width="100px" />](https://alura.com.br/) |
