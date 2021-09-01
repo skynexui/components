@@ -1,8 +1,12 @@
 {
   "name": "skynex",
+  "private": false,
   "version": "1.0.0",
   "main": "dist/index.js",
-  "repository": "git@github.com:skynexui/core.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:skynexui/core.git"
+  },
   "author": "Mario Souto <soutomarios@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -33,7 +37,14 @@
     "rollup-plugin-esbuild": "^4.5.0",
     "rollup-plugin-flat-dts": "^1.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-typescript2": "^0.30.0"
+    "rollup-plugin-typescript2": "^0.30.0",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/git": "9.0.0",
+    "@semantic-release/github": "7.2.3",
+    "@semantic-release/npm": "7.1.3",
+    "@semantic-release/release-notes-generator": "9.0.2",
+    "semantic-release": "17.4.3"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.14.5",
@@ -43,5 +54,31 @@
     "@rollup/plugin-typescript": "^8.2.5",
     "tslib": "^2.3.1",
     "typescript": "^4.4.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "dist"
+        }
+      ],
+      "@semantic-release/changelog",
+      "@semantic-release/git"
+    ],
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      "master"
+    ]
   }
 }
