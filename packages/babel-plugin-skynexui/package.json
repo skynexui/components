@@ -2,9 +2,9 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "name": "babel-plugin-react-native-web",
+  "name": "babel-plugin-skynexui",
   "version": "1.0.0",
-  "description": "Babel plugin for React Native for Web",
+  "description": "Babel plugin for @skynexui/web",
   "main": "index.js",
   "devDependencies": {
     "@babel/core": "^7.12.13",

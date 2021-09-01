@@ -71,6 +71,6 @@ pluginTester({
     }
   },
   plugin,
-  pluginName: 'Rewrite react-native to react-native-web',
+  pluginName: 'Rewrite @skynexui/native to @skynexui/web',
   tests
 });
