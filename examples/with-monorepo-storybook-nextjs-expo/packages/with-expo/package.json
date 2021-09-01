@@ -10,6 +10,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "common-ui": "*",
     "@skynexui/native": "latest",
     "styled-components": "^5.3.1",
     "expo": "~42.0.1",

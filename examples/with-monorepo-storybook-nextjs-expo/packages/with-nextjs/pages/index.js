@@ -1,8 +1,8 @@
 import React from 'react';
-import Text from '@skynexui/web/components/Text';
+import HomeScreen from 'common-ui/screens/HomeScreen';
 
 function HomePage() {
-  return <Text>Welcome to Next.js with @skynexui!</Text>
+  return <HomeScreen />
 }
 
 export default HomePage
