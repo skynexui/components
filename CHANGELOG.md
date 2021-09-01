@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/skynexui/core/compare/v1.8.0...v1.8.1) (2021-09-01)
+
+
+### Bug Fixes
+
+* adjust tsconfig and test deploy order ([861a996](https://github.com/skynexui/core/commit/861a9966dc1172d7fe1b2526ce1faa2b2340c905))
+
 # [1.8.0](https://github.com/skynexui/core/compare/v1.7.2...v1.8.0) (2021-09-01)
 
 
