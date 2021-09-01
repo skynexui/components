@@ -1,0 +1,85 @@
+{
+  "name": "@skynexui/web",
+  "private": false,
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skynexui/core.git"
+  },
+  "author": "Mario Souto <soutomarios@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist && rollup -c ./scripts/rollup/rollup.config.js && git clean -df && cp ./package.json ./dist/",
+    "release": "semantic-release"
+  },
+  "peerDependencies": {
+    "expo": "42.0.0",
+    "expo-status-bar": "~1.0.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+    "react-native-web": "~0.13.12",
+    "styled-components": "5.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@rollup/plugin-babel": "5.3.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@types/react": "~17.0.19",
+    "@types/react-native": "~0.63.2",
+    "@types/styled-components": "5.1.12",
+    "@types/styled-components-react-native": "5.1.1",
+    "babel-plugin-styled-components": "^1.13.2",
+    "esbuild": "^0.12.24",
+    "rollup": "2.56.3",
+    "rollup-plugin-dts": "^4.0.0",
+    "rollup-plugin-esbuild": "^4.5.0",
+    "rollup-plugin-flat-dts": "^1.3.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/git": "9.0.0",
+    "@semantic-release/github": "7.2.3",
+    "@semantic-release/npm": "7.1.3",
+    "@semantic-release/release-notes-generator": "9.0.2",
+    "semantic-release": "17.4.3"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "dist"
+        }
+      ],
+      "@semantic-release/changelog",
+      "@semantic-release/git"
+    ],
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      "main"
+    ]
+  }
+}
