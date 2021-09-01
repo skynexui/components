@@ -28,6 +28,5 @@ jobs:
         run: |
           npx semantic-release
           echo "//npm.pkg.github.com/:_authToken=$GH_TOKEN" > ~/.npmrc
-          cd ../
           cd ./dist-native
           npm publish
