@@ -10,7 +10,8 @@
   "author": "Mario Souto <soutomarios@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ./dist && rollup -c ./scripts/rollup/rollup.config.js && git clean -df"
+    "build": "rm -rf ./dist && rollup -c ./scripts/rollup/rollup.config.js && git clean -df",
+    "release": "semantic-release"
   },
   "peerDependencies": {
     "expo": "42.0.0",
