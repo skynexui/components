@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/skynexui/core/compare/v1.4.3...v1.4.4) (2021-09-01)
+
+
+### Bug Fixes
+
+* deploy to github registry also ([939811c](https://github.com/skynexui/core/commit/939811cc8ca02a75ca823204fdc7937e58bb32c6))
+
 ## [1.4.3](https://github.com/skynexui/core/compare/v1.4.2...v1.4.3) (2021-09-01)
 
 
