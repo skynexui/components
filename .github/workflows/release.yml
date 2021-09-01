@@ -26,10 +26,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_DEMO }}
           GH_TOKEN: ${{ secrets.DEPLOY_DEMO }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN || secrets.DEPLOY_DEMO }}
-        # echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > ~/.npmrc
         run: |
           npx semantic-release
           yarn scripts ./scripts/release/createWebPackageJson.js
           cd ./dist-web
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
           npm publish
+          cd ../
+          echo "DEPLOY TO GITHUB REGISTRY NOW!"
+          echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > ~/.npmrc
+          cd ./dist-web && npm publish && cd ../
+          cd ./dist-native && npm publish && cd ../
+
