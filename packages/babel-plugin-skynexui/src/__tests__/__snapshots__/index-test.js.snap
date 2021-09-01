@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rewrite @skynexui/native to @skynexui/web export from "@skynexui/native": export from "@skynexui/native" 1`] = `
+
+export { View } from '@skynexui/native';
+export { StyleSheet, Text, unstable_createElement } from '@skynexui/native';
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+export { default as View } from "@skynexui/web/dist/exports/View";
+export { default as StyleSheet } from "@skynexui/web/dist/exports/StyleSheet";
+export { default as Text } from "@skynexui/web/dist/exports/Text";
+export { default as unstable_createElement } from "@skynexui/web/dist/exports/createElement";
+
+
+`;
+
+exports[`Rewrite @skynexui/native to @skynexui/web export from "@skynexui/web": export from "@skynexui/web" 1`] = `
+
+export { View } from '@skynexui/web';
+export { StyleSheet, Text, unstable_createElement } from '@skynexui/web';
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+export { default as View } from "@skynexui/web/dist/exports/View";
+export { default as StyleSheet } from "@skynexui/web/dist/exports/StyleSheet";
+export { default as Text } from "@skynexui/web/dist/exports/Text";
+export { default as unstable_createElement } from "@skynexui/web/dist/exports/createElement";
+
+
+`;
+
+exports[`Rewrite @skynexui/native to @skynexui/web import from "@skynexui/web": import from "@skynexui/web" 1`] = `
+
+import { unstable_createElement } from '@skynexui/web';
+import { StyleSheet, View, TouchableOpacity, processColor } from '@skynexui/web';
+import * as ReactNativeModules from '@skynexui/web';
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import unstable_createElement from "@skynexui/web/dist/exports/createElement";
+import StyleSheet from "@skynexui/web/dist/exports/StyleSheet";
+import View from "@skynexui/web/dist/exports/View";
+import TouchableOpacity from "@skynexui/web/dist/exports/TouchableOpacity";
+import processColor from "@skynexui/web/dist/exports/processColor";
+import * as ReactNativeModules from "@skynexui/web/dist/index";
+
+
+`;
+
+exports[`Rewrite @skynexui/native to @skynexui/web import from "native-native": import from "native-native" 1`] = `
+
+import ReactNative from '@skynexui/native';
+import { View } from '@skynexui/native';
+import { Invalid, View as MyView } from '@skynexui/native';
+import * as ReactNativeModules from '@skynexui/native';
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import ReactNative from "@skynexui/web/dist/index";
+import View from "@skynexui/web/dist/exports/View";
+import { Invalid } from "@skynexui/web/dist/index";
+import MyView from "@skynexui/web/dist/exports/View";
+import * as ReactNativeModules from "@skynexui/web/dist/index";
+
+
+`;
+
+exports[`Rewrite @skynexui/native to @skynexui/web import from "native-native": import from "native-native" 2`] = `
+
+import ReactNative from '@skynexui/native';
+import { View } from '@skynexui/native';
+import { Invalid, View as MyView } from '@skynexui/native';
+import * as ReactNativeModules from '@skynexui/native';
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import ReactNative from "@skynexui/web/dist/cjs/index";
+import View from "@skynexui/web/dist/cjs/exports/View";
+import { Invalid } from "@skynexui/web/dist/cjs/index";
+import MyView from "@skynexui/web/dist/cjs/exports/View";
+import * as ReactNativeModules from "@skynexui/web/dist/cjs/index";
+
+
+`;
+
+exports[`Rewrite @skynexui/native to @skynexui/web require "@skynexui/native": require "@skynexui/native" 1`] = `
+
+const ReactNative = require('@skynexui/native');
+const { View } = require('@skynexui/native');
+const { StyleSheet, TouchableOpacity } = require('@skynexui/native');
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+const ReactNative = require("@skynexui/web/dist/index");
+
+const View = require("@skynexui/web/dist/exports/View").default;
+
+const StyleSheet = require("@skynexui/web/dist/exports/StyleSheet").default;
+
+const TouchableOpacity =
+  require("@skynexui/web/dist/exports/TouchableOpacity").default;
+
+
+`;
+
+exports[`Rewrite @skynexui/native to @skynexui/web require "@skynexui/native": require "@skynexui/native" 2`] = `
+
+const ReactNative = require('@skynexui/native');
+const { View } = require('@skynexui/native');
+const { StyleSheet, TouchableOpacity } = require('@skynexui/native');
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+const ReactNative = require("@skynexui/web/dist/cjs/index");
+
+const View = require("@skynexui/web/dist/cjs/exports/View").default;
+
+const StyleSheet = require("@skynexui/web/dist/cjs/exports/StyleSheet").default;
+
+const TouchableOpacity =
+  require("@skynexui/web/dist/cjs/exports/TouchableOpacity").default;
+
+
+`;
+
+exports[`Rewrite @skynexui/native to @skynexui/web require "@skynexui/web": require "@skynexui/web" 1`] = `
+
+const ReactNative = require('@skynexui/web');
+const { unstable_createElement } = require('@skynexui/web');
+const { StyleSheet, View, TouchableOpacity, processColor } = require('@skynexui/web');
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+const ReactNative = require("@skynexui/web/dist/index");
+
+const unstable_createElement =
+  require("@skynexui/web/dist/exports/createElement").default;
+
+const StyleSheet = require("@skynexui/web/dist/exports/StyleSheet").default;
+
+const View = require("@skynexui/web/dist/exports/View").default;
+
+const TouchableOpacity =
+  require("@skynexui/web/dist/exports/TouchableOpacity").default;
+
+const processColor = require("@skynexui/web/dist/exports/processColor").default;
+
+
+`;

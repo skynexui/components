@@ -6,9 +6,9 @@ const getDistLocation = (importName, opts) => {
   const format = isCommonJS(opts) ? 'cjs/' : '';
   const internalName = importName === 'unstable_createElement' ? 'createElement' : importName;
   if (internalName === 'index') {
-    return `react-native-web/dist/${format}index`;
+    return `@skynexui/web/dist/${format}index`;
   } else if (internalName && moduleMap[internalName]) {
-    return `react-native-web/dist/${format}exports/${internalName}`;
+    return `@skynexui/web/dist/${format}exports/${internalName}`;
   }
 };
 
@@ -24,18 +24,18 @@ const isReactNativeRequire = (t, node) => {
     t.isIdentifier(init.callee) &&
     init.callee.name === 'require' &&
     init.arguments.length === 1 &&
-    (init.arguments[0].value === 'react-native' || init.arguments[0].value === 'react-native-web')
+    (init.arguments[0].value === '@skynexui/native' || init.arguments[0].value === '@skynexui/web')
   );
 };
 
 const isReactNativeModule = ({ source, specifiers }) =>
   source &&
-  (source.value === 'react-native' || source.value === 'react-native-web') &&
+  (source.value === '@skynexui/native' || source.value === '@skynexui/web') &&
   specifiers.length;
 
 module.exports = function ({ types: t }) {
   return {
-    name: 'Rewrite react-native to react-native-web',
+    name: 'Rewrite @skynexui/native to @skynexui/web',
     visitor: {
       ImportDeclaration(path, state) {
         const { specifiers } = path.node;
