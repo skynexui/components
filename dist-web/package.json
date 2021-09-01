@@ -1,6 +1,6 @@
 {
   "name": "@skynexui/web",
-  "private": true,
+  "private": false,
   "version": "1.6.1",
   "main": "dist/index.js",
   "repository": {
