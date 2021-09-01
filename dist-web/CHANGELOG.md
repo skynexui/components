@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/skynexui/core/compare/v1.2.1...v1.2.2) (2021-09-01)
+
+
+### Bug Fixes
+
+* teste50 ([07e5bcb](https://github.com/skynexui/core/commit/07e5bcb4443dc5b9662449d911fc96f222d80195))
+
 ## [1.2.1](https://github.com/skynexui/core/compare/v1.2.0...v1.2.1) (2021-09-01)
 
 
