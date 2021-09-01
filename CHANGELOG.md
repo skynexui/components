@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/skynexui/core/compare/v1.4.1...v1.4.2) (2021-09-01)
+
+
+### Bug Fixes
+
+* deploy order to web and native ([71e842e](https://github.com/skynexui/core/commit/71e842eb6d699ab02164bcd8c28a87349608960a))
+
 ## [1.4.1](https://github.com/skynexui/core/compare/v1.4.0...v1.4.1) (2021-09-01)
 
 
