@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/skynexui/core/compare/v1.7.1...v1.7.2) (2021-09-01)
+
+
+### Bug Fixes
+
+* native release ([ff698a0](https://github.com/skynexui/core/commit/ff698a020238738481b3acd2d1e7a8683b64f5f5))
+
 ## [1.7.1](https://github.com/skynexui/core/compare/v1.7.0...v1.7.1) (2021-09-01)
 
 
