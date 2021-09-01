@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/skynexui/core/compare/v1.6.2...v1.7.0) (2021-09-01)
+
+
+### Features
+
+* minor update ([aca083a](https://github.com/skynexui/core/commit/aca083afd9de58e73783bd0bf070ac587718a1a0))
+
 ## [1.6.2](https://github.com/skynexui/core/compare/v1.6.1...v1.6.2) (2021-09-01)
 
 
