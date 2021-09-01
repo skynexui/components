@@ -6,8 +6,8 @@ const StyledText = styled.Text`
     ${Styles}
 `;
 
-function Text(): JSX.Element {
-  return <StyledText />
+function Text(props: any): JSX.Element {
+  return <StyledText {...props} />
 }
 
 export default Text;
