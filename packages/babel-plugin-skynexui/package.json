@@ -1,0 +1,19 @@
+{
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "name": "babel-plugin-react-native-web",
+  "version": "0.17.1",
+  "description": "Babel plugin for React Native for Web",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "babel-plugin-tester": "^10.0.0"
+  },
+  "author": "Mario Souto",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/skynexui/core.git"
+  }
+}

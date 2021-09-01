@@ -23,6 +23,7 @@
     "exclude": [
       "node_modules",
       "scripts",
-      "examples"
+      "examples",
+      "packages"
     ]
 }
