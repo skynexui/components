@@ -35,6 +35,6 @@ jobs:
           cd ../
           echo "DEPLOY TO GITHUB REGISTRY NOW!"
           echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > ~/.npmrc
-          cd ./dist-web && npm publish && cd ../
-          cd ./dist-native && npm publish && cd ../
+          cd ./dist-web && npm publish --@skynexui:registry=https://npm.pkg.github.com && cd ../
+          cd ./dist-native && npm publish --@skynexui:registry=https://npm.pkg.github.com && cd ../
 
