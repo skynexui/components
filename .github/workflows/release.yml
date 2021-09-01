@@ -21,18 +21,13 @@ jobs:
         run: yarn install
       - name: Build Lib
         run: yarn build
-      - name: Release WEB
+      - name: Release WEB/NATIVE
         env:
           GH_TOKEN: ${{ secrets.DEPLOY_DEMO }}
           NPM_TOKEN: ${{ secrets.DEPLOY_DEMO }}
         run: |
           cd ./dist-web
           npx semantic-release
-      - name: Release NATIVE
-        env:
-          GH_TOKEN: ${{ secrets.DEPLOY_DEMO }}
-          NPM_TOKEN: ${{ secrets.DEPLOY_DEMO }}
-        run: |
+          cd ../
           cd ./dist-native
           npm publish
-
