@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/skynexui/core/compare/v1.1.2...v1.2.0) (2021-09-01)
+
+
+### Features
+
+* add expo example ([74218b7](https://github.com/skynexui/core/commit/74218b74b7ddb38c2612c35f06966b75e398de67))
+
 ## [1.1.2](https://github.com/skynexui/core/compare/v1.1.1...v1.1.2) (2021-09-01)
 
 

@@ -1,7 +1,7 @@
 {
   "name": "@skynexui/native",
   "private": true,
-  "version": "1.1.2",
+  "version": "1.2.0",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
