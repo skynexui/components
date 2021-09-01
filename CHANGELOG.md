@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/skynexui/core/compare/v1.7.0...v1.7.1) (2021-09-01)
+
+
+### Bug Fixes
+
+* small try ([a69155b](https://github.com/skynexui/core/commit/a69155b6b06c0244091f2125605a211c620cc7fc))
+
 # [1.1.0](https://github.com/skynexui/core/compare/v1.0.0...v1.1.0) (2021-09-01)
 
 
