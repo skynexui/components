@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/skynexui/core/compare/v1.2.0...v1.2.1) (2021-09-01)
+
+
+### Bug Fixes
+
+* publish new release ([bba0878](https://github.com/skynexui/core/commit/bba08788f60daf1bda3a7fbde3ece3ac2245184d))
+
 # [1.2.0](https://github.com/skynexui/core/compare/v1.1.0...v1.2.0) (2021-09-01)
 
 
