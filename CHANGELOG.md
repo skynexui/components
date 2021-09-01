@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/skynexui/core/compare/v1.1.1...v1.1.2) (2021-09-01)
+
+
+### Bug Fixes
+
+* minor forgotten update ([1952451](https://github.com/skynexui/core/commit/19524514c09e2d0336397fe6e316bf97902a3cd5))
+
 ## [1.1.1](https://github.com/skynexui/core/compare/v1.1.0...v1.1.1) (2021-09-01)
 
 
