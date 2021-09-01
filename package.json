@@ -79,7 +79,7 @@
         "name": "beta",
         "prerelease": true
       },
-      "master"
+      "main"
     ]
   }
 }
