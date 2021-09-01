@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:skynexui/core.git"
+    "url": "https://github.com/skynexui/core.git"
   },
   "author": "Mario Souto <soutomarios@gmail.com>",
   "license": "MIT",
