@@ -26,7 +26,6 @@ jobs:
           GH_TOKEN: ${{ secrets.DEPLOY_DEMO }}
           NPM_TOKEN: ${{ secrets.DEPLOY_DEMO }}
         run: |
-          cd ./dist-web
           npx semantic-release
           echo "//npm.pkg.github.com/:_authToken=$GH_TOKEN" > ~/.npmrc
           cd ../
