@@ -22,6 +22,8 @@ writeFileSync(
 );
 
 spawnSyncWrapper('git', ['add', '-A']).log();
+log(chalk`{bgMagenta.white.bold [postVersionBump] LOGGING CURRENT FILE CHANGES}`);
 spawnSyncWrapper('git', ['status']).log();
+log(chalk`{bgMagenta.white.bold [postVersionBump] LOGGING CURRENT FILE CHANGES}`);
 
 log(chalk`{bgMagenta.white.bold [postVersionBump] Moving package.json to root  - [DONE]}`);
