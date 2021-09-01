@@ -24,10 +24,12 @@ jobs:
       - name: Release WEB/NATIVE
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_DEMO }}
+          GH_TOKEN: ${{ secrets.DEPLOY_DEMO }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN || secrets.DEPLOY_DEMO }}
         run: |
           npx semantic-release
           yarn scripts ./scripts/release/createWebPackageJson.js
           cd ./dist-web
+        # echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > ~/.npmrc
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
           npm publish
-          echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > ~/.npmrc
