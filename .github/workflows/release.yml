@@ -23,7 +23,7 @@ jobs:
         run: yarn build
       - name: Release WEB/NATIVE
         env:
-          GH_TOKEN: ${{ secrets.DEPLOY_DEMO }}
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_DEMO }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN || secrets.DEPLOY_DEMO }}
         run: |
           npx semantic-release
