@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/skynexui/core/compare/v1.4.0...v1.4.1) (2021-09-01)
+
+
+### Bug Fixes
+
+* first release after publish to npm ([ef9abdb](https://github.com/skynexui/core/commit/ef9abdb2144782c0e3d8563f383cb4fff914e706))
+
 # [1.4.0](https://github.com/skynexui/core/compare/v1.3.1...v1.4.0) (2021-09-01)
 
 
