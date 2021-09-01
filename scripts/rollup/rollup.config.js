@@ -10,9 +10,13 @@ import pkg from '../../package.json';
 
 const EXTENSIONS = [".ts", ".tsx"];
 
-const filePaths = [
+const filePathsWeb = [
   './src/components/Text/styles.ts',
   './src/components/Text/web/index.tsx',
+];
+
+const filePathsNative = [
+  './src/components/Text/styles.ts',
   './src/components/Text/native/index.tsx',
 ];
 
@@ -47,17 +51,33 @@ export function toRollupInputPaths(filePaths) {
   }, {});
 }
 
-export default {
-  input: toRollupInputPaths(filePaths),
-  output: [
-    {
-      dir: 'dist',
-      entryFileNames: '[name].js',
-      format: 'esm',
-      exports: 'named',
-      sourcemap: true
-    },
-  ],
-  external,
-  plugins,
-};
+export default [
+  {
+    input: toRollupInputPaths(filePathsWeb),
+    output: [
+      {
+        dir: 'dist-web',
+        entryFileNames: '[name].js',
+        format: 'esm',
+        exports: 'named',
+        sourcemap: true
+      },
+    ],
+    external,
+    plugins,
+  },
+  {
+    input: toRollupInputPaths(filePathsNative),
+    output: [
+      {
+        dir: 'dist-native',
+        entryFileNames: '[name].js',
+        format: 'esm',
+        exports: 'named',
+        sourcemap: true
+      },
+    ],
+    external,
+    plugins,
+  }
+];
