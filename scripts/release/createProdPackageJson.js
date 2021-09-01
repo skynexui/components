@@ -12,10 +12,12 @@ const packageJSON = {
   web: {
     ...pkg,
     name: '@skynexui/web',
+    private: false,
   }, 
   native: {
     ...pkg,
     name: '@skynexui/native',
+    private: false,
   }
 }
 
@@ -24,7 +26,6 @@ writeFileSync(
   distNativePath,
   `${JSON.stringify({
     ...packageJSON.native,
-    private: true,
   }, null, 2)}\n`,
 );
 
@@ -33,6 +34,5 @@ writeFileSync(
   distWebPath,
   `${JSON.stringify({
     ...packageJSON.web,
-    private: true,
   }, null, 2)}\n`,
 );
