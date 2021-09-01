@@ -1045,10 +1045,10 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@skynexui/native@^1.1.1":
-  version "1.1.1"
-  resolved "https://npm.pkg.github.com/download/@skynexui/native/1.1.1/da42a617c5a13b5d5a00613edcde0fd84b11668f3edb83e09381447bec9ef2d4#d2c85415c7901492c341e7313e9ee39527bf7053"
-  integrity sha512-W7l7WD/Rg9SEj7OK/AO1C4i3Sr2wEkw+Tq3AY+wjPcEcMp9MJSOP4x7U9JEs4S3HrpYuot5bzL5pT5bO3ZqHRQ==
+"@skynexui/native@^1.1.2":
+  version "1.1.2"
+  resolved "https://npm.pkg.github.com/download/@skynexui/native/1.1.2/88a71a6a90aa7feaba058d6da95e71b53eea950d94b4c57730d937b1912810a5#f79ac1d5079d8b4463ccbbcefb4fa1e233df6613"
+  integrity sha512-7Am1eQyC7QLVgrrGGZ5XrhYniIVCifVM260vD+GY5ibT++CAPmOMFRQ3O45MzKUSkEpbw/ZpDtG2fI4MK8mbbQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.14.5"
     "@babel/preset-env" "^7.15.0"
@@ -1058,10 +1058,10 @@
     tslib "^2.3.1"
     typescript "^4.4.2"
 
-"@skynexui/web@^1.1.1":
-  version "1.1.1"
-  resolved "https://npm.pkg.github.com/download/@skynexui/web/1.1.1/e5454fd1df699cb2140eeeada8b0e59b5b1aa50e1ff9d0820a44c922e79cb367#65da45956992853b130630311eef6df477040bc9"
-  integrity sha512-BEyMPHY2pBO/cn7rh+HCO06FiBbrwKtLlOh58xp+++eKl80xZwqpM8tesKTUd9BlwoLAbzM2QMHKeP5VP+IF7g==
+"@skynexui/web@^1.1.2":
+  version "1.1.2"
+  resolved "https://npm.pkg.github.com/download/@skynexui/web/1.1.2/ad22e1a1e9493038aafc9ddffc13cf80b4ff8f19229fc26536b329779804c345#43e9f00995cef39e20e87baf402f36de65fc1868"
+  integrity sha512-tEVbs7Q9gmzQyVVP6m2AGLW6S1PbQaBu2eJCa/zWE/b3MV4PoNUmYnz6OXnoYhoNAXPrTHrZwcplKBGC8Wmssw==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.14.5"
     "@babel/preset-env" "^7.15.0"
