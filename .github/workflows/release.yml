@@ -34,5 +34,5 @@ jobs:
           NPM_TOKEN: ${{ secrets.DEPLOY_DEMO }}
         run: |
           cd ./dist-native
-          npx semantic-release
+          npm publish
 
