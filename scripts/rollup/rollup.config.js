@@ -43,6 +43,8 @@ export function toRollupInputPaths(filePaths) {
     const filePathKey = filePath
       .replace('.tsx', '')
       .replace('.ts', '')
+      .replace('/web', '')
+      .replace('/native', '')
       .replace('./src/', '');
     return {
       ...rollupInputPaths,
