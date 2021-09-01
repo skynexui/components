@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/skynexui/core/compare/v1.3.0...v1.3.1) (2021-09-01)
+
+
+### Bug Fixes
+
+* deploy to npm registry ([cbd1fe7](https://github.com/skynexui/core/commit/cbd1fe7dc3f707b8a80fd87e19c0339d4a57c7e5))
+
 # [1.3.0](https://github.com/skynexui/core/compare/v1.2.1...v1.3.0) (2021-09-01)
 
 
