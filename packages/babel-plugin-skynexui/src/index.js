@@ -1,18 +1,16 @@
-const moduleMap = require('./moduleMap');
+const NATIVE_PACKAGE = '@skynexui/native';
+const WEB_PACKAGE = '@skynexui/web';
 
 const isCommonJS = (opts) => opts.commonjs === true;
 
-const getDistLocation = (importName, opts) => {
-  const format = isCommonJS(opts) ? 'cjs/' : '';
-  const internalName = importName === 'unstable_createElement' ? 'createElement' : importName;
-  if (internalName === 'index') {
-    return `@skynexui/web/dist/${format}index`;
-  } else if (internalName && moduleMap[internalName]) {
-    return `@skynexui/web/dist/${format}exports/${internalName}`;
-  }
-};
 
-const isReactNativeRequire = (t, node) => {
+function isSkynexNativeModule({ source, specifiers }) {
+  return source
+    && source.value.startsWith(NATIVE_PACKAGE)
+    && specifiers.length;
+}
+
+function isSkynexNativeRequire(t, node) {
   const { declarations } = node;
   if (declarations.length > 1) {
     return false;
@@ -24,14 +22,9 @@ const isReactNativeRequire = (t, node) => {
     t.isIdentifier(init.callee) &&
     init.callee.name === 'require' &&
     init.arguments.length === 1 &&
-    (init.arguments[0].value === '@skynexui/native' || init.arguments[0].value === '@skynexui/web')
+    init.arguments[0].value.startsWith(NATIVE_PACKAGE)
   );
-};
-
-const isReactNativeModule = ({ source, specifiers }) =>
-  source &&
-  (source.value === '@skynexui/native' || source.value === '@skynexui/web') &&
-  specifiers.length;
+}
 
 module.exports = function ({ types: t }) {
   return {
@@ -39,92 +32,65 @@ module.exports = function ({ types: t }) {
     visitor: {
       ImportDeclaration(path, state) {
         const { specifiers } = path.node;
-        if (isReactNativeModule(path.node)) {
+        if(isSkynexNativeModule(path.node)) {
           const imports = specifiers
-            .map((specifier) => {
-              if (t.isImportSpecifier(specifier)) {
-                const importName = specifier.imported.name;
-                const distLocation = getDistLocation(importName, state.opts);
-
-                if (distLocation) {
-                  return t.importDeclaration(
-                    [t.importDefaultSpecifier(t.identifier(specifier.local.name))],
-                    t.stringLiteral(distLocation)
-                  );
-                }
-              }
-              return t.importDeclaration(
-                [specifier],
-                t.stringLiteral(getDistLocation('index', state.opts))
-              );
-            })
-            .filter(Boolean);
-
+          .map((specifier) => {
+            return t.importDeclaration(
+              [specifier],
+              t.stringLiteral(path.node.source.value.replace(NATIVE_PACKAGE, WEB_PACKAGE))
+            );
+          })
+          .filter(Boolean);
           path.replaceWithMultiple(imports);
         }
       },
       ExportNamedDeclaration(path, state) {
         const { specifiers } = path.node;
-        if (isReactNativeModule(path.node)) {
+        if(isSkynexNativeModule(path.node)) {
           const exports = specifiers
             .map((specifier) => {
-              if (t.isExportSpecifier(specifier)) {
-                const exportName = specifier.exported.name;
-                const localName = specifier.local.name;
-                const distLocation = getDistLocation(localName, state.opts);
-
-                if (distLocation) {
-                  return t.exportNamedDeclaration(
-                    null,
-                    [t.exportSpecifier(t.identifier('default'), t.identifier(exportName))],
-                    t.stringLiteral(distLocation)
-                  );
-                }
-              }
               return t.exportNamedDeclaration(
                 null,
                 [specifier],
-                t.stringLiteral(getDistLocation('index', state.opts))
+                t.stringLiteral(path.node.source.value.replace(NATIVE_PACKAGE, WEB_PACKAGE))
               );
             })
             .filter(Boolean);
-
           path.replaceWithMultiple(exports);
         }
       },
       VariableDeclaration(path, state) {
-        if (isReactNativeRequire(t, path.node)) {
+        if(isSkynexNativeRequire(t, path.node)) {
           const { id } = path.node.declarations[0];
+
           if (t.isObjectPattern(id)) {
             const imports = id.properties
               .map((identifier) => {
-                const distLocation = getDistLocation(identifier.key.name, state.opts);
-                if (distLocation) {
-                  return t.variableDeclaration(path.node.kind, [
-                    t.variableDeclarator(
-                      t.identifier(identifier.value.name),
-                      t.memberExpression(
-                        t.callExpression(t.identifier('require'), [t.stringLiteral(distLocation)]),
-                        t.identifier('default')
-                      )
+                const replacedValue = NATIVE_PACKAGE.replace(NATIVE_PACKAGE, WEB_PACKAGE);
+                return t.variableDeclaration(path.node.kind, [
+                  t.variableDeclarator(
+                    t.identifier(identifier.value.name),
+                    t.memberExpression(
+                      t.callExpression(t.identifier('require'), [t.stringLiteral(replacedValue)]),
+                      t.identifier('default')
                     )
-                  ]);
-                }
+                  )
+                ]);
               })
               .filter(Boolean);
 
             path.replaceWithMultiple(imports);
           } else if (t.isIdentifier(id)) {
             const name = id.name;
+            const replacedValue = path.node.declarations[0].init.arguments[0].value.replace(NATIVE_PACKAGE, WEB_PACKAGE);
             const importIndex = t.variableDeclaration(path.node.kind, [
               t.variableDeclarator(
                 t.identifier(name),
                 t.callExpression(t.identifier('require'), [
-                  t.stringLiteral(getDistLocation('index', state.opts))
+                  t.stringLiteral(replacedValue)
                 ])
               )
             ]);
-
             path.replaceWith(importIndex);
           }
         }

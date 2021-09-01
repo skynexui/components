@@ -1,15 +1,12 @@
-
-const plugin = require('../index');
+const plugin = require('..');
 const pluginTester = require('babel-plugin-tester').default;
 
 const tests = [
-  // import react-native
   {
     title: 'import from "native-native"',
     code: `import ReactNative from '@skynexui/native';
-import { View } from '@skynexui/native';
-import { Invalid, View as MyView } from '@skynexui/native';
-import * as ReactNativeModules from '@skynexui/native';`,
+import Text from '@skynexui/native/components/Text';
+import Box from '@skynexui/native/components/Box';`,
     snapshot: true
   },
   {
@@ -30,7 +27,7 @@ import * as ReactNativeModules from '@skynexui/web';`,
   },
   {
     title: 'export from "@skynexui/native"',
-    code: `export { View } from '@skynexui/native';
+    code: `export { View } from '@skynexui/native/components/Text';
 export { StyleSheet, Text, unstable_createElement } from '@skynexui/native';`,
     snapshot: true
   },
@@ -42,8 +39,9 @@ export { StyleSheet, Text, unstable_createElement } from '@skynexui/web';`,
   },
   {
     title: 'require "@skynexui/native"',
-    code: `const ReactNative = require('@skynexui/native');
-const { View } = require('@skynexui/native');
+    code: `const ReactNative = require('@skynexui/native/components/Box');
+const Text = require('@skynexui/native/component/Text');
+const { Bla, Sample } = require('@skynexui/native/component/Text');
 const { StyleSheet, TouchableOpacity } = require('@skynexui/native');`,
     snapshot: true
   },
@@ -73,7 +71,6 @@ pluginTester({
     }
   },
   plugin,
-  // pluginName: 'Rewrite react-native to @skynexui/web',
-  pluginName: 'Rewrite @skynexui/native to @skynexui/web',
+  pluginName: 'Rewrite react-native to react-native-web',
   tests
 });
