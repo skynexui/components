@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/skynexui/core/compare/v1.0.0...v1.1.0) (2021-09-01)
+
+
+### Bug Fixes
+
+* rollup.config distribution of the packages ([0355319](https://github.com/skynexui/core/commit/0355319199ddd283a8fdfc70ba57de79ddaca167))
+
+
+### Features
+
+* add support to the first example with nextjs ([de092ef](https://github.com/skynexui/core/commit/de092ef6efa14a5d53e784a32e7595f75ecbadf0))
+
 # 1.0.0 (2021-09-01)
 
 
