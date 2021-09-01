@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/skynexui/core/compare/v1.7.2...v1.8.0) (2021-09-01)
+
+
+### Features
+
+* migrate deploy formula ([cbe2921](https://github.com/skynexui/core/commit/cbe29213f0a7f3849f24b21276bebdd0a09f1e60))
+
 ## [1.7.2](https://github.com/skynexui/core/compare/v1.7.1...v1.7.2) (2021-09-01)
 
 
