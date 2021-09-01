@@ -1,3 +1,10 @@
+## [1.4.5](https://github.com/skynexui/core/compare/v1.4.4...v1.4.5) (2021-09-01)
+
+
+### Bug Fixes
+
+* registry gh ([c0a0dfd](https://github.com/skynexui/core/commit/c0a0dfde75490018c1158fca4a547b3f02ce32db))
+
 ## [1.4.4](https://github.com/skynexui/core/compare/v1.4.3...v1.4.4) (2021-09-01)
 
 
