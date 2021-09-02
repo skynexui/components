@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/skynexui/core/compare/v1.6.1...v1.7.0) (2021-09-02)
+
+
+### Features
+
+* force release ([4368bc7](https://github.com/skynexui/core/commit/4368bc7f0b044a33d87732fae9a3cdbc064d99b2))
+
 ## [1.6.1](https://github.com/skynexui/core/compare/v1.6.0...v1.6.1) (2021-09-02)
 
 
