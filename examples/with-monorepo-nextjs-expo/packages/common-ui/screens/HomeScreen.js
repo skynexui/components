@@ -8,12 +8,12 @@ export default function HomeScreen() {
     <Box
       as={{ web: 'main', mobile: 'ScrollView' }}
       flex="1"
-      background="neutral100"
+      background="neutral050"
       paddingTop="x20"
       paddingX="x4"
     >
       <Text
-        variant="heading_1"
+        variant="heading_2"
         textColor="primary800"
         paddingX={{xs: "x0", md: "x6" }}
       >
