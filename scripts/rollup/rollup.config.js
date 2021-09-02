@@ -11,12 +11,20 @@ import pkg from '../../package.json';
 const EXTENSIONS = [".ts", ".tsx"];
 
 const filePathsWeb = [
-  './src/components/Text/styles.ts',
+  './src/theme/provider/UIThemeProvider/base.tsx',
+  './src/theme/provider/UIThemeProvider/web.tsx',
+  './src/components/Box/styles.tsx',
+  './src/components/Box/web/index.tsx',
+  './src/components/Text/styles.tsx',
   './src/components/Text/web/index.tsx',
 ];
 
 const filePathsNative = [
-  './src/components/Text/styles.ts',
+  './src/theme/provider/UIThemeProvider/base.tsx',
+  './src/theme/provider/UIThemeProvider/native.tsx',
+  './src/components/Box/styles.tsx',
+  './src/components/Box/native/index.tsx',
+  './src/components/Text/styles.tsx',
   './src/components/Text/native/index.tsx',
 ];
 

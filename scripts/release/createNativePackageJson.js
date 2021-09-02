@@ -2,7 +2,6 @@ import chalk from 'chalk';
 import { writeFileSync } from 'fs';
 import { join } from 'path';
 import pkg from '../../package.json';
-import spawnSyncWrapper from '../infra/spawnSyncWrapper';
 
 const { log } = console;
 
