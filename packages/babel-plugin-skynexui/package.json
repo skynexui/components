@@ -1,8 +1,9 @@
 {
+  "private": false,
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "name": "@skynexui/babel-plugin-skynexui",
+  "name": "babel-plugin-skynexui",
   "version": "1.0.0",
   "description": "Babel plugin for @skynexui/web",
   "main": "index.js",
