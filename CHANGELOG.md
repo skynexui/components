@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/skynexui/core/compare/v1.7.1...v1.8.0) (2021-09-02)
+
+
+### Features
+
+* update nextjs example and docs ([1bb14d6](https://github.com/skynexui/core/commit/1bb14d6a0f9f113c92a54c91363d2efcd4c9184c))
+
 ## [1.7.1](https://github.com/skynexui/core/compare/v1.7.0...v1.7.1) (2021-09-02)
 
 
