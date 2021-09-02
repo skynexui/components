@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/skynexui/core/compare/v1.8.0...v1.9.0) (2021-09-02)
+
+
+### Features
+
+* add the babel-plugin to the repo ([59dd461](https://github.com/skynexui/core/commit/59dd461b64ec39eaec17c2428e0f393bfc14109f))
+
 # [1.8.0](https://github.com/skynexui/core/compare/v1.7.1...v1.8.0) (2021-09-02)
 
 
