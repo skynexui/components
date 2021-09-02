@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/skynexui/core/compare/v1.4.5...v1.5.0) (2021-09-02)
+
+
+### Features
+
+* add example monorepo ([#6](https://github.com/skynexui/core/issues/6)) ([cb45fc2](https://github.com/skynexui/core/commit/cb45fc27ceb1959048c72abfe7fd7a8c036116a5))
+
 ## [1.4.5](https://github.com/skynexui/core/compare/v1.4.4...v1.4.5) (2021-09-01)
 
 
