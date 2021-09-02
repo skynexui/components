@@ -1681,10 +1681,36 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
+"@skynexui/native@^1.4.5":
+  version "1.4.5"
+  resolved "https://npm.pkg.github.com/download/@skynexui/native/1.4.5/a1ee51f082dcea0555832a8fb6b8846ed6a3fb30ea98515b12d6178cb7e7ceec#c17611348ec0996d5106850299745ab6f6fc11c0"
+  integrity sha512-LZvGecFk31jNbZ9V7KTvkhtgukkHW3/3zDIR7sbC29lPmYuEyt7U3oGD4X0bfzRrDUdZRIBrN9MMjUYWiiKKdw==
+  dependencies:
+    "@babel/plugin-proposal-class-properties" "^7.14.5"
+    "@babel/preset-env" "^7.15.0"
+    "@babel/preset-react" "^7.14.5"
+    "@babel/preset-typescript" "^7.15.0"
+    "@rollup/plugin-typescript" "^8.2.5"
+    tslib "^2.3.1"
+    typescript "^4.4.2"
+
 "@skynexui/native@latest":
   version "1.2.1"
   resolved "https://npm.pkg.github.com/download/@skynexui/native/1.2.1/4ae33a760dfa538b38d54f1d4d28e10c3102604d81d6de1f6b7843e088227789#6fde54efc82f49a870758b9852c2f75a4f12a8b7"
   integrity sha512-VA2Z1aDTTHNvnxfnYeINJ7QS9vl2AlFibvn3aE7ZtAS1YX1VFGMtWS9UbcJpvCUaxl9NKQovbDey3oSRZN13xw==
+  dependencies:
+    "@babel/plugin-proposal-class-properties" "^7.14.5"
+    "@babel/preset-env" "^7.15.0"
+    "@babel/preset-react" "^7.14.5"
+    "@babel/preset-typescript" "^7.15.0"
+    "@rollup/plugin-typescript" "^8.2.5"
+    tslib "^2.3.1"
+    typescript "^4.4.2"
+
+"@skynexui/web@^1.4.5":
+  version "1.4.5"
+  resolved "https://npm.pkg.github.com/download/@skynexui/web/1.4.5/25482e2762799820b3829edfa83da80f05540b7fdedd958caaa16cd42b7b2af4#7c523f1b6b29bac97033bca460c7d2e32137f05b"
+  integrity sha512-1fEiTe01S8zWyzdmCyJOCF7uQWnqaBEOKC6yh3KHCAPnbLegnSl1m3v54ewnhpmmpmTk+h61BKzrz9Ucd/R/rw==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.14.5"
     "@babel/preset-env" "^7.15.0"
@@ -2101,6 +2127,11 @@ babel-plugin-react-native-web@~0.13.6:
   version "0.13.18"
   resolved "https://registry.yarnpkg.com/babel-plugin-react-native-web/-/babel-plugin-react-native-web-0.13.18.tgz#f0b640412b81acd02d8036b7a935ffb3ab446e4e"
   integrity sha512-f8pAxyKqXBNRIh8l4Sqju055BNec+DQlItdtutByYxULU0iJ1F7evIYE3skPKAkTB/xJH17l+n3Z8dVabGIIGg==
+
+babel-plugin-skynexui@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-skynexui/-/babel-plugin-skynexui-1.0.0.tgz#36461b081450e8ce892fd8612f682d0da025c925"
+  integrity sha512-tSiF8QRZ8SPWo7R44YIL0Jo8nbF/TOcyOe2YTWEDssugfOEAAy1aXdOWrVVV6x0zlHmAtS+OybKRw9eM4ALUiA==
 
 "babel-plugin-styled-components@>= 1.12.0":
   version "1.13.2"
