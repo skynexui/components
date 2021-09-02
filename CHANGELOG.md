@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/skynexui/core/compare/v1.5.0...v1.6.0) (2021-09-02)
+
+
+### Features
+
+* add first implementation of components and enable Box with Text ([#9](https://github.com/skynexui/core/issues/9)) ([a177e47](https://github.com/skynexui/core/commit/a177e4792ff02ed3f9dd55240921ece4ec38d28c))
+
 # [1.5.0](https://github.com/skynexui/core/compare/v1.4.5...v1.5.0) (2021-09-02)
 
 
