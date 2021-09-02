@@ -5,8 +5,20 @@ import Box from '@skynexui/native/components/Box';
 
 export default function HomeScreen() {
   return (
-    <Box as={{ web: 'main', mobile: 'ScrollView' }} flex="1" background="neutral050" paddingTop="x20" paddingX="x4">
-      <Text textColor="primary800" paddingX="x4">This is my dream comming true! I can use the same API with React everywhere! "Learn once and write everywhere"</Text>
+    <Box
+      as={{ web: 'main', mobile: 'ScrollView' }}
+      flex="1"
+      background="neutral100"
+      paddingTop="x20"
+      paddingX="x4"
+    >
+      <Text
+        variant="heading_1"
+        textColor="primary800"
+        paddingX={{xs: "x0", md: "x6" }}
+      >
+        This is my dream comming true! I can use the same API with React everywhere! "Learn once and write everywhere"
+      </Text>
     </Box>
   )
 }
