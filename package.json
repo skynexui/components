@@ -13,7 +13,8 @@
     "build": "rm -rf ./dist && rollup -c ./scripts/rollup/rollup.config.js && yarn scripts ./scripts/release/createNativePackageJson.js",
     "release": "semantic-release",
     "scripts": "node -r esm",
-    "postversion": "cd ../ && yarn scripts ./scripts/release/postVersionBump.js"
+    "postversion": "cd ../ && yarn scripts ./scripts/release/postVersionBump.js",
+    "test:babel": "cd ./packages/babel-plugin-skynexui && yarn jest -u --watch"
   },
   "peerDependencies": {
     "expo": "42.0.0",
