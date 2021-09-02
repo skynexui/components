@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/skynexui/core/compare/v1.6.0...v1.6.1) (2021-09-02)
+
+
+### Bug Fixes
+
+* Box component ([#10](https://github.com/skynexui/core/issues/10)) ([2681985](https://github.com/skynexui/core/commit/26819851b1f5d6d951bca49327f893323c2e56ba))
+
 # [1.6.0](https://github.com/skynexui/core/compare/v1.5.0...v1.6.0) (2021-09-02)
 
 
