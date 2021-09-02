@@ -1,6 +1,8 @@
 # SkynexUI
 
 > Use the platform, don't care about how to style there
+> 
+> ⚠️ Version 1.x.x is **alpha**, trust only in v2
 
 A set of components writen on top of React and React Native (with Expo) made for you deliver code for mobile devices and for the web using the best structures that the React ecossystem can provide with a seamless and standardized API.
 
