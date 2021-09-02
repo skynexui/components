@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import withStyledInternalProps from '../../../theme/utils/withStyledInternalProps';
 import { BoxPropsBase, Styles } from '../styles';
