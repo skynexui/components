@@ -12,7 +12,7 @@
   "dependencies": {
     "@skynexui/web": "latest",
     "@skynexui/native": "latest",
-    "babel-plugin-skynexui": "^1.0.0",
+    "babel-plugin-skynexui": "latest",
     "common-ui": "*",
     "next": "latest",
     "react": "^17.0.2",
