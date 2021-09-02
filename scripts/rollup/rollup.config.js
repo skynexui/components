@@ -11,6 +11,8 @@ import pkg from '../../package.json';
 const EXTENSIONS = [".ts", ".tsx"];
 
 const filePathsWeb = [
+  './src/theme/provider/UIThemeProvider/base.tsx',
+  './src/theme/provider/UIThemeProvider/web.tsx',
   './src/components/Box/styles.tsx',
   './src/components/Box/web/index.tsx',
   './src/components/Text/styles.tsx',
@@ -18,6 +20,8 @@ const filePathsWeb = [
 ];
 
 const filePathsNative = [
+  './src/theme/provider/UIThemeProvider/base.tsx',
+  './src/theme/provider/UIThemeProvider/native.tsx',
   './src/components/Box/styles.tsx',
   './src/components/Box/native/index.tsx',
   './src/components/Text/styles.tsx',
