@@ -24,6 +24,8 @@
       "node_modules",
       "scripts",
       "examples",
-      "packages"
+      "packages",
+      "dist-native",
+      "dist-web"
     ]
 }

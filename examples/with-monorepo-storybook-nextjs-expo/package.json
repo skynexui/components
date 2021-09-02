@@ -7,12 +7,12 @@
   "workspaces": {
     "packages": [
       "packages/*"
-    ],
-    "nohoist": []
+    ]
   },
   "scripts": {
     "web": "yarn workspace @skynexuiexamples/web",
     "dev:web": "yarn web dev",
+    "build:web": "yarn web build",
     "native": "yarn workspace @skynexuiexamples/native",
     "dev:native": "yarn native start"
   },

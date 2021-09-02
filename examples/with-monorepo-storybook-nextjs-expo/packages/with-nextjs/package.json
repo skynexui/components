@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@skynexui/web": "latest",
+    "@skynexui/native": "latest",
+    "babel-plugin-skynexui": "latest",
     "common-ui": "*",
     "next": "latest",
     "react": "^17.0.2",
@@ -18,8 +20,8 @@
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
+    "babel-plugin-react-native-web": "0.14.8",
     "next-compose-plugins": "^2.2.1",
-    "next-transpile-modules": "^8.0.0",
-    "babel-plugin-react-native-web": "0.14.8"
+    "next-transpile-modules": "^8.0.0"
   }
 }

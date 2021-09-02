@@ -1,4 +1,4 @@
-import Text from '@skynexui/native';
+import Text from '@skynexui/native/components/Text';
 
 export default function HomeScreen() {
   return (
