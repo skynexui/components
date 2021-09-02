@@ -8,6 +8,15 @@ A set of components writen on top of React and React Native (with Expo) made for
 
 ## Get Started
 This repo exports 2 packages `@skynexui/web` and `@skynexui/native`
+- Always use `@skynexui/native` for imports
+- If you are writing a web project, please use [`babel-plugin-skynexui`](https://www.npmjs.com/package/babel-plugin-skynexui)
+```js
+// # babel.config.js
+module.exports = {
+  presets: ['next/babel'], // Eg: using NextJS
+  plugins: [['babel-plugin-skynexui', { commonjs: true }]],
+}
+```
 
 
 ## But why?

@@ -1,7 +1,7 @@
 import React from 'react';
-import UIThemeProvider from '@skynexui/web/theme/provider/UIThemeProvider';
-import Text from '@skynexui/web/components/Text';
-import Box from '@skynexui/web/components/Box';
+import UIThemeProvider from '@skynexui/native/theme/provider/UIThemeProvider';
+import Text from '@skynexui/native/components/Text';
+import Box from '@skynexui/native/components/Box';
 
 
 function HomePage() {
