@@ -6,7 +6,7 @@
   "name": "babel-plugin-skynexui",
   "version": "1.0.0",
   "description": "Babel plugin for @skynexui/web",
-  "main": "index.js",
+  "main": "src/index.js",
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "babel-plugin-tester": "^10.0.0",
