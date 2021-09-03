@@ -27,7 +27,25 @@ module.exports = {
 Recently I see that there's many people trying to use CrossPlatform alternatives for Mobile and Web (eg. Flutter Web) for web development, and based in it's current perfomance, a11y and support for breakpoints I truly believe that we already have nice structures and this repo starts with the idea to prove that we have tooling for delivery the great part of the apps that we have in today's development with high quality developer experience considering tools like [NextJS](https://nextjs.org/) for the web and [Expo](https://expo.dev/) for mobile development.  
 
 ## Contributing?
-Right now the project is not open for contributors but soon will be. For now, [leave your ideas and questions as an issue](https://github.com/skynexui/core/issues)!
+The project is in alpha and there's no fancy structures for contributing, for now you [just have to check the current issues](https://github.com/skynexui/core/issues) pick one and to run the project in your machine you have to:
+
+```js
+# inside project root
+yarn install
+
+yarn build
+
+yarn link
+```
+
+Then go to the `examples` folder, choose the monorepo one and then:
+
+```js
+yarn link @skynexui/native
+yarn link @skynexui/web
+```
+
+> I want to have and build watch command to make things better, probably could be your first issue solved here :)
 
 ## Strongly Inspired by:
 - [Flutter](https://flutter.dev/)
