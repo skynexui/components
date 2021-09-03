@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/skynexui/core/compare/v1.9.0...v1.10.0) (2021-09-03)
+
+
+### Features
+
+* add support to dynamic bundle components ([#13](https://github.com/skynexui/core/issues/13)) ([04e1e82](https://github.com/skynexui/core/commit/04e1e82d1fd188691e6d1db49fd9aa0dcaa69b1a))
+
 # [1.9.0](https://github.com/skynexui/core/compare/v1.8.0...v1.9.0) (2021-09-02)
 
 
