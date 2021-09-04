@@ -1,11 +1,10 @@
-import { defaultSpace } from "./index";
+import defaultSpace from "./index";
 
 <Meta title="Foundation/Space" />
 
 # Space
 
 Here are all the `space` definitions that we have avaiable through the `theme.space`.
-
 
 <table className="min-w-full divide-y divide-gray-200">
   <thead className="bg-gray-50">
@@ -22,18 +21,13 @@ Here are all the `space` definitions that we have avaiable through the `theme.sp
     </tr>
   </thead>
   <tbody>
-    {Object.keys(defaultSpace)
-    .map((key) => (
+    {Object.keys(defaultSpace).map((key) => (
       <tr key={key}>
+        <td>{key}</td>
+        <td>{defaultSpace[key]}</td>
         <td>
-          {key}
-        </td>
-        <td>
-          {defaultSpace[key]}
-        </td>        
-        <td>
-          {defaultSpace[key].includes('rem')
-            ? `${Number(defaultSpace[key].replace('rem', '')) * 16}px`
+          {defaultSpace[key].includes("rem")
+            ? `${Number(defaultSpace[key].replace("rem", "")) * 16}px`
             : defaultSpace[key]}
         </td>
       </tr>
