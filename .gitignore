@@ -124,3 +124,6 @@ dist
 dist-web/
 dist-native/
 examples/yarn.lock
+
+# Husky
+.husky/

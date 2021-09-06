@@ -14,7 +14,14 @@
     "release": "semantic-release",
     "scripts": "node -r esm",
     "postversion": "cd ../ && yarn scripts ./scripts/release/postVersionBump.js",
-    "test:babel": "cd ./packages/babel-plugin-skynexui && yarn jest -u --watch"
+    "test:babel": "cd ./packages/babel-plugin-skynexui && yarn jest -u --watch",
+    "cm": "cz",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
   },
   "peerDependencies": {
     "expo": "42.0.0",
@@ -42,8 +49,10 @@
     "@types/styled-components-react-native": "5.1.1",
     "babel-plugin-styled-components": "^1.13.2",
     "chalk": "^4.1.2",
+    "cz-conventional-changelog": "3.3.0",
     "esbuild": "^0.12.24",
     "esm": "^3.2.25",
+    "husky": "^7.0.2",
     "rollup": "2.56.3",
     "rollup-plugin-dts": "^4.0.0",
     "rollup-plugin-esbuild": "^4.5.0",
@@ -87,5 +96,10 @@
       },
       "main"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
