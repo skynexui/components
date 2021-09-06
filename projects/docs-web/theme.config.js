@@ -22,7 +22,7 @@ export default {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content="⚛️ Deliver UI for Web and Mobile platforms without taking care about complexity on how to style there, learn React once and code everywhere" />
       <meta name="og:title" content="SkynxUI: Cross platform UI normalizer for React and React Native" />
-      <meta property="og:image" content="https://opengraph.githubassets.com/8029ae29de688e8c3a4a645c482346b60477b2562ba4c1305b565db684c61074/skynexui/core">
+      <meta property="og:image" content="https://opengraph.githubassets.com/8029ae29de688e8c3a4a645c482346b60477b2562ba4c1305b565db684c61074/skynexui/core" />
     </>
   ),
 }
