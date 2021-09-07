@@ -8,7 +8,7 @@
 
 A set of components writen on top of React and React Native (with Expo) made for you deliver code for mobile devices and for the web using the best structures that the React ecossystem can provide with a seamless and standardized API.
 
-> You can see a preview [version here](https://twitter.com/omariosouto/status/1432528844599214080) and the [initial code here](https://github.com/omariosouto/mariosouto.com/tr ee/v1/packages/universal-ui/src/components) and an [app demo](https://github.com/omariosouto/pokedex-skynexui)
+> You can see a preview [version here](https://twitter.com/omariosouto/status/1432528844599214080) and the [initial code here](https://github.com/omariosouto/mariosouto.com/tree/v1/packages/universal-ui/src/components) and an [app demo](https://github.com/omariosouto/pokedex-skynexui)
 
 ![E-Fcs6mWQAQCCK9](https://user-images.githubusercontent.com/13791385/132002310-799ac565-e8ab-4c56-be78-253c1f532d49.jpeg)
 
