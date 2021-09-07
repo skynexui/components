@@ -1,3 +1,10 @@
+## [1.10.3](https://github.com/skynexui/core/compare/v1.10.2...v1.10.3) (2021-09-07)
+
+
+### Bug Fixes
+
+* husky bug ([d4bda34](https://github.com/skynexui/core/commit/d4bda34160083c4613cc08cbc2b817cca31d14eb))
+
 ## [1.10.2](https://github.com/skynexui/core/compare/v1.10.1...v1.10.2) (2021-09-07)
 
 
