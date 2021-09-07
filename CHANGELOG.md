@@ -1,3 +1,11 @@
+## [1.10.5](https://github.com/skynexui/core/compare/v1.10.4...v1.10.5) (2021-09-07)
+
+
+### Bug Fixes
+
+* broken package json ([dd67cb9](https://github.com/skynexui/core/commit/dd67cb96ba4333cecbc89ef4e9001966e69447a2))
+* remove husky support ([15aabd8](https://github.com/skynexui/core/commit/15aabd87d29f564113f950c7593d058acc07e173))
+
 ## [1.10.4](https://github.com/skynexui/core/compare/v1.10.3...v1.10.4) (2021-09-07)
 
 
