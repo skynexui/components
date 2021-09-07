@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/skynexui/core/compare/v1.11.0...v1.11.1) (2021-09-07)
+
+
+### Bug Fixes
+
+* add vercel support in svg ([91962c7](https://github.com/skynexui/core/commit/91962c7657c93baf709873371c9e6324be4667e5))
+
 # [1.11.0](https://github.com/skynexui/core/compare/v1.10.6...v1.11.0) (2021-09-07)
 
 
