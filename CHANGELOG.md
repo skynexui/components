@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/skynexui/core/compare/v1.10.6...v1.11.0) (2021-09-07)
+
+
+### Features
+
+* update readme add vercel sponsorship ([1fefa8b](https://github.com/skynexui/core/commit/1fefa8b6c84f0cdcb5d3697fe023148991d9fa1a))
+
 ## [1.10.6](https://github.com/skynexui/core/compare/v1.10.5...v1.10.6) (2021-09-07)
 
 
