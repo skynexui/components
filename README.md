@@ -6,7 +6,7 @@
 
 A set of components writen on top of React and React Native (with Expo) made for you deliver code for mobile devices and for the web using the best structures that the React ecossystem can provide with a seamless and standardized API.
 
-> You can see a preview [version here](https://twitter.com/omariosouto/status/1432528844599214080) and the [initial code here](https://github.com/omariosouto/mariosouto.com/tree/v1/packages/universal-ui/src/components) and an [app demo](https://github.com/omariosouto/pokedex-skynexui)
+> You can see a preview [version here](https://twitter.com/omariosouto/status/1432528844599214080) and the [initial code here](https://github.com/omariosouto/mariosouto.com/tr ee/v1/packages/universal-ui/src/components) and an [app demo](https://github.com/omariosouto/pokedex-skynexui)
 
 ![E-Fcs6mWQAQCCK9](https://user-images.githubusercontent.com/13791385/132002310-799ac565-e8ab-4c56-be78-253c1f532d49.jpeg)
 
@@ -32,23 +32,19 @@ Recently I see that there's many people trying to use CrossPlatform alternatives
 ## Contributing?
 The project is in alpha and there's no fancy structures for contributing, for now you [just have to check the current issues](https://github.com/skynexui/core/issues) pick one and to run the project in your machine you have to:
 
-```js
+```sh
 # inside project root
 yarn install
 
-yarn build
-
-yarn link
+yarn build:watch
 ```
 
-Then go to the `examples` folder, choose the monorepo one and then:
+Then go to the `examples` folder, choose some project and then run:
 
-```js
-yarn link @skynexui/native
-yarn link @skynexui/web
+```sh
+yarn install && cd ./node_modules/react && yarn link && cd ../../ && yarn link @skynexui/web && yarn link @skynexui/native && yarn link react && yarn dev
 ```
-
-> I want to have and build watch command to make things better, probably could be your first issue solved here :)
+> `yarn dev` in the monorepo example could be `yarn dev:web` or `yarn dev:native`
 
 ## Strongly Inspired by:
 - [Flutter](https://flutter.dev/)
