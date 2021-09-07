@@ -1,3 +1,10 @@
+## [1.10.4](https://github.com/skynexui/core/compare/v1.10.3...v1.10.4) (2021-09-07)
+
+
+### Bug Fixes
+
+* test new release patch ([5b178f9](https://github.com/skynexui/core/commit/5b178f9f589d546c879ff178ef1a9f425a344a2c))
+
 ## [1.10.3](https://github.com/skynexui/core/compare/v1.10.2...v1.10.3) (2021-09-07)
 
 
