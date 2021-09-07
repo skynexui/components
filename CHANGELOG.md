@@ -1,3 +1,10 @@
+## [1.10.6](https://github.com/skynexui/core/compare/v1.10.5...v1.10.6) (2021-09-07)
+
+
+### Bug Fixes
+
+* package.json ([10bf1f7](https://github.com/skynexui/core/commit/10bf1f7cee5425dcb76f8e5cf5cbc072f3dad101))
+
 ## [1.10.5](https://github.com/skynexui/core/compare/v1.10.4...v1.10.5) (2021-09-07)
 
 
