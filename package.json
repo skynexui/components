@@ -16,7 +16,8 @@
     "postversion": "cd ../ && yarn scripts ./scripts/release/postVersionBump.js",
     "test:babel": "cd ./packages/babel-plugin-skynexui && yarn jest -u --watch",
     "commit": "cz",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "contribution-mode": "echo 'under development'"
   },
   "peerDependencies": {
     "expo": "42.0.0",
