@@ -6,7 +6,7 @@ This example shows how to run SkynexUI with [Expo](https://expo.dev/) and [Next.
 
 Run `npm install` or `yarn install` to install the dependencies and all you have to do is starting your development server:
 
-### For testing NextJS running
+### For testing NextJS with React running
 
 ```bash
 npm run dev:web
@@ -14,7 +14,7 @@ npm run dev:web
 yarn dev:web
 ```
 
-### For testing NextJS running
+### For testing Expo with React Native running
 
 ```bash
 npm run dev:native
