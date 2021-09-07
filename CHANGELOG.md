@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/skynexui/core/compare/v1.10.1...v1.10.2) (2021-09-07)
+
+
+### Bug Fixes
+
+* broken build 2 ([90f1682](https://github.com/skynexui/core/commit/90f1682aa0a06e68a8dbbb331bb8f1f95662b9b9))
+
 ## [1.10.1](https://github.com/skynexui/core/compare/v1.10.0...v1.10.1) (2021-09-07)
 
 
