@@ -1,3 +1,10 @@
+## [1.11.3](https://github.com/skynexui/core/compare/v1.11.2...v1.11.3) (2021-09-07)
+
+
+### Bug Fixes
+
+* add more sources to tsconfig ([1632f04](https://github.com/skynexui/core/commit/1632f04401d6e76316e2956637b950c444b004e6))
+
 ## [1.11.2](https://github.com/skynexui/core/compare/v1.11.1...v1.11.2) (2021-09-07)
 
 
