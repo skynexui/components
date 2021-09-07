@@ -11,6 +11,9 @@ A set of components writen on top of React and React Native (with Expo) made for
 ![E-Fcs6mWQAQCCK9](https://user-images.githubusercontent.com/13791385/132002310-799ac565-e8ab-4c56-be78-253c1f532d49.jpeg)
 
 ## Get Started
+
+> If you just want to try it out, go directly to the examples folder: https://github.com/skynexui/core/tree/main/examples or check this project https://github.com/omariosouto/pokedex-skynexui
+
 This repo exports 2 packages `@skynexui/web` and `@skynexui/native`
 - Always use `@skynexui/native` for imports
 - If you are writing a web project, please use [`babel-plugin-skynexui`](https://www.npmjs.com/package/babel-plugin-skynexui)
