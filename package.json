@@ -15,7 +15,7 @@
     "scripts": "node -r esm",
     "postversion": "cd ../ && yarn scripts ./scripts/release/postVersionBump.js",
     "test:babel": "cd ./packages/babel-plugin-skynexui && yarn jest -u --watch",
-    "commit": "cz",
+    "commit": "cz"
   },
   "peerDependencies": {
     "expo": "42.0.0",
