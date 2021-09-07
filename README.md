@@ -1,5 +1,7 @@
 # SkynexUI
 
+[<img width="150px" src="https://user-images.githubusercontent.com/13791385/132404183-e04d91b8-8917-420c-b1a3-a4912f0f20a6.png" />](https://vercel.com/?utm_source=skynexui&utm_campaign=oss)
+
 > Use the platform, don't care about how to style there
 > 
 > ⚠️ Version 1.x.x is **alpha**, trust only in v2
