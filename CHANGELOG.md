@@ -1,3 +1,11 @@
+## [1.10.1](https://github.com/skynexui/core/compare/v1.10.0...v1.10.1) (2021-09-07)
+
+
+### Bug Fixes
+
+* **build:** broken build by cz ([8c9d2a9](https://github.com/skynexui/core/commit/8c9d2a9e4a006d99605339c90b00327eb25bd54e))
+* broken examples by UIProvider not being exported correctly ([#27](https://github.com/skynexui/core/issues/27)) ([e5a40e9](https://github.com/skynexui/core/commit/e5a40e9abdb6b297b351354612ea45400828c4d2))
+
 # [1.10.0](https://github.com/skynexui/core/compare/v1.9.0...v1.10.0) (2021-09-03)
 
 
