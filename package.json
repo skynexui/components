@@ -15,7 +15,7 @@
     "scripts": "node -r esm",
     "postversion": "cd ../ && yarn scripts ./scripts/release/postVersionBump.js",
     "test:babel": "cd ./packages/babel-plugin-skynexui && yarn jest -u --watch",
-    "cm": "cz",
+    "commit": "cz",
     "prepare": "husky install"
   },
   "peerDependencies": {
