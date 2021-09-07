@@ -1,3 +1,11 @@
+## [1.11.2](https://github.com/skynexui/core/compare/v1.11.1...v1.11.2) (2021-09-07)
+
+
+### Bug Fixes
+
+* again same error omg ([faa7f68](https://github.com/skynexui/core/commit/faa7f683436add8faf63faf0b01fba4c13814410))
+* broken build after build:watch ([bd192ea](https://github.com/skynexui/core/commit/bd192eaf58bc18fe44955f67e1890349b1018ac3))
+
 ## [1.11.1](https://github.com/skynexui/core/compare/v1.11.0...v1.11.1) (2021-09-07)
 
 
