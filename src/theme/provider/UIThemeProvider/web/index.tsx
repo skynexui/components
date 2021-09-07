@@ -1,6 +1,6 @@
 import React from 'react';
-import UIThemeProvider from './base';
-import GlobalStyle from '../../web/GlobalStyle';
+import UIThemeProvider from '../base';
+import GlobalStyle from '../../../web/GlobalStyle';
 
 interface UIThemeProviderWebProps {
   children: React.ReactNode;
