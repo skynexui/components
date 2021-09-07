@@ -1,4 +1,4 @@
-# SkynexUI:
+# SkynexUI
 
 > Use the platform, don't care about how to style there
 > 
