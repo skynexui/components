@@ -1,5 +1,5 @@
 import React from 'react';
-import UIThemeProvider from './base';
+import UIThemeProvider from '../base';
 // TODO: https://docs.expo.dev/guides/using-custom-fonts/#using-a-google-font
 import { KeyboardAvoidingView, Platform } from 'react-native';
 
