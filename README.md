@@ -38,7 +38,7 @@ The project is in alpha and there's no fancy structures for contributing, for no
 # inside project root
 yarn install
 
-yarn build:watch
+export DEV_MODE="true" && yarn build:watch
 ```
 
 Then go to the `examples` folder, choose some project and then run:

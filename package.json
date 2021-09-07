@@ -20,7 +20,7 @@
     "contribution-mode:setup": "yarn build && yarn scripts ./scripts/release/createWebPackageJson.js && yarn link:core",
     "contribution-mode": "nodemon --ext \"tsx,ts,json\"    --ignore dist-native/ --ignore dist-web/ --exec yarn contribution-mode:setup",
     "build:watch": "yarn contribution-mode",
-    "prepare": "[ -x \"$(command -v install-peers)\" ] && install-peers"
+    "postinstall": "[[ -n $DEV_MODES ]] && [ -x \"$(command -v install-peers)\" ] && install-peers"
   },
   "peerDependencies": {
     "expo": "42.0.0",
