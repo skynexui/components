@@ -1,16 +1,17 @@
 module.exports = {
   preset: "ts-jest",
+  testEnvironment: "jsdom",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
   modulePathIgnorePatterns: [
-    "/dist-web/",
-    "/dist-native/",
-    "/examples/",
-    "/packages/",
-    "/scripts/",
-    "/projects/",
+    "<rootDir>/dist-web/",
+    "<rootDir>/dist-native/",
+    "<rootDir>/examples/",
+    "<rootDir>/packages/",
+    "<rootDir>/scripts/",
+    "<rootDir>/projects/",
   ],
   transform: {
-    "^.+\\.(ts|tsx)$": "ts-jest",
+    "^.+\\.(ts|tsx)$": "babel-jest",
   },
   globals: {
     "ts-jest": {

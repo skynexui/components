@@ -27,11 +27,8 @@
   "peerDependencies": {
     "expo": "42.0.0",
     "expo-status-bar": "~1.0.4",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-web": "~0.13.12",
-    "styled-components": "5.3.1"
+    "react-native-web": "~0.13.12"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
@@ -46,6 +43,7 @@
     "@semantic-release/release-notes-generator": "9.0.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
+    "styled-components": "5.3.1",
     "@types/jest": "^27.0.1",
     "@types/react": "~17.0.19",
     "@types/react-native": "~0.63.2",
@@ -54,6 +52,8 @@
     "@types/testing-library__jest-dom": "^5.14.1",
     "@types/testing-library__react": "^10.2.0",
     "babel-jest": "^27.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "babel-plugin-styled-components": "^1.13.2",
     "chalk": "^4.1.2",
     "cz-conventional-changelog": "3.3.0",
