@@ -20,7 +20,4 @@ module.exports = {
   setupFilesAfterEnv: ["@testing-library/jest-dom"],
   transformIgnorePatterns: ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"],
   verbose: true,
-  transform: {
-    "\\.(tsx)$": "/packages/src/index.js",
-  },
 };
