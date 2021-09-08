@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box renders correctly 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "alignItems": undefined,
+      "flexGrow": 1,
+      "justifyContent": undefined,
+    }
+  }
+  style={
+    Array [
+      Object {
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View>
+    Native box
+  </View>
+</RCTScrollView>
+`;
