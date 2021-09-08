@@ -1,5 +1,6 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider as ThemeProviderNative } from "styled-components/native";
+import { ThemeProvider as ThemeProviderWeb } from "styled-components";
 import createTheme from "../../../theme/createTheme";
 import { Platforms } from "../../../theme/types/Platforms";
 
@@ -13,5 +14,9 @@ export default function UIThemeProvider({
 }: UIThemeProviderProps): JSX.Element {
   const theme = createTheme("light", platform);
 
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+  if (platform === "mobile") {
+    return <ThemeProviderNative theme={theme}>{children}</ThemeProviderNative>;
+  }
+
+  return <ThemeProviderWeb theme={theme}>{children}</ThemeProviderWeb>;
 }

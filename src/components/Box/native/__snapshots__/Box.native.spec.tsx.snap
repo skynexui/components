@@ -12,13 +12,20 @@ exports[`Box renders correctly 1`] = `
   style={
     Array [
       Object {
+        "backgroundColor": "#E1E1E1",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 80,
         "width": "100%",
       },
     ]
   }
 >
   <View>
-    Native box
+    Welcome to @skynexui!
   </View>
 </RCTScrollView>
 `;
