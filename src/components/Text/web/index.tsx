@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Styles, TextPropsBase, defaultProps } from '../styles';
-import propToMobile from '../../../theme/utils/propToMobile';
-import withStyledInternalProps from '../../../theme/utils/withStyledInternalProps';
+import withStyledInternalProps from '@src/theme/utils/withStyledInternalProps';
 
 const StyledComponents = styled.span<TextPropsBase>`
   ${Styles}

@@ -1,9 +1,9 @@
 import { css } from 'styled-components';
-import { SpaceThemeNames } from '../../theme/foundation/space';
-import { TypographyVariantsName } from '../../theme/foundation/typography/types';
-import { CSSProperties } from '../../theme/types/CSSProperties';
-import { RecordOfThemeBasicSizes } from '../../theme/types/ThemeBasicSizes';
-import { renderDynamicProps, commonDynamicProps } from '../Box/styles';
+import { SpaceThemeNames } from '@src/theme/foundation/space';
+import { TypographyVariantsName } from '@src/theme/foundation/typography/types';
+import { CSSProperties } from '@src/theme/types/CSSProperties';
+import { RecordOfThemeBasicSizes } from '@src/theme/types/ThemeBasicSizes';
+import { renderDynamicProps, commonDynamicProps } from '@src/components/Box/styles';
 import { iconMapByName } from './iconMapByName';
 
 export const iconSizes: RecordOfThemeBasicSizes<SpaceThemeNames> = {
@@ -39,7 +39,7 @@ export type StylesProps = {
 };
 export const Styles = css<StylesProps>`
   ${({ theme, $size }) => {
-    if($size.includes('body') || $size.includes('display') || $size.includes('heading')) {
+    if ($size.includes('body') || $size.includes('display') || $size.includes('heading')) {
       const baseValue = theme.typography[$size as TypographyVariantsName];
       return css`
         width: ${4 + Number(baseValue.xs.fontSize.replace('px', ''))}px;

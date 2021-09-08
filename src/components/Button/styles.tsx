@@ -3,7 +3,7 @@ import borderRadius from '../../theme/foundation/basics/borderRadius';
 import { CSSProperties, PropertyDefinition } from '../../theme/types/CSSProperties';
 import { PLATFORM_WEB } from '../../theme/types/Platforms';
 import propToStyle from '../../theme/utils/propToStyle';
-import { renderDynamicProps, commonDynamicProps, CommonDynamicProps } from '../Box/styles';
+import { renderDynamicProps, commonDynamicProps } from '@src/components/Box/styles';
 import { IconButton } from '../Icon/styles';
 import { actions } from './actions';
 import { sizeVariants, SizeVariantName } from './sizeVariants';
@@ -21,13 +21,13 @@ export type ButtonPropsBase = {
   fullWidth?: PropertyDefinition<boolean>;
   isFocusIn?: boolean;
   children?: React.ReactNode;
-  baseColor?: 
-    | 'primary'
-    | 'accent'
-    | 'positive'
-    | 'negative'
-    | 'warning'
-    | 'neutral';
+  baseColor?:
+  | 'primary'
+  | 'accent'
+  | 'positive'
+  | 'negative'
+  | 'warning'
+  | 'neutral';
   action?: 'primary' | 'secondary' | 'tertiary' | 'quartenary';
   disabled?: boolean;
 } & IconButton & Pick<CSSProperties, DynamicProps>;
@@ -57,7 +57,7 @@ export const Styles = css<StylesProps>`
     ${(props) => {
       const { background, borderColor, hoverfocus } = actions[$action](props);
 
-      if($disabled) return {
+      if ($disabled) return {
         background,
         borderColor,
       };

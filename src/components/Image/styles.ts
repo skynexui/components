@@ -1,6 +1,9 @@
-import { css } from 'styled-components';
-import { CSSProperties } from '../../theme/types/CSSProperties';
-import { renderDynamicProps, commonDynamicProps } from '../Box/styles';
+import { css } from "styled-components";
+import { CSSProperties } from "@src/theme/types/CSSProperties";
+import {
+  renderDynamicProps,
+  commonDynamicProps,
+} from "@src/components/Box/styles";
 
 const dynamicProps = {
   ...commonDynamicProps,
