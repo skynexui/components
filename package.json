@@ -20,7 +20,9 @@
     "contribution-mode:setup": "yarn build && yarn scripts ./scripts/release/createWebPackageJson.js && yarn link:core",
     "contribution-mode": "nodemon --ext \"tsx,ts,json\"    --ignore dist-native/ --ignore dist-web/ --exec yarn contribution-mode:setup",
     "build:watch": "yarn contribution-mode",
-    "postinstall": "[[ -n $DEV_MODE ]] && [ -x \"$(command -v install-peers)\" ] && install-peers || true"
+    "postinstall": "[[ -n $DEV_MODE ]] && [ -x \"$(command -v install-peers)\" ] && install-peers || true",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "peerDependencies": {
     "expo": "42.0.0",
@@ -42,6 +44,7 @@
     "@semantic-release/github": "7.2.3",
     "@semantic-release/npm": "7.1.3",
     "@semantic-release/release-notes-generator": "9.0.2",
+    "@types/jest": "^27.0.1",
     "@types/react": "~17.0.19",
     "@types/react-native": "~0.63.2",
     "@types/styled-components": "5.1.12",
@@ -53,6 +56,7 @@
     "esm": "^3.2.25",
     "husky": "^7.0.2",
     "install-peers-cli": "^2.2.0",
+    "jest": "^27.1.0",
     "nodemon": "^2.0.12",
     "rollup": "2.56.3",
     "rollup-plugin-dts": "^4.0.0",
@@ -60,7 +64,8 @@
     "rollup-plugin-flat-dts": "^1.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-typescript2": "^0.30.0",
-    "semantic-release": "17.4.3"
+    "semantic-release": "17.4.3",
+    "ts-jest": "^27.0.5"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.14.5",
