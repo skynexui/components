@@ -2,12 +2,12 @@ module.exports = {
   preset: "ts-jest",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
   modulePathIgnorePatterns: [
-    "<rootDir>/dist-web/",
-    "<rootDir>/dist-native/",
-    "<rootDir>/examples/",
-    "<rootDir>/packages/",
-    "<rootDir>/scripts/",
-    "<rootDir>/projects/",
+    "/dist-web/",
+    "/dist-native/",
+    "/examples/",
+    "/packages/",
+    "/scripts/",
+    "/projects/",
   ],
   transform: {
     "^.+\\.(ts|tsx)$": "ts-jest",
@@ -17,5 +17,10 @@ module.exports = {
       tsconfig: "tsconfig.json",
     },
   },
+  setupFilesAfterEnv: ["@testing-library/jest-dom"],
   transformIgnorePatterns: ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"],
+  verbose: true,
+  transform: {
+    "\\.(tsx)$": "/packages/src/index.js",
+  },
 };
