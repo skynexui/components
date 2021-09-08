@@ -1,8 +1,8 @@
 import { css } from 'styled-components';
-import borderRadius from '../../theme/foundation/basics/borderRadius';
-import { CSSProperties, PropertyDefinition } from '../../theme/types/CSSProperties';
-import { PLATFORM_WEB } from '../../theme/types/Platforms';
-import propToStyle from '../../theme/utils/propToStyle';
+import borderRadius from '@src/theme/foundation/basics/borderRadius';
+import { CSSProperties, PropertyDefinition } from '@src/theme/types/CSSProperties';
+import { PLATFORM_WEB } from '@src/theme/types/Platforms';
+import propToStyle from '@src/theme/utils/propToStyle';
 import { renderDynamicProps, commonDynamicProps } from '@src/components/Box/styles';
 import { IconButton } from '../Icon/styles';
 import { actions } from './actions';

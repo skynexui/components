@@ -2,9 +2,9 @@ import {
   css,
   DefaultTheme,
   FlattenSimpleInterpolation,
-} from 'styled-components';
-import { BreakpointsNames } from '../../foundation/breakpoints';
-import { SpaceThemeNames } from '../../foundation/space';
+} from "styled-components";
+import { BreakpointsNames } from "@src/theme/foundation/breakpoints";
+import { SpaceThemeNames } from "@src/theme/foundation/space";
 
 export type CSSByBreakpoints = Partial<
   Record<
@@ -25,15 +25,17 @@ export default function breakpointsMedia(cssByBreakpoints: CSSByBreakpoints) {
     const breakpointsNames = Object.keys(cssByBreakpoints);
     return breakpointsNames.map(
       (breakpointName: BreakpointsNames) => css`
-        ${breakpointName === 'xs'
-          ? (css`
-            ${cssByBreakpoints[breakpointName]}
-          `)
-         : (css`
-            @media screen and (min-width: ${theme.breakpoints[breakpointName]}) {
+        ${breakpointName === "xs"
+          ? css`
               ${cssByBreakpoints[breakpointName]}
-            }
-         `)}
+            `
+          : css`
+              @media screen and (min-width: ${theme.breakpoints[
+                  breakpointName
+                ]}) {
+                ${cssByBreakpoints[breakpointName]}
+              }
+            `}
       `
     );
   };
