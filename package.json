@@ -19,16 +19,15 @@
     "link:core": "cd ./dist-web && yarn install && yarn link && cd ../ && cd ./dist-native && yarn install && yarn link",
     "contribution-mode:setup": "yarn build && yarn scripts ./scripts/release/createWebPackageJson.js && yarn link:core",
     "contribution-mode": "nodemon --ext \"tsx,ts,json\"    --ignore dist-native/ --ignore dist-web/ --exec yarn contribution-mode:setup",
-    "build:watch": "yarn contribution-mode",
-    "postinstall": "[[ -n $DEV_MODE ]] && [ -x \"$(command -v install-peers)\" ] && install-peers || true"
+    "build:watch": "yarn contribution-mode"
   },
   "peerDependencies": {
     "expo": "42.0.0",
     "expo-status-bar": "~1.0.4",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
     "react-native-web": "~0.13.12",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "styled-components": "5.3.1"
   },
   "devDependencies": {
@@ -52,7 +51,6 @@
     "esbuild": "^0.12.24",
     "esm": "^3.2.25",
     "husky": "^7.0.2",
-    "install-peers-cli": "^2.2.0",
     "nodemon": "^2.0.12",
     "rollup": "2.56.3",
     "rollup-plugin-dts": "^4.0.0",
