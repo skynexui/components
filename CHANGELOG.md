@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/skynexui/core/compare/v1.11.3...v1.12.0) (2021-09-21)
+
+
+### Features
+
+* add configuration to use absolute import ([#32](https://github.com/skynexui/core/issues/32)) ([2c1c77f](https://github.com/skynexui/core/commit/2c1c77fddef48b79e389261cc27e063b00c8f9a6))
+
 ## [1.11.3](https://github.com/skynexui/core/compare/v1.11.2...v1.11.3) (2021-09-07)
 
 
