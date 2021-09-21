@@ -1,19 +1,19 @@
 import React from 'react';
 import { TextInput } from 'react-native';
 import styled from 'styled-components/native';
-import propToMobile from '../../../theme/utils/propToMobile';
-import withStyledInternalProps from '../../../theme/utils/withStyledInternalProps';
-import Box from '../../Box/native';
-import Text from '../../Text/native';
+import propToMobile from '@src/theme/utils/propToMobile';
+import withStyledInternalProps from '@src/theme/utils/withStyledInternalProps';
+import Box from '@src/components/Box/native';
+import Text from '@src/components/Text/native';
 
 import { Styles, TextFieldPropsBase, defaultProps } from '../styles';
 
 
-const TextFieldStyled = styled(Text)<TextFieldPropsBase>`
+const TextFieldStyled = styled(Text) <TextFieldPropsBase>`
   ${Styles}
 `;
 
-export default function TextField({...mobileProps}: TextFieldPropsBase): JSX.Element {
+export default function TextField({ ...mobileProps }: TextFieldPropsBase): JSX.Element {
   const props = withStyledInternalProps(propToMobile<TextFieldPropsBase>(mobileProps)) as any;
 
   return (

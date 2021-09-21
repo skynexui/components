@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import withStyledInternalProps from '../../../theme/utils/withStyledInternalProps';
-import Box from '../../Box/web';
-import Text from '../../Text/web';
+import withStyledInternalProps from '@src/theme/utils/withStyledInternalProps';
+import Box from '@src/components/Box/web';
+import Text from '@src/components/Text/web';
 
 import { Styles, TextFieldPropsBase, defaultProps } from '../styles';
 
 
-const TextFieldStyled = styled(Text)<TextFieldPropsBase>`
+const TextFieldStyled = styled(Text) <TextFieldPropsBase>`
   ${Styles}
 `;
 
-export default function TextField({...webProps}: TextFieldPropsBase): JSX.Element {
+export default function TextField({ ...webProps }: TextFieldPropsBase): JSX.Element {
   const props = withStyledInternalProps(webProps) as any;
 
   return (

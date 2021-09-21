@@ -1,9 +1,9 @@
 import React from 'react';
 import { css } from 'styled-components';
-import boxShadow, { BoxShadowNames } from '../../theme/foundation/basics/boxShadow';
-import borderRadius, { BorderRadiusNames } from '../../theme/foundation/basics/borderRadius';
-import { CSSProperties, CSSPropertiesNames } from '../../theme/types/CSSProperties';
-import propToStyle from '../../theme/utils/propToStyle';
+import boxShadow, { BoxShadowNames } from '@src/theme/foundation/basics/boxShadow';
+import borderRadius, { BorderRadiusNames } from '@src/theme/foundation/basics/borderRadius';
+import { CSSProperties, CSSPropertiesNames } from '@src/theme/types/CSSProperties';
+import propToStyle from '@src/theme/utils/propToStyle';
 
 export const commonDynamicProps: Partial<Record<CSSPropertiesNames, any>> = {
   // [Common Props]

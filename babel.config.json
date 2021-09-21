@@ -5,9 +5,22 @@
     "@babel/preset-react"
   ],
   "plugins": [
-    ["styled-components", {
-      "ssr": "true"
-    }],
+    [
+      "styled-components",
+      {
+        "ssr": "true"
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "extensions": [".ts", ".tsx"],
+        "alias": {
+          "@src": "./src"
+        }
+      }
+    ],
     "@babel/proposal-class-properties",
     "@babel/proposal-object-rest-spread"
   ]

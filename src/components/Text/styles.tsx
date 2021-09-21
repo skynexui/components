@@ -1,16 +1,16 @@
 import { css } from 'styled-components';
 import { DefaultTheme } from 'styled-components';
-import { TypographyVariantsName } from '../../theme/foundation/typography/types';
-import { CSSProperties } from '../../theme/types/CSSProperties';
-import { PLATFORM_WEB } from '../../theme/types/Platforms';
-import breakpointsMedia from '../../theme/utils/breakpointsMedia';
-import { renderDynamicProps, commonDynamicProps, CommonDynamicProps } from '../Box/styles';
+import { TypographyVariantsName } from '@src/theme/foundation/typography/types';
+import { CSSProperties } from '@src/theme/types/CSSProperties';
+import { PLATFORM_WEB } from '@src/theme/types/Platforms';
+import breakpointsMedia from '@src/theme/utils/breakpointsMedia';
+import { renderDynamicProps, commonDynamicProps } from '@src/components/Box/styles';
 
 
-function lineHeightHandler(lineHeight: string, fontSize:string, theme: DefaultTheme) {
+function lineHeightHandler(lineHeight: string, fontSize: string, theme: DefaultTheme) {
 
-  if(!lineHeight.includes('px')) {
-    if(theme.platform === PLATFORM_WEB) return lineHeight;
+  if (!lineHeight.includes('px')) {
+    if (theme.platform === PLATFORM_WEB) return lineHeight;
     return (+lineHeight.replace('px', '')) * (+fontSize.replace('px', '')) + 'px';
   }
 
@@ -40,7 +40,7 @@ export type TextPropsBase = {
   bold?: boolean;
   uppercase?: boolean;
   variant?: TypographyVariantsName;
- } & Pick<CSSProperties, DynamicProps>;
+} & Pick<CSSProperties, DynamicProps>;
 
 export const defaultProps: Partial<TextPropsBase> = {
   bold: false,
@@ -57,15 +57,15 @@ export const Styles = css<StylesProps>`
   ${({ theme, $bold, $variant, $uppercase }) => css`
     font-size: ${theme.typography[$variant].xs.fontSize};
     line-height: ${lineHeightHandler(
-      theme.typography[$variant].xs.lineHeight,
-      theme.typography[$variant].xs.fontSize,
-      theme
-    )};
+  theme.typography[$variant].xs.lineHeight,
+  theme.typography[$variant].xs.fontSize,
+  theme
+)};
     font-weight: ${fontWeightHandler(
-      $bold,
-      $variant,
-      theme.typography[$variant].xs.fontWeight
-    )};
+  $bold,
+  $variant,
+  theme.typography[$variant].xs.fontWeight
+)};
     letter-spacing: ${theme.typography[$variant].xs.letterSpacing ? theme.typography[$variant].xs.letterSpacing : '0px'};
 
     ${$uppercase && `text-transform: uppercase;`}
@@ -75,15 +75,15 @@ export const Styles = css<StylesProps>`
         md: css`
           font-size: ${theme.typography[$variant].md.fontSize};
           font-weight: ${fontWeightHandler(
-            $bold,
-            $variant,
-            theme.typography[$variant].md.fontWeight
-          )};
+          $bold,
+          $variant,
+          theme.typography[$variant].md.fontWeight
+        )};
           line-height: ${lineHeightHandler(
-            theme.typography[$variant].md.lineHeight,
-            theme.typography[$variant].md.fontSize,
-            theme
-          )};
+          theme.typography[$variant].md.lineHeight,
+          theme.typography[$variant].md.fontSize,
+          theme
+        )};
           letter-spacing: ${theme.typography[$variant].md.letterSpacing};
         `,
       })

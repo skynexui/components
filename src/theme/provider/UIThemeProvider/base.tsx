@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import createTheme from '../../createTheme';
-import { Platforms } from '../../types/Platforms';
+import createTheme from '@src/theme/createTheme';
+import { Platforms } from '@src/theme/types/Platforms';
 
 interface UIThemeProviderProps {
   platform: Platforms

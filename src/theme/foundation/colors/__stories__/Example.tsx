@@ -1,4 +1,4 @@
-import UIThemeProvider from '../../../provider/UIThemeProvider/web';
+import UIThemeProvider from '@src/theme/provider/UIThemeProvider/web';
 import { colorSetKeys } from '../types';
 import defaultPallete from '../index';
 

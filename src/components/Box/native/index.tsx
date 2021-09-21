@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components/native';
 import { View, ScrollView } from 'react-native';
 import { Styles, BoxPropsBase } from '../styles';
-import propToMobile from '../../../theme/utils/propToMobile';
-import withStyledInternalProps from '../../../theme/utils/withStyledInternalProps';
+import propToMobile from '@src/theme/utils/propToMobile';
+import withStyledInternalProps from '@src/theme/utils/withStyledInternalProps';
 
 const ViewTypes = {
   View,
@@ -16,10 +16,10 @@ const StyledComponentsBox = styled.View<BoxProps>`
   ${Styles}
 `;
 
-function Box({children, as, ...mobileProps}: BoxPropsBase) {
+function Box({ children, as, ...mobileProps }: BoxPropsBase) {
   const props = withStyledInternalProps(propToMobile<BoxPropsBase>(mobileProps)) as any;
-  
-  if(as?.mobile === 'ScrollView') {
+
+  if (as?.mobile === 'ScrollView') {
     const { $justifyContent, $alignItems, ...scrollViewProps } = props;
     return (
       <StyledComponentsBox
@@ -27,7 +27,7 @@ function Box({children, as, ...mobileProps}: BoxPropsBase) {
         contentContainerStyle={{
           justifyContent: $justifyContent,
           alignItems: $alignItems,
-          flexGrow : 1,
+          flexGrow: 1,
         }}
         {...scrollViewProps as any}
       >
@@ -35,7 +35,7 @@ function Box({children, as, ...mobileProps}: BoxPropsBase) {
       </StyledComponentsBox>
     );
   }
-  
+
   return (
     <StyledComponentsBox
       as={ViewTypes.View}

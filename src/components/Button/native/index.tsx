@@ -1,22 +1,22 @@
 import React from 'react';
 import styled, { useTheme } from 'styled-components/native';
 import Ripple from 'react-native-material-ripple';
-import Icon from '../../Icon/native';
-import Text from '../../Text/native';
+import Icon from '@src/components/Icon/native';
+import Text from '@src/components/Text/native';
 import { Styles, ButtonPropsBase, defaultProps } from '../styles';
-import propToMobile from '../../../theme/utils/propToMobile';
+import propToMobile from '@src/theme/utils/propToMobile';
 import { actions } from '../actions';
 import { sizeVariants } from '../sizeVariants';
-import withStyledInternalProps from '../../../theme/utils/withStyledInternalProps';
+import withStyledInternalProps from '@src/theme/utils/withStyledInternalProps';
 
-const StyledComponents = styled(Ripple)<ButtonPropsBase & { activeOpacity?: number }>`
+const StyledComponents = styled(Ripple) <ButtonPropsBase & { activeOpacity?: number }>`
   ${Styles}
 `;
-function Component({children, ...receivedProps}: ButtonPropsBase) {
-  const props =  withStyledInternalProps(propToMobile<ButtonPropsBase>(receivedProps)) as any;
-  const [isFocusIn, setFocusIn] = React.useState(false);  
+function Component({ children, ...receivedProps }: ButtonPropsBase) {
+  const props = withStyledInternalProps(propToMobile<ButtonPropsBase>(receivedProps)) as any;
+  const [isFocusIn, setFocusIn] = React.useState(false);
   const theme = useTheme();
-  const { color: textColor } = actions[props.$action]({theme, ...props});
+  const { color: textColor } = actions[props.$action]({ theme, ...props });
 
   const iconFormated = (
     <Icon
@@ -43,11 +43,11 @@ function Component({children, ...receivedProps}: ButtonPropsBase) {
       disabled={props.$disabled}
       onPress={props.$onPress}
       {...props}>
-      {props.$iconName && props.$iconPosition === 'left' && iconFormated }
+      {props.$iconName && props.$iconPosition === 'left' && iconFormated}
       <Text textColor={textColor} variant={sizeVariants[props.$size as 'lg'].typographyVariant} uppercase bold>
         {children}
       </Text>
-      {props.$iconName && props.$iconPosition === 'right' && iconFormated }
+      {props.$iconName && props.$iconPosition === 'right' && iconFormated}
     </StyledComponents>
   );
 }

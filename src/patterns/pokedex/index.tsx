@@ -1,5 +1,5 @@
 import React from 'react';
-import { SkynexComponents } from '../../libs/SkynexBridge/types';
+import { SkynexComponents } from '@src/libs/SkynexBridge/types';
 
 function capitalize(str: string) {
   return str.charAt(0).toUpperCase() + str.slice(1);
@@ -34,7 +34,7 @@ export default function MainScreenWrapper({ Box, Text, Image }: SkynexComponents
         <Text variant="heading_3" textColor="primary600" marginBottom="x8" alignSelf="center" bold>Created by DevSoutinho</Text>
         <Box flexWrap="wrap" flexDirection="row" justifyContent="center">
           {pokemons.map((pokemon) => (
-            <Box key={pokemon.id} flex={{ xs: '1 1 x96', md: "1 1 x64"}} maxWidth={{ xs: 'x96', md: "x64"}} flexDirection="column" border="x1 solid primary200" background="white" margin="x4" padding="x4" borderRadius="lg">
+            <Box key={pokemon.id} flex={{ xs: '1 1 x96', md: "1 1 x64" }} maxWidth={{ xs: 'x96', md: "x64" }} flexDirection="column" border="x1 solid primary200" background="white" margin="x4" padding="x4" borderRadius="lg">
               <Text variant="body_1" textColor="neutral300" bold>#{pokemon.id} {capitalize(pokemon.name)}</Text>
               <Image src={pokemon.image} width="x20" height="x20" alignSelf="flex-end" />
             </Box>

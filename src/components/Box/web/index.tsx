@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import withStyledInternalProps from '../../../theme/utils/withStyledInternalProps';
+import withStyledInternalProps from '@src/theme/utils/withStyledInternalProps';
 import { BoxPropsBase, Styles } from '../styles';
 
 type BoxProps = BoxPropsBase;
@@ -10,7 +10,7 @@ const StyledComponentsBox = styled.div<BoxProps>`
   ${Styles}
 `;
 
-function Box({children, as, ...webProps}: BoxPropsBase) {
+function Box({ children, as, ...webProps }: BoxPropsBase) {
   const props = withStyledInternalProps(webProps) as any;
   return (
     <StyledComponentsBox
