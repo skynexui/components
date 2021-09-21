@@ -1,15 +1,15 @@
 import React from 'react';
-import Icon from '../../Icon/web';
+import Icon from '@src/components/Icon/web';
 import Ripples from './ripples'
 import styled, { useTheme } from 'styled-components';
-import Text from '../../Text/web';
+import Text from '@src/components/Text/web';
 import { actions } from '../actions';
 import { Styles, ButtonPropsBase, defaultProps } from '../styles';
 import { sizeVariants } from '../sizeVariants';
-import withStyledInternalProps from '../../../theme/utils/withStyledInternalProps';
+import withStyledInternalProps from '@src/theme/utils/withStyledInternalProps';
 
 
-const StyledComponents = styled(Ripples)<ButtonPropsBase>`
+const StyledComponents = styled(Ripples) <ButtonPropsBase>`
   display: flex;
   cursor: pointer;
   ${Styles}
@@ -20,10 +20,10 @@ const StyledComponents = styled(Ripples)<ButtonPropsBase>`
 `;
 
 type ButtonWebProps = ButtonPropsBase;
-function Button({ children, fullWidth, ...webProps}: ButtonWebProps) {
+function Button({ children, fullWidth, ...webProps }: ButtonWebProps) {
   const props = withStyledInternalProps(webProps) as any;
   const theme = useTheme();
-  const { color: textColor } = actions[props.$action]({theme, ...props});
+  const { color: textColor } = actions[props.$action]({ theme, ...props });
 
   const iconFormated = (
     <Icon
@@ -43,11 +43,11 @@ function Button({ children, fullWidth, ...webProps}: ButtonWebProps) {
 
   return (
     <StyledComponents $fullWidth={fullWidth} {...props} onClick={props.$onPress}>
-      {props.$iconName && props.$iconPosition === 'left' && iconFormated }
+      {props.$iconName && props.$iconPosition === 'left' && iconFormated}
       <Text textColor={textColor} variant={sizeVariants[props.$size as 'lg'].typographyVariant} uppercase bold>
         {children}
       </Text>
-      {props.$iconName && props.$iconPosition === 'right' && iconFormated }
+      {props.$iconName && props.$iconPosition === 'right' && iconFormated}
     </StyledComponents>
   );
 }

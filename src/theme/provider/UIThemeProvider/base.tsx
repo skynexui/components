@@ -1,8 +1,8 @@
 import React from "react";
 import { ThemeProvider as ThemeProviderNative } from "styled-components/native";
 import { ThemeProvider as ThemeProviderWeb } from "styled-components";
-import createTheme from "../../../theme/createTheme";
-import { Platforms } from "../../../theme/types/Platforms";
+import createTheme from '@src/theme/createTheme';
+import { Platforms } from '@src/theme/types/Platforms';
 
 interface UIThemeProviderProps {
   platform: Platforms;

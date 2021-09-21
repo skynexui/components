@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
-import { CSSProperties } from '../../theme/types/CSSProperties';
-import { PLATFORM_WEB } from '../../theme/types/Platforms';
+import { CSSProperties } from '@src/theme/types/CSSProperties';
+import { PLATFORM_WEB } from '@src/theme/types/Platforms';
 import { renderDynamicProps, commonDynamicProps } from '../Box/styles';
 import { Styles as TextStyles } from '../Text/styles';
 
