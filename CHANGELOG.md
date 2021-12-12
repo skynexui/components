@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/skynexui/react/compare/v1.0.9...v1.0.10) (2021-12-12)
+
+
+### Bug Fixes
+
+* add type definitions ([7af4fb9](https://github.com/skynexui/react/commit/7af4fb914d4d54fd4c0551d96d33a44b7ac10303))
+
 ## [1.0.9](https://github.com/skynexui/react/compare/v1.0.8...v1.0.9) (2021-12-12)
 
 
