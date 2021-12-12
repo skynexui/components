@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/skynexui/react/compare/v1.0.3...v1.0.4) (2021-12-12)
+
+
+### Bug Fixes
+
+* privacy settings ([a47dd0d](https://github.com/skynexui/react/commit/a47dd0d6cf918eb98c60f9e67a551da0c4976783))
+
 ## [1.0.3](https://github.com/skynexui/react/compare/v1.0.2...v1.0.3) (2021-12-12)
 
 
