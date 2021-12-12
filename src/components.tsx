@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { Ref } from 'react';
 import NextLink from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as iconSet from "@fortawesome/free-solid-svg-icons";
 
 import { theme } from './theme';
 
-function capitalize(str) {
+function capitalize(str: any) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-function renderCSSValue(cssPropName, cssPropValue) {
+function renderCSSValue(cssPropName: any, cssPropValue: any) {
   if (cssPropName.includes('horizontal')) {
     return `
       ${cssPropName.replace('horizontal', 'left')}: ${cssPropValue};
@@ -25,7 +25,7 @@ function renderCSSValue(cssPropName, cssPropValue) {
 
   return cssPropName + ':' + cssPropValue + ';';
 }
-function renderCSS(props, currentBreakpoint) {
+function renderCSS(props: any, currentBreakpoint: any) {
   if (!props) return '';
 
   return Object
@@ -46,11 +46,19 @@ function renderCSS(props, currentBreakpoint) {
     }).filter(Boolean).join('');
 }
 
+
+interface BoxProps {
+  as?: any;
+  children?: any;
+  className?: string;
+  styleSheet?: any;
+  ref?: Ref<any>;
+}
 export const Box = React.forwardRef(({
   as,
   styleSheet: { focus, hover, srOnly, ...styleSheet },
   ...props
-}, ref) => {
+}: BoxProps, ref) => {
   const Tag = as || 'div';
 
   return (
@@ -123,7 +131,7 @@ export function Icon({
   as,
   styleSheet: initialStyleSheet,
   ...props
-}) {
+}: any) {
   const Tag = 'svg';
   const {
     iconVariant,
@@ -136,12 +144,13 @@ export function Icon({
     height: '1.5ch',
     ...restStyleSheet
   };
+  const icon = (iconSet as any)[`fa${capitalize(iconVariant)}`];
 
   return (
     <React.Fragment>
       <Box styleSheet={styleSheet}>
         <FontAwesomeIcon
-          icon={iconSet[`fa${capitalize(iconVariant)}`]}
+          icon={icon}
           crossOrigin="anonymous"
           {...props}
         />
@@ -150,7 +159,7 @@ export function Icon({
   )
 }
 
-export const Text = React.forwardRef(({ as, styleSheet, ...props }, ref) => {
+export const Text = React.forwardRef(({ as, styleSheet, ...props }: any, ref) => {
   const {
     textVariant = {
       fontSize: 'inherit',
@@ -176,7 +185,7 @@ Text.defaultProps = {
   styleSheet: {},
 };
 
-export function Image({ as, ...props }) {
+export function Image({ as, ...props }: any) {
   const tag = 'img';
   const {
     children,
@@ -194,7 +203,7 @@ Image.defaultProps = {
 };
 
 
-export function Input({ as, styleSheet, ...props }) {
+export function Input({ as, styleSheet, ...props }: any) {
   const tag = 'input';
   const finalStyleSheet = {
     transition: 'all 0.2s ease-in-out',
@@ -224,12 +233,14 @@ Input.defaultProps = {
   styleSheet: {},
 };
 
-export function Button({ as, styleSheet, ...props }) {
+export function Button({ as, styleSheet, ...props }: any) {
   const {
     buttonVariant = 'primary',
     ...restStyleSheet
   } = styleSheet;
   const tag = as || 'button';
+  // TODO: fix this
+  const currentColorTODO = theme.colors[buttonVariant as 'primary'];
   console.log('buttonVariant: ', buttonVariant);
 
   const finalStyleSheet = {
@@ -242,7 +253,7 @@ export function Button({ as, styleSheet, ...props }) {
     justifyContent: 'center',
     outline: 0,
     width: theme.space["x1/1"],
-    border: `${theme.space.xpx} solid ${theme.colors[buttonVariant][600]}`,
+    border: `${theme.space.xpx} solid ${currentColorTODO[600]}`,
     borderRadius: theme.space.x2,
     paddingHorizontal: {
       xs: theme.space.x5,
@@ -250,13 +261,13 @@ export function Button({ as, styleSheet, ...props }) {
     },
     paddingVertical: theme.space.x3,
     transition: 'all 0.2s ease-in-out',
-    backgroundColor: theme.colors[buttonVariant][600],
+    backgroundColor: currentColorTODO[600],
     hover: {
-      backgroundColor: theme.colors[buttonVariant][500],
+      backgroundColor: currentColorTODO[500],
       boxShadow: `0 5px 10px -5px ${theme.colors.neutral[999]}73`,
     },
     focus: {
-      backgroundColor: theme.colors[buttonVariant][700],
+      backgroundColor: currentColorTODO[700],
       boxShadow: `0 5px 10px -5px ${theme.colors.neutral[999]}93`,
     },
     ...restStyleSheet,
@@ -271,7 +282,7 @@ Button.defaultProps = {
   styleSheet: {},
 };
 
-export function Link({ children, href, styleSheet, as, ...props }) {
+export function Link({ children, href, styleSheet, as, ...props }: any) {
   return (
     <NextLink href={href} passHref>
       {

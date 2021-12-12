@@ -1,26 +1,42 @@
-import babel from "rollup-plugin-babel";
-import commonjs from "rollup-plugin-commonjs";
-import resolve from "rollup-plugin-node-resolve";
-import replace from "rollup-plugin-replace";
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import typescript from '@rollup/plugin-typescript';
+import { terser } from 'rollup-plugin-terser';
+import external from 'rollup-plugin-peer-deps-external';
+import postcss from 'rollup-plugin-postcss';
+import dts from 'rollup-plugin-dts';
 
-const NODE_ENV = process.env.NODE_ENV || "development";
-const outputFile = NODE_ENV === "production" ? "./lib/prod.js" : "./lib/dev.js";
+const packageJson = require('./package.json');
 
-export default {
-  input: "./src/index.js",
-  output: {
-    file: outputFile,
-    format: "cjs"
+export default [
+  {
+    input: 'src/index.ts',
+    output: [
+      {
+        file: packageJson.main,
+        format: 'cjs',
+        sourcemap: true,
+        name: packageJson.name,
+      },
+      {
+        file: packageJson.module,
+        format: 'esm',
+        sourcemap: true
+      }
+    ],
+    plugins: [
+      external(),
+      resolve(),
+      commonjs(),
+      typescript({ tsconfig: './tsconfig.json' }),
+      postcss(),
+      terser()
+    ],
   },
-  plugins: [
-    replace({
-      "process.env.NODE_ENV": JSON.stringify(NODE_ENV)
-    }),
-    babel({
-      exclude: "node_modules/**"
-    }),
-    resolve(),
-    commonjs()
-  ],
-  external: id => /^react|styled-jsx/.test(id)
-};
+  {
+    input: 'dist/esm/types/index.d.ts',
+    output: [{ file: 'dist/index.d.ts', format: "esm" }],
+    external: [/\.css$/],
+    plugins: [dts()],
+  },
+]
