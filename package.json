@@ -15,7 +15,8 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "release:github_registry": "npm publish --@skynexui:registry=https://npm.pkg.github.com"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
