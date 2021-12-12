@@ -2,7 +2,7 @@
   "private": false,
   "name": "@skynexui/react",
   "license": "MIT",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -57,7 +57,6 @@
     "rollup-plugin-postcss": "4.0.1",
     "rollup-plugin-terser": "7.0.2",
     "typescript": "4.3.5"
-
   },
   "peerDependencies": {
     "next": ">= 12.x.x",

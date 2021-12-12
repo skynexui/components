@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/skynexui/react/compare/v1.0.7...v1.0.8) (2021-12-12)
+
+
+### Bug Fixes
+
+* trigger release with ts version ([27e7232](https://github.com/skynexui/react/commit/27e72320adf886300b16a267b9fb61613a524dba))
+
 ## [1.0.7](https://github.com/skynexui/react/compare/v1.0.6...v1.0.7) (2021-12-12)
 
 
