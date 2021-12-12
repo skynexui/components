@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/skynexui/react/compare/v1.0.10...v1.0.11) (2021-12-12)
+
+
+### Bug Fixes
+
+* release token ([4bf9314](https://github.com/skynexui/react/commit/4bf9314a93c08c5406bc1c6e462d45e05db00323))
+
 ## [1.0.10](https://github.com/skynexui/react/compare/v1.0.9...v1.0.10) (2021-12-12)
 
 
