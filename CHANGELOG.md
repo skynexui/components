@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/skynexui/react/compare/v1.0.5...v1.0.6) (2021-12-12)
+
+
+### Bug Fixes
+
+* release 6 ([0259f19](https://github.com/skynexui/react/commit/0259f19520df5513b8f1f6e8ecd812ecc24fb831))
+
 ## [1.0.5](https://github.com/skynexui/react/compare/v1.0.4...v1.0.5) (2021-12-12)
 
 
