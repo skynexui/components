@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@skynexui/react",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "index.js",
   "license": "MIT",
   "repository": {

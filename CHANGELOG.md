@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/skynexui/react/compare/v1.0.6...v1.0.7) (2021-12-12)
+
+
+### Bug Fixes
+
+* globalstyle ([4a7327b](https://github.com/skynexui/react/commit/4a7327b504a5c3e00007a8bae4c153fee3e6f1e5))
+
 ## [1.0.6](https://github.com/skynexui/react/compare/v1.0.5...v1.0.6) (2021-12-12)
 
 
