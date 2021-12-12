@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/skynexui/react/compare/v1.0.8...v1.0.9) (2021-12-12)
+
+
+### Bug Fixes
+
+* build to typescript now it will go ([8fb29f4](https://github.com/skynexui/react/commit/8fb29f4ec1912de73308fcc8689acd8557a0de30))
+
 ## [1.0.8](https://github.com/skynexui/react/compare/v1.0.7...v1.0.8) (2021-12-12)
 
 
