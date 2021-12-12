@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/skynexui/react/compare/v1.0.4...v1.0.5) (2021-12-12)
+
+
+### Bug Fixes
+
+* sample ([5075a82](https://github.com/skynexui/react/commit/5075a829c4c1329d90803d817aa2cd3b3db34e2d))
+
 ## [1.0.4](https://github.com/skynexui/react/compare/v1.0.3...v1.0.4) (2021-12-12)
 
 
