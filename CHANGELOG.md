@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/skynexui/react/compare/v1.0.11...v1.0.12) (2021-12-12)
+
+
+### Bug Fixes
+
+* trigger a brand new release everywhere ([6051d81](https://github.com/skynexui/react/commit/6051d81694eaf731fb7b03715c4a4829eba21508))
+
 ## [1.0.11](https://github.com/skynexui/react/compare/v1.0.10...v1.0.11) (2021-12-12)
 
 
