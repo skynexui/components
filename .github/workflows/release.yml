@@ -19,14 +19,14 @@ jobs:
       - name: Release NPM Registry
         env:
           GIT_AUTHOR_NAME: "@bumper-bot"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_MASTER_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN || secrets.GH_MASTER_TOKEN }}
         run: |
           yarn build
           yarn release
       - name: Release GitHub Registry
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_MASTER_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN || secrets.GH_MASTER_TOKEN }}
         run: |
           yarn release:github_registry
