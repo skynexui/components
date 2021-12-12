@@ -14,10 +14,7 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "deploy:release": "semantic-release",
-    "release": "yarn run build:dev && yarn run build:prod",
-    "build:dev": "NODE_ENV=development rollup -c",
-    "build:prod": "NODE_ENV=production rollup -c"
+    "release": "semantic-release"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
