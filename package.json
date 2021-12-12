@@ -16,7 +16,9 @@
   "scripts": {
     "build": "rollup -c",
     "release": "semantic-release",
-    "release:github_registry": "npm publish --@skynexui:registry=https://npm.pkg.github.com"
+    "release:github_registry": "npm publish --@skynexui:registry=https://npm.pkg.github.com",
+    "dev": "start-storybook -p 6006",
+    "build:storybook": "build-storybook -s public -o dist-storybook"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -24,6 +26,10 @@
     "@fortawesome/react-fontawesome": "^0.1.16"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.4.8",
+    "@storybook/addon-essentials": "^6.4.8",
+    "@storybook/addon-links": "^6.4.8",
+    "@storybook/react": "^6.4.8",
     "@babel/core": "7.16.0",
     "@babel/preset-env": "7.16.4",
     "@babel/preset-react": "7.16.0",
