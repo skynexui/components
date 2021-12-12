@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/skynexui/react/compare/v1.0.12...v1.0.13) (2021-12-12)
+
+
+### Bug Fixes
+
+* add support to storybook ([650603e](https://github.com/skynexui/react/commit/650603e55cf26f82654b74783e061f40dcbf4861))
+
 ## [1.0.12](https://github.com/skynexui/react/compare/v1.0.11...v1.0.12) (2021-12-12)
 
 
