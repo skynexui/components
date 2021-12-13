@@ -18,7 +18,7 @@
     "release": "semantic-release",
     "release:github_registry": "npm publish --@skynexui:registry=https://npm.pkg.github.com",
     "dev": "start-storybook -p 6006",
-    "build:storybook": "build-storybook -s public -o dist-storybook"
+    "build:storybook": "build-storybook -o dist-storybook"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",

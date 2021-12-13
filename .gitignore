@@ -91,6 +91,9 @@ out
 .nuxt
 dist
 
+# Storybook
+dist-storybook
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
