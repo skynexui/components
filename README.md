@@ -1,4 +1,4 @@
-# SkynexUI
+# SkynexUI:
 
 ## Why "another component library"?
 - ...
