@@ -1,7 +1,8 @@
 # SkynexUI
 
 ## Why "another component library"?
-...
+- ...
+- ...
 
 ## Contributing
 - `./src` is the entrypoint of this project.
