@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/skynexui/core/compare/v1.0.3...v1.0.4) (2021-12-13)
+
+
+### Bug Fixes
+
+* storybook release ([1baf8a4](https://github.com/skynexui/core/commit/1baf8a4a2bb4f52a8ab29f2e3ab9f113b2c15fa9))
+
 ## [1.0.3](https://github.com/skynexui/core/compare/v1.0.2...v1.0.3) (2021-12-13)
 
 
