@@ -3,7 +3,7 @@ import NextLink from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as iconSet from "@fortawesome/free-solid-svg-icons";
 
-import { theme } from '../core/theme/theme';
+import { theme } from 'core/theme/theme';
 
 function capitalize(str: any) {
   return str.charAt(0).toUpperCase() + str.slice(1);

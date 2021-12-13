@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet } from '../../core/stylesheet/stylesheet';
-import { Box } from '../box/box';
+import { StyleSheet } from 'core/stylesheet/stylesheet';
+import { Box } from 'components/box/box';
 
 interface TextProps {
   styleSheet: StyleSheet;

@@ -1,6 +1,6 @@
 import React, { Ref } from 'react';
-import { renderCSS } from '../../utils/renderCSS';
-import { theme } from '../../core/theme/theme';
+import { renderCSS } from 'utils/renderCSS';
+import { theme } from 'core/theme/theme';
 
 interface BoxProps {
   as?: any;

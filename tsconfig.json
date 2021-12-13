@@ -18,7 +18,8 @@
     "typeRoots": [
       "./node_modules/@types",
       "./@types"
-    ]
+    ],
+    "baseUrl": "./lib",
   },
   "exclude": [
     "node_modules"

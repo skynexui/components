@@ -1,4 +1,4 @@
-import { Breakpoints } from '../breakpoints/breakpoints';
+import { Breakpoints } from 'core/breakpoints/breakpoints';
 
 type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
