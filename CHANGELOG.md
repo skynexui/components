@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/skynexui/core/compare/v1.0.1...v1.0.2) (2021-12-13)
+
+
+### Bug Fixes
+
+* add alias import ([301dbc1](https://github.com/skynexui/core/commit/301dbc19ac03dc5ae82981b992feae011f4ef123))
+
 ## [1.0.1](https://github.com/skynexui/core/compare/v1.0.0...v1.0.1) (2021-12-13)
 
 
