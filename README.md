@@ -1,4 +1,4 @@
-# SkynexUI/react
+# SkynexUI
 
 ## Why "another component library"?
 ...
