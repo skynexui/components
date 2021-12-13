@@ -6,7 +6,7 @@
 - ...
 
 ## Contributing
-- `./src` is the entrypoint of this project.
+- `./lib` is the entrypoint of this project.
 
 ## How to install?
 - yarn
