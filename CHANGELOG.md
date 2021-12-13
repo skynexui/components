@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/skynexui/core/compare/v1.0.0...v1.0.1) (2021-12-13)
+
+
+### Bug Fixes
+
+* trigger the new release on gh and nom ([dbaa402](https://github.com/skynexui/core/commit/dbaa402b0e74295c9fae1d8628f675f685c9dc28))
+
 # 1.0.0 (2021-12-13)
 
 
