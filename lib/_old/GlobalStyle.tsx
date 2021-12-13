@@ -1,5 +1,5 @@
 import React from 'react';
-import { theme } from 'core/theme/theme';
+import { theme } from '@lib/core/theme/theme';
 
 export function GlobalStyle() {
   return (

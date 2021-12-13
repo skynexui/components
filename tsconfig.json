@@ -19,7 +19,10 @@
       "./node_modules/@types",
       "./@types"
     ],
-    "baseUrl": "./lib",
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["./lib/*"]
+    }
   },
   "exclude": [
     "node_modules"
