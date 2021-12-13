@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/skynexui/core/compare/v1.0.4...v1.1.0) (2021-12-13)
+
+
+### Features
+
+* add support to export docs ([47d4b62](https://github.com/skynexui/core/commit/47d4b622eb8b033335d12fe3718efa4bff4846ca))
+
 ## [1.0.4](https://github.com/skynexui/core/compare/v1.0.3...v1.0.4) (2021-12-13)
 
 
