@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/skynexui/react.git"
+    "url": "https://github.com/skynexui/core.git"
   },
   "scripts": {
     "build": "rollup -c",
