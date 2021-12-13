@@ -2,7 +2,7 @@
   "private": false,
   "name": "@skynexui/components",
   "license": "MIT",
-  "version": "1.0.13",
+  "version": "1.0.15",
   "types": "dist/index.d.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
