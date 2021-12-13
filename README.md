@@ -16,7 +16,7 @@ yarn add @skynexui/components
 
 - npm
 ```sh
-yarn add @skynexui/components
+npm install @skynexui/components
 ```
 
 ## Supporters
