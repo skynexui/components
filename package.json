@@ -19,7 +19,7 @@
     "release:github_registry": "npm publish --@skynexui:registry=https://npm.pkg.github.com",
     "dev": "start-storybook -p 6006",
     "build:storybook": "build-storybook -o dist-storybook",
-    "export:docs": "find ./lib -name '*.mdx' -exec cp -prv '{}' './dist' ';' && node ./scripts/parseDocs.js && cp ./docs.json ./dist/docs.json"
+    "export:docs": "find ./lib -name '*.mdx' -exec cp -prv '{}' './dist' ';' && node ./scripts/parseDocs.js && cp ./docs.json ./dist/docs.json && ls -la ./dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
