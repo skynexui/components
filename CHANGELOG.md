@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/skynexui/core/compare/v1.1.0...v1.1.1) (2021-12-14)
+
+
+### Bug Fixes
+
+* docs ordering ([393e9e5](https://github.com/skynexui/core/commit/393e9e5b2db2e45674d5c8175de13fdf92213f62))
+
 # [1.1.0](https://github.com/skynexui/core/compare/v1.0.4...v1.1.0) (2021-12-13)
 
 
