@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/skynexui/core/compare/v1.2.6...v1.2.7) (2021-12-14)
+
+
+### Bug Fixes
+
+* remove react from build ([d3b45f1](https://github.com/skynexui/core/commit/d3b45f1455756053c061355fe980239469b7f1d6))
+
 ## [1.2.6](https://github.com/skynexui/core/compare/v1.2.5...v1.2.6) (2021-12-14)
 
 
