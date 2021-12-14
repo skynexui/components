@@ -3,20 +3,17 @@ import { StyleSheet } from '@lib/core/stylesheet/stylesheet';
 import { Box } from '@lib/components/box/box';
 
 interface TextProps {
-  styleSheet: StyleSheet;
+  styleSheet?: StyleSheet;
   children: React.ReactNode;
 }
-
-export function Text({ children, styleSheet }: TextProps) {
+export function Text({ children, styleSheet }: TextProps): JSX.Element {
   return (
     <Box styleSheet={styleSheet}>
-      <span>
-        {children}
-      </span>
+      <span>{children}</span>
     </Box>
-  )
+  );
 }
 
 Text.defaultProps = {
   styleSheet: {},
-}
+};

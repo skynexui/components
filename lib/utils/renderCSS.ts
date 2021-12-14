@@ -12,26 +12,33 @@ function renderCSSValue(cssPropName: any, cssPropValue: any) {
     `;
   }
 
-  return cssPropName + ':' + cssPropValue + ';';
+  return `${cssPropName}:${cssPropValue};`;
 }
 
 export function renderCSS(props: any, currentBreakpoint: any) {
   if (!props) return '';
 
-  return Object
-    .keys(props)
+  return Object.keys(props)
     .map((prop) => {
-      const cssPropName = prop.split(/(?=[A-Z])/).join('-').toLowerCase();
+      const cssPropName = prop
+        .split(/(?=[A-Z])/)
+        .join('-')
+        .toLowerCase();
       const cssPropValue = props[prop];
-      const isCssPropValueAnObject = Object.prototype.toString.call(cssPropValue) === '[object Object]';
+      const isCssPropValueAnObject =
+        Object.prototype.toString.call(cssPropValue) === '[object Object]';
       const currentCssPropValue = cssPropValue[currentBreakpoint];
 
-      if (currentBreakpoint == 'xs' && !isCssPropValueAnObject) {
+      if (currentBreakpoint === 'xs' && !isCssPropValueAnObject) {
         return renderCSSValue(cssPropName, cssPropValue);
       }
 
       if (currentCssPropValue) {
         return renderCSSValue(cssPropName, currentCssPropValue);
       }
-    }).filter(Boolean).join('');
+
+      return false;
+    })
+    .filter(Boolean)
+    .join('');
 }

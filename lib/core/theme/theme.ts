@@ -30,8 +30,8 @@ const partition = {
 
 const container = {
   xcontainer_xs: '0', // '440px'  /* 27.5rem */,
-  xcontainer_sm: '640px'  /* 40rem */,
-  xcontainer_md: '768px'  /* 48rem */,
+  xcontainer_sm: '640px' /* 40rem */,
+  xcontainer_md: '768px' /* 48rem */,
   xcontainer_lg: '1024px' /* 64rem */,
   xcontainer_xl: '1280px' /* 80rem */,
 };
@@ -50,8 +50,8 @@ const space = {
   'x3.5': '14px', // 0.875rem
   x4: '16px', // 1rem
   x5: '20px', // 1.25rem'
-  x6: '24px',// 1.5rem
-  x7: '1.75rem',// 1.75rem
+  x6: '24px', // 1.5rem
+  x7: '1.75rem', // 1.75rem
   x8: '32px', // 2rem
   x9: '36px', // 2.25rem
   x10: '40px', // 2.5rem
@@ -78,142 +78,142 @@ const space = {
 
 export const theme = {
   breakpoints: {
-    "Breakpoints.xs": 0,
-    "Breakpoints.sm": 480,
-    "Breakpoints.md": 768,
-    "Breakpoints.lg": 992,
-    "Breakpoints.xl": 1200,
+    'Breakpoints.xs': 0,
+    'Breakpoints.sm': 480,
+    'Breakpoints.md': 768,
+    'Breakpoints.lg': 992,
+    'Breakpoints.xl': 1200,
   },
   colors: {
     primary: {
-      "050": "#EAE2F8",
-      "100": "#CFBCF2",
-      "200": "#A081D9",
-      "300": "#8662C7",
-      "400": "#724BB7",
-      "500": "#653CAD",
-      "600": "#51279B",
-      "700": "#421987",
-      "800": "#34126F",
-      "900": "#240754",
+      '050': '#EAE2F8',
+      '100': '#CFBCF2',
+      '200': '#A081D9',
+      '300': '#8662C7',
+      '400': '#724BB7',
+      '500': '#653CAD',
+      '600': '#51279B',
+      '700': '#421987',
+      '800': '#34126F',
+      '900': '#240754',
     },
     neutral: {
-      "000": "#FFFFFF",
-      "050": "#F7F7F7",
-      "100": "#E1E1E1",
-      "200": "#CFCFCF",
-      "300": "#B1B1B1",
-      "400": "#9E9E9E",
-      "500": "#7E7E7E",
-      "600": "#626262",
-      "700": "#515151",
-      "800": "#3B3B3B",
-      "900": "#222222",
-      "999": "#111111",
+      '000': '#FFFFFF',
+      '050': '#F7F7F7',
+      '100': '#E1E1E1',
+      '200': '#CFCFCF',
+      '300': '#B1B1B1',
+      '400': '#9E9E9E',
+      '500': '#7E7E7E',
+      '600': '#626262',
+      '700': '#515151',
+      '800': '#3B3B3B',
+      '900': '#222222',
+      '999': '#111111',
     },
     positive: {
-      "050": "#E3F9E5",
-      "100": "#C1EAC5",
-      "200": "#A3D9A5",
-      "300": "#7BC47F",
-      "400": "#57AE5B",
-      "500": "#3F9142",
-      "600": "#2F8132",
-      "700": "#207227",
-      "800": "#0E5814",
-      "900": "#05400A",
+      '050': '#E3F9E5',
+      '100': '#C1EAC5',
+      '200': '#A3D9A5',
+      '300': '#7BC47F',
+      '400': '#57AE5B',
+      '500': '#3F9142',
+      '600': '#2F8132',
+      '700': '#207227',
+      '800': '#0E5814',
+      '900': '#05400A',
     },
     negative: {
-      "050": "#FFE3E3",
-      "100": "#FFBDBD",
-      "200": "#FF9B9B",
-      "300": "#F86A6A",
-      "400": "#EF4E4E",
-      "500": "#E12D39",
-      "600": "#CF1124",
-      "700": "#AB091E",
-      "800": "#8A041A",
-      "900": "#610316",
-    }
+      '050': '#FFE3E3',
+      '100': '#FFBDBD',
+      '200': '#FF9B9B',
+      '300': '#F86A6A',
+      '400': '#EF4E4E',
+      '500': '#E12D39',
+      '600': '#CF1124',
+      '700': '#AB091E',
+      '800': '#8A041A',
+      '900': '#610316',
+    },
   },
   typography: {
     fontFamily: 'Open Sans',
     variants: {
       display1: {
         fontSize: {
-          xs: "48px",
-          md: "60px"
+          xs: '48px',
+          md: '60px',
         },
         letterSpacing: {
           xs: '-0.04px',
         },
         fontWeight: {
           xs: '900',
-        }
+        },
       },
       heading1: {
         fontSize: {
-          xs: "36px",
-          md: "48px"
+          xs: '36px',
+          md: '48px',
         },
         letterSpacing: {
           xs: '-0.04px',
         },
         fontWeight: {
           xs: '900',
-        }
+        },
       },
       heading2: {
         fontSize: {
-          xs: "24px",
-          md: "36px",
+          xs: '24px',
+          md: '36px',
         },
         letterSpacing: {
           xs: '-0.04px',
         },
         fontWeight: {
           xs: '900',
-        }
+        },
       },
       heading3: {
         fontSize: {
-          xs: "20px",
-          md: "30px",
+          xs: '20px',
+          md: '30px',
         },
         letterSpacing: {
           xs: '-0.04px',
         },
         fontWeight: {
           xs: 'bold',
-        }
+        },
       },
       heading4: {
         fontSize: {
-          xs: "16px",
-          md: "20px",
+          xs: '16px',
+          md: '20px',
         },
         letterSpacing: {
           xs: '-0.04px',
         },
         fontWeight: {
           xs: 'bold',
-        }
+        },
       },
       heading5: {
         fontSize: {
-          xs: "14px",
-          md: "16px",
+          xs: '14px',
+          md: '16px',
         },
         letterSpacing: {
           xs: '-0.04px',
         },
         fontWeight: {
           xs: 'bold',
-        }
+        },
       },
       body1: {
         fontSize: {
-          xs: "18px",
+          xs: '18px',
         },
         fontWeight: {
           xs: '400',
@@ -221,7 +221,7 @@ export const theme = {
       },
       body2: {
         fontSize: {
-          xs: "16px",
+          xs: '16px',
         },
         fontWeight: {
           xs: '400',
@@ -229,7 +229,7 @@ export const theme = {
       },
       body3: {
         fontSize: {
-          xs: "14px",
+          xs: '14px',
         },
         fontWeight: {
           xs: '400',
@@ -237,13 +237,13 @@ export const theme = {
       },
       body4: {
         fontSize: {
-          xs: "12px",
+          xs: '12px',
         },
         fontWeight: {
           xs: '400',
         },
       },
-    }
+    },
   },
   space,
-}
+};

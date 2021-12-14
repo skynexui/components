@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import path from 'path';
 import alias from '@rollup/plugin-alias';
 import resolve from '@rollup/plugin-node-resolve';
@@ -6,16 +7,14 @@ import babel from '@rollup/plugin-babel';
 import external from 'rollup-plugin-peer-deps-external';
 import dts from 'rollup-plugin-dts';
 
-const tsConfig = require('./tsconfig.json');
 const packageJson = require('./package.json');
-const rootDir = path.resolve(__dirname);
-const dstDir = path.join(rootDir, "dist");
-const extensions = [".ts", ".tsx", ".json"];
+
+const extensions = ['.ts', '.tsx', '.json'];
 
 export default [
   {
     input: 'lib/components.ts',
-    external: id => {
+    external: (id) => {
       return /^react|styled-jsx/.test(id);
     },
     output: [
@@ -28,45 +27,49 @@ export default [
       {
         file: packageJson.module,
         format: 'esm',
-        sourcemap: true
-      }
+        sourcemap: true,
+      },
     ],
     plugins: [
       external(),
       alias({
-        entries: [{
-          find: '@lib',
-          replacement: (...args) => {
-            return path.resolve(__dirname, 'lib');
+        entries: [
+          {
+            find: '@lib',
+            replacement: () => {
+              return path.resolve(__dirname, 'lib');
+            },
           },
-        }]
+        ],
       }),
       resolve({
         jsnext: true,
         extensions,
-      }),  
+      }),
       commonjs(),
       babel({
         babelHelpers: 'inline',
-        exclude: "node_modules/**",
-        extensions
+        exclude: 'node_modules/**',
+        extensions,
       }),
     ],
   },
   {
     input: 'types/components.d.ts',
-    output: [{ file: packageJson.types, format: "esm" }],
+    output: [{ file: packageJson.types, format: 'esm' }],
     external: [/\.css$/],
     plugins: [
       alias({
-        entries: [{
-          find: '@lib',
-          replacement: (...args) => {
-            return path.resolve(__dirname, 'types/');
+        entries: [
+          {
+            find: '@lib',
+            replacement: () => {
+              return path.resolve(__dirname, 'types/');
+            },
           },
-        }]
+        ],
       }),
       dts(),
     ],
   },
-]
+];
