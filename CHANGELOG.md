@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/skynexui/core/compare/v1.1.4...v1.1.5) (2021-12-14)
+
+
+### Bug Fixes
+
+* release version ([8bbfbf5](https://github.com/skynexui/core/commit/8bbfbf55fd5bbabb87b923fde791950165e01882))
+
 ## [1.1.4](https://github.com/skynexui/core/compare/v1.1.3...v1.1.4) (2021-12-14)
 
 
