@@ -14,6 +14,10 @@ const packageJson = require('./package.json');
 export default [
   {
     input: 'lib/components.ts',
+    external: id => {
+      console.log(id);
+      return /^react|styled-jsx/.test(id);
+    },
     output: [
       {
         file: packageJson.main,
