@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/skynexui/core/compare/v1.1.5...v1.2.0) (2021-12-14)
+
+
+### Bug Fixes
+
+* output in ts with babel ([4e5585d](https://github.com/skynexui/core/commit/4e5585d9715752eab323887053f8aa63bdf92cb2))
+
+
+### Features
+
+* talvez eu tenha quebrado tudo ([2db9164](https://github.com/skynexui/core/commit/2db916434660476c942336f3ca26883dbcc6ab12))
+
 ## [1.1.5](https://github.com/skynexui/core/compare/v1.1.4...v1.1.5) (2021-12-14)
 
 
