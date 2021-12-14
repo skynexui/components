@@ -21,7 +21,8 @@
     "dev": "start-storybook -p 6006",
     "build:storybook": "build-storybook -o dist-storybook",
     "export:types": "tsc",
-    "export:docs": "find ./lib -name '*.mdx' -exec cp -prv '{}' './dist' ';' && node ./scripts/parseDocs.js && cp ./docs.json ./dist/docs.json && ls -la ./dist"
+    "export:docs": "find ./lib -name '*.mdx' -exec cp -prv '{}' './dist' ';' && node ./scripts/parseDocs.js && cp ./docs.json ./dist/docs.json && ls -la ./dist",
+    "deploy:docs": "cd ../ && cd docs && yarn deploy"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
