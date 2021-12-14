@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/skynexui/core/compare/v1.2.0...v1.2.1) (2021-12-14)
+
+
+### Bug Fixes
+
+* update bundle output ([c9c63cf](https://github.com/skynexui/core/commit/c9c63cffa5ae42f5e569458244292ae3f38467ef))
+
 # [1.2.0](https://github.com/skynexui/core/compare/v1.1.5...v1.2.0) (2021-12-14)
 
 
