@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/skynexui/core/compare/v1.2.5...v1.2.6) (2021-12-14)
+
+
+### Bug Fixes
+
+* add support to eslint ([f20edbe](https://github.com/skynexui/core/commit/f20edbe87c916d237485af4802fe1533be6e3344))
+
 ## [1.2.5](https://github.com/skynexui/core/compare/v1.2.4...v1.2.5) (2021-12-14)
 
 
