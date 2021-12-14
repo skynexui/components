@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/skynexui/core/compare/v1.2.1...v1.2.2) (2021-12-14)
+
+
+### Bug Fixes
+
+* remote .d.ts files ([54cd415](https://github.com/skynexui/core/commit/54cd415c362912604c65274b5717894d30146823))
+
 ## [1.2.1](https://github.com/skynexui/core/compare/v1.2.0...v1.2.1) (2021-12-14)
 
 
