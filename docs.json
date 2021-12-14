@@ -1,0 +1,15 @@
+{
+  "pages": {
+    "_app.js": "_app.js",
+    "meta.json": {
+      "index": "Introduction",
+      "components": "Components",
+      "theme": "Theme",
+      "compiler": "Compiler"
+    },
+    "components": {
+      "box.mdx": "Introduction.stories.mdx"
+    },
+    "index.mdx": "Introduction.stories.mdx"
+  }
+}
