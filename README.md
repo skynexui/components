@@ -1,5 +1,7 @@
 # SkynexUI
 
+<!-- Docs Structure: https://github.com/skynexui/docs/tree/6113e6cc169665aff4805d074eceb32f428fb1bc/packages/docs/pages -->
+
 ## Why "another component library"?
 - ...
 

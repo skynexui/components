@@ -7,9 +7,20 @@
       "theme": "Theme",
       "compiler": "Compiler"
     },
+    "index.mdx": "introduction.stories.mdx",
     "components": {
-      "box.mdx": "Introduction.stories.mdx"
+      "box.mdx": "box.stories.mdx"
     },
-    "index.mdx": "Introduction.stories.mdx"
+    "theme": {
+      "meta.json": {
+        "index": "What is considered the theme?",
+        "breakpoints": "Breakpoints",
+        "colors": "Colors",
+        "typography": "Typography",
+        "space": "Space",
+        "icons": "Icons"
+      },
+      "theme.mdx": "theme.stories.mdx"
+    }
   }
 }
