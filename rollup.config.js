@@ -15,7 +15,7 @@ export default [
   {
     input: 'lib/components.ts',
     external: (id) => {
-      return /^react|styled-jsx/.test(id);
+      return /^react|styled-jsx|next/.test(id);
     },
     output: [
       {
