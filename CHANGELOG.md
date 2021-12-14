@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/skynexui/core/compare/v1.2.3...v1.2.4) (2021-12-14)
+
+
+### Bug Fixes
+
+* provider in docs ([df5c338](https://github.com/skynexui/core/commit/df5c338a3e072bce873a97db93c25301e13ecba2))
+
 ## [1.2.3](https://github.com/skynexui/core/compare/v1.2.2...v1.2.3) (2021-12-14)
 
 
