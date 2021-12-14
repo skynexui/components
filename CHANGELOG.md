@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/skynexui/core/compare/v1.1.3...v1.1.4) (2021-12-14)
+
+
+### Bug Fixes
+
+* add example with box ([9cbebcc](https://github.com/skynexui/core/commit/9cbebcc07aaddb991344218f55d5911adfe90bdc))
+
 ## [1.1.3](https://github.com/skynexui/core/compare/v1.1.2...v1.1.3) (2021-12-14)
 
 
