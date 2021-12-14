@@ -14,11 +14,13 @@
     "url": "https://github.com/skynexui/core.git"
   },
   "scripts": {
-    "build": "rollup -c",
+    "prebuild": "rimraf dist && rimraf types",
+    "build": "yarn export:types && rollup -c && yarn export:docs",
     "release": "semantic-release",
     "release:github_registry": "npm publish --@skynexui:registry=https://npm.pkg.github.com",
     "dev": "start-storybook -p 6006",
     "build:storybook": "build-storybook -o dist-storybook",
+    "export:types": "tsc",
     "export:docs": "find ./lib -name '*.mdx' -exec cp -prv '{}' './dist' ';' && node ./scripts/parseDocs.js && cp ./docs.json ./dist/docs.json && ls -la ./dist"
   },
   "dependencies": {

@@ -23,7 +23,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN || secrets.GH_MASTER_TOKEN }}
         run: |
           yarn build
-          yarn export:docs
           yarn release
       - name: Release GitHub Registry
         env:

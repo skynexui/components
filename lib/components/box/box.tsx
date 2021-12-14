@@ -1,12 +1,13 @@
 import React, { Ref } from 'react';
 import { renderCSS } from '@lib/utils/renderCSS';
 import { theme } from '@lib/core/theme/theme';
+import { StyleSheet } from '@lib/core/stylesheet/stylesheet';
 
 interface BoxProps {
   as?: any;
   children?: any;
   className?: string;
-  styleSheet?: any;
+  styleSheet?: StyleSheet;
   ref?: Ref<any>;
 }
 export const Box = React.forwardRef(({

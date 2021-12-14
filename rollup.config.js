@@ -47,13 +47,14 @@ export default [
       }),  
       commonjs(),
       babel({
+        babelHelpers: 'bundled',
         exclude: "node_modules/**",
         extensions
       }),
     ],
   },
   {
-    input: 'dist/esm/types/components.d.ts',
+    input: 'types/components.d.ts',
     output: [{ file: packageJson.types, format: "esm" }],
     external: [/\.css$/],
     plugins: [
@@ -61,7 +62,7 @@ export default [
         entries: [{
           find: '@lib',
           replacement: (...args) => {
-            return path.resolve(__dirname, 'dist/esm/types/');
+            return path.resolve(__dirname, 'types/');
           },
         }]
       }),

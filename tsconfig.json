@@ -15,6 +15,7 @@
     "declarationDir": "types",
     "sourceMap": true,
     "emitDeclarationOnly": true,
+    "skipLibCheck": true,
     "typeRoots": [
       "./node_modules/@types",
       "./@types"
