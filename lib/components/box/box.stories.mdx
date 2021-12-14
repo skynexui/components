@@ -1,4 +1,6 @@
-import { Meta } from '@storybook/addon-docs';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Box } from '@lib/components';
+
 
 <Meta title="Components/Box" />
 
@@ -6,4 +8,18 @@ import { Meta } from '@storybook/addon-docs';
 
 Box is the most primal component that we have that has the representation of a "box" in the UI.
 
-## Properties
+<Canvas>
+  <Story
+    name="Box Component"
+    args={{ children: 'Box Component' }}
+  >
+    <Box
+      styleSheet={{
+        backgroundColor: 'red',
+      }}
+    >
+      Box Component
+    </Box> 
+  </Story>
+</Canvas>
+

@@ -77,3 +77,7 @@ export const Box = React.forwardRef(({
     </React.Fragment>
   )
 });
+
+Box.defaultProps = {
+  styleSheet: {},
+}
