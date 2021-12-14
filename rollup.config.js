@@ -47,7 +47,7 @@ export default [
       }),  
       commonjs(),
       babel({
-        babelHelpers: 'bundled',
+        babelHelpers: 'inline',
         exclude: "node_modules/**",
         extensions
       }),
