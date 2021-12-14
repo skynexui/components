@@ -9,6 +9,7 @@
     },
     "index.mdx": "introduction.stories.mdx",
     "components": {
+      "provider.mdx": "provider.stories.mdx",
       "box.mdx": "box.stories.mdx"
     },
     "theme": {

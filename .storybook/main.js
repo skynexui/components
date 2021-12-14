@@ -3,14 +3,17 @@ const { TsconfigPathsPlugin } = require('tsconfig-paths-webpack-plugin');
 
 
 module.exports = {
-  "stories": [
+  stories: [
     "../lib/**/*.stories.mdx",
   ],
-  "addons": [
+  addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials"
   ],
-  "framework": "@storybook/react",
+  features: {
+    postcss: false,
+  },
+  framework: "@storybook/react",
   webpackFinal: async (config) => {
     [].push.apply(config.resolve.plugins, [
         new TsconfigPathsPlugin({extensions: config.resolve.extensions})
