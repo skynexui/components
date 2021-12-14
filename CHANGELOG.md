@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/skynexui/core/compare/v1.2.4...v1.2.5) (2021-12-14)
+
+
+### Bug Fixes
+
+* remove unnecessary dependencies ([428c768](https://github.com/skynexui/core/commit/428c76894b59dddea1edad1a3d831b9de4798b1a))
+
 ## [1.2.4](https://github.com/skynexui/core/compare/v1.2.3...v1.2.4) (2021-12-14)
 
 
