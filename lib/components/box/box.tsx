@@ -21,75 +21,77 @@ export const Box = React.forwardRef(
     ref
   ) => {
     const Tag = as || 'div';
+    const selector = 'sknui-box';
+    const jsxValue = process.env.NODE_ENV === 'test' ? 'true' : true;
 
     return (
       <>
         <Tag
           ref={ref}
           {...props}
-          className={`${props.className ? props.className : ''} ${
+          className={`sknui-box ${props.className ? props.className : ''} ${
             srOnly ? 'sr-only' : ''
           }`}
         />
-        <style jsx>{`
-          ${Tag} {
+        <style jsx={jsxValue}>{`
+          ${`${Tag}.${selector}`} {
             ${renderCSS(styleSheet, 'xs')};
           }
-          ${Tag}:hover {
+          ${`${Tag}.${selector}`}:hover {
             ${renderCSS(hover, 'xs')};
           }
-          ${Tag}:focus {
+          ${`${Tag}.${selector}`}:focus {
             ${renderCSS(focus, 'xs')};
           }
           @media screen and (min-width: ${theme.breakpoints[
               'Breakpoints.sm'
             ]}px) {
-            ${Tag} {
+            ${`${Tag}.${selector}`} {
               ${renderCSS(styleSheet, 'sm')};
             }
-            ${Tag}:hover {
+            ${`${Tag}.${selector}`}:hover {
               ${renderCSS(hover, 'sm')};
             }
-            ${Tag}:focus {
+            ${`${Tag}.${selector}`}:focus {
               ${renderCSS(focus, 'sm')};
             }
           }
           @media screen and (min-width: ${theme.breakpoints[
               'Breakpoints.md'
             ]}px) {
-            ${Tag} {
+            ${`${Tag}.${selector}`} {
               ${renderCSS(styleSheet, 'md')};
             }
-            ${Tag}:hover {
+            ${`${Tag}.${selector}`}:hover {
               ${renderCSS(hover, 'md')};
             }
-            ${Tag}:focus {
+            ${`${Tag}.${selector}`}:focus {
               ${renderCSS(focus, 'md')};
             }
           }
           @media screen and (min-width: ${theme.breakpoints[
               'Breakpoints.lg'
             ]}px) {
-            ${Tag} {
+            ${`${Tag}.${selector}`} {
               ${renderCSS(styleSheet, 'lg')};
             }
-            ${Tag}:hover {
+            ${`${Tag}.${selector}`}:hover {
               ${renderCSS(hover, 'lg')};
             }
-            ${Tag}:focus {
+            ${`${Tag}.${selector}`}:focus {
               ${renderCSS(focus, 'lg')};
             }
           }
           @media screen and (min-width: ${theme.breakpoints[
               'Breakpoints.xl'
             ]}px) {
-            ${Tag} {
+            ${`${Tag}.${selector}`} {
               ${renderCSS(styleSheet, 'xl')};
             }
-            ${Tag}:hover {
+            ${`${Tag}.${selector}`}:hover {
               ${renderCSS(hover, 'xl')};
             }
-            ${Tag}:focus {
+            ${`${Tag}.${selector}`}:focus {
               ${renderCSS(focus, 'xl')};
             }
           }

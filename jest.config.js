@@ -10,7 +10,7 @@ module.exports = {
     prefix: '<rootDir>/',
   }),
   transform: {
-    '^.+\\.css$': 'jest-styled-jsx-transformer',
-    '^.+\\.(t|j)sx?': 'babel-jest',
+    // '^.+\\.css$': 'jest-styled-jsx-transformer',
+    // '^.+\\.(t|j)sx?': 'babel-jest',
   },
 };

@@ -2,12 +2,71 @@
 
 exports[`works 1`] = `
 <div>
-  <div>
+  <main>
     <div
-      class="jsx-4101367178  "
+      class="sknui-box  "
     >
       Hello a
     </div>
-  </div>
+    <style
+      jsx="true"
+    >
+      
+          div.sknui-box {
+            background-color:red;padding:10;;
+          }
+          div.sknui-box:hover {
+            ;
+          }
+          div.sknui-box:focus {
+            ;
+          }
+          @media screen and (min-width: 480px) {
+            div.sknui-box {
+              ;
+            }
+            div.sknui-box:hover {
+              ;
+            }
+            div.sknui-box:focus {
+              ;
+            }
+          }
+          @media screen and (min-width: 768px) {
+            div.sknui-box {
+              ;
+            }
+            div.sknui-box:hover {
+              ;
+            }
+            div.sknui-box:focus {
+              ;
+            }
+          }
+          @media screen and (min-width: 992px) {
+            div.sknui-box {
+              ;
+            }
+            div.sknui-box:hover {
+              ;
+            }
+            div.sknui-box:focus {
+              ;
+            }
+          }
+          @media screen and (min-width: 1200px) {
+            div.sknui-box {
+              ;
+            }
+            div.sknui-box:hover {
+              ;
+            }
+            div.sknui-box:focus {
+              ;
+            }
+          }
+        
+    </style>
+  </main>
 </div>
 `;

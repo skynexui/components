@@ -5,7 +5,7 @@ interface AllTheProvidersProps {
   children: ReactElement;
 }
 function AllTheProviders({ children }: AllTheProvidersProps) {
-  return <div>{children}</div>;
+  return <main>{children}</main>;
 }
 
 const customRender = (
