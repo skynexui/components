@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/skynexui/core/compare/v1.2.9...v1.3.0) (2021-12-15)
+
+
+### Features
+
+* add tests support ([#35](https://github.com/skynexui/core/issues/35)) ([83d4603](https://github.com/skynexui/core/commit/83d460377d5d2aef0f89f4c8284e99f1f14537c2))
+
 ## [1.2.9](https://github.com/skynexui/core/compare/v1.2.8...v1.2.9) (2021-12-15)
 
 
