@@ -14,6 +14,7 @@
     "url": "https://github.com/skynexui/core.git"
   },
   "scripts": {
+    "test": "jest --no-cache",
     "prebuild": "rimraf dist && rimraf types",
     "build": "yarn export:types && rollup -c && yarn export:docs",
     "release": "semantic-release",
@@ -28,17 +29,16 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.16"
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@testing-library/react": "^12.1.2"
   },
   "devDependencies": {
-    "tsconfig-paths-webpack-plugin": "^3.5.2",
-    "@rollup/plugin-babel": "^5.3.0",
-    "react": "^17.0.2",
     "@babel/core": "7.16.0",
     "@babel/preset-env": "7.16.4",
     "@babel/preset-react": "7.16.0",
     "@babel/preset-typescript": "^7.16.5",
     "@rollup/plugin-alias": "^3.1.8",
+    "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "20.0.0",
     "@rollup/plugin-node-resolve": "13.0.4",
     "@rollup/plugin-typescript": "8.2.5",
@@ -52,6 +52,7 @@
     "@storybook/addon-essentials": "^6.4.8",
     "@storybook/addon-links": "^6.4.8",
     "@storybook/react": "^6.4.8",
+    "@types/jest": "^27.0.3",
     "@types/react": "17.0.18",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
@@ -64,17 +65,22 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "rollup-plugin-dts": "3.0.2",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "jest": "^27.4.5",
+    "jest-styled-jsx-transformer": "^1.1.0",
     "next": "12.0.2",
     "prettier": "^2.5.1",
+    "react": "^17.0.2",
     "react-dom": "17.0.2",
     "rimraf": "3.0.2",
     "rollup": "2.56.2",
+    "rollup-plugin-dts": "3.0.2",
     "rollup-plugin-peer-deps-external": "2.2.4",
     "semantic-release": "17.1.1",
     "styled-jsx": "4.0.1",
+    "ts-jest": "^27.1.1",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
     "typescript": "4.3.5"
   },
   "peerDependencies": {

@@ -10,6 +10,8 @@
     "@babel/preset-typescript"
   ],
   "plugins": [
-    ["styled-jsx/babel"]
+    [
+      "styled-jsx/babel"
+    ]
   ]
 }

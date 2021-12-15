@@ -27,7 +27,8 @@ export function renderCSS(props: any, currentBreakpoint: any) {
       const cssPropValue = props[prop];
       const isCssPropValueAnObject =
         Object.prototype.toString.call(cssPropValue) === '[object Object]';
-      const currentCssPropValue = cssPropValue[currentBreakpoint];
+      const currentCssPropValue =
+        cssPropValue[`Breakpoints.${currentBreakpoint}`];
 
       if (currentBreakpoint === 'xs' && !isCssPropValueAnObject) {
         return renderCSSValue(cssPropName, cssPropValue);
