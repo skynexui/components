@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
           padding: {Breakpoints.xs: 50},
         ),
         children: [
-          Text('Olá'),
+          Text('Hihi'),
         ],
       ),
     );
