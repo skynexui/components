@@ -21,6 +21,18 @@ yarn add @skynexui/components
 npm install @skynexui/components
 ```
 
+## Current Tools
+- Flutter
+- React
+  - TypeScript
+  - styled/jsx
+  - React Testing Library
+  - Jest
+  - ESLint
+  - Prettier
+  - .editorconfig
+- Semantic Release
+
 ## Supporters
 
 | Companies that trust in this project |
