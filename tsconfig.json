@@ -6,6 +6,7 @@
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "module": "es6",
+    "esModuleInterop": true,
     "moduleResolution": "node",
     "noImplicitAny": true,
     "outDir": "./dist",

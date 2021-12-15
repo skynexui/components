@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`works 1`] = `
+<div>
+  <div>
+    <div
+      class="jsx-4101367178  "
+    >
+      Hello a
+    </div>
+  </div>
+</div>
+`;

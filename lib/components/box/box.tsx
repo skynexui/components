@@ -10,6 +10,7 @@ interface BoxProps {
   styleSheet?: StyleSheet;
   ref: Ref<any>;
 }
+
 export const Box = React.forwardRef(
   (
     {

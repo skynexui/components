@@ -10,6 +10,18 @@
     "@babel/preset-typescript"
   ],
   "plugins": [
-    ["styled-jsx/babel"]
-  ]
+    [
+      "styled-jsx/babel"
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "@babel/preset-env"
+      ],
+      "plugins": [
+        "styled-jsx/babel"
+      ]
+    }
+  }
 }
