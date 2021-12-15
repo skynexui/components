@@ -1,3 +1,10 @@
+## [1.2.9](https://github.com/skynexui/core/compare/v1.2.8...v1.2.9) (2021-12-15)
+
+
+### Bug Fixes
+
+* unused packages pt2 ([a91f20e](https://github.com/skynexui/core/commit/a91f20ecd10674a6be02e8870cdcb933cdef1305))
+
 ## [1.2.8](https://github.com/skynexui/core/compare/v1.2.7...v1.2.8) (2021-12-14)
 
 
