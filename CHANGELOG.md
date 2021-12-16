@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/skynexui/components/compare/v1.3.2...v1.3.3) (2021-12-16)
+
+
+### Bug Fixes
+
+* testing if release works ([b355dda](https://github.com/skynexui/components/commit/b355ddaebb541e1e3144a30fa8e20863aec3f9c0))
+
 ## [1.3.2](https://github.com/skynexui/components/compare/v1.3.1...v1.3.2) (2021-12-16)
 
 
