@@ -6,6 +6,7 @@
 
 ## Why "another component library"?
 - ...
+- ...
 
 ## Contributing
 - `./lib` is the entrypoint of this project.
