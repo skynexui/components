@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/skynexui/core/compare/v1.3.0...v1.3.1) (2021-12-16)
+
+
+### Bug Fixes
+
+* script to sync with gh registry ([57e3e7b](https://github.com/skynexui/core/commit/57e3e7b1065007f86131885aa800a861dc10b2ae))
+
 # [1.3.0](https://github.com/skynexui/core/compare/v1.2.9...v1.3.0) (2021-12-15)
 
 
