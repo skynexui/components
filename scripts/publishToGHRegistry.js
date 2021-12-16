@@ -10,7 +10,7 @@ Promise.allSettled([fetchModule]).then(async ([{ value: fetch }]) => {
     .trim();
 
   const response = await fetch
-    .default('https://github.com/skynexui/core/packages/1146437/versions')
+    .default('https://github.com/skynexui/components/packages/1146437/versions')
     .then((res) => res.text());
 
   if (!response.includes(lastTag)) {
