@@ -1,3 +1,11 @@
+## [1.3.2](https://github.com/skynexui/components/compare/v1.3.1...v1.3.2) (2021-12-16)
+
+
+### Bug Fixes
+
+* docs link ([42b0e3a](https://github.com/skynexui/components/commit/42b0e3ab061fee18ee4ad965fc55f31ddf636eb1))
+* finish migration of repo name ([01a7719](https://github.com/skynexui/components/commit/01a7719c4a3ac38f342772b487a718e689fcfbb7))
+
 ## [1.3.1](https://github.com/skynexui/components/compare/v1.3.0...v1.3.1) (2021-12-16)
 
 
