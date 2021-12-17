@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/skynexui/components/compare/v1.3.3...v1.3.4) (2021-12-17)
+
+
+### Bug Fixes
+
+* add the build watch command ([8085de2](https://github.com/skynexui/components/commit/8085de2a6d39624134621c066b094270c686cd20))
+
 ## [1.3.3](https://github.com/skynexui/components/compare/v1.3.2...v1.3.3) (2021-12-16)
 
 
