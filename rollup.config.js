@@ -1,5 +1,7 @@
+/* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-var-requires */
 import path from 'path';
+import { execSync } from 'child_process';
 import alias from '@rollup/plugin-alias';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
@@ -10,6 +12,26 @@ import dts from 'rollup-plugin-dts';
 const packageJson = require('./package.json');
 
 const extensions = ['.ts', '.tsx', '.json'];
+
+const SKNBBuildEnd = (options = {}) => {
+  const { hook = 'generateBundle' } = options;
+  return {
+    name: 'skn-build-end',
+    [hook]: async () => {
+      execSync('[ -d dist ] || mkdir dist');
+
+      const cmdExportTypes = 'yarn export:types';
+      console.log(`RUN: ${cmdExportTypes}`);
+      execSync(cmdExportTypes);
+      console.log(`DONE: ${cmdExportTypes}`);
+
+      const cmd = 'yarn export:docs';
+      console.log(`RUN: ${cmd}`);
+      execSync(cmd);
+      console.log(`DONE: ${cmd}`);
+    },
+  };
+};
 
 export default [
   {
@@ -52,6 +74,7 @@ export default [
         exclude: 'node_modules/**',
         extensions,
       }),
+      SKNBBuildEnd(),
     ],
   },
   {

@@ -20,6 +20,7 @@ export const Box = React.forwardRef(
     }: BoxProps,
     ref
   ) => {
+    console.log('Testing stuff');
     const Tag = as || 'div';
     const selector = 'sknui-box';
     const jsxValue = process.env.NODE_ENV === 'test' ? 'true' : true;

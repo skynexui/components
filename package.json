@@ -15,9 +15,11 @@
   },
   "scripts": {
     "predev": "yarn prebuild",
+    "prebuild:watch": "yarn link",
     "test": "jest --no-cache",
     "prebuild": "rimraf dist && rimraf types",
-    "build": "yarn export:types && rollup -c && yarn export:docs",
+    "build:watch": "rollup -cw",
+    "build": "rollup -c",
     "release": "semantic-release",
     "release:github_registry": "node ./scripts/publishToGHRegistry.js",
     "dev": "start-storybook -p 6006",
