@@ -7,10 +7,10 @@ it('works', () => {
     <Box
       styleSheet={{
         backgroundColor: {
-          'Breakpoints.xs': 'red',
+          xs: 'red',
         },
         padding: {
-          'Breakpoints.xs': 10,
+          xs: 10,
         },
       }}
     >

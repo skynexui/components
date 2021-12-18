@@ -1,19 +1,26 @@
 import React from 'react';
 import { StyleSheet } from '@lib/core/stylesheet/stylesheet';
-import { Box } from '@lib/components/box/box';
+import { BoxBase } from '@lib/components/box/box-base';
 
 interface TextProps {
-  styleSheet?: StyleSheet;
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span' | 'li' | 'label';
   children: React.ReactNode;
+  styleSheet?: StyleSheet;
 }
-export function Text({ children, styleSheet }: TextProps): JSX.Element {
+export function Text({
+  as,
+  children,
+  styleSheet,
+  ...props
+}: TextProps): JSX.Element {
   return (
-    <Box styleSheet={styleSheet}>
-      <span>{children}</span>
-    </Box>
+    <BoxBase as={as} styleSheet={styleSheet} {...props}>
+      {children}
+    </BoxBase>
   );
 }
 
 Text.defaultProps = {
+  as: 'span',
   styleSheet: {},
 };

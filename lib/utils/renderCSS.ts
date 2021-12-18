@@ -24,15 +24,17 @@ export function renderCSS(props: any, currentBreakpoint: any) {
         .split(/(?=[A-Z])/)
         .join('-')
         .toLowerCase();
-      const cssPropValue = props[prop];
+      const cssPropValue = props[prop] || '';
       const isCssPropValueAnObject =
         Object.prototype.toString.call(cssPropValue) === '[object Object]';
-      const currentCssPropValue =
-        cssPropValue[`Breakpoints.${currentBreakpoint}`];
 
       if (currentBreakpoint === 'xs' && !isCssPropValueAnObject) {
         return renderCSSValue(cssPropName, cssPropValue);
       }
+
+      const currentCssPropValue =
+        cssPropValue[`Breakpoints.${currentBreakpoint}`] ||
+        cssPropValue[currentBreakpoint];
 
       if (currentCssPropValue) {
         return renderCSSValue(cssPropName, currentCssPropValue);

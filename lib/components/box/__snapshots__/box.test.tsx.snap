@@ -4,7 +4,8 @@ exports[`works 1`] = `
 <div>
   <main>
     <div
-      class="sknui-box  "
+      class="sknui-div"
+      value=""
     >
       Hello a
     </div>
@@ -12,56 +13,71 @@ exports[`works 1`] = `
       jsx="true"
     >
       
-          div.sknui-box {
+          div.sknui-div {
             background-color:red;padding:10;;
           }
-          div.sknui-box:hover {
+          div.sknui-div:hover:enabled {
             ;
           }
-          div.sknui-box:focus {
+          div.sknui-div:focus:enabled {
+            ;
+          }
+          div.sknui-div:disabled {
             ;
           }
           @media screen and (min-width: 480px) {
-            div.sknui-box {
+            div.sknui-div {
               ;
             }
-            div.sknui-box:hover {
+            div.sknui-div:hover:enabled {
               ;
             }
-            div.sknui-box:focus {
+            div.sknui-div:focus:enabled {
+              ;
+            }
+            div.sknui-div:disabled {
               ;
             }
           }
           @media screen and (min-width: 768px) {
-            div.sknui-box {
+            div.sknui-div {
               ;
             }
-            div.sknui-box:hover {
+            div.sknui-div:hover:enabled {
               ;
             }
-            div.sknui-box:focus {
+            div.sknui-div:focus:enabled {
+              ;
+            }
+            div.sknui-div:disabled {
               ;
             }
           }
           @media screen and (min-width: 992px) {
-            div.sknui-box {
+            div.sknui-div {
               ;
             }
-            div.sknui-box:hover {
+            div.sknui-div:hover:enabled {
               ;
             }
-            div.sknui-box:focus {
+            div.sknui-div:focus:enabled {
+              ;
+            }
+            div.sknui-div:disabled {
               ;
             }
           }
           @media screen and (min-width: 1200px) {
-            div.sknui-box {
+            div.sknui-div {
               ;
             }
-            div.sknui-box:hover {
+            div.sknui-div:hover:enabled {
               ;
             }
-            div.sknui-box:focus {
+            div.sknui-div:focus:enabled {
+              ;
+            }
+            div.sknui-div:disabled {
               ;
             }
           }

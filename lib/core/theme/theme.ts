@@ -1,3 +1,5 @@
+import { Breakpoints } from '@lib/core/breakpoints/breakpoints';
+
 const partition = {
   'x1/1': '100%',
   'x1/2': '50%',
@@ -78,11 +80,11 @@ const space = {
 
 export const theme = {
   breakpoints: {
-    'Breakpoints.xs': 0,
-    'Breakpoints.sm': 480,
-    'Breakpoints.md': 768,
-    'Breakpoints.lg': 992,
-    'Breakpoints.xl': 1200,
+    [Breakpoints.xs]: 0,
+    [Breakpoints.sm]: 480,
+    [Breakpoints.md]: 768,
+    [Breakpoints.lg]: 992,
+    [Breakpoints.xl]: 1200,
   },
   colors: {
     primary: {
