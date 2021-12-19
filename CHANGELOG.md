@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/skynexui/components/compare/v1.3.4...v1.4.0) (2021-12-19)
+
+
+### Features
+
+* add initial components ([49a64ac](https://github.com/skynexui/components/commit/49a64acfdc5e72c737cadbf566a6bf32857b57de))
+
 ## [1.3.4](https://github.com/skynexui/components/compare/v1.3.3...v1.3.4) (2021-12-17)
 
 
