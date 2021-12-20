@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/skynexui/components/compare/v1.4.0...v1.4.1) (2021-12-20)
+
+
+### Bug Fixes
+
+* add more customizations to the current version ([b60bab9](https://github.com/skynexui/components/commit/b60bab903c64956c338d633b2277c9ce0b4ee63a))
+
 # [1.4.0](https://github.com/skynexui/components/compare/v1.3.4...v1.4.0) (2021-12-19)
 
 
