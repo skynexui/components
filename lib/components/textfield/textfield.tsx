@@ -5,6 +5,7 @@ import { Text } from '@lib/components/text/text';
 import { BoxBase } from '@lib/components/box/box-base';
 
 interface TextFieldProps {
+  type?: 'textarea' | 'phone' | 'email' | 'password' | 'number' | 'text';
   styleSheet?: StyleSheet;
   maxLength?: number;
   value?: string;
@@ -13,18 +14,33 @@ interface TextFieldProps {
 export function TextField({
   maxLength,
   styleSheet: { width, ...styleSheet },
+  value,
   ...props
 }: TextFieldProps): JSX.Element {
   const hasCounterText = Boolean(maxLength);
+  const as = props.type === 'textarea' ? 'textarea' : 'input';
+  const hasOnChange = Boolean(props.onChange);
+
+  const valueProps = {
+    ...(hasOnChange && {
+      value,
+    }),
+    ...(!hasOnChange && {
+      defaultValue: value,
+    }),
+  };
+
   return (
     <Box
       styleSheet={{
+        fontSize: '0',
         width,
       }}
     >
       <BoxBase
-        as="input"
+        as={as}
         {...props}
+        {...valueProps}
         styleSheet={{
           outline: '0',
           width,
@@ -33,7 +49,7 @@ export function TextField({
       />
       {hasCounterText && (
         <Text>
-          {props.value.length}/{maxLength}
+          {value.length}/{maxLength}
         </Text>
       )}
     </Box>
@@ -41,10 +57,9 @@ export function TextField({
 }
 
 TextField.defaultProps = {
+  type: 'text',
   styleSheet: {},
-  value: '',
+  value: undefined,
   maxLength: undefined,
-  onChange: (): void => {
-    return undefined;
-  },
+  onChange: undefined,
 };

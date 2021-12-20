@@ -38,10 +38,10 @@ export const BoxBase = React.forwardRef(
           ${`${Tag}.${selector}`} {
             ${renderCSS(styleSheet, 'xs')};
           }
-          ${`${Tag}.${selector}`}:hover:enabled {
+          ${`${Tag}.${selector}`}:hover {
             ${renderCSS(hover, 'xs')};
           }
-          ${`${Tag}.${selector}`}:focus:enabled {
+          ${`${Tag}.${selector}`}:focus {
             ${renderCSS(focus, 'xs')};
           }
           ${`${Tag}.${selector}`}:disabled {
@@ -53,10 +53,10 @@ export const BoxBase = React.forwardRef(
             ${`${Tag}.${selector}`} {
               ${renderCSS(styleSheet, 'sm')};
             }
-            ${`${Tag}.${selector}`}:hover:enabled {
+            ${`${Tag}.${selector}`}:hover {
               ${renderCSS(hover, 'sm')};
             }
-            ${`${Tag}.${selector}`}:focus:enabled {
+            ${`${Tag}.${selector}`}:focus {
               ${renderCSS(focus, 'sm')};
             }
             ${`${Tag}.${selector}`}:disabled {
@@ -69,10 +69,10 @@ export const BoxBase = React.forwardRef(
             ${`${Tag}.${selector}`} {
               ${renderCSS(styleSheet, 'md')};
             }
-            ${`${Tag}.${selector}`}:hover:enabled {
+            ${`${Tag}.${selector}`}:hover {
               ${renderCSS(hover, 'md')};
             }
-            ${`${Tag}.${selector}`}:focus:enabled {
+            ${`${Tag}.${selector}`}:focus {
               ${renderCSS(focus, 'md')};
             }
             ${`${Tag}.${selector}`}:disabled {
@@ -85,10 +85,10 @@ export const BoxBase = React.forwardRef(
             ${`${Tag}.${selector}`} {
               ${renderCSS(styleSheet, 'lg')};
             }
-            ${`${Tag}.${selector}`}:hover:enabled {
+            ${`${Tag}.${selector}`}:hover {
               ${renderCSS(hover, 'lg')};
             }
-            ${`${Tag}.${selector}`}:focus:enabled {
+            ${`${Tag}.${selector}`}:focus {
               ${renderCSS(focus, 'lg')};
             }
             ${`${Tag}.${selector}`}:disabled {
@@ -101,10 +101,10 @@ export const BoxBase = React.forwardRef(
             ${`${Tag}.${selector}`} {
               ${renderCSS(styleSheet, 'xl')};
             }
-            ${`${Tag}.${selector}`}:hover:enabled {
+            ${`${Tag}.${selector}`}:hover {
               ${renderCSS(hover, 'xl')};
             }
-            ${`${Tag}.${selector}`}:focus:enabled {
+            ${`${Tag}.${selector}`}:focus {
               ${renderCSS(focus, 'xl')};
             }
             ${`${Tag}.${selector}`}:disabled {
@@ -121,6 +121,6 @@ BoxBase.defaultProps = {
   as: 'div',
   children: null,
   styleSheet: {},
-  value: '',
+  value: undefined,
   className: '',
 };

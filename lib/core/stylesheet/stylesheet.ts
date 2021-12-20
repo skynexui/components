@@ -4,6 +4,7 @@ type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   srOnly?: boolean;
+  fontSize?: ResponsiveProperty<string | number> | string;
   width?: ResponsiveProperty<string | number> | string;
   height?: ResponsiveProperty<string | number> | string;
   outline?: ResponsiveProperty<string> | string;
