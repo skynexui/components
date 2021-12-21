@@ -13,7 +13,17 @@ interface TextFieldProps {
 }
 export function TextField({
   maxLength,
-  styleSheet: { width, ...styleSheet },
+  styleSheet: {
+    width,
+    margin,
+    marginLeft,
+    marginRight,
+    marginBottom,
+    marginTop,
+    marginHorizontal,
+    marginVertical,
+    ...styleSheet
+  },
   value,
   ...props
 }: TextFieldProps): JSX.Element {
@@ -35,6 +45,13 @@ export function TextField({
       styleSheet={{
         fontSize: '0',
         width,
+        margin,
+        marginLeft,
+        marginRight,
+        marginBottom,
+        marginTop,
+        marginHorizontal,
+        marginVertical,
       }}
     >
       <BoxBase

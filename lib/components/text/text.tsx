@@ -14,7 +14,8 @@ interface TextProps {
     | 'span'
     | 'li'
     | 'label'
-    | 'a';
+    | 'a'
+    | 'strong';
   children: React.ReactNode;
   styleSheet?: StyleSheet;
 }

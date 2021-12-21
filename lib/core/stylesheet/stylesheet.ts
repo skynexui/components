@@ -17,6 +17,12 @@ export interface StyleSheet {
   backgroundColor?: ResponsiveProperty<string> | string;
   padding?: ResponsiveProperty<number | string>;
   margin?: ResponsiveProperty<number | string> | string;
+  marginLeft?: ResponsiveProperty<number | string> | string;
+  marginRight?: ResponsiveProperty<number | string> | string;
+  marginBottom?: ResponsiveProperty<number | string> | string;
+  marginTop?: ResponsiveProperty<number | string> | string;
+  marginHorizontal?: ResponsiveProperty<number | string> | string;
+  marginVertical?: ResponsiveProperty<number | string> | string;
   opacity?: ResponsiveProperty<number | string> | string;
   flex?: ResponsiveProperty<number> | number;
   textAlign?: ResponsiveProperty<string> | string;
