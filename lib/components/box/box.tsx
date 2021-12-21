@@ -3,7 +3,7 @@ import { StyleSheet } from '@lib/core/stylesheet/stylesheet';
 import { BoxBase } from '@lib/components/box/box-base';
 
 interface BoxProps {
-  as?:
+  tag?:
     | 'form' // Prefer to use the <Form /> component instead.
     | 'div'
     | 'ul'
@@ -19,12 +19,12 @@ interface BoxProps {
   ref: Ref<unknown>;
 }
 
-export const Box = React.forwardRef((props: BoxProps, ref) => {
-  return <BoxBase {...props} ref={ref} />;
+export const Box = React.forwardRef(({ tag, ...props }: BoxProps, ref) => {
+  return <BoxBase as={tag} {...props} ref={ref} />;
 });
 
 Box.defaultProps = {
-  as: 'div',
+  tag: 'div',
   styleSheet: {},
   className: '',
 };

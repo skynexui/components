@@ -1,9 +1,12 @@
 import React from 'react';
 import { StyleSheet } from '@lib/core/stylesheet/stylesheet';
 import { BoxBase } from '@lib/components/box/box-base';
+import { TypographyVariants } from '@lib/core/typography/typography';
+import { theme } from '@lib/core/theme/theme';
 
 interface TextProps {
-  as?:
+  variant?: keyof typeof TypographyVariants;
+  tag?:
     | 'h1'
     | 'h2'
     | 'h3'
@@ -20,19 +23,32 @@ interface TextProps {
   styleSheet?: StyleSheet;
 }
 export function Text({
-  as,
+  tag,
   children,
   styleSheet,
+  variant,
   ...props
 }: TextProps): JSX.Element {
+  const { variants } = theme.typography;
+  const currentVariant = variants[variant];
+
   return (
-    <BoxBase as={as} styleSheet={styleSheet} {...props}>
+    <BoxBase
+      as={tag}
+      styleSheet={{
+        fontFamily: theme.typography.fontFamily,
+        ...currentVariant,
+        ...styleSheet,
+      }}
+      {...props}
+    >
       {children}
     </BoxBase>
   );
 }
 
 Text.defaultProps = {
-  as: 'span',
+  variant: 'body2',
+  tag: 'span',
   styleSheet: {},
 };
