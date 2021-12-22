@@ -1,5 +1,5 @@
 /* eslint-disable react/button-has-type */
-import React, { ChangeEventHandler } from 'react';
+import React from 'react';
 import { StyleSheet } from '@lib/core/stylesheet/stylesheet';
 import { BoxBase } from '@lib/components/box/box-base';
 import { TypographyVariants } from '@lib/core/typography/typography';

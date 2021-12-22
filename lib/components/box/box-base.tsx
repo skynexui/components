@@ -12,8 +12,8 @@ interface BoxProps {
   className?: string;
   styleSheet?: StyleSheet;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  ref: Ref<any>;
-  onClick: unknown;
+  ref?: Ref<any>;
+  onClick?: unknown;
 }
 
 export const BoxBase = React.forwardRef(
@@ -124,4 +124,6 @@ BoxBase.defaultProps = {
   styleSheet: {},
   value: undefined,
   className: '',
+  ref: undefined,
+  onClick: undefined,
 };
