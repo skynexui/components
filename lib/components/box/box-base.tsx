@@ -13,6 +13,7 @@ interface BoxProps {
   styleSheet?: StyleSheet;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ref: Ref<any>;
+  onClick: unknown;
 }
 
 export const BoxBase = React.forwardRef(

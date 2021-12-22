@@ -1,11 +1,11 @@
 /* eslint-disable react/button-has-type */
 import React, { ChangeEventHandler } from 'react';
-import Ripples from 'react-ripples';
 import { StyleSheet } from '@lib/core/stylesheet/stylesheet';
 import { BoxBase } from '@lib/components/box/box-base';
 import { TypographyVariants } from '@lib/core/typography/typography';
 import { Text } from '@lib/components/text/text';
 import { theme } from '@lib/core/theme/theme';
+import { useRipples } from './ripples/ripples';
 
 // TODO: Move it to the theme
 const buttonVariantToStyle = {
@@ -102,6 +102,7 @@ const buttonSizes = {
 };
 
 interface ButtonProps {
+  fullWidth?: boolean;
   variant?: 'primary' | 'secondary' | 'tertiary';
   buttonColors?: ButtonColorValues;
   colorVariant?:
@@ -118,15 +119,18 @@ interface ButtonProps {
   disabled?: boolean;
   styleSheet?: StyleSheet;
   label: string;
-  onClick?: ChangeEventHandler<HTMLInputElement>;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 export function Button({
   label,
   styleSheet,
   colorVariant,
   buttonColors,
+  fullWidth,
+  onClick,
   ...props
 }: ButtonProps): JSX.Element {
+  const { onClickRipple, rippleStyle } = useRipples();
   const borderRadius = rounded[props.rounded];
   const { textVariant, ...buttonSize } = buttonSizes[props.size];
   const colorSet = (() => {
@@ -165,51 +169,57 @@ export function Button({
     buttonStyles[buttonVariantToStyle[props.variant]](colorSet);
 
   return (
-    <Ripples during={1000} color="rgba(255,255,255,0.2)">
-      <BoxBase
-        as="button"
+    <BoxBase
+      as="button"
+      styleSheet={{
+        ...buttonSize,
+        ...buttonStyle,
+        width: fullWidth ? '100%' : 'initial',
+        borderRadius,
+        cursor: 'pointer',
+        outline: '0',
+        transition: '.2s ease-in-out',
+        border: '1px solid transparent',
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        position: 'relative',
+        ...styleSheet,
+        disabled: {
+          ...styleSheet.disabled,
+          cursor: 'not-allowed',
+          opacity: '.65',
+        },
+        hover: {
+          ...buttonStyle.hover,
+          ...styleSheet.hover,
+        },
+        focus: {
+          ...buttonStyle.focus,
+          ...styleSheet.focus,
+        },
+      }}
+      onClick={(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        onClick(event);
+        onClickRipple(event);
+      }}
+      {...props}
+    >
+      <Text
+        variant={textVariant as TypographyVariants}
         styleSheet={{
-          ...buttonSize,
-          ...buttonStyle,
-          transition: '.2s ease-in-out',
-          borderRadius,
-          display: 'inline-flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          outline: '0',
-          border: '1px solid transparent',
-          cursor: 'pointer',
-          ...styleSheet,
-          disabled: {
-            ...styleSheet.disabled,
-            cursor: 'not-allowed',
-            opacity: '.65',
-          },
-          hover: {
-            ...buttonStyle.hover,
-            ...styleSheet.hover,
-          },
-          focus: {
-            ...buttonStyle.focus,
-            ...styleSheet.focus,
-          },
+          color: 'inherit',
         }}
-        {...props}
       >
-        <Text
-          variant={textVariant as TypographyVariants}
-          styleSheet={{
-            color: 'inherit',
-          }}
-        >
-          {label}
-        </Text>
-      </BoxBase>
-    </Ripples>
+        {label}
+      </Text>
+      <s style={rippleStyle as unknown} />
+    </BoxBase>
   );
 }
 
 Button.defaultProps = {
+  fullWidth: false,
   variant: 'primary',
   colorVariant: 'primary',
   rounded: 'sm',
@@ -218,7 +228,5 @@ Button.defaultProps = {
   buttonColors: undefined,
   disabled: false,
   styleSheet: { hover: {}, focus: {}, disabled: {} },
-  onClick: (): void => {
-    return undefined;
-  },
+  onClick: (): void => undefined,
 };
