@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/skynexui/components/compare/v1.4.2...v1.5.0) (2021-12-22)
+
+
+### Bug Fixes
+
+* add ripple to buttons ([0742fc4](https://github.com/skynexui/components/commit/0742fc418c4539c5f236f72ac15857bdc2fc9c20))
+
+
+### Features
+
+* add button support ([f71504a](https://github.com/skynexui/components/commit/f71504a28806f7e76e47cc1a2bee290f68af125c))
+
 ## [1.4.2](https://github.com/skynexui/components/compare/v1.4.1...v1.4.2) (2021-12-21)
 
 
