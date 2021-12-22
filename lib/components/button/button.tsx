@@ -1,5 +1,6 @@
 /* eslint-disable react/button-has-type */
 import React, { ChangeEventHandler } from 'react';
+import Ripples from 'react-ripples';
 import { StyleSheet } from '@lib/core/stylesheet/stylesheet';
 import { BoxBase } from '@lib/components/box/box-base';
 import { TypographyVariants } from '@lib/core/typography/typography';
@@ -49,21 +50,17 @@ const buttonStyles = {
       backgroundColor: mainColor,
     },
   }),
-  ghost: ({
-    mainColor,
-    mainColorStrong,
-    contrastColor,
-  }: ButtonColorValues) => ({
+  ghost: ({ mainColor, mainColorLight, contrastColor }: ButtonColorValues) => ({
     color: mainColor,
     borderColor: 'transparent',
     backgroundColor: 'transparent',
     hover: {
       color: contrastColor,
-      backgroundColor: mainColorStrong,
+      backgroundColor: mainColorLight,
     },
     focus: {
       color: contrastColor,
-      backgroundColor: mainColorStrong,
+      backgroundColor: mainColorLight,
     },
   }),
 } as const;
@@ -168,45 +165,47 @@ export function Button({
     buttonStyles[buttonVariantToStyle[props.variant]](colorSet);
 
   return (
-    <BoxBase
-      as="button"
-      styleSheet={{
-        ...buttonSize,
-        ...buttonStyle,
-        transition: '.2s ease-in-out',
-        borderRadius,
-        display: 'inline-flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        outline: '0',
-        border: '1px solid transparent',
-        cursor: 'pointer',
-        ...styleSheet,
-        disabled: {
-          ...styleSheet.disabled,
-          cursor: 'not-allowed',
-          opacity: '.65',
-        },
-        hover: {
-          ...buttonStyle.hover,
-          ...styleSheet.hover,
-        },
-        focus: {
-          ...buttonStyle.focus,
-          ...styleSheet.focus,
-        },
-      }}
-      {...props}
-    >
-      <Text
-        variant={textVariant as TypographyVariants}
+    <Ripples during={1000} color="rgba(255,255,255,0.2)">
+      <BoxBase
+        as="button"
         styleSheet={{
-          color: 'inherit',
+          ...buttonSize,
+          ...buttonStyle,
+          transition: '.2s ease-in-out',
+          borderRadius,
+          display: 'inline-flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          outline: '0',
+          border: '1px solid transparent',
+          cursor: 'pointer',
+          ...styleSheet,
+          disabled: {
+            ...styleSheet.disabled,
+            cursor: 'not-allowed',
+            opacity: '.65',
+          },
+          hover: {
+            ...buttonStyle.hover,
+            ...styleSheet.hover,
+          },
+          focus: {
+            ...buttonStyle.focus,
+            ...styleSheet.focus,
+          },
         }}
+        {...props}
       >
-        {label}
-      </Text>
-    </BoxBase>
+        <Text
+          variant={textVariant as TypographyVariants}
+          styleSheet={{
+            color: 'inherit',
+          }}
+        >
+          {label}
+        </Text>
+      </BoxBase>
+    </Ripples>
   );
 }
 
