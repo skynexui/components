@@ -12,7 +12,7 @@ Button is the component that you use, for get user taps and clicks.
 <Canvas>
   <Story
     name="Button Component"
-    args={{ label: 'Button Component', ...Button.defaultProps }}
+    args={{ ...Button.defaultProps, label: 'Button Component' }}
   >
     {(args) => <Button {...args} />}
   </Story>
@@ -36,5 +36,28 @@ Button is the component that you use, for get user taps and clicks.
         {...args}
       />
     )}
+  </Story>
+</Canvas>
+
+## With icon and label
+
+<Canvas>
+  <Story
+    name="Button Component with icon and label"
+    args={{ ...Button.defaultProps, label: 'Button Component', iconName: 'github' }}
+  >
+    {(args) => <Button {...args} />}
+  </Story>
+</Canvas>
+
+
+## With icon only
+
+<Canvas>
+  <Story
+    name="Button Component with icon only"
+    args={{ ...Button.defaultProps, iconName: 'arrowRight' }}
+  >
+    {(args) => <Button {...args} />}
   </Story>
 </Canvas>

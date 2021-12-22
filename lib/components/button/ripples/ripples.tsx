@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const useRipples = () => {
-  const during = 1000;
+  const during = 600;
   const color = 'rgba(255, 255, 255, 0.5)';
   const [rippleStyle, setRippleStyle] = React.useState({
     backgroundColor: color,

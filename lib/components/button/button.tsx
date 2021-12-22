@@ -5,6 +5,7 @@ import { BoxBase } from '@lib/components/box/box-base';
 import { TypographyVariants } from '@lib/core/typography/typography';
 import { Text } from '@lib/components/text/text';
 import { theme } from '@lib/core/theme/theme';
+import { Icon } from '@lib/components/icon/icon';
 import { useRipples } from './ripples/ripples';
 
 // TODO: Move it to the theme
@@ -102,6 +103,7 @@ const buttonSizes = {
 };
 
 interface ButtonProps {
+  iconName?: string;
   fullWidth?: boolean;
   variant?: 'primary' | 'secondary' | 'tertiary';
   buttonColors?: ButtonColorValues;
@@ -128,6 +130,7 @@ export function Button({
   buttonColors,
   fullWidth,
   onClick,
+  iconName,
   ...props
 }: ButtonProps): JSX.Element {
   const { onClickRipple, rippleStyle } = useRipples();
@@ -168,6 +171,8 @@ export function Button({
   const buttonStyle =
     buttonStyles[buttonVariantToStyle[props.variant]](colorSet);
 
+  const isCircularButton = iconName && !label;
+
   return (
     <BoxBase
       as="button"
@@ -198,6 +203,12 @@ export function Button({
           ...buttonStyle.focus,
           ...styleSheet.focus,
         },
+        ...(isCircularButton && {
+          borderRadius: '50%',
+          padding: '0',
+          width: '48px',
+          height: '48px',
+        }),
       }}
       onClick={(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         onClick(event);
@@ -213,12 +224,21 @@ export function Button({
       >
         {label}
       </Text>
+      {iconName && (
+        <Icon
+          name={iconName as unknown as never}
+          styleSheet={{
+            marginLeft: isCircularButton ? '0' : '16px',
+          }}
+        />
+      )}
       <s style={rippleStyle as unknown} />
     </BoxBase>
   );
 }
 
 Button.defaultProps = {
+  iconName: undefined,
   fullWidth: false,
   variant: 'primary',
   colorVariant: 'primary',

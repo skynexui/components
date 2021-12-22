@@ -18,7 +18,7 @@ export interface StyleSheet {
   color?: ResponsiveProperty<string> | string;
   border?: ResponsiveProperty<string> | string;
   backgroundColor?: ResponsiveProperty<string> | string;
-  padding?: ResponsiveProperty<number | string>;
+  padding?: ResponsiveProperty<number | string> | string;
   margin?: ResponsiveProperty<number | string> | string;
   marginLeft?: ResponsiveProperty<number | string> | string;
   marginRight?: ResponsiveProperty<number | string> | string;

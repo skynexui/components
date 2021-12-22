@@ -21,7 +21,6 @@ export function Icon({ name, styleSheet, ...props }: IconProps): JSX.Element {
   return (
     <BoxBase
       styleSheet={{
-        color: 'red',
         width: size,
         height: size,
         ...styleSheet,
@@ -44,6 +43,6 @@ Icon.defaultProps = {
   className: '',
   size: '1.6ch',
   styleSheet: {
-    color: 'red',
+    color: 'currentColor',
   },
 };
