@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/skynexui/components/compare/v1.6.0...v1.7.0) (2021-12-22)
+
+
+### Features
+
+* add support to circular button ([4af16a1](https://github.com/skynexui/components/commit/4af16a1f043fe6c23a45c5dff5c55296554ad717))
+
 # [1.6.0](https://github.com/skynexui/components/compare/v1.5.0...v1.6.0) (2021-12-22)
 
 
