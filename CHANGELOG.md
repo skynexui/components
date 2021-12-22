@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/skynexui/components/compare/v1.5.0...v1.6.0) (2021-12-22)
+
+
+### Bug Fixes
+
+* ripple effect ([3cbeae3](https://github.com/skynexui/components/commit/3cbeae3c2ceb2f6c34755a11512e494e1c2a5bb4))
+
+
+### Features
+
+* add icon component ([a4476af](https://github.com/skynexui/components/commit/a4476af7fcf04e3ccf2ea6b9cc0e203fb36d8157))
+
 # [1.5.0](https://github.com/skynexui/components/compare/v1.4.2...v1.5.0) (2021-12-22)
 
 
