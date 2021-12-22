@@ -1,4 +1,4 @@
-export enum TypographyVariants {
+enum Typography {
   display1 = 'display1',
   heading1 = 'heading1',
   heading2 = 'heading2',
@@ -10,3 +10,5 @@ export enum TypographyVariants {
   body3 = 'body3',
   body4 = 'body4',
 }
+
+export type TypographyVariants = keyof typeof Typography;

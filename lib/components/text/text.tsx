@@ -5,7 +5,7 @@ import { TypographyVariants } from '@lib/core/typography/typography';
 import { theme } from '@lib/core/theme/theme';
 
 interface TextProps {
-  variant?: keyof typeof TypographyVariants;
+  variant?: TypographyVariants;
   tag?:
     | 'h1'
     | 'h2'

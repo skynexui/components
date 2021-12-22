@@ -1,0 +1,37 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Button } from '@lib/components';
+
+<Meta title="Components/Button" component={Button} />
+
+# Button
+
+Button is the component that you use, for get user taps and clicks.
+
+<ArgsTable of={Button} />
+
+<Canvas>
+  <Story
+    name="Button Component"
+    args={{ label: 'Button Component', ...Button.defaultProps }}
+  >
+    {(args) => <Button {...args} />}
+  </Story>
+</Canvas>
+
+## With custom buttonColors
+
+<Canvas>
+  <Story name="Button Component with buttonColors">
+    <Button
+      variant="secondary"
+      size="xl"
+      label="Button Component with provided colors"
+      buttonColors={{
+        contrastColor: '#FFFFFF',
+        mainColor: '#C65D21',
+        mainColorLight: '#E67635',
+        mainColorStrong: '#AB4E19',
+      }}
+    />
+  </Story>
+</Canvas>
