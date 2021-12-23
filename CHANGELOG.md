@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/skynexui/components/compare/v1.7.0...v1.7.1) (2021-12-23)
+
+
+### Bug Fixes
+
+* small ripple adjustsments ([011ba95](https://github.com/skynexui/components/commit/011ba951dd7b1c90c8a109b57226316fb26448f8))
+
 # [1.7.0](https://github.com/skynexui/components/compare/v1.6.0...v1.7.0) (2021-12-22)
 
 
