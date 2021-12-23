@@ -179,6 +179,7 @@ export function Button({
       styleSheet={{
         ...buttonSize,
         ...buttonStyle,
+        overflow: 'hidden',
         width: fullWidth ? '100%' : 'initial',
         borderRadius,
         cursor: 'pointer',
