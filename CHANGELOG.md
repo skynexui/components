@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/skynexui/components/compare/v1.8.0...v1.9.0) (2021-12-24)
+
+
+### Features
+
+* add link support to button component ([25f973f](https://github.com/skynexui/components/commit/25f973f92b75e551f8960c8c156bd14ed23639c3))
+
 # [1.8.0](https://github.com/skynexui/components/compare/v1.7.1...v1.8.0) (2021-12-24)
 
 
