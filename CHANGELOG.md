@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/skynexui/components/compare/v1.7.1...v1.8.0) (2021-12-24)
+
+
+### Features
+
+* add support to textfield ([5cb8289](https://github.com/skynexui/components/commit/5cb828963853272c8e99a412b811fb9a44453e16))
+
 ## [1.7.1](https://github.com/skynexui/components/compare/v1.7.0...v1.7.1) (2021-12-23)
 
 
