@@ -180,7 +180,7 @@ export function Button({
         ...buttonSize,
         ...buttonStyle,
         overflow: 'hidden',
-        width: fullWidth ? '100%' : 'initial',
+        width: fullWidth ? '100%' : styleSheet.width,
         borderRadius,
         cursor: 'pointer',
         outline: '0',

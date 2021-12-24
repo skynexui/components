@@ -18,7 +18,9 @@ interface TextProps {
     | 'li'
     | 'label'
     | 'a'
-    | 'strong';
+    | 'strong'
+    | 'label';
+  htmlFor?: string;
   children: React.ReactNode;
   styleSheet?: StyleSheet;
 }
@@ -48,6 +50,7 @@ export function Text({
 }
 
 Text.defaultProps = {
+  htmlFor: '',
   variant: 'body2',
   tag: 'span',
   styleSheet: {},

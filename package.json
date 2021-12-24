@@ -41,6 +41,7 @@
     "react-ripples": "^2.2.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.5",
     "@babel/core": "7.16.0",
     "@babel/preset-env": "7.16.4",
     "@babel/preset-react": "7.16.0",
@@ -56,10 +57,10 @@
     "@semantic-release/github": "7.0.7",
     "@semantic-release/npm": "7.0.5",
     "@semantic-release/release-notes-generator": "9.0.1",
-    "@storybook/addon-actions": "^6.4.8",
-    "@storybook/addon-essentials": "^6.4.8",
-    "@storybook/addon-links": "^6.4.8",
-    "@storybook/react": "^6.4.8",
+    "@storybook/addon-actions": "6.4.9",
+    "@storybook/addon-essentials": "6.4.9",
+    "@storybook/addon-links": "6.4.9",
+    "@storybook/react": "6.4.9",
     "@types/jest": "^27.0.3",
     "@types/react": "17.0.18",
     "@typescript-eslint/eslint-plugin": "^5.7.0",

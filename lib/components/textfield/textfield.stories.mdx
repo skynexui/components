@@ -1,0 +1,43 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import { TextField } from '@lib/components';
+
+<Meta title="Components/TextField" component={TextField} />
+
+# TextField
+
+TextField component explains itself.
+
+<ArgsTable of={TextField} />
+
+<Canvas>
+  <Story
+    name="TextField Component"
+    args={{
+      ...TextField.defaultProps,
+      onChange: undefined,
+      label: 'Label',
+      placeholder: 'Placeholder text...',
+      value: '',
+      styleSheet: {}
+    }}
+  >
+    {(args) => <TextField {...args} />}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="TextField Component typpe: textarea"
+    args={{
+      ...TextField.defaultProps,
+      onChange: undefined,
+      label: 'Label',
+      type: 'textarea',
+      placeholder: 'Placeholder text...',
+      value: '',
+      styleSheet: {}
+    }}
+  >
+    {(args) => <TextField {...args} />}
+  </Story>
+</Canvas>

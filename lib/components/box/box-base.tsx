@@ -7,7 +7,10 @@ import { Breakpoints } from '@lib/core/breakpoints/breakpoints';
 interface BoxProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   as?: any;
+  id?: string;
+  name?: string;
   value?: string;
+  placeholder?: string;
   children?: React.ReactNode;
   className?: string;
   styleSheet?: StyleSheet;
@@ -123,7 +126,10 @@ BoxBase.defaultProps = {
   children: null,
   styleSheet: {},
   value: undefined,
+  placeholder: undefined,
   className: '',
+  name: '',
+  id: '',
   ref: undefined,
   onClick: undefined,
 };

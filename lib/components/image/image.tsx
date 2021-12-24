@@ -1,12 +1,11 @@
 /* eslint-disable react/button-has-type */
-import React, { ChangeEventHandler } from 'react';
+import React from 'react';
 import { StyleSheet } from '@lib/core/stylesheet/stylesheet';
 import { BoxBase } from '@lib/components/box/box-base';
 
 interface ImageProps {
   src?: string;
   styleSheet?: StyleSheet;
-  onClick?: ChangeEventHandler<HTMLInputElement>;
 }
 export function Image({ styleSheet, ...props }: ImageProps): JSX.Element {
   return (
@@ -26,7 +25,4 @@ export function Image({ styleSheet, ...props }: ImageProps): JSX.Element {
 Image.defaultProps = {
   src: '',
   styleSheet: {},
-  onClick: (): void => {
-    return undefined;
-  },
 };
