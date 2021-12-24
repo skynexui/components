@@ -1,3 +1,10 @@
+## [1.9.2](https://github.com/skynexui/components/compare/v1.9.1...v1.9.2) (2021-12-24)
+
+
+### Bug Fixes
+
+* textdecoration in button as link ([afa134e](https://github.com/skynexui/components/commit/afa134ef2f2bd853813f3e4fda97e16417ac759a))
+
 ## [1.9.1](https://github.com/skynexui/components/compare/v1.9.0...v1.9.1) (2021-12-24)
 
 
