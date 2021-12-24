@@ -6,15 +6,36 @@ import { BoxBase } from '@lib/components/box/box-base';
 import { theme } from '@lib/core/theme/theme';
 
 const textFieldSizes = {
-  xs: '12px',
-  sm: '14px',
-  md: '14px',
-  lg: '16px',
-  xl: '18px',
+  xs: {
+    fontSize: '12px',
+    paddingVertical: '8px',
+    paddingHorizontal: '12px',
+  },
+  sm: {
+    fontSize: '14px',
+    paddingVertical: '8px',
+    paddingHorizontal: '12px',
+  },
+  md: {
+    fontSize: '14px',
+    paddingVertical: '12px',
+    paddingHorizontal: '16px',
+  },
+  lg: {
+    fontSize: '16px',
+    paddingVertical: '8px',
+    paddingHorizontal: '12px',
+  },
+  xl: {
+    fontSize: '18px',
+    paddingVertical: '8px',
+    paddingHorizontal: '12px',
+  },
 };
 
 interface TextFieldColorSet {
   mainColor?: string;
+  mainColorHighlight?: string;
   textColor?: string;
   backgroundColor?: string;
 }
@@ -32,6 +53,8 @@ interface TextFieldStyleProps {
   borderRadius?: string;
   mainColor?: unknown;
   fontSize?: unknown;
+  paddingVertical?: unknown;
+  paddingHorizontal?: unknown;
   textColor?: unknown;
 }
 const textFieldStyles = {
@@ -39,6 +62,8 @@ const textFieldStyles = {
     status,
     borderRadius,
     fontSize,
+    paddingHorizontal,
+    paddingVertical,
     textFieldColors,
   }: TextFieldStyleProps) => {
     return {
@@ -59,8 +84,14 @@ const textFieldStyles = {
         borderColor: textFieldColors[status].mainColor,
         fontSize,
         borderRadius,
-        paddingHorizontal: '12px',
-        paddingVertical: '8px',
+        paddingVertical,
+        paddingHorizontal,
+        hover: {
+          borderColor: textFieldColors[status].mainColorHighlight,
+        },
+        focus: {
+          borderColor: textFieldColors[status].mainColorHighlight,
+        },
       },
       validationMessage: {
         fontSize,
@@ -90,6 +121,12 @@ const textFieldStyles = {
         borderBottomColor: textFieldColors[status].mainColor,
         fontSize,
         paddingVertical: '8px',
+        hover: {
+          borderColor: textFieldColors[status].mainColorHighlight,
+        },
+        focus: {
+          borderColor: textFieldColors[status].mainColorHighlight,
+        },
       },
       validationMessage: {
         fontSize,
@@ -172,7 +209,9 @@ export function TextField({
   const hasOnChange = Boolean(props.onChange);
   const styles = textFieldStyles[variant]({
     status,
-    fontSize: textFieldSize,
+    fontSize: textFieldSize.fontSize,
+    paddingVertical: textFieldSize.paddingVertical,
+    paddingHorizontal: textFieldSize.paddingHorizontal,
     borderRadius,
     textFieldColors,
   });
@@ -216,6 +255,7 @@ export function TextField({
           placeholder={fieldPlaceholder}
           styleSheet={{
             ...styles.textField,
+            borderStyle: 'solid',
             resize: 'none',
             width: '100%',
             display: 'block',
@@ -278,16 +318,19 @@ TextField.defaultProps = {
     neutral: {
       backgroundColor: theme.colors.neutral['000'],
       mainColor: theme.colors.neutral['300'],
+      mainColorHighlight: theme.colors.primary['500'],
       textColor: theme.colors.neutral['900'],
     },
     positive: {
       backgroundColor: theme.colors.neutral['000'],
       mainColor: theme.colors.positive['300'],
+      mainColorHighlight: theme.colors.positive['500'],
       textColor: theme.colors.positive['900'],
     },
     negative: {
       backgroundColor: theme.colors.neutral['000'],
       mainColor: theme.colors.negative['300'],
+      mainColorHighlight: theme.colors.negative['500'],
       textColor: theme.colors.negative['900'],
     },
   },
