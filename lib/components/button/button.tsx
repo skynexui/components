@@ -1,5 +1,6 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
+import { useRouter } from 'next/router';
 import { StyleSheet } from '@lib/core/stylesheet/stylesheet';
 import { BoxBase } from '@lib/components/box/box-base';
 import { TypographyVariants } from '@lib/core/typography/typography';
@@ -104,6 +105,7 @@ const buttonSizes = {
 
 interface ButtonProps {
   iconName?: string;
+  href?: string;
   fullWidth?: boolean;
   variant?: 'primary' | 'secondary' | 'tertiary';
   buttonColors?: ButtonColorValues;
@@ -133,6 +135,10 @@ export function Button({
   iconName,
   ...props
 }: ButtonProps): JSX.Element {
+  const isLink = Boolean(props.href);
+  const Tag = isLink ? 'a' : 'button';
+  const openInNewTab = props.href && props.href.startsWith('http');
+  const router = useRouter();
   const { onClickRipple, rippleStyle } = useRipples();
   const borderRadius = rounded[props.rounded];
   const { textVariant, ...buttonSize } = buttonSizes[props.size];
@@ -175,7 +181,8 @@ export function Button({
 
   return (
     <BoxBase
-      as="button"
+      as={Tag}
+      target={openInNewTab ? '_blank' : undefined}
       styleSheet={{
         ...buttonSize,
         ...buttonStyle,
@@ -211,9 +218,17 @@ export function Button({
           height: '48px',
         }),
       }}
+      onMouseDown={onClickRipple}
       onClick={(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         onClick(event);
-        onClickRipple(event);
+        if (isLink && props.href.startsWith('/')) {
+          event.preventDefault();
+          router?.push(props.href);
+          if (process.env.STORYBOOK) {
+            // eslint-disable-next-line no-alert
+            alert('Internal routing! Only supports Next.JS');
+          }
+        }
       }}
       {...props}
     >
@@ -241,6 +256,7 @@ export function Button({
 Button.defaultProps = {
   iconName: undefined,
   fullWidth: false,
+  href: '',
   variant: 'primary',
   colorVariant: 'primary',
   rounded: 'sm',

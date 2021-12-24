@@ -61,3 +61,25 @@ Button is the component that you use, for get user taps and clicks.
     {(args) => <Button {...args} />}
   </Story>
 </Canvas>
+
+## With link external
+
+<Canvas>
+  <Story
+    name="Button Component with link external"
+    args={{ ...Button.defaultProps, label: 'Link to https://google.com', href: 'https://google.com' }}
+  >
+    {(args) => <Button {...args} />}
+  </Story>
+</Canvas>
+
+## With link internal
+
+<Canvas>
+  <Story
+    name="Button Component with link internal"
+    args={{ ...Button.defaultProps, label: 'Link to /', href: '/' }}
+  >
+    {(args) => <Button {...args} />}
+  </Story>
+</Canvas>

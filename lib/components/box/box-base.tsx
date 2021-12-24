@@ -10,12 +10,14 @@ interface BoxProps {
   id?: string;
   name?: string;
   value?: string;
+  target?: string;
   placeholder?: string;
   children?: React.ReactNode;
   className?: string;
   styleSheet?: StyleSheet;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ref?: Ref<any>;
+  onMouseDown?: unknown;
   onClick?: unknown;
 }
 
@@ -128,8 +130,10 @@ BoxBase.defaultProps = {
   value: undefined,
   placeholder: undefined,
   className: '',
+  target: '',
   name: '',
   id: '',
   ref: undefined,
   onClick: undefined,
+  onMouseDown: undefined,
 };
