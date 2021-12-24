@@ -11,7 +11,11 @@
     "components": {
       "provider.mdx": "provider.stories.mdx",
       "box.mdx": "box.stories.mdx",
-      "text.mdx": "text.stories.mdx"
+      "text.mdx": "text.stories.mdx",
+      "button.mdx": "button.stories.mdx",
+      "textfield.mdx": "textfield.stories.mdx",
+      "icon.mdx": "icon.stories.mdx",
+      "image.mdx": "image.stories.mdx"
     },
     "theme": {
       "meta.json": {
