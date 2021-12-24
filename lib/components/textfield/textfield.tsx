@@ -106,6 +106,7 @@ const textFieldStyles = {
   bottomBorder: ({
     status,
     fontSize,
+    paddingVertical,
     textFieldColors,
   }: TextFieldStyleProps) => {
     return {
@@ -120,7 +121,7 @@ const textFieldStyles = {
         color: textFieldColors[status].textColor,
         borderBottomColor: textFieldColors[status].mainColor,
         fontSize,
-        paddingVertical: '8px',
+        paddingVertical,
         hover: {
           borderColor: textFieldColors[status].mainColorHighlight,
         },
