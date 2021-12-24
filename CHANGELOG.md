@@ -1,3 +1,10 @@
+## [1.9.4](https://github.com/skynexui/components/compare/v1.9.3...v1.9.4) (2021-12-24)
+
+
+### Bug Fixes
+
+* adjust size of sizes insite textfield ([9487e6f](https://github.com/skynexui/components/commit/9487e6f19b19175b50409c97bf0199b1b220c559))
+
 ## [1.9.3](https://github.com/skynexui/components/compare/v1.9.2...v1.9.3) (2021-12-24)
 
 
