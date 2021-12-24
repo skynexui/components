@@ -23,13 +23,13 @@ const textFieldSizes = {
   },
   lg: {
     fontSize: '16px',
-    paddingVertical: '8px',
-    paddingHorizontal: '12px',
+    paddingVertical: '12px',
+    paddingHorizontal: '16px',
   },
   xl: {
     fontSize: '18px',
-    paddingVertical: '8px',
-    paddingHorizontal: '12px',
+    paddingVertical: '16px',
+    paddingHorizontal: '20px',
   },
 };
 
