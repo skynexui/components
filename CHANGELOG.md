@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/skynexui/components/compare/v1.9.0...v1.9.1) (2021-12-24)
+
+
+### Bug Fixes
+
+* update docs manager ([6a9ca5b](https://github.com/skynexui/components/commit/6a9ca5b6d8371493b4232d9b1b008b92d82b6fcd))
+
 # [1.9.0](https://github.com/skynexui/components/compare/v1.8.0...v1.9.0) (2021-12-24)
 
 
