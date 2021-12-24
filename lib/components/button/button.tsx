@@ -186,6 +186,7 @@ export function Button({
       styleSheet={{
         ...buttonSize,
         ...buttonStyle,
+        textDecoration: 'none',
         overflow: 'hidden',
         width: fullWidth ? '100%' : styleSheet.width,
         borderRadius,
