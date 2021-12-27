@@ -1,3 +1,10 @@
+## [1.9.5](https://github.com/skynexui/components/compare/v1.9.4...v1.9.5) (2021-12-27)
+
+
+### Bug Fixes
+
+* minor update inside textfield ([90790ff](https://github.com/skynexui/components/commit/90790fff8ac5556d279c6bfed731392fa7675a4c))
+
 ## [1.9.4](https://github.com/skynexui/components/compare/v1.9.3...v1.9.4) (2021-12-24)
 
 
