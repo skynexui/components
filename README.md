@@ -1,4 +1,4 @@
-# SkynexUI
+# SkynexUI:
 
 [<img width="150px" src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" />](https://vercel.com/?utm_source=skynexui&utm_campaign=oss)
 
