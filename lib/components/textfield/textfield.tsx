@@ -1,9 +1,31 @@
 import React, { ChangeEventHandler } from 'react';
+import _merge from 'lodash/merge';
 import { StyleSheet } from '@lib/core/stylesheet/stylesheet';
 import { Box } from '@lib/components/box/box';
 import { Text } from '@lib/components/text/text';
 import { BoxBase } from '@lib/components/box/box-base';
 import { theme } from '@lib/core/theme/theme';
+
+const textFieldColorsDefault = {
+  neutral: {
+    backgroundColor: theme.colors.neutral['000'],
+    mainColor: theme.colors.neutral['300'],
+    mainColorHighlight: theme.colors.primary['500'],
+    textColor: theme.colors.neutral['900'],
+  },
+  positive: {
+    backgroundColor: theme.colors.neutral['000'],
+    mainColor: theme.colors.positive['300'],
+    mainColorHighlight: theme.colors.positive['500'],
+    textColor: theme.colors.positive['900'],
+  },
+  negative: {
+    backgroundColor: theme.colors.neutral['000'],
+    mainColor: theme.colors.negative['300'],
+    mainColorHighlight: theme.colors.negative['500'],
+    textColor: theme.colors.negative['900'],
+  },
+};
 
 const textFieldSizes = {
   xs: {
@@ -214,7 +236,7 @@ export function TextField({
     paddingVertical: textFieldSize.paddingVertical,
     paddingHorizontal: textFieldSize.paddingHorizontal,
     borderRadius,
-    textFieldColors,
+    textFieldColors: _merge(textFieldColorsDefault, textFieldColors),
   });
   const fieldPlaceholder = styles.label.hasPlaceholder ? placeholder : label;
 
@@ -256,6 +278,7 @@ export function TextField({
           placeholder={fieldPlaceholder}
           styleSheet={{
             ...styles.textField,
+            transition: '.2s ease-in-out',
             borderStyle: 'solid',
             resize: 'none',
             width: '100%',
@@ -315,26 +338,7 @@ TextField.defaultProps = {
   label: '',
   hasLabel: true,
   placeholder: '',
-  textFieldColors: {
-    neutral: {
-      backgroundColor: theme.colors.neutral['000'],
-      mainColor: theme.colors.neutral['300'],
-      mainColorHighlight: theme.colors.primary['500'],
-      textColor: theme.colors.neutral['900'],
-    },
-    positive: {
-      backgroundColor: theme.colors.neutral['000'],
-      mainColor: theme.colors.positive['300'],
-      mainColorHighlight: theme.colors.positive['500'],
-      textColor: theme.colors.positive['900'],
-    },
-    negative: {
-      backgroundColor: theme.colors.neutral['000'],
-      mainColor: theme.colors.negative['300'],
-      mainColorHighlight: theme.colors.negative['500'],
-      textColor: theme.colors.negative['900'],
-    },
-  },
+  textFieldColors: textFieldColorsDefault,
   isValid: true,
   isTouched: false,
   type: 'text',

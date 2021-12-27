@@ -36,13 +36,14 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@testing-library/react": "^12.1.2",
+    "lodash": "^4.17.21",
     "node-fetch": "^3.1.0",
     "react-icons": "^4.3.1",
     "react-ripples": "^2.2.1"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.5",
     "@babel/core": "7.16.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.5",
     "@babel/preset-env": "7.16.4",
     "@babel/preset-react": "7.16.0",
     "@babel/preset-typescript": "^7.16.5",
@@ -62,6 +63,7 @@
     "@storybook/addon-links": "6.4.9",
     "@storybook/react": "6.4.9",
     "@types/jest": "^27.0.3",
+    "@types/lodash": "^4.14.178",
     "@types/react": "17.0.18",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
