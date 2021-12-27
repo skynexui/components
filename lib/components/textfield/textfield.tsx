@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler } from 'react';
+import React, { ChangeEventHandler, KeyboardEventHandler } from 'react';
 import _merge from 'lodash/merge';
 import { StyleSheet } from '@lib/core/stylesheet/stylesheet';
 import { Box } from '@lib/components/box/box';
@@ -189,6 +189,7 @@ interface TextFieldProps {
   maxLength?: number;
   value?: string;
   onChange?: ChangeEventHandler<HTMLInputElement>;
+  onKeyPress?: KeyboardEventHandler<HTMLInputElement>;
 }
 export function TextField({
   name,
@@ -278,6 +279,7 @@ export function TextField({
           placeholder={fieldPlaceholder}
           styleSheet={{
             ...styles.textField,
+            fontFamily: 'inherit',
             transition: '.2s ease-in-out',
             borderStyle: 'solid',
             resize: 'none',
@@ -349,4 +351,5 @@ TextField.defaultProps = {
   maxLength: undefined,
   counter: true,
   onChange: undefined,
+  onKeyPress: undefined,
 };
