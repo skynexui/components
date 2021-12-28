@@ -1,21 +1,25 @@
-import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
 import { Box } from '@lib/components';
 
 
-<Meta title="Components/Box" />
+<Meta title="Components/Box" component={Box} />
 
 # Box
 
-Box is the most primal component that we have that has the representation of a "box" in the UI.
+Box is the most basic component that we have. The idea is to be the representation of a "box" in the UI. It can be used to create a container for other components.
+You also are able to provide a `tag` prop where you change the displayed tag for semantics in the web.
+
+<ArgsTable of={Box} />
 
 <Canvas>
   <Story
     name="Box Component"
-    args={{ children: 'Box Component' }}
-  >
-    <Box
-      styleSheet={{
-        color: 'red',
+    args={{
+      children: 'Box Component',
+      styleSheet:{
+        margin: '16px',
+        padding: '16px',
+        color: 'white',
         backgroundColor: {
           xs: 'red',
           sm: 'blue',
@@ -23,10 +27,10 @@ Box is the most primal component that we have that has the representation of a "
           lg: 'purple',
           xl: 'black',
         },
-      }}
-    >
-      Box Component
-    </Box> 
+      }
+    }}
+  >
+    {(args) => <Box {...args} />}
   </Story>
 </Canvas>
 
