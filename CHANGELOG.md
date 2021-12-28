@@ -1,3 +1,10 @@
+## [1.9.7](https://github.com/skynexui/components/compare/v1.9.6...v1.9.7) (2021-12-28)
+
+
+### Bug Fixes
+
+* release new version of the docs ([3026eff](https://github.com/skynexui/components/commit/3026eff244aeac72140aa4c272dfbeb21beba8cb))
+
 ## [1.9.6](https://github.com/skynexui/components/compare/v1.9.5...v1.9.6) (2021-12-27)
 
 
