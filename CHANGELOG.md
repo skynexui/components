@@ -1,3 +1,10 @@
+## [1.9.8](https://github.com/skynexui/components/compare/v1.9.7...v1.9.8) (2021-12-28)
+
+
+### Bug Fixes
+
+* adjust the docs ([634c1e1](https://github.com/skynexui/components/commit/634c1e129dceb7b2d05f80657879b09504b9469d))
+
 ## [1.9.7](https://github.com/skynexui/components/compare/v1.9.6...v1.9.7) (2021-12-28)
 
 
