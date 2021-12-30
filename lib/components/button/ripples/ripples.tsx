@@ -41,7 +41,7 @@ export const useRipples = () => {
         transform: `scale(${size / 9})`,
         transition: `all ${during}ms`,
       });
-    }, 50);
+    }, 0);
   };
 
   return {
