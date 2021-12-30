@@ -1,3 +1,10 @@
+## [1.9.9](https://github.com/skynexui/components/compare/v1.9.8...v1.9.9) (2021-12-30)
+
+
+### Bug Fixes
+
+* minimize button timer ([8a31e4c](https://github.com/skynexui/components/commit/8a31e4cf2ce28c67b43ca0de89c2fac4adcee4c4))
+
 ## [1.9.8](https://github.com/skynexui/components/compare/v1.9.7...v1.9.8) (2021-12-28)
 
 
