@@ -222,9 +222,9 @@ export function TextField({
   const internalTheme = useTheme();
   // Theme Integration
   const currentVariant =
-    variant === internalTheme.theme.components.textField.defaultVariant
+    variant === internalTheme.theme.components.textField.variant
       ? variant
-      : internalTheme.theme.components.textField.defaultVariant;
+      : internalTheme.theme.components.textField.variant;
   // ==========================
 
   const id = `textfield_${name}`;

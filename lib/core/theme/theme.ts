@@ -274,7 +274,7 @@ export const theme = {
   space,
   components: {
     textField: {
-      defaultVariant: 'basicBordered',
+      variant: 'basicBordered',
     },
   },
 };
