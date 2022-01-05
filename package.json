@@ -17,6 +17,7 @@
     "predev": "yarn prebuild",
     "prebuild:watch": "yarn link",
     "test": "jest --no-cache",
+    "test:watch": "jest --watch",
     "prebuild": "rimraf dist && rimraf types",
     "build:watch": "rollup -cw",
     "build": "rollup -c",

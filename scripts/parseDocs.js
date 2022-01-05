@@ -17,6 +17,9 @@ readdirSync('./dist')
       }
       if (line.startsWith('# ')) lock = false;
       if (lock) return;
+      if (line.includes('<!-- > [Wanna test the props? To go Storybook]')) {
+        fileLines.push(line.replace('<!-- ', '').replace(' -->', ''));
+      }
       fileLines.push(line);
     });
 

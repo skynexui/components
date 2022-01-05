@@ -1,23 +1,56 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
-import { Provider } from '@lib/components';
-
+import { Provider, Text, TextField } from '@lib/components';
 
 <Meta title="Components/Provider" />
 
-# [WIP] Provider
+# Provider
 
 Provider is a wrapper that allows you to have enabled the facilities that the library has to offer in different environments
 
-> [Wanna test the props? To go Storybook](http://storybook.skynexui.dev/?path=/docs/components-provider--provider-component)
+<!-- > [Wanna test the props? To go Storybook](http://storybook.skynexui.dev/?path=/docs/components-provider--provider-component) -->
 
 <Canvas>
   <Story
     name="Provider Component"
-    args={{ children: 'Provider Component' }}
+    args={{
+      ...Provider.defaultProps,
+      theme: {
+        components: {
+          textField: {
+            defaultVariant: 'basicBordered',
+          },
+        },
+      },
+    }}
   >
-    <Provider>
-      Provider Component
-    </Provider> 
+    {(args) => (
+      <Provider {...args}>
+        <Text tag="p">Provider Component</Text>
+        <TextField label="Sample button" />
+      </Provider>
+    )}
   </Story>
 </Canvas>
 
+<Canvas>
+  <Story
+    name="Provider Component with TextField:bottomBorder"
+    args={{
+      ...Provider.defaultProps,
+      theme: {
+        components: {
+          textField: {
+            defaultVariant: 'bottomBorder',
+          },
+        },
+      },
+    }}
+  >
+    {(args) => (
+      <Provider {...args}>
+        <Text tag="p">Provider Component</Text>
+        <TextField label="Sample button" />
+      </Provider>
+    )}
+  </Story>
+</Canvas>

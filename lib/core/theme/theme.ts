@@ -272,4 +272,11 @@ export const theme = {
     },
   },
   space,
+  components: {
+    textField: {
+      defaultVariant: 'basicBordered',
+    },
+  },
 };
+
+export type Theme = typeof theme;

@@ -5,6 +5,7 @@ import { Box } from '@lib/components/box/box';
 import { Text } from '@lib/components/text/text';
 import { BoxBase } from '@lib/components/box/box-base';
 import { theme } from '@lib/core/theme/theme';
+import { useTheme } from '@lib/components/provider/provider';
 
 const textFieldColorsDefault = {
   neutral: {
@@ -218,6 +219,14 @@ export function TextField({
   value,
   ...props
 }: TextFieldProps): JSX.Element {
+  const internalTheme = useTheme();
+  // Theme Integration
+  const currentVariant =
+    variant === internalTheme.theme.components.textField.defaultVariant
+      ? variant
+      : internalTheme.theme.components.textField.defaultVariant;
+  // ==========================
+
   const id = `textfield_${name}`;
   const status = (() => {
     if (isValid && isTouched) return 'positive';
@@ -231,7 +240,9 @@ export function TextField({
   const hasCounterText = Boolean(maxLength);
   const Tag = props.type === 'textarea' ? 'textarea' : 'input';
   const hasOnChange = Boolean(props.onChange);
-  const styles = textFieldStyles[variant]({
+  const styles = textFieldStyles[
+    currentVariant as keyof typeof textFieldStyles
+  ]({
     status,
     fontSize: textFieldSize.fontSize,
     paddingVertical: textFieldSize.paddingVertical,
