@@ -1,3 +1,10 @@
+## [1.9.12](https://github.com/skynexui/components/compare/v1.9.11...v1.9.12) (2022-01-05)
+
+
+### Bug Fixes
+
+* remove extra word ([8f8f9a1](https://github.com/skynexui/components/commit/8f8f9a13ae9a265a5b4b7765e824335e54c51bdb))
+
 ## [1.9.11](https://github.com/skynexui/components/compare/v1.9.10...v1.9.11) (2022-01-05)
 
 
