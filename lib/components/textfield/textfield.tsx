@@ -222,9 +222,7 @@ export function TextField({
   const internalTheme = useTheme();
   // Theme Integration
   const currentVariant =
-    variant === internalTheme.theme.components.textField.variant
-      ? variant
-      : internalTheme.theme.components.textField.variant;
+    variant || internalTheme.theme.components.textField.variant;
   // ==========================
 
   const id = `textfield_${name}`;
@@ -346,7 +344,7 @@ export function TextField({
 }
 
 TextField.defaultProps = {
-  variant: 'basicBordered',
+  variant: '',
   value: undefined,
   label: '',
   hasLabel: true,

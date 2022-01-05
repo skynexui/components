@@ -17,29 +17,6 @@ Provider is a wrapper that allows you to have enabled the facilities that the li
       theme: {
         components: {
           textField: {
-            variant: 'basicBordered',
-          },
-        },
-      },
-    }}
-  >
-    {(args) => (
-      <Provider {...args}>
-        <Text tag="p">Provider Component</Text>
-        <TextField label="Sample button" />
-      </Provider>
-    )}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    name="Provider Component with TextField:bottomBorder"
-    args={{
-      ...Provider.defaultProps,
-      theme: {
-        components: {
-          textField: {
             variant: 'bottomBorder',
           },
         },
@@ -48,8 +25,10 @@ Provider is a wrapper that allows you to have enabled the facilities that the li
   >
     {(args) => (
       <Provider {...args}>
-        <Text tag="p">Provider Component</Text>
-        <TextField label="Sample button" />
+        <TextField
+          label="Sample textfield with custom theme"
+          value="try pass basicBordered to textField.variant"
+        />
       </Provider>
     )}
   </Story>
