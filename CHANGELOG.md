@@ -1,3 +1,10 @@
+## [1.9.10](https://github.com/skynexui/components/compare/v1.9.9...v1.9.10) (2022-01-05)
+
+
+### Bug Fixes
+
+* force release ([1c05169](https://github.com/skynexui/components/commit/1c05169f853af748ca61207fb1a73fd8cc3a2fbb))
+
 ## [1.9.9](https://github.com/skynexui/components/compare/v1.9.8...v1.9.9) (2021-12-30)
 
 
