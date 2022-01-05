@@ -19,6 +19,7 @@ readdirSync('./dist')
       if (lock) return;
       if (line.includes('<!-- > [Wanna test the props? To go Storybook]')) {
         fileLines.push(line.replace('<!-- ', '').replace(' -->', ''));
+        return;
       }
       fileLines.push(line);
     });
