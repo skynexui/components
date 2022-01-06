@@ -17,7 +17,7 @@ const ThemeContext = React.createContext<ThemeProviderProps>({
 export const useTheme = () => React.useContext(ThemeContext);
 
 interface ProviderProps {
-  theme?: Theme;
+  theme?: Partial<Theme>;
   children: React.ReactNode;
 }
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

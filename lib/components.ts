@@ -6,3 +6,6 @@ export { TextField } from '@lib/components/textfield/textfield';
 export { Icon } from '@lib/components/icon/icon';
 export { Button } from '@lib/components/button/button';
 export { Image } from '@lib/components/image/image';
+
+// Tooling
+export { ThemeGenerator } from '@lib/core/theme/generator/generator';
