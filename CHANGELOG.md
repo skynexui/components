@@ -1,3 +1,10 @@
+## [1.9.13](https://github.com/skynexui/components/compare/v1.9.12...v1.9.13) (2022-01-06)
+
+
+### Bug Fixes
+
+* add more itens to the docs ([840e649](https://github.com/skynexui/components/commit/840e64900cb09b8fa9b2727fdd6b24089d5b87de))
+
 ## [1.9.12](https://github.com/skynexui/components/compare/v1.9.11...v1.9.12) (2022-01-05)
 
 
