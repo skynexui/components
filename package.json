@@ -27,7 +27,7 @@
     "build:storybook": "build-storybook -o dist-storybook",
     "export:types": "tsc",
     "export:docs": "find ./lib -name '*.mdx' -exec cp -prv '{}' './dist' ';' && node ./scripts/parseDocs.js && cp ./docs.json ./dist/docs.json && ls -la ./dist",
-    "deploy:docs": "cd ../ && cd docs && yarn deploy",
+    "deploy:docs": "cd ../ && cd docs && yarn deploy:soft",
     "lint": "eslint ."
   },
   "dependencies": {

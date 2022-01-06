@@ -24,9 +24,16 @@
         "colors": "Colors",
         "typography": "Typography",
         "space": "Space",
-        "icons": "Icons"
+        "icons": "Icons",
+        "generator": "Generator"
       },
-      "theme.mdx": "theme.stories.mdx"
+      "theme.mdx": "theme.stories.mdx",
+      "breakpoints.mdx": "breakpoints.stories.mdx",
+      "colors.mdx": "colors.stories.mdx",
+      "typography.mdx": "typography.stories.mdx",
+      "space.mdx": "space.stories.mdx",
+      "icons.mdx": "icons.stories.mdx",
+      "generator.mdx": "generator.stories.mdx"
     }
   }
 }
