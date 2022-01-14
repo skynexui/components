@@ -22,6 +22,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_MASTER_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN || secrets.GH_MASTER_TOKEN }}
         run: |
+          echo 'Run Flutter CI Steps'
           yarn build
           yarn release
       - name: Release GitHub Registry
@@ -30,6 +31,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN || secrets.GH_MASTER_TOKEN }}
         run: |
           echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' > ~/.npmrc
-          yarn bump:flutter
-          git add . && git commit -m "chore(release): bump flutter package version"
           yarn release:github_registry
