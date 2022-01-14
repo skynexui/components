@@ -1,7 +1,7 @@
 # SkynexUI:
 
 ## Why "another component library"?
-The focus of this library is to provide a common "DSL" for write UI cross platform. Doesn't matter if you are using React, Vue, Angular or any other framework. You will think in UI based in "Text" (`<Text>`) and "Boxes" (`<Box>`).
+The focus of this library is to provide a common "DSL" for write UI cross platform. Doesn't matter if the platform if it's mobile or web. You will think in UI based in "Text" (`<Text>`) and "Boxes" (`<Box>`) and write the styles based in the web CSS.
 
 [<img width="150px" src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" />](https://vercel.com/?utm_source=skynexui&utm_campaign=oss)
 
