@@ -1,3 +1,10 @@
+## [1.9.20](https://github.com/skynexui/components/compare/v1.9.19...v1.9.20) (2022-01-14)
+
+
+### Bug Fixes
+
+* dry run flutter ([a95eefc](https://github.com/skynexui/components/commit/a95eefcd8b4cb129daa2325f1797c564c96342c8))
+
 ## [1.9.19](https://github.com/skynexui/components/compare/v1.9.18...v1.9.19) (2022-01-14)
 
 
