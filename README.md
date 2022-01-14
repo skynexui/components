@@ -5,6 +5,8 @@ The focus of this library is to provide a common "DSL" for write UI cross platfo
 
 [<img width="150px" src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" />](https://vercel.com/?utm_source=skynexui&utm_campaign=oss)
 
+[![Flutter Package](https://img.shields.io/badge/skynexui__components-fluttter-blue)](https://pub.dev/packages/skynexui_components) [![NPM Package](https://img.shields.io/badge/@skynexui/components-npm-red)](https://www.npmjs.com/package/@skynexui/components)
+
 <!-- Docs Structure: https://github.com/skynexui/docs/tree/6113e6cc169665aff4805d074eceb32f428fb1bc/packages/docs/pages -->
 
 
