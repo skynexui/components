@@ -133,6 +133,7 @@ dist-storybook
 # ================================================================
 
 # Flutter
+.packages
 
 # Miscellaneous
 *.class
