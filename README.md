@@ -12,6 +12,12 @@ The focus of this library is to provide a common "DSL" for write UI cross platfo
 - The project is not open for contributions right now, if you find a bug, please [open an issue](https://github.com/skynexui/components/issues).
 
 ## How to install?
+
+- flutter: 
+```sh
+flutter pub add skynexui_components
+```
+
 - yarn
 ```sh
 yarn add @skynexui/components
@@ -21,18 +27,6 @@ yarn add @skynexui/components
 ```sh
 npm install @skynexui/components
 ```
-
-## Current Tools
-- React
-  - TypeScript
-  - styled/jsx
-  - React Testing Library
-  - Jest
-  - ESLint
-  - Prettier
-  - .editorconfig
-- Semantic Release
-- F̶l̶u̶t̶t̶e̶r̶
 
 ## Supporters
 
