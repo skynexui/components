@@ -16,7 +16,7 @@ jobs:
           node-version: 17
       - name: Install dependencies
         run: yarn install
-      - name: Release NPM Registry
+      - name: Release NPM Registry & Flutter Pub
         env:
           GIT_AUTHOR_NAME: "@bumper-bot"
           GITHUB_TOKEN: ${{ secrets.GH_MASTER_TOKEN }}
