@@ -1,3 +1,10 @@
+## [1.9.17](https://github.com/skynexui/components/compare/v1.9.16...v1.9.17) (2022-01-14)
+
+
+### Bug Fixes
+
+* update docs to add labels of publishers ([f59f7df](https://github.com/skynexui/components/commit/f59f7df9d8d5cbbed91831cd216a5750f35c1484))
+
 ## [1.9.16](https://github.com/skynexui/components/compare/v1.9.15...v1.9.16) (2022-01-14)
 
 
