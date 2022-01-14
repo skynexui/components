@@ -1,3 +1,10 @@
+## [1.9.18](https://github.com/skynexui/components/compare/v1.9.17...v1.9.18) (2022-01-14)
+
+
+### Bug Fixes
+
+* add flutter pubspec bump ([f7ab18a](https://github.com/skynexui/components/commit/f7ab18a589971950202e7a2dddefc457857b5f1d))
+
 ## [1.9.17](https://github.com/skynexui/components/compare/v1.9.16...v1.9.17) (2022-01-14)
 
 
