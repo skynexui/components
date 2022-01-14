@@ -1,3 +1,10 @@
+## [1.9.19](https://github.com/skynexui/components/compare/v1.9.18...v1.9.19) (2022-01-14)
+
+
+### Bug Fixes
+
+* flutter bump scripts ([c4ac0e6](https://github.com/skynexui/components/commit/c4ac0e6fe3f7fb8fdef9f0e9616f2e600d235dba))
+
 ## [1.9.18](https://github.com/skynexui/components/compare/v1.9.17...v1.9.18) (2022-01-14)
 
 
