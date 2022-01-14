@@ -1,4 +1,4 @@
-import 'package:components/components.dart';
+import 'package:skynexui_components/components.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

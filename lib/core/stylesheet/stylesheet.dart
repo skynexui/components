@@ -1,4 +1,4 @@
-import 'package:components/core/breakpoints/breakpoints.dart';
+import 'package:skynexui_components/core/breakpoints/breakpoints.dart';
 import 'package:flutter/material.dart';
 
 const Map<Breakpoints, String?> defaultStringEmptyValue = {

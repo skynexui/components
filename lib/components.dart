@@ -1,4 +1,4 @@
-library components;
+library skynexui_components;
 
 export 'package:flutter/material.dart' hide Typography, Text, TextField, Image;
 export 'components/box/box.dart';

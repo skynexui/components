@@ -1,4 +1,4 @@
-import 'package:components/components.dart';
+import 'package:skynexui_components/components.dart';
 import 'package:flutter/material.dart' as flutter;
 
 class Image extends StatelessWidget {

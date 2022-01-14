@@ -1,4 +1,4 @@
-import 'package:components/screens/home.dart';
+import 'package:skynexui_components/screens/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
