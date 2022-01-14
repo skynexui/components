@@ -1,3 +1,10 @@
+## [1.9.16](https://github.com/skynexui/components/compare/v1.9.15...v1.9.16) (2022-01-14)
+
+
+### Bug Fixes
+
+* **docs:** add flutter installation support ([de42b0b](https://github.com/skynexui/components/commit/de42b0b5ec3be4de2378184999f4aecff59ab2dd))
+
 ## [1.9.15](https://github.com/skynexui/components/compare/v1.9.14...v1.9.15) (2022-01-14)
 
 
