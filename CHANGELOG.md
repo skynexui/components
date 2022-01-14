@@ -1,3 +1,10 @@
+## [1.9.15](https://github.com/skynexui/components/compare/v1.9.14...v1.9.15) (2022-01-14)
+
+
+### Bug Fixes
+
+* display of readme ([5b6e5ad](https://github.com/skynexui/components/commit/5b6e5ade5b299f90ec680d7f6963ee278381df87))
+
 ## [1.9.14](https://github.com/skynexui/components/compare/v1.9.13...v1.9.14) (2022-01-06)
 
 
