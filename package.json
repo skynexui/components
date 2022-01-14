@@ -23,6 +23,7 @@
     "build": "rollup -c",
     "release": "semantic-release",
     "release:github_registry": "node ./scripts/publishToGHRegistry.js",
+    "bump:flutter": "node ./scripts/bumpFlutter.js",
     "release:flutter": "flutter clean && dart pub publish",
     "dev": "start-storybook -p 6006",
     "build:storybook": "build-storybook -o dist-storybook",

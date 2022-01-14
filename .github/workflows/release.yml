@@ -30,4 +30,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN || secrets.GH_MASTER_TOKEN }}
         run: |
           echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' > ~/.npmrc
+          yarn bump:flutter
+          git add . && git commit -m "chore(release): bump flutter package version"
           yarn release:github_registry
