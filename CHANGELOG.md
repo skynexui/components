@@ -1,3 +1,10 @@
+## [1.9.23](https://github.com/skynexui/components/compare/v1.9.22...v1.9.23) (2022-01-14)
+
+
+### Bug Fixes
+
+* **docs:** cta on the readme ([b2253c4](https://github.com/skynexui/components/commit/b2253c4dbd7364490832c71fca1b44d457d00ad7))
+
 ## [1.9.22](https://github.com/skynexui/components/compare/v1.9.21...v1.9.22) (2022-01-14)
 
 
