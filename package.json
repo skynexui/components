@@ -14,6 +14,8 @@
     "url": "https://github.com/skynexui/components.git"
   },
   "scripts": {
+    "predocs:dev": "yarn export:docs && node ./docs/scripts/docs/generator.js",
+    "docs:dev": "cd docs && yarn install && yarn dev",
     "predev": "yarn prebuild",
     "prebuild:watch": "yarn link",
     "test": "jest --no-cache",
@@ -29,7 +31,7 @@
     "dev": "start-storybook -p 6006",
     "build:storybook": "build-storybook -o dist-storybook",
     "export:types": "tsc",
-    "export:docs": "find ./lib -name '*.mdx' -exec cp -prv '{}' './dist' ';' && node ./scripts/parseDocs.js && cp ./docs.json ./dist/docs.json && ls -la ./dist",
+    "export:docs": "find ./lib -name '*.mdx' -exec cp -prv '{}' './dist' ';' && node ./scripts/parseDocs.js && ls -la ./dist",
     "deploy:docs": "cd ../ && cd docs && yarn deploy:soft",
     "lint": "eslint ."
   },

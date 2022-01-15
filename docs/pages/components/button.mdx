@@ -1,13 +1,16 @@
-import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
-import { Button } from '@lib/components';
+---
+title: Button
+---
+import { Canvas, Story, ArgsTable } from '../../scripts/docs/defaults.tsx'
 
-<Meta title="Components/Button" component={Button} />
+import { Button } from '@skynexui/components';
+
 
 # Button
 
 Button is the component that you use, for get user taps and clicks.
 
-<!-- > [Wanna test the props? To go Storybook](https://storybook.skynexui.dev/?path=/docs/components-button--button-component) -->
+> [Wanna test the props? To go Storybook](https://storybook.skynexui.dev/?path=/docs/components-button--button-component)
 
 <ArgsTable of={Button} />
 
@@ -85,3 +88,5 @@ Button is the component that you use, for get user taps and clicks.
     {(args) => <Button {...args} />}
   </Story>
 </Canvas>
+
+      

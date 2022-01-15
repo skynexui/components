@@ -1,15 +1,17 @@
-import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
-import { Box } from '@lib/components';
+---
+title: Box
+---
+import { Canvas, Story, ArgsTable } from '../../scripts/docs/defaults.tsx'
 
+import { Box } from '@skynexui/components';
 
-<Meta title="Components/Box" component={Box} />
 
 # Box
 
 Box is the most basic component that we have. The idea is to be the representation of a "box" in the UI. It can be used to create a container for other components.
 You also are able to provide a `tag` prop where you change the displayed tag for semantics in the web.
 
-<!-- > [Wanna test the props? To go Storybook](https://storybook.skynexui.dev/?path=/story/components-box--box-component) -->
+> [Wanna test the props? To go Storybook](https://storybook.skynexui.dev/?path=/story/components-box--box-component)
 
 <ArgsTable of={Box} />
 
@@ -35,3 +37,5 @@ You also are able to provide a `tag` prop where you change the displayed tag for
     {(args) => <Box {...args} />}
   </Story>
 </Canvas>
+
+      

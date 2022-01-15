@@ -1,0 +1,25 @@
+---
+title: Image
+---
+import { Canvas, Story, ArgsTable } from '../../scripts/docs/defaults.tsx'
+
+import { Image } from '@skynexui/components';
+
+
+# Image
+
+Image component explains itself.
+
+> [Wanna test the props? To go Storybook](https://storybook.skynexui.dev/?path=/docs/components-image--image-component)
+
+<ArgsTable of={Image} />
+
+<Canvas>
+  <Story
+    name="Image Component"
+    args={{ ...Image.defaultProps, src: 'https://via.placeholder.com/300x300' }}
+  >
+    {(args) => <Image {...args} />}
+  </Story>
+</Canvas>
+      

@@ -1,6 +1,6 @@
 {
   "pages": {
-    "_app.js": "_app.js",
+    "_app.js": "_app.tsx",
     "meta.json": {
       "index": "Introduction",
       "components": "Components",

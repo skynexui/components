@@ -1,0 +1,25 @@
+---
+title: Icon
+---
+import { Canvas, Story, ArgsTable } from '../../scripts/docs/defaults.tsx'
+
+import { Icon } from '@skynexui/components';
+
+
+# Icon
+
+Icon component explains itself.
+
+> [Wanna test the props? To go Storybook](https://storybook.skynexui.dev/?path=/docs/components-icon--icon-component)
+
+<ArgsTable of={Icon} />
+
+<Canvas>
+  <Story
+    name="Icon Component"
+    args={{ label: 'Icon Component', ...Icon.defaultProps }}
+  >
+    {(args) => <Icon {...args} />}
+  </Story>
+</Canvas>
+      
