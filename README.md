@@ -13,6 +13,11 @@ The focus of this library is to provide a common "DSL" for write UI cross platfo
 ## Contributing
 - The project is not open for contributions right now, if you find a bug, please [open an issue](https://github.com/skynexui/components/issues).
 
+## How to use?
+
+- Check the [docs here](https://skynexui.dev/)
+- We also have a [storybook](https://storybook.skynexui.dev/)
+
 ## How to install?
 
 - flutter: 
