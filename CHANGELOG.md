@@ -1,3 +1,10 @@
+## [1.9.25](https://github.com/skynexui/components/compare/v1.9.24...v1.9.25) (2022-01-15)
+
+
+### Bug Fixes
+
+* docs build ([32dd647](https://github.com/skynexui/components/commit/32dd647a27b978db5d00785aac9524359b3e6a9e))
+
 ## [1.9.24](https://github.com/skynexui/components/compare/v1.9.23...v1.9.24) (2022-01-15)
 
 
