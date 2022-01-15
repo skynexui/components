@@ -14,6 +14,7 @@
     "url": "https://github.com/skynexui/components.git"
   },
   "scripts": {
+    "setup": "yarn install && flutter pub get",
     "predocs:dev": "yarn export:docs && node ./docs/scripts/docs/generator.js",
     "docs:dev": "cd docs && yarn install && yarn dev",
     "predev": "yarn prebuild",
@@ -30,6 +31,7 @@
     "clean": "flutter clean && yarn prebuild",
     "release:flutter": "yarn clean && dart pub publish --force",
     "dev": "start-storybook -p 6006",
+    "dev:flutter": "flutter run",
     "build:storybook": "build-storybook -o dist-storybook",
     "export:types": "tsc",
     "export:docs": "find ./lib -name '*.mdx' -exec cp -prv '{}' './dist' ';' && node ./scripts/parseDocs.js && ls -la ./dist",
