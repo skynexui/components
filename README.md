@@ -11,7 +11,7 @@ The focus of this library is to provide a common "DSL" for write UI cross platfo
 
 
 ## Contributing
-- The project is not open for contributions right now, if you find a bug, please [open an issue](https://github.com/skynexui/components/issues).
+- The project is not well structured for contributions right now, if you find a bug, please [open an issue](https://github.com/skynexui/components/issues) and let's discuss how to implement it 😋.
 
 ## How to use?
 
