@@ -1,3 +1,10 @@
+## [1.9.24](https://github.com/skynexui/components/compare/v1.9.23...v1.9.24) (2022-01-15)
+
+
+### Bug Fixes
+
+* broken tsconfig ([0a8c379](https://github.com/skynexui/components/commit/0a8c3791d3dca8b26f6748308b384bb601c13d30))
+
 ## [1.9.23](https://github.com/skynexui/components/compare/v1.9.22...v1.9.23) (2022-01-14)
 
 
