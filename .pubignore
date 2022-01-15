@@ -1,2 +1,7 @@
 android/components_android.iml
 components.iml
+scripts
+docs
+.storybook
+.github
+node_modules
