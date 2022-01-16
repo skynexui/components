@@ -1,3 +1,10 @@
+## [1.9.26](https://github.com/skynexui/components/compare/v1.9.25...v1.9.26) (2022-01-16)
+
+
+### Bug Fixes
+
+* add examples folder ([40171d2](https://github.com/skynexui/components/commit/40171d2cd78ec9f12c4e703b97a293b2a7e97c08))
+
 ## [1.9.25](https://github.com/skynexui/components/compare/v1.9.24...v1.9.25) (2022-01-15)
 
 
