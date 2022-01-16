@@ -8,12 +8,12 @@ class HomeScreen extends StatelessWidget {
     return const Scaffold(
       body: Box(
         styleSheet: StyleSheet(
-          backgroundColor: {Breakpoints.xs: '#aabbcc'},
+          backgroundColor: {Breakpoints.xs: '#565678'},
           margin: {Breakpoints.xs: 50},
           padding: {Breakpoints.xs: 50},
         ),
         children: [
-          Text('Hihi'),
+          Text('Olá pessoas!'),
         ],
       ),
     );
