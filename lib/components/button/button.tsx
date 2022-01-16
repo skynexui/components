@@ -149,28 +149,28 @@ export function Button({
 
     if (colorVariant === 'dark') {
       return {
-        mainColor: theme.colors.neutral[800],
-        mainColorLight: theme.colors.neutral[700],
-        mainColorStrong: theme.colors.neutral[900],
-        contrastColor: theme.colors.neutral['000'],
+        mainColor: theme.colors.neutral.x800,
+        mainColorLight: theme.colors.neutral.x700,
+        mainColorStrong: theme.colors.neutral.x900,
+        contrastColor: theme.colors.neutral.x000,
       };
     }
 
     if (colorVariant === 'light') {
       return {
-        mainColor: theme.colors.neutral['100'],
-        mainColorLight: theme.colors.neutral['050'],
-        mainColorStrong: theme.colors.neutral['200'],
-        contrastColor: theme.colors.neutral['999'],
+        mainColor: theme.colors.neutral.x100,
+        mainColorLight: theme.colors.neutral.x050,
+        mainColorStrong: theme.colors.neutral.x200,
+        contrastColor: theme.colors.neutral.x999,
       };
     }
 
     const currentColorVariant = theme.colors[colorVariant];
     return {
-      mainColor: currentColorVariant[500],
-      mainColorLight: currentColorVariant[400],
-      mainColorStrong: currentColorVariant[600],
-      contrastColor: theme.colors.neutral['000'],
+      mainColor: currentColorVariant.x500,
+      mainColorLight: currentColorVariant.x400,
+      mainColorStrong: currentColorVariant.x600,
+      contrastColor: theme.colors.neutral.x000,
     };
   })();
 
