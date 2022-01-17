@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/skynexui/components/compare/v1.9.26...v1.10.0) (2022-01-17)
+
+
+### Features
+
+* **components:** add provider component with initial theme support ([#40](https://github.com/skynexui/components/issues/40)) ([c66a462](https://github.com/skynexui/components/commit/c66a46257853ee9868ebadb68863cbde50a919ba))
+
 ## [1.9.26](https://github.com/skynexui/components/compare/v1.9.25...v1.9.26) (2022-01-16)
 
 
