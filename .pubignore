@@ -5,3 +5,4 @@ docs
 .storybook
 .github
 node_modules
+examples
