@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/skynexui/components/compare/v1.10.0...v1.10.1) (2022-01-17)
+
+
+### Bug Fixes
+
+* **docs:** add important note to the docs ([49857f5](https://github.com/skynexui/components/commit/49857f5d2e151bfa6d77c569ad3b504cfaca1e47))
+
 # [1.10.0](https://github.com/skynexui/components/compare/v1.9.26...v1.10.0) (2022-01-17)
 
 
