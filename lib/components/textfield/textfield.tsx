@@ -9,22 +9,22 @@ import { useTheme } from '@lib/components/provider/provider';
 
 const textFieldColorsDefault = {
   neutral: {
-    backgroundColor: theme.colors.neutral['000'],
-    mainColor: theme.colors.neutral['300'],
-    mainColorHighlight: theme.colors.primary['500'],
-    textColor: theme.colors.neutral['900'],
+    backgroundColor: theme.colors.neutral.x000,
+    mainColor: theme.colors.neutral.x300,
+    mainColorHighlight: theme.colors.primary.x500,
+    textColor: theme.colors.neutral.x900,
   },
   positive: {
-    backgroundColor: theme.colors.neutral['000'],
-    mainColor: theme.colors.positive['300'],
-    mainColorHighlight: theme.colors.positive['500'],
-    textColor: theme.colors.positive['900'],
+    backgroundColor: theme.colors.neutral.x000,
+    mainColor: theme.colors.positive.x300,
+    mainColorHighlight: theme.colors.positive.x500,
+    textColor: theme.colors.positive.x900,
   },
   negative: {
-    backgroundColor: theme.colors.neutral['000'],
-    mainColor: theme.colors.negative['300'],
-    mainColorHighlight: theme.colors.negative['500'],
-    textColor: theme.colors.negative['900'],
+    backgroundColor: theme.colors.neutral.x000,
+    mainColor: theme.colors.negative.x300,
+    mainColorHighlight: theme.colors.negative.x500,
+    textColor: theme.colors.negative.x900,
   },
 };
 
@@ -221,8 +221,7 @@ export function TextField({
 }: TextFieldProps): JSX.Element {
   const internalTheme = useTheme();
   // Theme Integration
-  const currentVariant =
-    variant || internalTheme.theme.components.textField.variant;
+  const currentVariant = variant || internalTheme.components.textField.variant;
   // ==========================
 
   const id = `textfield_${name}`;

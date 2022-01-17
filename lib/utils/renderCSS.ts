@@ -37,6 +37,9 @@ export function renderCSS(props: any, currentBreakpoint: any) {
         cssPropValue[currentBreakpoint];
 
       if (currentCssPropValue) {
+        if (typeof currentCssPropValue === 'number') {
+          return renderCSSValue(cssPropName, `${currentCssPropValue}px`);
+        }
         return renderCSSValue(cssPropName, currentCssPropValue);
       }
 

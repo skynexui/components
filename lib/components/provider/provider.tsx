@@ -1,5 +1,5 @@
 import React from 'react';
-import { GlobalStyle } from '@lib/components/provider/web/CSSReset';
+import { GlobalStyle } from '@lib/components/provider/react/CSSReset';
 import _merge from 'lodash/merge';
 import { theme as baseTheme, Theme } from '@lib/core/theme/theme';
 
@@ -14,7 +14,7 @@ const ThemeContext = React.createContext<ThemeProviderProps>({
   },
 });
 
-export const useTheme = () => React.useContext(ThemeContext);
+export const useTheme = () => React.useContext(ThemeContext).theme;
 
 interface ProviderProps {
   theme?: Partial<Theme>;

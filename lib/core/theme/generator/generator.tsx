@@ -21,10 +21,10 @@ export function ThemeGenerator() {
       <Box
         styleSheet={{
           padding: theme.space.x4,
-          backgroundColor: theme.colors.neutral['000'],
+          backgroundColor: theme.colors.neutral.x000,
           borderWidth: theme.space.xpx,
           borderStyle: 'solid',
-          borderColor: theme.colors.neutral['100'],
+          borderColor: theme.colors.neutral.x100,
         }}
       >
         <Box
@@ -37,10 +37,10 @@ export function ThemeGenerator() {
               width: theme.space['x8/12'],
               padding: theme.space.x4,
               marginBottom: theme.space.x4,
-              backgroundColor: theme.colors.neutral['050'],
+              backgroundColor: theme.colors.neutral.x050,
               borderWidth: theme.space.xpx,
               borderStyle: 'solid',
-              borderColor: theme.colors.neutral['100'],
+              borderColor: theme.colors.neutral.x100,
             }}
           >
             <Text variant="heading1" tag="p">
@@ -57,10 +57,10 @@ export function ThemeGenerator() {
               marginLeft: theme.space.x4,
               padding: theme.space.x4,
               marginBottom: theme.space.x4,
-              backgroundColor: theme.colors.neutral['050'],
+              backgroundColor: theme.colors.neutral.x050,
               borderWidth: theme.space.xpx,
               borderStyle: 'solid',
-              borderColor: theme.colors.neutral['100'],
+              borderColor: theme.colors.neutral.x100,
             }}
           >
             <Text variant="heading4">TextField</Text>

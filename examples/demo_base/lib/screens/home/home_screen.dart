@@ -5,17 +5,21 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    var theme = useTheme(context);
+    var colorsPrimary = theme.colors.primary.toMap();
+    var colorSelected = colorsPrimary['x500'] as String;
+    var bg = colorSelected;
+    return Scaffold(
       body: Box(
         styleSheet: StyleSheet(
           backgroundColor: {
-            Breakpoints.xs: '#aabbcc',
+            Breakpoints.xs: bg,
           },
           margin: {Breakpoints.xs: 50},
           padding: {Breakpoints.xs: 50},
         ),
         children: [
-          Text('SkynexUI'),
+          Text('SkynexUI: $colorSelected'),
         ],
       ),
     );
