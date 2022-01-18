@@ -22,7 +22,7 @@ jobs:
         java-version: '11'
     - uses: subosito/flutter-action@v1
       with:
-        flutter-version: '2.5.3'
+        flutter-version: '2.8.0'
     - run: |
         cd examples/demo_base
         yarn install
