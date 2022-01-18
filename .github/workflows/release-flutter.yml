@@ -31,6 +31,8 @@ jobs:
         sh ./scripts/pub_login.sh
         rm -rf examples
         rm -rf docs
+        git config --global user.email "13791385+omariosouto@users.noreply.github.com"
+        git config --global user.name "CI Bot - DevSoutinho"
         git add .
         git commit -m "forcing delete"
     - name: Check Publish Warnings
