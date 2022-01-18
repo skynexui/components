@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/skynexui/components/compare/v1.10.10...v1.11.0) (2022-01-18)
+
+
+### Features
+
+* force a new release to test the new CI setup ([9b504c9](https://github.com/skynexui/components/commit/9b504c9f768c18e2db67e8f7ee386eb415375e2b))
+
 ## [1.10.10](https://github.com/skynexui/components/compare/v1.10.9...v1.10.10) (2022-01-18)
 
 
