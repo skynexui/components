@@ -1,3 +1,11 @@
+## [1.10.2](https://github.com/skynexui/components/compare/v1.10.1...v1.10.2) (2022-01-18)
+
+
+### Bug Fixes
+
+* other release ([37bdee4](https://github.com/skynexui/components/commit/37bdee4787453d2c3f29b437bef7289be0663bf7))
+* release flutter ([5d343bd](https://github.com/skynexui/components/commit/5d343bd5fb9123867e8006d206f01bb5c4e8d080))
+
 ## [1.10.1](https://github.com/skynexui/components/compare/v1.10.0...v1.10.1) (2022-01-17)
 
 
