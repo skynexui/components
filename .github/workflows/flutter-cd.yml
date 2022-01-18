@@ -24,7 +24,7 @@ jobs:
       with:
         flutter-version: '2.5.3'
     - run: |
-      cd examples/demo_base
-      yarn install
-      yarn build:flutter-web
-      yarn deploy:prod
+        cd examples/demo_base
+        yarn install
+        yarn build:flutter-web
+        yarn deploy:prod
