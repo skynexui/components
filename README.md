@@ -9,6 +9,8 @@ The focus of this library is to provide a common "DSL" for write UI cross platfo
 
 > ⚠️ Until version 2.0 we will have breaking changes while structuring the API
 
+## Demo
+- This is the [main demo](https://github.com/skynexui/components/tree/main/examples/demo_base) that we are working on, an project with React for Web and Flutter for mobile development.
 
 ## Contributing
 - The project is not well structured for contributions right now, if you find a bug, please [open an issue](https://github.com/skynexui/components/issues) and let's discuss how to implement it 😋.
