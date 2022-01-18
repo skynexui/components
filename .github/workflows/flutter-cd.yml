@@ -27,4 +27,4 @@ jobs:
         cd examples/demo_base
         yarn install
         yarn build:flutter-web
-        yarn deploy:prod
+        VERCEL_ORG_ID=team_VsGiGOd4ssSG5mHS8pVtgfp6 yarn deploy:prod
