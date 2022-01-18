@@ -29,6 +29,9 @@ class Box extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: todo
+    // TODO: Refactor this to use a loop or other stuff to make everything be grouped together.
+
     const activeBreakpoint = Breakpoints.xs;
     var padding =
         resolveValueForBreakpoint(styleSheet.padding, activeBreakpoint);
