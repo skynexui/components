@@ -7,7 +7,7 @@ The focus of this library is to provide a common "DSL" for write UI cross platfo
 
 ![Current Version](https://img.shields.io/npm/v/@skynexui/components?color=green&label=version&cache=1) [![Flutter Package](https://img.shields.io/badge/skynexui__components-fluttter-blue)](https://pub.dev/packages/skynexui_components) [![NPM Package](https://img.shields.io/badge/@skynexui/components-npm-red)](https://www.npmjs.com/package/@skynexui/components)
 
-> ⚠️ Until version 2.0 we will have breaking changes while structuring the API
+> ⚠️ Until version 2.0 we will have breaking changes while structuring the API.
 
 ## Demo
 - This is the [main demo](https://github.com/skynexui/components/tree/main/examples/demo_base) that we are working on, an project with React for Web and Flutter for mobile development.
