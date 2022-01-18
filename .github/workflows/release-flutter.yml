@@ -29,6 +29,8 @@ jobs:
         PUB_DEV_PUBLISH_EXPIRATION: ${{ secrets.PUB_DEV_PUBLISH_EXPIRATION }}
       run: |
         sh ./scripts/pub_login.sh
+        rm -rf examples
+        rm -rf docs
     - name: Check Publish Warnings
       run: pub publish --dry-run
     - name: Publish Package
