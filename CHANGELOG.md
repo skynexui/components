@@ -1,3 +1,10 @@
+## [1.10.8](https://github.com/skynexui/components/compare/v1.10.7...v1.10.8) (2022-01-18)
+
+
+### Bug Fixes
+
+* another try ([8f80e1c](https://github.com/skynexui/components/commit/8f80e1cad312be60935abddc05ce51a8cc77ec30))
+
 ## [1.10.7](https://github.com/skynexui/components/compare/v1.10.6...v1.10.7) (2022-01-18)
 
 
