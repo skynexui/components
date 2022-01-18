@@ -1,0 +1,18 @@
+{
+  "backgroundColor": {
+    "type": "String",
+    "default": "defaultStringEmptyValue"
+  },
+  "color": [
+    "String",
+    "defaultColorTransparentValue"
+  ],
+  "padding": [
+    "double",
+    "defaultDoubleZeroValue"
+  ],
+  "paddingTop": [
+    "double",
+    "defaultDoubleEmptyValue"
+  ]
+}
