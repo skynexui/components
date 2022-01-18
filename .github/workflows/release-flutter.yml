@@ -1,4 +1,4 @@
-name: Publish Package
+name: Flutter - Publish Package
 on:
   release:
     types: [published]

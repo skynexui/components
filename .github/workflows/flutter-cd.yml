@@ -1,4 +1,4 @@
-name: Flutter Continuous Delivery
+name: Flutter - Continuous Delivery
 
 on:
   push:
