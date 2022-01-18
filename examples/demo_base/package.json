@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
+    "build:flutter-web": "flutter build web --web-renderer html",
+    "deploy:prod": "npx vercel ./build/web --confirm --no-clipboard --name=sknui-demobase-flutter --token=$VERCEL_TOKEN --prod"
   },
   "dependencies": {
     "@skynexui/components": "latest",
