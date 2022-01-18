@@ -31,6 +31,8 @@ jobs:
         sh ./scripts/pub_login.sh
         rm -rf examples
         rm -rf docs
+        git add .
+        git commit -m "forcing delete"
     - name: Check Publish Warnings
       run: pub publish --dry-run
     - name: Publish Package
