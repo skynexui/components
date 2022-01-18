@@ -6,4 +6,4 @@ It's a Flutter and React project with a compilation of examples about how you ca
 
 ## Demos
 - [React Web](https://sknui-demobase-react.vercel.app/)
-- [Flutter Web](https://sknui-demobase-flutter.vercel.app/#/)
+- [Flutter Web](https://sknui-demobase-flutter-tau.vercel.app/)
