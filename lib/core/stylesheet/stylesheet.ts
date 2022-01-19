@@ -3,6 +3,13 @@ import { Breakpoints } from '@lib/core/breakpoints/breakpoints';
 type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
+  // %%[CODER_START]:StyleSheet_attributes%%
+  paddingRight?: ResponsiveProperty<number | string> | string;
+  paddingLeft?: ResponsiveProperty<number | string> | string;
+  paddingTop?: ResponsiveProperty<number | string> | string;
+  padding?: ResponsiveProperty<number | string> | string;
+  backgroundColor?: ResponsiveProperty<string> | string;
+  // %%[CODER_END]:StyleSheet_attributes%%
   srOnly?: boolean;
   borderStyle?: string;
   overflow?: ResponsiveProperty<string> | string;
@@ -23,8 +30,6 @@ export interface StyleSheet {
   border?: ResponsiveProperty<string> | string;
   borderWidth?: ResponsiveProperty<string> | string;
   borderColor?: ResponsiveProperty<string> | string;
-  backgroundColor?: ResponsiveProperty<string> | string;
-  padding?: ResponsiveProperty<number | string> | string;
   margin?: ResponsiveProperty<number | string> | string;
   marginLeft?: ResponsiveProperty<number | string> | string;
   marginRight?: ResponsiveProperty<number | string> | string;

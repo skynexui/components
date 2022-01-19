@@ -1,0 +1,22 @@
+{
+  "backgroundColor": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "padding": {
+    "type": "double",
+    "default": "defaultDoubleZeroValue"
+  },
+  "paddingTop": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "paddingLeft": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "paddingRight": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  }
+}

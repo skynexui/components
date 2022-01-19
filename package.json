@@ -14,6 +14,7 @@
     "url": "https://github.com/skynexui/components.git"
   },
   "scripts": {
+    "update:contracts": "node ./scripts/coder/coder.js && yarn lint --fix && flutter analyze",
     "setup": "yarn install && flutter pub get",
     "predocs:dev": "yarn export:docs && node ./docs/scripts/docs/generator.js",
     "docs:dev": "cd docs && yarn install && yarn dev",
