@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 function renderCSSValue(cssPropName: any, cssPropValue: any) {
   if (cssPropName.includes('horizontal')) {
     return `

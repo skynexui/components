@@ -14,5 +14,9 @@
   "paddingLeft": {
     "type": "double?",
     "default": "defaultDoubleEmptyValue"
+  },
+  "paddingRight": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
   }
 }
