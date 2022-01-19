@@ -18,5 +18,29 @@
   "paddingRight": {
     "type": "double?",
     "default": "defaultDoubleEmptyValue"
+  },
+  "paddingBottom": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "margin": {
+    "type": "double",
+    "default": "defaultDoubleZeroValue"
+  },
+  "marginTop": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "marginLeft": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "marginRight": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "marginBottom": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
   }
 }

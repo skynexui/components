@@ -44,7 +44,7 @@ module.exports = {
     );
     fileOutput = fileOutput.replace(
       REGEX_CODER_CLEAR,
-      `$1 \n// %%[CODER_END]:StyleSheet_attributes%%`
+      `$1 \n// %%[CODER_END]:${name}%%`
     );
 
     Object.entries(contract).forEach(([key, value], index) => {

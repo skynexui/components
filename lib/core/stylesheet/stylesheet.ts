@@ -4,6 +4,12 @@ type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   // %%[CODER_START]:StyleSheet_attributes%%
+  marginBottom?: ResponsiveProperty<number | string> | string;
+  marginRight?: ResponsiveProperty<number | string> | string;
+  marginLeft?: ResponsiveProperty<number | string> | string;
+  marginTop?: ResponsiveProperty<number | string> | string;
+  margin?: ResponsiveProperty<number | string> | string;
+  paddingBottom?: ResponsiveProperty<number | string> | string;
   paddingRight?: ResponsiveProperty<number | string> | string;
   paddingLeft?: ResponsiveProperty<number | string> | string;
   paddingTop?: ResponsiveProperty<number | string> | string;
