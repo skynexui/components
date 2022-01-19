@@ -21,18 +21,16 @@ const Map<Breakpoints, double?> defaultDoubleEmptyValue = {
 };
 
 class StyleSheet {
-  // States
-  // final StyleSheet? darkMode;
-  // final StyleSheet? disabled;
-  // ===============
-  // Box Style
+// %%[CODER_START]:StyleSheet_attributes%%
+final Map<Breakpoints,double?> paddingLeft;
+final Map<Breakpoints,double?> paddingTop;
+final Map<Breakpoints,double> padding;
+final Map<Breakpoints,String?> backgroundColor; 
+// %%[CODER_END]:StyleSheet_attributes%%
   final double? width;
   final double? height;
   final Map<Breakpoints, Color> color;
-  final Map<Breakpoints, String?> backgroundColor;
-  final Map<Breakpoints, double> padding;
-  final Map<Breakpoints, double?> paddingTop;
-  final Map<Breakpoints, double?> paddingLeft;
+
   final Map<Breakpoints, double?> paddingRight;
   final Map<Breakpoints, double?> paddingBottom;
   final Map<Breakpoints, double?> paddingVertical;
