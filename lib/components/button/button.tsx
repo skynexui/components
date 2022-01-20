@@ -133,6 +133,7 @@ export function Button({
   fullWidth,
   onClick,
   iconName,
+  type,
   ...props
 }: ButtonProps): JSX.Element {
   const isLink = Boolean(props.href);
@@ -231,6 +232,7 @@ export function Button({
           }
         }
       }}
+      type={isLink ? undefined : type}
       {...props}
     >
       <Text

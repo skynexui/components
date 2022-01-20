@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React, { Ref } from 'react';
 import { renderCSS } from '@lib/utils/renderCSS';
 import { theme } from '@lib/core/theme/theme';
@@ -6,6 +7,7 @@ import { Breakpoints } from '@lib/core/breakpoints/breakpoints';
 
 interface BoxProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  type?: any;
   as?: any;
   id?: string;
   name?: string;

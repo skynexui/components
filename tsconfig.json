@@ -17,6 +17,7 @@
     "sourceMap": true,
     "emitDeclarationOnly": true,
     "skipLibCheck": true,
+    "resolveJsonModule": true,
     "typeRoots": [
       "./node_modules/@types",
       "./@types"
