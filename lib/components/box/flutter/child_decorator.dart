@@ -6,9 +6,9 @@ mainAxisResolver(String value) {
   if (value == 'center') return MainAxisAlignment.center;
   if (value == 'flex-start') return MainAxisAlignment.start;
   if (value == 'flex-end') return MainAxisAlignment.end;
-  if (value == 'spaceBetween') return MainAxisAlignment.spaceBetween;
-  if (value == 'spaceAround') return MainAxisAlignment.spaceAround;
-  if (value == 'spaceEvenly') return MainAxisAlignment.spaceEvenly;
+  if (value == 'space-between') return MainAxisAlignment.spaceBetween;
+  if (value == 'space-around') return MainAxisAlignment.spaceAround;
+  if (value == 'space-evenly') return MainAxisAlignment.spaceEvenly;
 
   throw Exception('mainAxisAlignment: $value is not supported');
 }

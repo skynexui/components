@@ -15,7 +15,9 @@ const GlobalStyle = () => {
         flex-direction: column;
       }
       #__next {
+        display: flex;
         flex: 1;
+        flex-direction: row;
       }
     `}</style>
   );
@@ -31,12 +33,15 @@ export function HomeScreen() {
       styleSheet={{
         // TODO: Standardize the default CSS between React Web and Flutter
         display: 'flex',
-        flexDirection: 'column',
-        justifyContent: {
-          xs: 'center',
-        },
+        alignSelf: 'start', // ganha com o flexDirection: 'row'
+        flex: 1, // ganha flex 1 com o flexDirection: 'row'
+        // ===============================================================
+        flexDirection: 'row',
         alignItems: {
           xs: 'center',
+        },
+        justifyContent: {
+          xs: 'flex-end',
         },
         backgroundColor: {
           xs: bg,
@@ -49,12 +54,18 @@ export function HomeScreen() {
       }}
     >
       <Text styleSheet={{
+        display: 'flex',
+        backgroundColor: {
+          xs: theme.colors.positive.x200,
+        },
         color: {
+          // TODO: Fix theme colors
           xs: theme.colors.neutral.x999,
           sm: theme.colors.neutral.x000,
         },
       }}>React - SkynexUI: {colorSelected}</Text>
       <Text styleSheet={{
+        display: 'flex',
         color: {
           xs: theme.colors.neutral.x999,
           sm: theme.colors.neutral.x000,

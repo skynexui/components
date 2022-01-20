@@ -47,6 +47,8 @@ export interface StyleSheet {
   padding?: ResponsiveProperty<number | string> | string;
   backgroundColor?: ResponsiveProperty<string> | string;
   color?: ResponsiveProperty<string> | string;
+  height?: ResponsiveProperty<number | string> | string;
+  width?: ResponsiveProperty<number | string> | string;
   // %%[CODER_END]:StyleSheet_attributes%%
   srOnly?: boolean;
   borderStyle?: string;

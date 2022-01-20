@@ -4,6 +4,8 @@ import 'package:skynexui_components/components/box/flutter/hexcolor.dart';
 class BoxBaseStyles {
   StyleSheet styleSheet;
   Breakpoints activeBreakpoint;
+  dynamic width;
+  dynamic height;
   dynamic color;
   dynamic backgroundColor;
   dynamic padding;
@@ -21,7 +23,7 @@ class BoxBaseStyles {
   dynamic marginVertical;
   dynamic marginHorizontal;
   dynamic position;
-  dynamic flexDirection = 'row';
+  dynamic flexDirection;
   dynamic crossAxisAlignment = 'flex-start';
   dynamic mainAxisAlignment = 'flex-start';
 
@@ -29,6 +31,11 @@ class BoxBaseStyles {
     required this.styleSheet,
     required this.activeBreakpoint,
   }) {
+    // [width]
+    width = resolveValueForBreakpoint(styleSheet.width, activeBreakpoint);
+    // [height]
+    height = resolveValueForBreakpoint(styleSheet.height, activeBreakpoint);
+
     // [color]
     var colorValue =
         resolveValueForBreakpoint(styleSheet.color, activeBreakpoint);

@@ -13,13 +13,13 @@ class HomeScreen extends StatelessWidget {
       body: Box(
         styleSheet: StyleSheet(
           flexDirection: {
-            Breakpoints.xs: 'column',
-          },
-          justifyContent: {
-            Breakpoints.xs: 'center',
+            Breakpoints.xs: 'row',
           },
           alignItems: {
             Breakpoints.xs: 'center',
+          },
+          justifyContent: {
+            Breakpoints.xs: 'flex-end',
           },
           backgroundColor: {
             Breakpoints.xs: bg,
@@ -33,6 +33,9 @@ class HomeScreen extends StatelessWidget {
           Text(
             'Flutter - SkynexUI: $colorSelected',
             styleSheet: StyleSheet(
+              backgroundColor: {
+                Breakpoints.xs: theme.colors.positive.x200,
+              },
               color: {
                 Breakpoints.xs: theme.colors.neutral.x999,
                 Breakpoints.sm: theme.colors.neutral.x000,

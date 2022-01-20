@@ -41,7 +41,9 @@ class StyleSheet {
   final Map<Breakpoints, double?> paddingTop;
   final Map<Breakpoints, double> padding;
   final Map<Breakpoints, String?> backgroundColor;
-  final Map<Breakpoints, String?> color; 
+  final Map<Breakpoints, String?> color;
+  final Map<Breakpoints, double> height;
+  final Map<Breakpoints, double> width; 
 // %%[CODER_END]:StyleSheet_attributes%%
 
   const StyleSheet({
@@ -66,7 +68,9 @@ class StyleSheet {
     this.paddingTop = defaultDoubleEmptyValue,
     this.padding = defaultDoubleZeroValue,
     this.backgroundColor = defaultStringEmptyValue,
-    this.color = defaultStringEmptyValue, 
+    this.color = defaultStringEmptyValue,
+    this.height = defaultDoubleZeroValue,
+    this.width = defaultDoubleZeroValue, 
 // %%[CODER_END]:StyleSheet_constructor%%
   });
 }
