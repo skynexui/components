@@ -13,8 +13,8 @@ class HomeScreen extends StatelessWidget {
       body: Box(
         styleSheet: StyleSheet(
           flexDirection: {Breakpoints.xs: 'column'},
-          alignItems: {Breakpoints.xs: 'center'},
-          justifyContent: {Breakpoints.xs: 'flex-start'},
+          crossAxisAlignment: {Breakpoints.xs: 'center'}, // alignItems
+          mainAxisAlignment: {Breakpoints.xs: 'flex-start'}, // justifyContent
           backgroundColor: {Breakpoints.xs: bg},
           margin: {Breakpoints.xs: 50},
           paddingVertical: {Breakpoints.xs: 50},

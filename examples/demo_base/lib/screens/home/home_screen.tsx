@@ -31,8 +31,8 @@ export function HomeScreen() {
     <Box
       styleSheet={{
         flexDirection: 'column',
-        alignItems: { xs: 'center' },
-        justifyContent: { xs: 'flex-start' },
+        crossAxisAlignment: { xs: 'center' }, // alignItems
+        mainAxisAlignment: { xs: 'flex-start' }, // justifyContent
         backgroundColor: {
           xs: bg,
         },
