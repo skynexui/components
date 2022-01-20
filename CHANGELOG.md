@@ -1,3 +1,15 @@
+# [1.16.0](https://github.com/skynexui/components/compare/v1.15.1...v1.16.0) (2022-01-20)
+
+
+### Bug Fixes
+
+* broken build ([82b11f7](https://github.com/skynexui/components/commit/82b11f7dac333d30e05bedb23b43b4a6c4ef5885))
+
+
+### Features
+
+* add flex and string width for enable percentage in future ([a2ed399](https://github.com/skynexui/components/commit/a2ed3991a60cdf55c2549e144204266207a8deca))
+
 ## [1.15.1](https://github.com/skynexui/components/compare/v1.15.0...v1.15.1) (2022-01-20)
 
 
