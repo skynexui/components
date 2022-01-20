@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/skynexui/components/compare/v1.14.0...v1.15.0) (2022-01-20)
+
+
+### Features
+
+* remove theme from exported stuff useTheme is the right way ([c720df0](https://github.com/skynexui/components/commit/c720df0bf973d97eb9a70d96051f0fe8fa2e35c3))
+
 # [1.14.0](https://github.com/skynexui/components/compare/v1.13.0...v1.14.0) (2022-01-20)
 
 
