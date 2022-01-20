@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/require-default-props */
 import React, { Ref } from 'react';
 import { renderCSS } from '@lib/utils/renderCSS';
