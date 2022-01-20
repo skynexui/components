@@ -4,7 +4,7 @@ type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   // %%[CODER_START]:StyleSheet_attributes%%
-  flex?: ResponsiveProperty<number | string> | string;
+  flex?: ResponsiveProperty<number | string> | string | number;
   alignItems?:
     | ResponsiveProperty<'stretch' | 'flex-start' | 'flex-end' | 'center'>
     | string;
