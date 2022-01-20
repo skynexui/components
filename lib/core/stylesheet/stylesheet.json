@@ -1,11 +1,13 @@
 {
   "width": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "string | number"
   },
   "height": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "string | number"
   },
   "color": {
     "type": "String?",
@@ -95,5 +97,9 @@
     "type": "String?",
     "default": "defaultStringEmptyValue",
     "hintValues": "'stretch' |'flex-start' |'flex-end' | 'center'"
+  },
+  "flex": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"    
   }
 }

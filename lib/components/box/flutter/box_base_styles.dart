@@ -24,6 +24,7 @@ class BoxBaseStyles {
   dynamic marginHorizontal;
   dynamic position;
   dynamic flexDirection;
+  dynamic flex;
   dynamic crossAxisAlignment = 'flex-start';
   dynamic mainAxisAlignment = 'flex-start';
 
@@ -32,9 +33,17 @@ class BoxBaseStyles {
     required this.activeBreakpoint,
   }) {
     // [width]
-    width = resolveValueForBreakpoint(styleSheet.width, activeBreakpoint);
+    var baseWidth =
+        resolveValueForBreakpoint(styleSheet.width, activeBreakpoint);
+    if (baseWidth != null) {
+      width = double.parse(baseWidth);
+    }
     // [height]
-    height = resolveValueForBreakpoint(styleSheet.height, activeBreakpoint);
+    var baseHeight =
+        resolveValueForBreakpoint(styleSheet.height, activeBreakpoint);
+    if (baseHeight != null) {
+      height = double.parse(baseHeight);
+    }
 
     // [color]
     var colorValue =
@@ -113,5 +122,8 @@ class BoxBaseStyles {
             styleSheet.crossAxisAlignment, activeBreakpoint) ??
         alignItems ??
         crossAxisAlignment;
+
+    // [flex]
+    flex = resolveValueForBreakpoint(styleSheet.flex, activeBreakpoint);
   }
 }

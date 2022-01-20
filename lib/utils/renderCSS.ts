@@ -45,7 +45,11 @@ export function renderCSS(props: any, currentBreakpoint: any) {
         cssPropValue[currentBreakpoint];
 
       if (currentCssPropValue) {
-        if (typeof currentCssPropValue === 'number') {
+        if (
+          typeof currentCssPropValue === 'number' &&
+          cssPropName !== 'flex' &&
+          cssPropName !== 'z-index'
+        ) {
           return renderCSSValue(cssPropName, `${currentCssPropValue}px`);
         }
         return renderCSSValue(cssPropName, currentCssPropValue);

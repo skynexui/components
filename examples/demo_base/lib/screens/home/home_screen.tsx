@@ -30,7 +30,8 @@ export function HomeScreen() {
   return (
     <Box
       styleSheet={{
-        flexDirection: 'column',
+        width: { xs: '500px' },
+        flexDirection: 'row',
         crossAxisAlignment: { xs: 'center' }, // alignItems
         mainAxisAlignment: { xs: 'flex-start' }, // justifyContent
         backgroundColor: {
@@ -44,21 +45,23 @@ export function HomeScreen() {
       }}
     >
       <Text styleSheet={{
-        width: {xs: 50},
+        // width: {xs: 50},
         height: {xs: 50},
         backgroundColor: {xs: theme.colors.primary.x400 },
       }}>
         Box 01
       </Text>
       <Text styleSheet={{
-        width: {xs: 50},
+        // width: {xs: 50},
+        flex: {xs: 2},
         height: {xs: 50},
         backgroundColor: {xs: theme.colors.accent.x400 },
       }}>
         Box 02
       </Text>
       <Text styleSheet={{
-        width: {xs: 50},
+        // width: {xs: 50},
+        flex: {xs: 3},
         height: {xs: 50},
         backgroundColor: {xs: theme.colors.positive.x400 },
       }}>

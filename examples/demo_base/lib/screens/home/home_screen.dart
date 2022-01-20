@@ -12,7 +12,8 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Box(
         styleSheet: StyleSheet(
-          flexDirection: {Breakpoints.xs: 'column'},
+          width: {Breakpoints.xs: '500'},
+          flexDirection: {Breakpoints.xs: 'row'},
           crossAxisAlignment: {Breakpoints.xs: 'center'}, // alignItems
           mainAxisAlignment: {Breakpoints.xs: 'flex-start'}, // justifyContent
           backgroundColor: {Breakpoints.xs: bg},
@@ -25,24 +26,26 @@ class HomeScreen extends StatelessWidget {
           Text(
             'Box 01',
             styleSheet: StyleSheet(
-              width: {Breakpoints.xs: 50},
-              height: {Breakpoints.xs: 50},
+              // width: {Breakpoints.xs: 50},
+              height: {Breakpoints.xs: '50'},
               backgroundColor: {Breakpoints.xs: theme.colors.primary.x400},
             ),
           ),
           Text(
             'Box 02',
             styleSheet: StyleSheet(
-              width: {Breakpoints.xs: 50},
-              height: {Breakpoints.xs: 50},
+              flex: {Breakpoints.xs: 2},
+              // width: {Breakpoints.xs: 50},
+              height: {Breakpoints.xs: '50'},
               backgroundColor: {Breakpoints.xs: theme.colors.accent.x400},
             ),
           ),
           Text(
             'Box 03',
             styleSheet: StyleSheet(
-              width: {Breakpoints.xs: 50},
-              height: {Breakpoints.xs: 50},
+              flex: {Breakpoints.xs: 3},
+              // width: {Breakpoints.xs: 50},
+              height: {Breakpoints.xs: '50'},
               backgroundColor: {Breakpoints.xs: theme.colors.positive.x400},
             ),
           )

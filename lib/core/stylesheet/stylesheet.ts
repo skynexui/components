@@ -4,6 +4,7 @@ type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   // %%[CODER_START]:StyleSheet_attributes%%
+  flex?: ResponsiveProperty<number | string> | string;
   alignItems?:
     | ResponsiveProperty<'stretch' | 'flex-start' | 'flex-end' | 'center'>
     | string;
@@ -47,8 +48,8 @@ export interface StyleSheet {
   padding?: ResponsiveProperty<number | string> | string;
   backgroundColor?: ResponsiveProperty<string> | string;
   color?: ResponsiveProperty<string> | string;
-  height?: ResponsiveProperty<number | string> | string;
-  width?: ResponsiveProperty<number | string> | string;
+  height?: ResponsiveProperty<string | number> | string;
+  width?: ResponsiveProperty<string | number> | string;
   // %%[CODER_END]:StyleSheet_attributes%%
   srOnly?: boolean;
   borderStyle?: string;
@@ -68,7 +69,6 @@ export interface StyleSheet {
   borderWidth?: ResponsiveProperty<string> | string;
   borderColor?: ResponsiveProperty<string> | string;
   opacity?: ResponsiveProperty<number | string> | string;
-  flex?: ResponsiveProperty<number> | number;
   textAlign?: ResponsiveProperty<string> | string;
   focus?: StyleSheet;
   hover?: StyleSheet;

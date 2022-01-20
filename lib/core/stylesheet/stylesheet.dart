@@ -21,6 +21,7 @@ const Map<Breakpoints, double?> defaultDoubleEmptyValue = {
 
 class StyleSheet {
 // %%[CODER_START]:StyleSheet_attributes%%
+  final Map<Breakpoints, double?> flex;
   final Map<Breakpoints, String?> alignItems;
   final Map<Breakpoints, String?> crossAxisAlignment;
   final Map<Breakpoints, String?> justifyContent;
@@ -42,12 +43,13 @@ class StyleSheet {
   final Map<Breakpoints, double> padding;
   final Map<Breakpoints, String?> backgroundColor;
   final Map<Breakpoints, String?> color;
-  final Map<Breakpoints, double?> height;
-  final Map<Breakpoints, double?> width; 
+  final Map<Breakpoints, String?> height;
+  final Map<Breakpoints, String?> width; 
 // %%[CODER_END]:StyleSheet_attributes%%
 
   const StyleSheet({
 // %%[CODER_START]:StyleSheet_constructor%%
+    this.flex = defaultDoubleEmptyValue,
     this.alignItems = defaultStringEmptyValue,
     this.crossAxisAlignment = defaultStringEmptyValue,
     this.justifyContent = defaultStringEmptyValue,
@@ -69,8 +71,8 @@ class StyleSheet {
     this.padding = defaultDoubleZeroValue,
     this.backgroundColor = defaultStringEmptyValue,
     this.color = defaultStringEmptyValue,
-    this.height = defaultDoubleEmptyValue,
-    this.width = defaultDoubleEmptyValue, 
+    this.height = defaultStringEmptyValue,
+    this.width = defaultStringEmptyValue, 
 // %%[CODER_END]:StyleSheet_constructor%%
   });
 }
