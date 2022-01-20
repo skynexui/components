@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/skynexui/components/compare/v1.12.0...v1.13.0) (2022-01-20)
+
+
+### Features
+
+* force release ([0214b75](https://github.com/skynexui/components/commit/0214b75c0857b4fe21b35f8947cfd36eaef77305))
+
 # [1.12.0](https://github.com/skynexui/components/compare/v1.11.0...v1.12.0) (2022-01-19)
 
 
