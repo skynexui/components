@@ -13,30 +13,35 @@ class Box extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const activeBreakpoint = Breakpoints.xs;
+    var activeBreakpoint = getActiveBreakpoint(context);
     var styles = BoxBaseStyles(
       activeBreakpoint: activeBreakpoint,
       styleSheet: styleSheet,
     );
 
     var child = children![0];
-    return Container(
-      margin: EdgeInsets.only(
-        bottom: styles.margin,
-        left: styles.margin,
-        right: styles.margin,
-        top: styles.margin,
+    return DefaultTextStyle.merge(
+      style: TextStyle(
+        color: styles.color,
       ),
-      padding: EdgeInsets.only(
-        bottom: styles.padding,
-        left: styles.padding,
-        right: styles.padding,
-        top: styles.padding,
+      child: Container(
+        margin: EdgeInsets.only(
+          bottom: styles.marginBottom,
+          left: styles.marginLeft,
+          right: styles.marginRight,
+          top: styles.marginTop,
+        ),
+        padding: EdgeInsets.only(
+          bottom: styles.paddingBottom,
+          left: styles.paddingLeft,
+          right: styles.paddingRight,
+          top: styles.paddingTop,
+        ),
+        decoration: BoxDecoration(
+          color: styles.backgroundColor,
+        ),
+        child: child,
       ),
-      decoration: BoxDecoration(
-        color: styles.backgroundColor,
-      ),
-      child: child,
     );
   }
 }

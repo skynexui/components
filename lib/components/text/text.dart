@@ -15,6 +15,7 @@ class Text extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Box(
+      styleSheet: styleSheet,
       children: [
         flutter.Text(
           data,

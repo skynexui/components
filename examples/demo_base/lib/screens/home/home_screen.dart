@@ -16,10 +16,20 @@ class HomeScreen extends StatelessWidget {
             Breakpoints.xs: bg,
           },
           margin: {Breakpoints.xs: 50},
-          padding: {Breakpoints.xs: 50},
+          paddingBottom: {Breakpoints.xs: 100},
+          paddingVertical: {Breakpoints.xs: 50},
+          paddingHorizontal: {Breakpoints.xs: 50},
         ),
         children: [
-          Text('SkynexUI: $colorSelected'),
+          Text(
+            'SkynexUI: $colorSelected',
+            styleSheet: StyleSheet(
+              color: {
+                Breakpoints.xs: theme.colors.neutral.x999,
+                Breakpoints.sm: theme.colors.neutral.x000,
+              },
+            ),
+          ),
         ],
       ),
     );

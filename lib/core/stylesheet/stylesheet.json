@@ -1,4 +1,8 @@
 {
+  "color": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
   "backgroundColor": {
     "type": "String?",
     "default": "defaultStringEmptyValue"
@@ -23,6 +27,14 @@
     "type": "double?",
     "default": "defaultDoubleEmptyValue"
   },
+  "paddingVertical": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "paddingHorizontal": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
   "margin": {
     "type": "double",
     "default": "defaultDoubleZeroValue"
@@ -40,6 +52,14 @@
     "default": "defaultDoubleEmptyValue"
   },
   "marginBottom": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "marginVertical": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "marginHorizontal": {
     "type": "double?",
     "default": "defaultDoubleEmptyValue"
   }
