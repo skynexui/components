@@ -1,3 +1,15 @@
+## [1.15.1](https://github.com/skynexui/components/compare/v1.15.0...v1.15.1) (2022-01-20)
+
+
+### Bug Fixes
+
+* add extra adjusts ([f25069b](https://github.com/skynexui/components/commit/f25069b13d42f32d631b0d6e779de956b36d80cf))
+* add support to sknui-box with default flex ([3d3d279](https://github.com/skynexui/components/commit/3d3d2790740c63c5b23be5bf1c371a30f0193dd0))
+* adjust examples and sknui-text className ([5d95962](https://github.com/skynexui/components/commit/5d9596235a3cb200bcbbcf0598eed181acf35b7e))
+* force release ([7aea78a](https://github.com/skynexui/components/commit/7aea78abd99f46ed91f9a25b1101d276f1b04454))
+* remove ts warning ([4314672](https://github.com/skynexui/components/commit/4314672863ad46f1d132bf48131bb2788c16febc))
+* update broken theme ([7622f16](https://github.com/skynexui/components/commit/7622f16b824d9dfc7d848d99907357593ef00349))
+
 # [1.15.0](https://github.com/skynexui/components/compare/v1.14.0...v1.15.0) (2022-01-20)
 
 
