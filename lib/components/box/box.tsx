@@ -19,9 +19,18 @@ interface BoxProps {
   ref: Ref<unknown>;
 }
 
-export const Box = React.forwardRef(({ tag, ...props }: BoxProps, ref) => {
-  return <BoxBase as={tag} {...props} ref={ref} />;
-});
+export const Box = React.forwardRef(
+  ({ tag, className, ...props }: BoxProps, ref) => {
+    return (
+      <BoxBase
+        as={tag}
+        className={`${className} sknui-box`}
+        {...props}
+        ref={ref}
+      />
+    );
+  }
+);
 
 Box.defaultProps = {
   tag: 'div',

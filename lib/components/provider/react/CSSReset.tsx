@@ -563,6 +563,11 @@ Add the correct display in Chrome and Safari.
         --tw-border-opacity: 1;
         border-color: rgba(229, 231, 235, var(--tw-border-opacity));
       }
+
+      /** SkynexUI Styles */
+      .sknui-box {
+        display: flex;
+      }
     `}</style>
   );
 }
