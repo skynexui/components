@@ -12,43 +12,28 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Box(
         styleSheet: StyleSheet(
-          width: {Breakpoints.xs: '500'},
-          flexDirection: {Breakpoints.xs: 'row'},
+          flexDirection: {Breakpoints.xs: 'column'},
           crossAxisAlignment: {Breakpoints.xs: 'center'}, // alignItems
           mainAxisAlignment: {Breakpoints.xs: 'flex-start'}, // justifyContent
           backgroundColor: {Breakpoints.xs: bg},
-          margin: {Breakpoints.xs: 50},
           paddingVertical: {Breakpoints.xs: 50},
           paddingHorizontal: {Breakpoints.xs: 50},
           paddingBottom: {Breakpoints.xs: 100},
         ),
         children: [
           Text(
-            'Box 01',
+            'Header',
             styleSheet: StyleSheet(
               // width: {Breakpoints.xs: 50},
               height: {Breakpoints.xs: '50'},
               backgroundColor: {Breakpoints.xs: theme.colors.primary.x400},
             ),
           ),
-          Text(
-            'Box 02',
+          const FlatList(
             styleSheet: StyleSheet(
-              flex: {Breakpoints.xs: 2},
-              // width: {Breakpoints.xs: 50},
-              height: {Breakpoints.xs: '50'},
-              backgroundColor: {Breakpoints.xs: theme.colors.accent.x400},
+              flex: {Breakpoints.xs: 1},
             ),
           ),
-          Text(
-            'Box 03',
-            styleSheet: StyleSheet(
-              flex: {Breakpoints.xs: 3},
-              // width: {Breakpoints.xs: 50},
-              height: {Breakpoints.xs: '50'},
-              backgroundColor: {Breakpoints.xs: theme.colors.positive.x400},
-            ),
-          )
         ],
       ),
     );
