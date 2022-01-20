@@ -20,6 +20,10 @@ class BoxBaseStyles {
   dynamic marginBottom;
   dynamic marginVertical;
   dynamic marginHorizontal;
+  dynamic position;
+  dynamic flexDirection = 'row';
+  dynamic crossAxisAlignment = 'start';
+  dynamic mainAxisAlignment = 'start';
 
   BoxBaseStyles({
     required this.styleSheet,
@@ -81,5 +85,10 @@ class BoxBaseStyles {
         resolveValueForBreakpoint(styleSheet.paddingBottom, activeBreakpoint) ??
             paddingVertical ??
             padding;
+
+    // [flexDirection]
+    flexDirection =
+        resolveValueForBreakpoint(styleSheet.flexDirection, activeBreakpoint) ??
+            flexDirection;
   }
 }

@@ -20,7 +20,7 @@ const generators = {
       contract: core.readFile(`${path}/stylesheet.json`, 'json'),
     };
     core.applyContract(contract, `${path}/stylesheet.dart`, ([name, value]) => {
-      return `  final Map<Breakpoints,${value.type}> ${name};`;
+      return `  final Map<Breakpoints, ${value.type}> ${name};`;
     });
 
     core.applyContract(contract, `${path}/stylesheet.ts`, ([name, value]) => {
@@ -30,7 +30,7 @@ const generators = {
       const type = (
         types[value.type.replace('?', '')] || value.type.replace('?', '')
       ).toLowerCase();
-      return `${name}?: ResponsiveProperty<${type}> | string;`;
+      return `${name}?: ResponsiveProperty<${value.hintValues || type}> | string;`;
     });
   },
 };

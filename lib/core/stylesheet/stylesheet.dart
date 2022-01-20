@@ -21,26 +21,28 @@ const Map<Breakpoints, double?> defaultDoubleEmptyValue = {
 
 class StyleSheet {
 // %%[CODER_START]:StyleSheet_attributes%%
-  final Map<Breakpoints,double?> marginHorizontal;
-  final Map<Breakpoints,double?> marginVertical;
-  final Map<Breakpoints,double?> marginBottom;
-  final Map<Breakpoints,double?> marginRight;
-  final Map<Breakpoints,double?> marginLeft;
-  final Map<Breakpoints,double?> marginTop;
-  final Map<Breakpoints,double> margin;
-  final Map<Breakpoints,double?> paddingHorizontal;
-  final Map<Breakpoints,double?> paddingVertical;
-  final Map<Breakpoints,double?> paddingBottom;
-  final Map<Breakpoints,double?> paddingRight;
-  final Map<Breakpoints,double?> paddingLeft;
-  final Map<Breakpoints,double?> paddingTop;
-  final Map<Breakpoints,double> padding;
-  final Map<Breakpoints,String?> backgroundColor;
-  final Map<Breakpoints,String?> color; 
+  final Map<Breakpoints, String?> flexDirection;
+  final Map<Breakpoints, double?> marginHorizontal;
+  final Map<Breakpoints, double?> marginVertical;
+  final Map<Breakpoints, double?> marginBottom;
+  final Map<Breakpoints, double?> marginRight;
+  final Map<Breakpoints, double?> marginLeft;
+  final Map<Breakpoints, double?> marginTop;
+  final Map<Breakpoints, double> margin;
+  final Map<Breakpoints, double?> paddingHorizontal;
+  final Map<Breakpoints, double?> paddingVertical;
+  final Map<Breakpoints, double?> paddingBottom;
+  final Map<Breakpoints, double?> paddingRight;
+  final Map<Breakpoints, double?> paddingLeft;
+  final Map<Breakpoints, double?> paddingTop;
+  final Map<Breakpoints, double> padding;
+  final Map<Breakpoints, String?> backgroundColor;
+  final Map<Breakpoints, String?> color; 
 // %%[CODER_END]:StyleSheet_attributes%%
 
   const StyleSheet({
 // %%[CODER_START]:StyleSheet_constructor%%
+    this.flexDirection = defaultStringEmptyValue,
     this.marginHorizontal = defaultDoubleEmptyValue,
     this.marginVertical = defaultDoubleEmptyValue,
     this.marginBottom = defaultDoubleEmptyValue,

@@ -62,5 +62,10 @@
   "marginHorizontal": {
     "type": "double?",
     "default": "defaultDoubleEmptyValue"
+  },
+  "flexDirection": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'row' | 'column'"
   }
 }

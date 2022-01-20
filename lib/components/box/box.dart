@@ -1,5 +1,6 @@
 import 'package:skynexui_components/components.dart';
 import 'package:skynexui_components/components/box/flutter/box_base_styles.dart';
+import 'package:skynexui_components/components/box/flutter/child_decorator.dart';
 
 class Box extends StatelessWidget {
   final List<Widget>? children;
@@ -19,7 +20,6 @@ class Box extends StatelessWidget {
       styleSheet: styleSheet,
     );
 
-    var child = children![0];
     return DefaultTextStyle.merge(
       style: TextStyle(
         color: styles.color,
@@ -40,7 +40,13 @@ class Box extends StatelessWidget {
         decoration: BoxDecoration(
           color: styles.backgroundColor,
         ),
-        child: child,
+        child: ChildDecorator(
+          flexDirection: styles.flexDirection,
+          position: styles.position,
+          crossAxisAlignment: styles.crossAxisAlignment,
+          mainAxisAlignment: styles.mainAxisAlignment,
+          children: children as List<Widget>,
+        ),
       ),
     );
   }

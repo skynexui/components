@@ -4,6 +4,7 @@ type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   // %%[CODER_START]:StyleSheet_attributes%%
+  flexDirection?: ResponsiveProperty<'row' | 'column'> | string;
   marginHorizontal?: ResponsiveProperty<number | string> | string;
   marginVertical?: ResponsiveProperty<number | string> | string;
   marginBottom?: ResponsiveProperty<number | string> | string;
@@ -44,7 +45,6 @@ export interface StyleSheet {
   flex?: ResponsiveProperty<number> | number;
   textAlign?: ResponsiveProperty<string> | string;
   // mainAxisAlignment or crossAxisAlignment
-  flexDirection?: ResponsiveProperty<string> | string;
   alignItems?: ResponsiveProperty<string> | string;
   justifyContent?: ResponsiveProperty<string> | string;
   // mainAxisAlignment or crossAxisAlignment

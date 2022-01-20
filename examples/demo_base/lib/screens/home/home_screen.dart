@@ -12,6 +12,9 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Box(
         styleSheet: StyleSheet(
+          flexDirection: {
+            Breakpoints.xs: 'column',
+          },
           backgroundColor: {
             Breakpoints.xs: bg,
           },
@@ -23,6 +26,15 @@ class HomeScreen extends StatelessWidget {
         children: [
           Text(
             'SkynexUI: $colorSelected',
+            styleSheet: StyleSheet(
+              color: {
+                Breakpoints.xs: theme.colors.neutral.x999,
+                Breakpoints.sm: theme.colors.neutral.x000,
+              },
+            ),
+          ),
+          Text(
+            'Second text',
             styleSheet: StyleSheet(
               color: {
                 Breakpoints.xs: theme.colors.neutral.x999,
