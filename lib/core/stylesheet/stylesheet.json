@@ -67,5 +67,25 @@
     "type": "String?",
     "default": "defaultStringEmptyValue",
     "hintValues": "'row' | 'column'"
+  },
+  "mainAxisAlignment": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'center' |'flex-start' |'flex-end' |'spaceBetween' |'spaceAround' | 'spaceEvenly'"
+  },
+  "justifyContent": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'center' |'flex-start' |'flex-end' |'spaceBetween' |'spaceAround' | 'spaceEvenly'"
+  },
+  "crossAxisAlignment": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'stretch' |'flex-start' |'flex-end' | 'center'"
+  },
+  "alignItems": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'stretch' |'flex-start' |'flex-end' | 'center'"
   }
 }

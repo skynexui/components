@@ -4,6 +4,32 @@ type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   // %%[CODER_START]:StyleSheet_attributes%%
+  alignItems?:
+    | ResponsiveProperty<'stretch' | 'flex-start' | 'flex-end' | 'center'>
+    | string;
+  crossAxisAlignment?:
+    | ResponsiveProperty<'stretch' | 'flex-start' | 'flex-end' | 'center'>
+    | string;
+  justifyContent?:
+    | ResponsiveProperty<
+        | 'center'
+        | 'flex-start'
+        | 'flex-end'
+        | 'spaceBetween'
+        | 'spaceAround'
+        | 'spaceEvenly'
+      >
+    | string;
+  mainAxisAlignment?:
+    | ResponsiveProperty<
+        | 'center'
+        | 'flex-start'
+        | 'flex-end'
+        | 'spaceBetween'
+        | 'spaceAround'
+        | 'spaceEvenly'
+      >
+    | string;
   flexDirection?: ResponsiveProperty<'row' | 'column'> | string;
   marginHorizontal?: ResponsiveProperty<number | string> | string;
   marginVertical?: ResponsiveProperty<number | string> | string;
@@ -44,10 +70,6 @@ export interface StyleSheet {
   opacity?: ResponsiveProperty<number | string> | string;
   flex?: ResponsiveProperty<number> | number;
   textAlign?: ResponsiveProperty<string> | string;
-  // mainAxisAlignment or crossAxisAlignment
-  alignItems?: ResponsiveProperty<string> | string;
-  justifyContent?: ResponsiveProperty<string> | string;
-  // mainAxisAlignment or crossAxisAlignment
   focus?: StyleSheet;
   hover?: StyleSheet;
   disabled?: StyleSheet;

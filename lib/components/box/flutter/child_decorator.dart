@@ -1,10 +1,11 @@
 import 'package:skynexui_components/components.dart';
 
 mainAxisResolver(String value) {
+  // justify-content
   // mainAxisAlignment:  "center|start|end|spaceBetween|spaceAround|spaceEvenly" [MainAxisAlignment],
   if (value == 'center') return MainAxisAlignment.center;
-  if (value == 'start') return MainAxisAlignment.start;
-  if (value == 'end') return MainAxisAlignment.end;
+  if (value == 'flex-start') return MainAxisAlignment.start;
+  if (value == 'flex-end') return MainAxisAlignment.end;
   if (value == 'spaceBetween') return MainAxisAlignment.spaceBetween;
   if (value == 'spaceAround') return MainAxisAlignment.spaceAround;
   if (value == 'spaceEvenly') return MainAxisAlignment.spaceEvenly;
@@ -13,10 +14,11 @@ mainAxisResolver(String value) {
 }
 
 crossAxisResolver(String value) {
+  // align-items
   // crossAxisAlignment: "stretch|start|end|center"                              [CrossAxisAlignment],
   if (value == 'stretch') return CrossAxisAlignment.stretch;
-  if (value == 'start') return CrossAxisAlignment.start;
-  if (value == 'end') return CrossAxisAlignment.end;
+  if (value == 'flex-start') return CrossAxisAlignment.start;
+  if (value == 'flex-end') return CrossAxisAlignment.end;
   if (value == 'center') return CrossAxisAlignment.center;
 
   throw Exception('crossAxisAlignment: $value is not supported');

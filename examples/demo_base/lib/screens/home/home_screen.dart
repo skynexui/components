@@ -15,6 +15,12 @@ class HomeScreen extends StatelessWidget {
           flexDirection: {
             Breakpoints.xs: 'column',
           },
+          justifyContent: {
+            Breakpoints.xs: 'center',
+          },
+          alignItems: {
+            Breakpoints.xs: 'center',
+          },
           backgroundColor: {
             Breakpoints.xs: bg,
           },
@@ -25,7 +31,7 @@ class HomeScreen extends StatelessWidget {
         ),
         children: [
           Text(
-            'SkynexUI: $colorSelected',
+            'Flutter - SkynexUI: $colorSelected',
             styleSheet: StyleSheet(
               color: {
                 Breakpoints.xs: theme.colors.neutral.x999,
