@@ -25,7 +25,7 @@ const GlobalStyle = () => {
 export function HomeScreen() {
   const theme = useTheme();
   const colorsneutral = theme.colors.neutral;
-  const colorSelected = colorsneutral.x050;
+  const colorSelected = colorsneutral.x100;
   const bg = colorSelected;
   return (
     <Box
