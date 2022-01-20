@@ -4,6 +4,33 @@ type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   // %%[CODER_START]:StyleSheet_attributes%%
+  alignItems?:
+    | ResponsiveProperty<'stretch' | 'flex-start' | 'flex-end' | 'center'>
+    | string;
+  crossAxisAlignment?:
+    | ResponsiveProperty<'stretch' | 'flex-start' | 'flex-end' | 'center'>
+    | string;
+  justifyContent?:
+    | ResponsiveProperty<
+        | 'center'
+        | 'flex-start'
+        | 'flex-end'
+        | 'spaceBetween'
+        | 'spaceAround'
+        | 'spaceEvenly'
+      >
+    | string;
+  mainAxisAlignment?:
+    | ResponsiveProperty<
+        | 'center'
+        | 'flex-start'
+        | 'flex-end'
+        | 'spaceBetween'
+        | 'spaceAround'
+        | 'spaceEvenly'
+      >
+    | string;
+  flexDirection?: ResponsiveProperty<'row' | 'column'> | string;
   marginHorizontal?: ResponsiveProperty<number | string> | string;
   marginVertical?: ResponsiveProperty<number | string> | string;
   marginBottom?: ResponsiveProperty<number | string> | string;
@@ -20,6 +47,8 @@ export interface StyleSheet {
   padding?: ResponsiveProperty<number | string> | string;
   backgroundColor?: ResponsiveProperty<string> | string;
   color?: ResponsiveProperty<string> | string;
+  height?: ResponsiveProperty<number | string> | string;
+  width?: ResponsiveProperty<number | string> | string;
   // %%[CODER_END]:StyleSheet_attributes%%
   srOnly?: boolean;
   borderStyle?: string;
@@ -30,8 +59,6 @@ export interface StyleSheet {
   transition?: ResponsiveProperty<string> | string;
   fontFamily?: ResponsiveProperty<string> | string;
   fontSize?: ResponsiveProperty<string | number> | string;
-  width?: ResponsiveProperty<string | number> | string;
-  height?: ResponsiveProperty<string | number> | string;
   outline?: ResponsiveProperty<string> | string;
   borderRadius?: ResponsiveProperty<string> | string;
   cursor?: ResponsiveProperty<string> | string;
@@ -43,11 +70,6 @@ export interface StyleSheet {
   opacity?: ResponsiveProperty<number | string> | string;
   flex?: ResponsiveProperty<number> | number;
   textAlign?: ResponsiveProperty<string> | string;
-  // mainAxisAlignment or crossAxisAlignment
-  flexDirection?: ResponsiveProperty<string> | string;
-  alignItems?: ResponsiveProperty<string> | string;
-  justifyContent?: ResponsiveProperty<string> | string;
-  // mainAxisAlignment or crossAxisAlignment
   focus?: StyleSheet;
   hover?: StyleSheet;
   disabled?: StyleSheet;

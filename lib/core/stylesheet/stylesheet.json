@@ -1,4 +1,12 @@
 {
+  "width": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "height": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
   "color": {
     "type": "String?",
     "default": "defaultStringEmptyValue"
@@ -62,5 +70,30 @@
   "marginHorizontal": {
     "type": "double?",
     "default": "defaultDoubleEmptyValue"
+  },
+  "flexDirection": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'row' | 'column'"
+  },
+  "mainAxisAlignment": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'center' |'flex-start' |'flex-end' |'spaceBetween' |'spaceAround' | 'spaceEvenly'"
+  },
+  "justifyContent": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'center' |'flex-start' |'flex-end' |'spaceBetween' |'spaceAround' | 'spaceEvenly'"
+  },
+  "crossAxisAlignment": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'stretch' |'flex-start' |'flex-end' | 'center'"
+  },
+  "alignItems": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'stretch' |'flex-start' |'flex-end' | 'center'"
   }
 }

@@ -6,30 +6,48 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = useTheme(context);
-    var colorsPrimary = theme.colors.primary.toMap();
-    var colorSelected = colorsPrimary['x500'] as String;
+    var colorsneutral = theme.colors.neutral.toMap();
+    var colorSelected = colorsneutral['x100'] as String;
     var bg = colorSelected;
     return Scaffold(
       body: Box(
         styleSheet: StyleSheet(
-          backgroundColor: {
-            Breakpoints.xs: bg,
-          },
+          // width: {Breakpoints.xs: 500},
+          // height: {Breakpoints.xs: 500},
+          flexDirection: {Breakpoints.xs: 'column'},
+          alignItems: {Breakpoints.xs: 'center'},
+          justifyContent: {Breakpoints.xs: 'flex-start'},
+          backgroundColor: {Breakpoints.xs: bg},
           margin: {Breakpoints.xs: 50},
-          paddingBottom: {Breakpoints.xs: 100},
+          // paddingBottom: {Breakpoints.xs: 100},
           paddingVertical: {Breakpoints.xs: 50},
           paddingHorizontal: {Breakpoints.xs: 50},
         ),
         children: [
           Text(
-            'SkynexUI: $colorSelected',
+            'Box 01',
             styleSheet: StyleSheet(
-              color: {
-                Breakpoints.xs: theme.colors.neutral.x999,
-                Breakpoints.sm: theme.colors.neutral.x000,
-              },
+              width: {Breakpoints.xs: 50},
+              height: {Breakpoints.xs: 50},
+              backgroundColor: {Breakpoints.xs: theme.colors.primary.x400},
             ),
           ),
+          Text(
+            'Box 02',
+            styleSheet: StyleSheet(
+              width: {Breakpoints.xs: 50},
+              height: {Breakpoints.xs: 50},
+              backgroundColor: {Breakpoints.xs: theme.colors.accent.x400},
+            ),
+          ),
+          Text(
+            'Box 03',
+            styleSheet: StyleSheet(
+              width: {Breakpoints.xs: 50},
+              height: {Breakpoints.xs: 50},
+              backgroundColor: {Breakpoints.xs: theme.colors.positive.x400},
+            ),
+          )
         ],
       ),
     );

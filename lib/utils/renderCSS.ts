@@ -13,6 +13,13 @@ function renderCSSValue(cssPropName: any, cssPropValue: any) {
     `;
   }
 
+  if (cssPropName === 'main-axis-alignment') {
+    return `justify-content:${cssPropValue};`;
+  }
+  if (cssPropName === 'cross-axis-alignment') {
+    return `align-items:${cssPropValue};`;
+  }
+
   return `${cssPropName}:${cssPropValue};`;
 }
 

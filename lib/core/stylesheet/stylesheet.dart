@@ -21,26 +21,38 @@ const Map<Breakpoints, double?> defaultDoubleEmptyValue = {
 
 class StyleSheet {
 // %%[CODER_START]:StyleSheet_attributes%%
-  final Map<Breakpoints,double?> marginHorizontal;
-  final Map<Breakpoints,double?> marginVertical;
-  final Map<Breakpoints,double?> marginBottom;
-  final Map<Breakpoints,double?> marginRight;
-  final Map<Breakpoints,double?> marginLeft;
-  final Map<Breakpoints,double?> marginTop;
-  final Map<Breakpoints,double> margin;
-  final Map<Breakpoints,double?> paddingHorizontal;
-  final Map<Breakpoints,double?> paddingVertical;
-  final Map<Breakpoints,double?> paddingBottom;
-  final Map<Breakpoints,double?> paddingRight;
-  final Map<Breakpoints,double?> paddingLeft;
-  final Map<Breakpoints,double?> paddingTop;
-  final Map<Breakpoints,double> padding;
-  final Map<Breakpoints,String?> backgroundColor;
-  final Map<Breakpoints,String?> color; 
+  final Map<Breakpoints, String?> alignItems;
+  final Map<Breakpoints, String?> crossAxisAlignment;
+  final Map<Breakpoints, String?> justifyContent;
+  final Map<Breakpoints, String?> mainAxisAlignment;
+  final Map<Breakpoints, String?> flexDirection;
+  final Map<Breakpoints, double?> marginHorizontal;
+  final Map<Breakpoints, double?> marginVertical;
+  final Map<Breakpoints, double?> marginBottom;
+  final Map<Breakpoints, double?> marginRight;
+  final Map<Breakpoints, double?> marginLeft;
+  final Map<Breakpoints, double?> marginTop;
+  final Map<Breakpoints, double> margin;
+  final Map<Breakpoints, double?> paddingHorizontal;
+  final Map<Breakpoints, double?> paddingVertical;
+  final Map<Breakpoints, double?> paddingBottom;
+  final Map<Breakpoints, double?> paddingRight;
+  final Map<Breakpoints, double?> paddingLeft;
+  final Map<Breakpoints, double?> paddingTop;
+  final Map<Breakpoints, double> padding;
+  final Map<Breakpoints, String?> backgroundColor;
+  final Map<Breakpoints, String?> color;
+  final Map<Breakpoints, double?> height;
+  final Map<Breakpoints, double?> width; 
 // %%[CODER_END]:StyleSheet_attributes%%
 
   const StyleSheet({
 // %%[CODER_START]:StyleSheet_constructor%%
+    this.alignItems = defaultStringEmptyValue,
+    this.crossAxisAlignment = defaultStringEmptyValue,
+    this.justifyContent = defaultStringEmptyValue,
+    this.mainAxisAlignment = defaultStringEmptyValue,
+    this.flexDirection = defaultStringEmptyValue,
     this.marginHorizontal = defaultDoubleEmptyValue,
     this.marginVertical = defaultDoubleEmptyValue,
     this.marginBottom = defaultDoubleEmptyValue,
@@ -56,7 +68,9 @@ class StyleSheet {
     this.paddingTop = defaultDoubleEmptyValue,
     this.padding = defaultDoubleZeroValue,
     this.backgroundColor = defaultStringEmptyValue,
-    this.color = defaultStringEmptyValue, 
+    this.color = defaultStringEmptyValue,
+    this.height = defaultDoubleEmptyValue,
+    this.width = defaultDoubleEmptyValue, 
 // %%[CODER_END]:StyleSheet_constructor%%
   });
 }

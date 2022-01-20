@@ -4,6 +4,8 @@ import 'package:skynexui_components/components/box/flutter/hexcolor.dart';
 class BoxBaseStyles {
   StyleSheet styleSheet;
   Breakpoints activeBreakpoint;
+  dynamic width;
+  dynamic height;
   dynamic color;
   dynamic backgroundColor;
   dynamic padding;
@@ -20,11 +22,20 @@ class BoxBaseStyles {
   dynamic marginBottom;
   dynamic marginVertical;
   dynamic marginHorizontal;
+  dynamic position;
+  dynamic flexDirection;
+  dynamic crossAxisAlignment = 'flex-start';
+  dynamic mainAxisAlignment = 'flex-start';
 
   BoxBaseStyles({
     required this.styleSheet,
     required this.activeBreakpoint,
   }) {
+    // [width]
+    width = resolveValueForBreakpoint(styleSheet.width, activeBreakpoint);
+    // [height]
+    height = resolveValueForBreakpoint(styleSheet.height, activeBreakpoint);
+
     // [color]
     var colorValue =
         resolveValueForBreakpoint(styleSheet.color, activeBreakpoint);
@@ -81,5 +92,26 @@ class BoxBaseStyles {
         resolveValueForBreakpoint(styleSheet.paddingBottom, activeBreakpoint) ??
             paddingVertical ??
             padding;
+
+    // [flexDirection]
+    flexDirection =
+        resolveValueForBreakpoint(styleSheet.flexDirection, activeBreakpoint) ??
+            flexDirection;
+
+    // [mainAxisAlignment|justifyContent]
+    var justifyContent =
+        resolveValueForBreakpoint(styleSheet.justifyContent, activeBreakpoint);
+    mainAxisAlignment = resolveValueForBreakpoint(
+            styleSheet.mainAxisAlignment, activeBreakpoint) ??
+        justifyContent ??
+        mainAxisAlignment;
+
+    // [crossAxisAlignment|alignItems]
+    var alignItems =
+        resolveValueForBreakpoint(styleSheet.alignItems, activeBreakpoint);
+    crossAxisAlignment = resolveValueForBreakpoint(
+            styleSheet.crossAxisAlignment, activeBreakpoint) ??
+        alignItems ??
+        crossAxisAlignment;
   }
 }
