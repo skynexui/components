@@ -16,7 +16,6 @@ const GlobalStyle = () => {
       }
       #__next {
         display: flex;
-        flex: 1;
         flex-direction: row;
       }
     `}</style>
@@ -25,24 +24,20 @@ const GlobalStyle = () => {
 
 export function HomeScreen() {
   const theme = useTheme();
-  const colorsPrimary = theme.colors.primary;
-  const colorSelected = colorsPrimary.x500;
+  const colorsneutral = theme.colors.neutral;
+  const colorSelected = colorsneutral.x050;
   const bg = colorSelected;
   return (
     <Box
       styleSheet={{
         // TODO: Standardize the default CSS between React Web and Flutter
         display: 'flex',
-        alignSelf: 'start', // ganha com o flexDirection: 'row'
-        flex: 1, // ganha flex 1 com o flexDirection: 'row'
+        // alignSelf: 'start', // ganha com o flexDirection: 'row'
+        // flex: 1, // ganha flex 1 com o flexDirection: 'row'
         // ===============================================================
-        flexDirection: 'row',
-        alignItems: {
-          xs: 'center',
-        },
-        justifyContent: {
-          xs: 'flex-end',
-        },
+        flexDirection: 'column',
+        alignItems: { xs: 'center' },
+        justifyContent: { xs: 'flex-start' },
         backgroundColor: {
           xs: bg,
         },
@@ -50,27 +45,33 @@ export function HomeScreen() {
         // TODO: Fix padding bottom implementation to match Flutter
         paddingVertical: { xs: 50 },
         paddingHorizontal: { xs: 50 },
-        paddingBottom: { xs: 100 },
+        // paddingBottom: { xs: 100 },
       }}
     >
       <Text styleSheet={{
         display: 'flex',
-        backgroundColor: {
-          xs: theme.colors.positive.x200,
-        },
-        color: {
-          // TODO: Fix theme colors
-          xs: theme.colors.neutral.x999,
-          sm: theme.colors.neutral.x000,
-        },
-      }}>React - SkynexUI: {colorSelected}</Text>
+        width: {xs: 50},
+        height: {xs: 50},
+        backgroundColor: {xs: theme.colors.primary.x400 },
+      }}>
+        Box 01
+      </Text>
       <Text styleSheet={{
         display: 'flex',
-        color: {
-          xs: theme.colors.neutral.x999,
-          sm: theme.colors.neutral.x000,
-        },
-      }}>Second text</Text>
+        width: {xs: 50},
+        height: {xs: 50},
+        backgroundColor: {xs: theme.colors.accent.x400 },
+      }}>
+        Box 02
+      </Text>
+      <Text styleSheet={{
+        display: 'flex',
+        width: {xs: 50},
+        height: {xs: 50},
+        backgroundColor: {xs: theme.colors.positive.x400 },
+      }}>
+        Box 03
+      </Text>
       <GlobalStyle />
     </Box >
   );

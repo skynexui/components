@@ -50,6 +50,7 @@ class ChildDecorator extends StatelessWidget {
         children: children,
         mainAxisAlignment: mainAxis,
         crossAxisAlignment: crossAxis,
+        mainAxisSize: MainAxisSize.min,
       );
     }
 
@@ -58,6 +59,7 @@ class ChildDecorator extends StatelessWidget {
         children: children,
         mainAxisAlignment: mainAxis,
         crossAxisAlignment: crossAxis,
+        mainAxisSize: MainAxisSize.min,
       );
     }
 

@@ -59,8 +59,6 @@ export interface StyleSheet {
   transition?: ResponsiveProperty<string> | string;
   fontFamily?: ResponsiveProperty<string> | string;
   fontSize?: ResponsiveProperty<string | number> | string;
-  width?: ResponsiveProperty<string | number> | string;
-  height?: ResponsiveProperty<string | number> | string;
   outline?: ResponsiveProperty<string> | string;
   borderRadius?: ResponsiveProperty<string> | string;
   cursor?: ResponsiveProperty<string> | string;
