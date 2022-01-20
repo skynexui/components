@@ -8,7 +8,7 @@ class Box extends StatelessWidget {
 
   const Box({
     Key? key,
-    required this.children,
+    this.children = const [],
     this.styleSheet = const StyleSheet(),
   }) : super(key: key);
 
@@ -25,6 +25,8 @@ class Box extends StatelessWidget {
         color: styles.color,
       ),
       child: Container(
+        width: styles.width,
+        height: styles.height,
         margin: EdgeInsets.only(
           bottom: styles.marginBottom,
           left: styles.marginLeft,
@@ -40,13 +42,15 @@ class Box extends StatelessWidget {
         decoration: BoxDecoration(
           color: styles.backgroundColor,
         ),
-        child: ChildDecorator(
-          flexDirection: styles.flexDirection,
-          position: styles.position,
-          crossAxisAlignment: styles.crossAxisAlignment,
-          mainAxisAlignment: styles.mainAxisAlignment,
-          children: children as List<Widget>,
-        ),
+        child: children!.isNotEmpty
+            ? ChildDecorator(
+                flexDirection: styles.flexDirection,
+                position: styles.position,
+                crossAxisAlignment: styles.crossAxisAlignment,
+                mainAxisAlignment: styles.mainAxisAlignment,
+                children: children as List<Widget>,
+              )
+            : null,
       ),
     );
   }

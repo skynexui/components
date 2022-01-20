@@ -1,11 +1,11 @@
 {
   "width": {
-    "type": "double",
-    "default": "defaultDoubleZeroValue"
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
   },
   "height": {
-    "type": "double",
-    "default": "defaultDoubleZeroValue"
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
   },
   "color": {
     "type": "String?",
