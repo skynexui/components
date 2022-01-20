@@ -15,10 +15,17 @@ export function HomeScreen() {
           xs: bg,
         },
         margin: { xs: 50 },
-        padding: { xs: 50 },
+        paddingBottom: { xs: 100 },
+        paddingVertical: { xs: 50 },
+        paddingHorizontal: { xs: 50 },
       }}
     >
-      <Text>SkynexUI: {colorSelected}</Text>
-    </Box>
+      <Text styleSheet={{
+        color: {
+          xs: theme.colors.neutral.x999,
+          sm: theme.colors.neutral.x000,
+        },
+      }}>SkynexUI: {colorSelected}</Text>
+    </Box >
   );
 }

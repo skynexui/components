@@ -39,7 +39,7 @@ ThemeColorSet neutralDefault = ThemeColorSet(
   x700: skynexUIBaseTheme["colors"]!["neutral"]!["x700"] as String,
   x800: skynexUIBaseTheme["colors"]!["neutral"]!["x800"] as String,
   x900: skynexUIBaseTheme["colors"]!["neutral"]!["x900"] as String,
-  x999: skynexUIBaseTheme["colors"]!["neutral"]!["x000"] as String,
+  x999: skynexUIBaseTheme["colors"]!["neutral"]!["x999"] as String,
 );
 
 ThemeColorSet positiveDefault = ThemeColorSet(

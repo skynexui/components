@@ -4,13 +4,23 @@ const core = require('../core/core');
 const path = './lib/core/stylesheet';
 
 const generators = {
+  StyleSheet_constructor() {
+    const contract = {
+      name: 'StyleSheet_constructor',
+      contract: core.readFile(`${path}/stylesheet.json`, 'json'),
+    };
+
+    core.applyContract(contract, `${path}/stylesheet.dart`, ([name, value]) => {
+      return `    this.${name} = ${value.default},`;
+    });
+  },
   StyleSheet_attributes() {
     const contract = {
       name: 'StyleSheet_attributes',
       contract: core.readFile(`${path}/stylesheet.json`, 'json'),
     };
     core.applyContract(contract, `${path}/stylesheet.dart`, ([name, value]) => {
-      return `final Map<Breakpoints,${value.type}> ${name};`;
+      return `  final Map<Breakpoints,${value.type}> ${name};`;
     });
 
     core.applyContract(contract, `${path}/stylesheet.ts`, ([name, value]) => {
