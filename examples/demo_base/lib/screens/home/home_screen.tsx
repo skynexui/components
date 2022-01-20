@@ -30,11 +30,6 @@ export function HomeScreen() {
   return (
     <Box
       styleSheet={{
-        // TODO: Standardize the default CSS between React Web and Flutter
-        display: 'flex',
-        // alignSelf: 'start', // ganha com o flexDirection: 'row'
-        // flex: 1, // ganha flex 1 com o flexDirection: 'row'
-        // ===============================================================
         flexDirection: 'column',
         alignItems: { xs: 'center' },
         justifyContent: { xs: 'flex-start' },
@@ -42,14 +37,13 @@ export function HomeScreen() {
           xs: bg,
         },
         margin: { xs: 50 },
-        // TODO: Fix padding bottom implementation to match Flutter
         paddingVertical: { xs: 50 },
         paddingHorizontal: { xs: 50 },
-        // paddingBottom: { xs: 100 },
+        // TODO: Fix padding bottom implementation to match Flutter
+        paddingBottom: { xs: 100 },
       }}
     >
       <Text styleSheet={{
-        display: 'flex',
         width: {xs: 50},
         height: {xs: 50},
         backgroundColor: {xs: theme.colors.primary.x400 },
@@ -57,7 +51,6 @@ export function HomeScreen() {
         Box 01
       </Text>
       <Text styleSheet={{
-        display: 'flex',
         width: {xs: 50},
         height: {xs: 50},
         backgroundColor: {xs: theme.colors.accent.x400 },
@@ -65,7 +58,6 @@ export function HomeScreen() {
         Box 02
       </Text>
       <Text styleSheet={{
-        display: 'flex',
         width: {xs: 50},
         height: {xs: 50},
         backgroundColor: {xs: theme.colors.positive.x400 },

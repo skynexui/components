@@ -565,7 +565,8 @@ Add the correct display in Chrome and Safari.
       }
 
       /** SkynexUI Styles */
-      .sknui-box {
+      .sknui-box,
+      .sknui-text {
         display: flex;
       }
     `}</style>

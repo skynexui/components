@@ -12,16 +12,14 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Box(
         styleSheet: StyleSheet(
-          // width: {Breakpoints.xs: 500},
-          // height: {Breakpoints.xs: 500},
           flexDirection: {Breakpoints.xs: 'column'},
           alignItems: {Breakpoints.xs: 'center'},
           justifyContent: {Breakpoints.xs: 'flex-start'},
           backgroundColor: {Breakpoints.xs: bg},
           margin: {Breakpoints.xs: 50},
-          // paddingBottom: {Breakpoints.xs: 100},
           paddingVertical: {Breakpoints.xs: 50},
           paddingHorizontal: {Breakpoints.xs: 50},
+          paddingBottom: {Breakpoints.xs: 100},
         ),
         children: [
           Text(

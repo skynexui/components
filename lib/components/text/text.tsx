@@ -21,6 +21,7 @@ interface TextProps {
     | 'strong'
     | 'label';
   htmlFor?: string;
+  className?: string;
   children: React.ReactNode;
   styleSheet?: StyleSheet;
 }
@@ -29,6 +30,7 @@ export function Text({
   children,
   styleSheet,
   variant,
+  className,
   ...props
 }: TextProps): JSX.Element {
   const { variants } = theme.typography;
@@ -42,6 +44,7 @@ export function Text({
         ...currentVariant,
         ...styleSheet,
       }}
+      className={`${className} sknui-text`}
       {...props}
     >
       {children}
@@ -51,6 +54,7 @@ export function Text({
 
 Text.defaultProps = {
   htmlFor: '',
+  className: '',
   variant: 'body2',
   tag: 'span',
   styleSheet: {},
