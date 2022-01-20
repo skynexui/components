@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/skynexui/components/compare/v1.13.0...v1.14.0) (2022-01-20)
+
+
+### Features
+
+* add support to flex direction minimal support ([#47](https://github.com/skynexui/components/issues/47)) ([0c228f7](https://github.com/skynexui/components/commit/0c228f77acc07e7f152aa79986270ce662557e26))
+
 # [1.13.0](https://github.com/skynexui/components/compare/v1.12.0...v1.13.0) (2022-01-20)
 
 
