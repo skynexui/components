@@ -9,6 +9,9 @@ The focus of this library is to provide a common "DSL" for write UI cross platfo
 
 > ⚠️ Until version 2.0 we will have breaking changes while structuring the API.
 
+## Get Started
+- [Follow these steps to create a new project](https://github.com/vercel/next.js/tree/canary/examples/with-skynexui-components)
+
 ## Demo
 - This is the [main demo](https://github.com/skynexui/components/tree/main/examples/demo_base) that we are working on, an project with React for Web and Flutter for mobile development.
 
