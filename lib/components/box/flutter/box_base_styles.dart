@@ -33,6 +33,11 @@ class BoxBaseStyles {
   dynamic borderRadiusTopRight;
   dynamic borderRadiusBottomLeft;
   dynamic borderRadiusBottomRight;
+  dynamic boxShadowOffsetX = 0;
+  dynamic boxShadowOffsetY = 0;
+  dynamic boxShadowBlur = 0;
+  dynamic boxShadowSpread = 0;
+  dynamic boxShadowColor;
 
   BoxBaseStyles({
     required this.styleSheet,
@@ -165,5 +170,23 @@ class BoxBaseStyles {
     borderRadiusBottomRight = (borderRadiusBottomRightValue != null)
         ? double.parse(borderRadiusBottomRightValue)
         : borderRadius;
+
+    // [boxShadow]
+    boxShadowOffsetX = resolveValueForBreakpoint(
+            styleSheet.boxShadowOffsetX, activeBreakpoint) ??
+        boxShadowOffsetX;
+    boxShadowOffsetY = resolveValueForBreakpoint(
+            styleSheet.boxShadowOffsetY, activeBreakpoint) ??
+        boxShadowOffsetY;
+    boxShadowBlur =
+        resolveValueForBreakpoint(styleSheet.boxShadowBlur, activeBreakpoint) ??
+            boxShadowBlur;
+    boxShadowSpread = resolveValueForBreakpoint(
+            styleSheet.boxShadowSpread, activeBreakpoint) ??
+        boxShadowSpread;
+    // fromRGBA -> to Colors. ...
+    // add support to transparent color in Hex and RGBA
+    // boxShadowColor = Colors.black.withOpacity(0.5);
+    boxShadowColor = Colors.transparent;
   }
 }

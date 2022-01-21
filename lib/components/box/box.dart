@@ -64,6 +64,14 @@ class Box extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         color: styles.backgroundColor,
+        boxShadow: [
+          BoxShadow(
+            color: styles.boxShadowColor,
+            spreadRadius: styles.boxShadowSpread,
+            blurRadius: styles.boxShadowBlur,
+            offset: Offset(styles.boxShadowOffsetX, styles.boxShadowOffsetY),
+          ),
+        ],
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(styles.borderRadiusTopLeft),
           topRight: Radius.circular(styles.borderRadiusTopRight),
