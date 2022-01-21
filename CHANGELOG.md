@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/skynexui/components/compare/v1.17.1...v1.18.0) (2022-01-21)
+
+
+### Features
+
+* add support to overflowY ([8fe001a](https://github.com/skynexui/components/commit/8fe001a1ad4f7781ef4df4dc62cec1c0c7e06e86))
+
 ## [1.17.1](https://github.com/skynexui/components/compare/v1.17.0...v1.17.1) (2022-01-21)
 
 
