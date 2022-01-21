@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget {
           ),
           FlatList(
             crossAxisCount: const {
-              Breakpoints.sm: 1,
+              Breakpoints.xs: 1,
               Breakpoints.md: 2,
             },
             styleSheet: StyleSheet(
