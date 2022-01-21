@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/skynexui/components/compare/v1.19.0...v1.20.0) (2022-01-21)
+
+
+### Features
+
+* add initial support to box-shadow in flutter ([#52](https://github.com/skynexui/components/issues/52)) ([01360ec](https://github.com/skynexui/components/commit/01360ec89de49e650eb97e50e48a1f2e6c34d6c9))
+
 # [1.19.0](https://github.com/skynexui/components/compare/v1.18.0...v1.19.0) (2022-01-21)
 
 
