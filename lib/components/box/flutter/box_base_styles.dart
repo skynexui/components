@@ -28,6 +28,11 @@ class BoxBaseStyles {
   dynamic crossAxisAlignment = 'flex-start';
   dynamic mainAxisAlignment = 'flex-start';
   dynamic overflowY;
+  dynamic borderRadius;
+  dynamic borderRadiusTopLeft;
+  dynamic borderRadiusTopRight;
+  dynamic borderRadiusBottomLeft;
+  dynamic borderRadiusBottomRight;
 
   BoxBaseStyles({
     required this.styleSheet,
@@ -130,5 +135,35 @@ class BoxBaseStyles {
     // [overflowY]
     overflowY =
         resolveValueForBreakpoint(styleSheet.overflowY, activeBreakpoint);
+
+    // [borderRadius]
+    var borderRadiusValue =
+        resolveValueForBreakpoint(styleSheet.borderRadius, activeBreakpoint);
+    borderRadius =
+        (borderRadiusValue != null) ? double.parse(borderRadiusValue) : 0;
+
+    var borderRadiusTopLeftValue = resolveValueForBreakpoint(
+        styleSheet.borderRadiusTopLeft, activeBreakpoint);
+    borderRadiusTopLeft = (borderRadiusTopLeftValue != null)
+        ? double.parse(borderRadiusTopLeftValue)
+        : borderRadius;
+
+    var borderRadiusTopRightValue = resolveValueForBreakpoint(
+        styleSheet.borderRadiusTopRight, activeBreakpoint);
+    borderRadiusTopRight = (borderRadiusTopRightValue != null)
+        ? double.parse(borderRadiusTopRightValue)
+        : borderRadius;
+
+    var borderRadiusBottomLeftValue = resolveValueForBreakpoint(
+        styleSheet.borderRadiusBottomLeft, activeBreakpoint);
+    borderRadiusBottomLeft = (borderRadiusBottomLeftValue != null)
+        ? double.parse(borderRadiusBottomLeftValue)
+        : borderRadius;
+
+    var borderRadiusBottomRightValue = resolveValueForBreakpoint(
+        styleSheet.borderRadiusBottomRight, activeBreakpoint);
+    borderRadiusBottomRight = (borderRadiusBottomRightValue != null)
+        ? double.parse(borderRadiusBottomRightValue)
+        : borderRadius;
   }
 }

@@ -64,6 +64,12 @@ class Box extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         color: styles.backgroundColor,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(styles.borderRadiusTopLeft),
+          topRight: Radius.circular(styles.borderRadiusTopRight),
+          bottomLeft: Radius.circular(styles.borderRadiusBottomLeft),
+          bottomRight: Radius.circular(styles.borderRadiusBottomRight),
+        ),
       ),
       child: children!.isNotEmpty
           ? ChildDecorator(

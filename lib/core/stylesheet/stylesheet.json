@@ -106,5 +106,25 @@
     "type": "String?",
     "default": "defaultStringEmptyValue",
     "hintValues": "'visible' | 'hidden' | 'scroll'"
+  },
+  "borderRadius": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "borderRadiusTopLeft": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "borderRadiusTopRight": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "borderRadiusBottomLeft": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "borderRadiusBottomRight": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   }
 }

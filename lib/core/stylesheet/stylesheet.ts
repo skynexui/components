@@ -4,6 +4,11 @@ type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   // %%[CODER_START]:StyleSheet_attributes%%
+  borderRadiusBottomRight?: ResponsiveProperty<string> | string;
+  borderRadiusBottomLeft?: ResponsiveProperty<string> | string;
+  borderRadiusTopRight?: ResponsiveProperty<string> | string;
+  borderRadiusTopLeft?: ResponsiveProperty<string> | string;
+  borderRadius?: ResponsiveProperty<string> | string;
   overflowY?: ResponsiveProperty<'visible' | 'hidden' | 'scroll'> | string;
   flex?: ResponsiveProperty<number | string> | string | number;
   alignItems?:
@@ -62,7 +67,6 @@ export interface StyleSheet {
   fontFamily?: ResponsiveProperty<string> | string;
   fontSize?: ResponsiveProperty<string | number> | string;
   outline?: ResponsiveProperty<string> | string;
-  borderRadius?: ResponsiveProperty<string> | string;
   cursor?: ResponsiveProperty<string> | string;
   display?: ResponsiveProperty<string> | string;
   maxWidth?: ResponsiveProperty<string> | string;
