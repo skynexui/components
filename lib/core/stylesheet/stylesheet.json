@@ -101,5 +101,10 @@
   "flex": {
     "type": "double?",
     "default": "defaultDoubleEmptyValue"    
+  },
+  "overflowY": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'visible' | 'hidden' | 'scroll'"
   }
 }

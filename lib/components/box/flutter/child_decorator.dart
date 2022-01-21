@@ -1,4 +1,5 @@
 import 'package:skynexui_components/components.dart';
+import 'package:skynexui_components/components/box/flutter/box_base_styles.dart';
 
 mainAxisResolver(String value) {
   // justify-content
@@ -30,6 +31,7 @@ class ChildDecorator extends StatelessWidget {
   final List<Widget> children;
   final String crossAxisAlignment;
   final String mainAxisAlignment;
+  final BoxBaseStyles styles;
 
   const ChildDecorator({
     Key? key,
@@ -38,12 +40,19 @@ class ChildDecorator extends StatelessWidget {
     this.children = const [],
     required this.crossAxisAlignment,
     required this.mainAxisAlignment,
+    required this.styles,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     var mainAxis = mainAxisResolver(mainAxisAlignment);
     var crossAxis = crossAxisResolver(crossAxisAlignment);
+
+    if (styles.overflowY == 'scroll') {
+      return ListView(
+        children: children,
+      );
+    }
 
     if (flexDirection == "row") {
       return Row(

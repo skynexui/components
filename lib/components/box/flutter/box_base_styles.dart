@@ -27,6 +27,7 @@ class BoxBaseStyles {
   dynamic flex;
   dynamic crossAxisAlignment = 'flex-start';
   dynamic mainAxisAlignment = 'flex-start';
+  dynamic overflowY;
 
   BoxBaseStyles({
     required this.styleSheet,
@@ -125,5 +126,9 @@ class BoxBaseStyles {
 
     // [flex]
     flex = resolveValueForBreakpoint(styleSheet.flex, activeBreakpoint);
+
+    // [overflowY]
+    overflowY =
+        resolveValueForBreakpoint(styleSheet.overflowY, activeBreakpoint);
   }
 }

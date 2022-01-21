@@ -67,6 +67,7 @@ class Box extends StatelessWidget {
       ),
       child: children!.isNotEmpty
           ? ChildDecorator(
+              styles: styles,
               flexDirection: styles.flexDirection,
               position: styles.position,
               crossAxisAlignment: styles.crossAxisAlignment,
