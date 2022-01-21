@@ -22,6 +22,12 @@ class HomeScreen extends StatelessWidget {
           Text(
             'Header',
             styleSheet: StyleSheet(
+              margin: {Breakpoints.xs: 10},
+              boxShadowOffsetX: {Breakpoints.xs: 10},
+              boxShadowOffsetY: {Breakpoints.xs: 10},
+              boxShadowBlur: {Breakpoints.xs: 10},
+              boxShadowSpread: {Breakpoints.xs: 10},
+              boxShadowColor: {Breakpoints.xs: 'rgba(0,0,0,0.5)'},
               borderRadius: {Breakpoints.xs: '10'},
               borderRadiusTopLeft: {Breakpoints.xs: '20'},
               height: {Breakpoints.xs: '50'},

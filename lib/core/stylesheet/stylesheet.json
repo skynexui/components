@@ -126,5 +126,29 @@
   "borderRadiusBottomRight": {
     "type": "String?",
     "default": "defaultStringEmptyValue"
+  },
+  "boxShadowOffsetX": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue",
+    "hintValues": "string | number"
+  },
+  "boxShadowOffsetY": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue",
+    "hintValues": "string | number"
+  },
+  "boxShadowBlur": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue",
+    "hintValues": "string | number"
+  },
+  "boxShadowSpread": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue",
+    "hintValues": "string | number"
+  },
+  "boxShadowColor": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   }
 }
