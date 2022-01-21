@@ -12,43 +12,42 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Box(
         styleSheet: StyleSheet(
-          width: {Breakpoints.xs: '500'},
-          flexDirection: {Breakpoints.xs: 'row'},
-          crossAxisAlignment: {Breakpoints.xs: 'center'}, // alignItems
+          flexDirection: {Breakpoints.xs: 'column'},
+          crossAxisAlignment: {Breakpoints.xs: 'stretch'}, // alignItems
           mainAxisAlignment: {Breakpoints.xs: 'flex-start'}, // justifyContent
           backgroundColor: {Breakpoints.xs: bg},
-          margin: {Breakpoints.xs: 50},
-          paddingVertical: {Breakpoints.xs: 50},
-          paddingHorizontal: {Breakpoints.xs: 50},
-          paddingBottom: {Breakpoints.xs: 100},
         ),
         children: [
           Text(
-            'Box 01',
+            'Header',
             styleSheet: StyleSheet(
-              // width: {Breakpoints.xs: 50},
               height: {Breakpoints.xs: '50'},
+              paddingVertical: {Breakpoints.xs: 10},
+              paddingHorizontal: {Breakpoints.xs: 50},
               backgroundColor: {Breakpoints.xs: theme.colors.primary.x400},
             ),
           ),
-          Text(
-            'Box 02',
+          FlatList(
+            crossAxisCount: const {
+              Breakpoints.sm: 1,
+              Breakpoints.md: 2,
+            },
             styleSheet: StyleSheet(
-              flex: {Breakpoints.xs: 2},
-              // width: {Breakpoints.xs: 50},
-              height: {Breakpoints.xs: '50'},
-              backgroundColor: {Breakpoints.xs: theme.colors.accent.x400},
+              paddingHorizontal: {Breakpoints.xs: 50},
+              flex: {Breakpoints.xs: 1},
+              crossAxisAlignment: {Breakpoints.xs: 'stretch'}, // alignItems
+              backgroundColor: {Breakpoints.xs: theme.colors.primary.x200},
             ),
+            data: const [1, 2, 3, 4, 5],
+            itemBuilder: (context, index) {
+              return Text(
+                'Olaa $index',
+                styleSheet: StyleSheet(backgroundColor: {
+                  Breakpoints.xs: theme.colors.neutral.x500,
+                }),
+              );
+            },
           ),
-          Text(
-            'Box 03',
-            styleSheet: StyleSheet(
-              flex: {Breakpoints.xs: 3},
-              // width: {Breakpoints.xs: 50},
-              height: {Breakpoints.xs: '50'},
-              backgroundColor: {Breakpoints.xs: theme.colors.positive.x400},
-            ),
-          )
         ],
       ),
     );
