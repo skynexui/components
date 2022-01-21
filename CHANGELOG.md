@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/skynexui/components/compare/v1.18.0...v1.19.0) (2022-01-21)
+
+
+### Features
+
+* add borderRadius support ([d21c35b](https://github.com/skynexui/components/commit/d21c35b5420608811fd09c6bcb81c2eec5a899f8))
+
 # [1.18.0](https://github.com/skynexui/components/compare/v1.17.1...v1.18.0) (2022-01-21)
 
 
