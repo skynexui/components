@@ -1,13 +1,40 @@
 import 'package:skynexui_components/components.dart';
 import 'package:skynexui_components/components/box/flutter/hexcolor.dart';
 
+Color colorResolver(String? value) {
+  if (value == null) return Colors.transparent;
+  if (value.startsWith('transparent')) return Colors.transparent;
+  if (value.startsWith('#')) return HexColor.fromHex(value);
+  if (value.startsWith('rgba')) {
+    var matchColorValues = RegExp(r'rgba?\((\d+),(\d+),(\d+),?([\d.]+)?');
+    final match = matchColorValues.firstMatch(value);
+
+    int r = int.parse(match!.group(1)!);
+    int g = int.parse(match.group(2)!);
+    int b = int.parse(match.group(3)!);
+    double a = double.parse(match.group(4)!);
+    return Color.fromRGBO(r, g, b, a);
+  }
+  if (value.startsWith('rgb')) {
+    var matchColorValues = RegExp(r'rgba?\((\d+),(\d+),(\d+),?([\d.]+)?');
+    final match = matchColorValues.firstMatch(value);
+
+    int r = int.parse(match!.group(1)!);
+    int g = int.parse(match.group(2)!);
+    int b = int.parse(match.group(3)!);
+    return Color.fromRGBO(r, g, b, 1);
+  }
+
+  return Colors.transparent;
+}
+
 class BoxBaseStyles {
   StyleSheet styleSheet;
   Breakpoints activeBreakpoint;
   dynamic width;
   dynamic height;
-  dynamic color;
-  dynamic backgroundColor;
+  dynamic color = '#000000';
+  dynamic backgroundColor = 'transparent';
   dynamic padding;
   dynamic paddingTop;
   dynamic paddingLeft;
@@ -57,16 +84,13 @@ class BoxBaseStyles {
     }
 
     // [color]
-    var colorValue =
-        resolveValueForBreakpoint(styleSheet.color, activeBreakpoint);
-    color = (colorValue != null) ? HexColor.fromHex(colorValue) : Colors.black;
+    color = colorResolver(
+        resolveValueForBreakpoint(styleSheet.color, activeBreakpoint) ?? color);
 
     // [backgroundColor]
-    var backgroundColorValue =
-        resolveValueForBreakpoint(styleSheet.backgroundColor, activeBreakpoint);
-    backgroundColor = (backgroundColorValue != null)
-        ? HexColor.fromHex(backgroundColorValue)
-        : Colors.transparent;
+    backgroundColor = colorResolver(resolveValueForBreakpoint(
+            styleSheet.backgroundColor, activeBreakpoint) ??
+        backgroundColor);
 
     // [margin]
     margin = resolveValueForBreakpoint(styleSheet.margin, activeBreakpoint);
@@ -187,6 +211,8 @@ class BoxBaseStyles {
     // fromRGBA -> to Colors. ...
     // add support to transparent color in Hex and RGBA
     // boxShadowColor = Colors.black.withOpacity(0.5);
-    boxShadowColor = Colors.transparent;
+    boxShadowColor = colorResolver(resolveValueForBreakpoint(
+            styleSheet.boxShadowColor, activeBreakpoint) ??
+        boxShadowColor);
   }
 }
