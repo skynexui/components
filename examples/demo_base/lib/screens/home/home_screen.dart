@@ -13,26 +13,40 @@ class HomeScreen extends StatelessWidget {
       body: Box(
         styleSheet: StyleSheet(
           flexDirection: {Breakpoints.xs: 'column'},
-          crossAxisAlignment: {Breakpoints.xs: 'center'}, // alignItems
+          crossAxisAlignment: {Breakpoints.xs: 'stretch'}, // alignItems
           mainAxisAlignment: {Breakpoints.xs: 'flex-start'}, // justifyContent
           backgroundColor: {Breakpoints.xs: bg},
-          paddingVertical: {Breakpoints.xs: 50},
-          paddingHorizontal: {Breakpoints.xs: 50},
-          paddingBottom: {Breakpoints.xs: 100},
         ),
         children: [
           Text(
             'Header',
             styleSheet: StyleSheet(
-              // width: {Breakpoints.xs: 50},
               height: {Breakpoints.xs: '50'},
+              paddingVertical: {Breakpoints.xs: 10},
+              paddingHorizontal: {Breakpoints.xs: 50},
               backgroundColor: {Breakpoints.xs: theme.colors.primary.x400},
             ),
           ),
-          const FlatList(
+          FlatList(
+            crossAxisCount: const {
+              Breakpoints.sm: 1,
+              Breakpoints.md: 2,
+            },
             styleSheet: StyleSheet(
+              paddingHorizontal: {Breakpoints.xs: 50},
               flex: {Breakpoints.xs: 1},
+              crossAxisAlignment: {Breakpoints.xs: 'stretch'}, // alignItems
+              backgroundColor: {Breakpoints.xs: theme.colors.primary.x200},
             ),
+            data: const [1, 2, 3, 4, 5],
+            itemBuilder: (context, index) {
+              return Text(
+                'Olaa $index',
+                styleSheet: StyleSheet(backgroundColor: {
+                  Breakpoints.xs: theme.colors.neutral.x500,
+                }),
+              );
+            },
           ),
         ],
       ),

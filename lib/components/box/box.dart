@@ -5,20 +5,25 @@ import 'package:skynexui_components/components/box/flutter/child_decorator.dart'
 class Box extends StatelessWidget {
   final List<Widget>? children;
   final StyleSheet styleSheet;
+  final BoxBaseStyles? externalStyles;
 
   const Box({
     Key? key,
     this.children = const [],
     this.styleSheet = const StyleSheet(),
+    this.externalStyles,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     var activeBreakpoint = getActiveBreakpoint(context);
-    var styles = BoxBaseStyles(
+    BoxBaseStyles styles = BoxBaseStyles(
       activeBreakpoint: activeBreakpoint,
       styleSheet: styleSheet,
     );
+    if (externalStyles != null) {
+      styles = externalStyles as BoxBaseStyles;
+    }
 
     return DefaultTextStyle.merge(
       style: TextStyle(
