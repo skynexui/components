@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
             styleSheet: StyleSheet(
               height: {Breakpoints.xs: '50'},
               paddingVertical: {Breakpoints.xs: 10},
-              paddingHorizontal: {Breakpoints.xs: 50},
+              paddingHorizontal: {Breakpoints.xs: 15, Breakpoints.md: 50},
               backgroundColor: {Breakpoints.xs: theme.colors.primary.x400},
             ),
           ),
@@ -33,7 +33,8 @@ class HomeScreen extends StatelessWidget {
               Breakpoints.md: 2,
             },
             styleSheet: StyleSheet(
-              paddingHorizontal: {Breakpoints.xs: 50},
+              paddingTop: {Breakpoints.xs: 15, Breakpoints.md: 50},
+              paddingHorizontal: {Breakpoints.xs: 15, Breakpoints.md: 50},
               flex: {Breakpoints.xs: 1},
               crossAxisAlignment: {Breakpoints.xs: 'stretch'}, // alignItems
               backgroundColor: {Breakpoints.xs: theme.colors.primary.x200},
