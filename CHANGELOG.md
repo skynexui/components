@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/skynexui/components/compare/v1.17.0...v1.17.1) (2022-01-21)
+
+
+### Bug Fixes
+
+* homescreen example ([9fc45f2](https://github.com/skynexui/components/commit/9fc45f2c69cf15338782eecd3aba1f21ae73707a))
+
 # [1.17.0](https://github.com/skynexui/components/compare/v1.16.0...v1.17.0) (2022-01-21)
 
 
