@@ -22,6 +22,7 @@ const Map<Breakpoints, double?> defaultDoubleEmptyValue = {
 
 class StyleSheet {
 // %%[CODER_START]:StyleSheet_attributes%%
+  final Map<Breakpoints, String?> boxShadow;
   final Map<Breakpoints, String?> borderRadiusBottomRight;
   final Map<Breakpoints, String?> borderRadiusBottomLeft;
   final Map<Breakpoints, String?> borderRadiusTopRight;
@@ -56,6 +57,7 @@ class StyleSheet {
 
   const StyleSheet({
 // %%[CODER_START]:StyleSheet_constructor%%
+    this.boxShadow = defaultStringEmptyValue,
     this.borderRadiusBottomRight = defaultStringEmptyValue,
     this.borderRadiusBottomLeft = defaultStringEmptyValue,
     this.borderRadiusTopRight = defaultStringEmptyValue,

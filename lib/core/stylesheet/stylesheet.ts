@@ -4,6 +4,7 @@ type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   // %%[CODER_START]:StyleSheet_attributes%%
+  boxShadow?: ResponsiveProperty<string> | string;
   borderRadiusBottomRight?: ResponsiveProperty<string> | string;
   borderRadiusBottomLeft?: ResponsiveProperty<string> | string;
   borderRadiusTopRight?: ResponsiveProperty<string> | string;
