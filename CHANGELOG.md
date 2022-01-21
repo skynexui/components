@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/skynexui/components/compare/v1.16.0...v1.17.0) (2022-01-21)
+
+
+### Features
+
+* flatlist for flutter ([#50](https://github.com/skynexui/components/issues/50)) ([57f1fe7](https://github.com/skynexui/components/commit/57f1fe7a3361ea456c1df590f732ab9fd21281e9))
+
 # [1.16.0](https://github.com/skynexui/components/compare/v1.15.1...v1.16.0) (2022-01-20)
 
 
