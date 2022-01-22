@@ -70,7 +70,6 @@ export interface StyleSheet {
   srOnly?: boolean;
   borderStyle?: string;
   overflow?: ResponsiveProperty<string> | string;
-  position?: ResponsiveProperty<string> | string;
   resize?: ResponsiveProperty<string> | string;
   textDecoration?: ResponsiveProperty<string> | string;
   transition?: ResponsiveProperty<string> | string;
