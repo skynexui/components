@@ -4,6 +4,11 @@ type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   // %%[CODER_START]:StyleSheet_attributes%%
+  bottom?: ResponsiveProperty<string | number> | string;
+  left?: ResponsiveProperty<string | number> | string;
+  right?: ResponsiveProperty<string | number> | string;
+  top?: ResponsiveProperty<string | number> | string;
+  position?: ResponsiveProperty<'relative' | 'absolute'> | string;
   boxShadowColor?: ResponsiveProperty<string> | string;
   boxShadowSpread?: ResponsiveProperty<string | number> | string;
   boxShadowBlur?: ResponsiveProperty<string | number> | string;

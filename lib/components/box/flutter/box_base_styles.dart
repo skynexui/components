@@ -28,6 +28,14 @@ Color colorResolver(String? value) {
   return Colors.transparent;
 }
 
+double? doubleValueResolver(value, defaultValue, activeBreakpoint) {
+  var baseValue = resolveValueForBreakpoint(
+    value,
+    activeBreakpoint,
+  );
+  return (baseValue != null) ? double.parse(baseValue) : defaultValue;
+}
+
 class BoxBaseStyles {
   StyleSheet styleSheet;
   Breakpoints activeBreakpoint;
@@ -49,7 +57,6 @@ class BoxBaseStyles {
   dynamic marginBottom;
   dynamic marginVertical;
   dynamic marginHorizontal;
-  dynamic position;
   dynamic flexDirection;
   dynamic flex;
   dynamic crossAxisAlignment = 'flex-start';
@@ -65,6 +72,11 @@ class BoxBaseStyles {
   dynamic boxShadowBlur = 0;
   dynamic boxShadowSpread = 0;
   dynamic boxShadowColor;
+  dynamic position;
+  dynamic top;
+  dynamic right;
+  dynamic left;
+  dynamic bottom;
 
   BoxBaseStyles({
     required this.styleSheet,
@@ -208,11 +220,18 @@ class BoxBaseStyles {
     boxShadowSpread = resolveValueForBreakpoint(
             styleSheet.boxShadowSpread, activeBreakpoint) ??
         boxShadowSpread;
-    // fromRGBA -> to Colors. ...
-    // add support to transparent color in Hex and RGBA
-    // boxShadowColor = Colors.black.withOpacity(0.5);
     boxShadowColor = colorResolver(resolveValueForBreakpoint(
             styleSheet.boxShadowColor, activeBreakpoint) ??
         boxShadowColor);
+
+    // [position]
+    position =
+        resolveValueForBreakpoint(styleSheet.position, activeBreakpoint) ??
+            position;
+
+    top = doubleValueResolver(styleSheet.top, top, activeBreakpoint);
+    right = doubleValueResolver(styleSheet.right, right, activeBreakpoint);
+    bottom = doubleValueResolver(styleSheet.bottom, bottom, activeBreakpoint);
+    left = doubleValueResolver(styleSheet.left, left, activeBreakpoint);
   }
 }

@@ -4,6 +4,10 @@ const Map<Breakpoints, String?> defaultStringEmptyValue = {
   Breakpoints.xs: null,
 };
 
+const Map<Breakpoints, String> defaultStringZeroValue = {
+  Breakpoints.xs: '0',
+};
+
 const Map<Breakpoints, String?> defaultStringColorEmptyValue = {
   Breakpoints.xs: null,
 };
@@ -22,6 +26,11 @@ const Map<Breakpoints, double?> defaultDoubleEmptyValue = {
 
 class StyleSheet {
 // %%[CODER_START]:StyleSheet_attributes%%
+  final Map<Breakpoints, String?> bottom;
+  final Map<Breakpoints, String?> left;
+  final Map<Breakpoints, String?> right;
+  final Map<Breakpoints, String?> top;
+  final Map<Breakpoints, String?> position;
   final Map<Breakpoints, String?> boxShadowColor;
   final Map<Breakpoints, double?> boxShadowSpread;
   final Map<Breakpoints, double?> boxShadowBlur;
@@ -56,11 +65,16 @@ class StyleSheet {
   final Map<Breakpoints, String?> backgroundColor;
   final Map<Breakpoints, String?> color;
   final Map<Breakpoints, String?> height;
-  final Map<Breakpoints, String?> width;
+  final Map<Breakpoints, String?> width; 
 // %%[CODER_END]:StyleSheet_attributes%%
 
   const StyleSheet({
 // %%[CODER_START]:StyleSheet_constructor%%
+    this.bottom = defaultStringEmptyValue,
+    this.left = defaultStringEmptyValue,
+    this.right = defaultStringEmptyValue,
+    this.top = defaultStringEmptyValue,
+    this.position = defaultStringEmptyValue,
     this.boxShadowColor = defaultStringEmptyValue,
     this.boxShadowSpread = defaultDoubleEmptyValue,
     this.boxShadowBlur = defaultDoubleEmptyValue,
@@ -95,7 +109,7 @@ class StyleSheet {
     this.backgroundColor = defaultStringEmptyValue,
     this.color = defaultStringEmptyValue,
     this.height = defaultStringEmptyValue,
-    this.width = defaultStringEmptyValue,
+    this.width = defaultStringEmptyValue, 
 // %%[CODER_END]:StyleSheet_constructor%%
   });
 }

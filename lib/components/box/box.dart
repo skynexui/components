@@ -29,11 +29,40 @@ class Box extends StatelessWidget {
       style: TextStyle(
         color: styles.color,
       ),
-      child: withFlexible(
+      child: withPositioned(
         styles: styles,
-        child: mainWidget(styles),
+        child: withFlexible(
+          styles: styles,
+          child: mainWidget(styles),
+        ),
       ),
     );
+  }
+
+  Widget withPositioned({required Widget child, required styles}) {
+    if (styles.position == 'absolute') {
+      // .fill ?
+      return Positioned(
+        child: LayoutBuilder(builder: (context, constraints) {
+          // ignore: todo
+          // TODO: Implement percentage in future
+          return Padding(
+            padding: const EdgeInsets.only(
+              left: 0,
+              bottom: 0,
+              top: 0,
+              right: 0,
+            ),
+            child: child,
+          );
+        }),
+        top: styles.top,
+        left: styles.left,
+        right: styles.right,
+        bottom: styles.bottom,
+      );
+    }
+    return child;
   }
 
   Widget withFlexible({required Widget child, required styles}) {
