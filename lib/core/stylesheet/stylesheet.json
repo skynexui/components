@@ -150,5 +150,30 @@
   "boxShadowColor": {
     "type": "String?",
     "default": "defaultStringEmptyValue"
+  },
+  "position": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'relative' | 'absolute'"
+  },
+  "top": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue",
+    "hintValues": "string | number"
+  },
+  "right": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue",
+    "hintValues": "string | number"
+  },
+  "left": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue",
+    "hintValues": "string | number"
+  },
+  "bottom": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue",
+    "hintValues": "string | number"
   }
 }

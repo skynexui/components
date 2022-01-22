@@ -12,17 +12,27 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Box(
         styleSheet: StyleSheet(
-          overflowY: {Breakpoints.xs: 'scroll'},
-          // flexDirection: {Breakpoints.xs: 'column'},
+          // overflowY: {Breakpoints.xs: 'scroll'},
+          position: {Breakpoints.xs: 'relative'},
+          // flexDirection: {Breakpoints.xs: 'row'},
           // crossAxisAlignment: {Breakpoints.xs: 'stretch'}, // alignItems
           // mainAxisAlignment: {Breakpoints.xs: 'flex-start'}, // justifyContent
           backgroundColor: {Breakpoints.xs: bg},
         ),
         children: [
+          Box(
+            styleSheet: StyleSheet(
+              height: {Breakpoints.xs: '550'},
+              backgroundColor: {Breakpoints.xs: theme.colors.positive.x800},
+            ),
+          ),
           Text(
             'Header',
             styleSheet: StyleSheet(
-              margin: {Breakpoints.xs: 10},
+              position: {Breakpoints.xs: 'absolute'},
+              top: {Breakpoints.xs: 50},
+              right: {Breakpoints.xs: 10},
+              // margin: {Breakpoints.xs: 10},
               boxShadowOffsetX: {Breakpoints.xs: 10},
               boxShadowOffsetY: {Breakpoints.xs: 10},
               boxShadowBlur: {Breakpoints.xs: 10},
@@ -36,24 +46,18 @@ class HomeScreen extends StatelessWidget {
               backgroundColor: {Breakpoints.xs: theme.colors.primary.x400},
             ),
           ),
-          Box(
-            styleSheet: StyleSheet(
-              height: {Breakpoints.xs: '550'},
-              backgroundColor: {Breakpoints.xs: theme.colors.positive.x800},
-            ),
-          ),
-          Box(
-            styleSheet: StyleSheet(
-              height: {Breakpoints.xs: '550'},
-              backgroundColor: {Breakpoints.xs: theme.colors.accent.x800},
-            ),
-          ),
-          Box(
-            styleSheet: StyleSheet(
-              height: {Breakpoints.xs: '550'},
-              backgroundColor: {Breakpoints.xs: theme.colors.negative.x800},
-            ),
-          ),
+          // Box(
+          //   styleSheet: StyleSheet(
+          //     height: {Breakpoints.xs: '550'},
+          //     backgroundColor: {Breakpoints.xs: theme.colors.accent.x800},
+          //   ),
+          // ),
+          // Box(
+          //   styleSheet: StyleSheet(
+          //     height: {Breakpoints.xs: '550'},
+          //     backgroundColor: {Breakpoints.xs: theme.colors.negative.x800},
+          //   ),
+          // ),
         ],
       ),
     );

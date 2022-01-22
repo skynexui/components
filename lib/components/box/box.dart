@@ -29,11 +29,27 @@ class Box extends StatelessWidget {
       style: TextStyle(
         color: styles.color,
       ),
-      child: withFlexible(
+      child: withPositioned(
         styles: styles,
-        child: mainWidget(styles),
+        child: withFlexible(
+          styles: styles,
+          child: mainWidget(styles),
+        ),
       ),
     );
+  }
+
+  Widget withPositioned({required Widget child, required styles}) {
+    if (styles.position == 'absolute') {
+      return Positioned(
+        child: child,
+        top: styles.top,
+        left: styles.left,
+        right: styles.right,
+        bottom: styles.bottom,
+      );
+    }
+    return child;
   }
 
   Widget withFlexible({required Widget child, required styles}) {

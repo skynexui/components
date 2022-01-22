@@ -49,7 +49,6 @@ class BoxBaseStyles {
   dynamic marginBottom;
   dynamic marginVertical;
   dynamic marginHorizontal;
-  dynamic position;
   dynamic flexDirection;
   dynamic flex;
   dynamic crossAxisAlignment = 'flex-start';
@@ -65,6 +64,11 @@ class BoxBaseStyles {
   dynamic boxShadowBlur = 0;
   dynamic boxShadowSpread = 0;
   dynamic boxShadowColor;
+  dynamic position;
+  dynamic top;
+  dynamic right;
+  dynamic left;
+  dynamic bottom;
 
   BoxBaseStyles({
     required this.styleSheet,
@@ -208,11 +212,18 @@ class BoxBaseStyles {
     boxShadowSpread = resolveValueForBreakpoint(
             styleSheet.boxShadowSpread, activeBreakpoint) ??
         boxShadowSpread;
-    // fromRGBA -> to Colors. ...
-    // add support to transparent color in Hex and RGBA
-    // boxShadowColor = Colors.black.withOpacity(0.5);
     boxShadowColor = colorResolver(resolveValueForBreakpoint(
             styleSheet.boxShadowColor, activeBreakpoint) ??
         boxShadowColor);
+    // [position]
+    position =
+        resolveValueForBreakpoint(styleSheet.position, activeBreakpoint) ??
+            position;
+    top = resolveValueForBreakpoint(styleSheet.top, activeBreakpoint) ?? top;
+    right =
+        resolveValueForBreakpoint(styleSheet.right, activeBreakpoint) ?? right;
+    left = resolveValueForBreakpoint(styleSheet.left, activeBreakpoint) ?? left;
+    bottom = resolveValueForBreakpoint(styleSheet.bottom, activeBreakpoint) ??
+        bottom;
   }
 }
