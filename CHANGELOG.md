@@ -1,3 +1,15 @@
+# [1.21.0](https://github.com/skynexui/components/compare/v1.20.0...v1.21.0) (2022-01-22)
+
+
+### Bug Fixes
+
+* update in broken stylesheet ([8b1ed10](https://github.com/skynexui/components/commit/8b1ed1078e779ed5605188afb6a0c378e6c31fcf))
+
+
+### Features
+
+* force position in flutter release ([5f42057](https://github.com/skynexui/components/commit/5f4205744a23c67b6921f811610987d7e23565e1))
+
 # [1.20.0](https://github.com/skynexui/components/compare/v1.19.0...v1.20.0) (2022-01-21)
 
 
