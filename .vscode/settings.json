@@ -1,0 +1,5 @@
+{
+    "files.exclude": {
+        "examples/demo_base/node_modules": true
+    },
+}
