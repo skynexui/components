@@ -28,6 +28,14 @@ Color colorResolver(String? value) {
   return Colors.transparent;
 }
 
+double? doubleValueResolver(value, defaultValue, activeBreakpoint) {
+  var baseValue = resolveValueForBreakpoint(
+    value,
+    activeBreakpoint,
+  );
+  return (baseValue != null) ? double.parse(baseValue) : defaultValue;
+}
+
 class BoxBaseStyles {
   StyleSheet styleSheet;
   Breakpoints activeBreakpoint;
@@ -215,15 +223,15 @@ class BoxBaseStyles {
     boxShadowColor = colorResolver(resolveValueForBreakpoint(
             styleSheet.boxShadowColor, activeBreakpoint) ??
         boxShadowColor);
+
     // [position]
     position =
         resolveValueForBreakpoint(styleSheet.position, activeBreakpoint) ??
             position;
-    top = resolveValueForBreakpoint(styleSheet.top, activeBreakpoint) ?? top;
-    right =
-        resolveValueForBreakpoint(styleSheet.right, activeBreakpoint) ?? right;
-    left = resolveValueForBreakpoint(styleSheet.left, activeBreakpoint) ?? left;
-    bottom = resolveValueForBreakpoint(styleSheet.bottom, activeBreakpoint) ??
-        bottom;
+
+    top = doubleValueResolver(styleSheet.top, top, activeBreakpoint);
+    right = doubleValueResolver(styleSheet.right, right, activeBreakpoint);
+    bottom = doubleValueResolver(styleSheet.bottom, bottom, activeBreakpoint);
+    left = doubleValueResolver(styleSheet.left, left, activeBreakpoint);
   }
 }

@@ -41,8 +41,21 @@ class Box extends StatelessWidget {
 
   Widget withPositioned({required Widget child, required styles}) {
     if (styles.position == 'absolute') {
+      // .fill ?
       return Positioned(
-        child: child,
+        child: LayoutBuilder(builder: (context, constraints) {
+          // ignore: todo
+          // TODO: Implement percentage in future
+          return Padding(
+            padding: const EdgeInsets.only(
+              left: 0,
+              bottom: 0,
+              top: 0,
+              right: 0,
+            ),
+            child: child,
+          );
+        }),
         top: styles.top,
         left: styles.left,
         right: styles.right,

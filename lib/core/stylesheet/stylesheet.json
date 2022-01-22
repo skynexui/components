@@ -157,23 +157,23 @@
     "hintValues": "'relative' | 'absolute'"
   },
   "top": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue",
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
     "hintValues": "string | number"
   },
   "right": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue",
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
     "hintValues": "string | number"
   },
   "left": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue",
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
     "hintValues": "string | number"
   },
   "bottom": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue",
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
     "hintValues": "string | number"
   }
 }
