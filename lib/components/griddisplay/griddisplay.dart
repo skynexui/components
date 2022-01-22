@@ -1,7 +1,7 @@
 import 'package:skynexui_components/components.dart';
 import 'package:skynexui_components/components/box/flutter/box_base_styles.dart';
 
-class FlatList<DataList> extends StatelessWidget {
+class GridDisplay<DataList> extends StatelessWidget {
   final List<DataList> data;
   final StyleSheet styleSheet;
   final Map<Breakpoints, int> crossAxisCount;
@@ -24,7 +24,7 @@ class FlatList<DataList> extends StatelessWidget {
     return boxStyles;
   }
 
-  const FlatList({
+  const GridDisplay({
     Key? key,
     required this.data,
     required this.itemBuilder,
