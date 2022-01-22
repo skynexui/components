@@ -31,6 +31,7 @@
     "postversion": "yarn bump:flutter && git add .",
     "clean": "flutter clean && yarn prebuild",
     "release:flutter": "yarn clean && dart pub publish --force",
+    "dev:demo_base": "cd examples/demo_base && yarn link @skynexui/components && yarn dev",
     "dev": "start-storybook -p 6006",
     "dev:flutter": "flutter run",
     "build:storybook": "build-storybook -o dist-storybook",
