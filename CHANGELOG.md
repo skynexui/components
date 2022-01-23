@@ -1,3 +1,10 @@
+## [1.23.1](https://github.com/skynexui/components/compare/v1.23.0...v1.23.1) (2022-01-23)
+
+
+### Bug Fixes
+
+* small adjustments on theme and text component ([43a4f44](https://github.com/skynexui/components/commit/43a4f44508d6ed5b6d47b960004fc1e7413b618c))
+
 # [1.23.0](https://github.com/skynexui/components/compare/v1.22.0...v1.23.0) (2022-01-23)
 
 
