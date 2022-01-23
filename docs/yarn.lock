@@ -205,9 +205,9 @@
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
 "@skynexui/components@latest":
-  version "1.9.23"
-  resolved "https://registry.yarnpkg.com/@skynexui/components/-/components-1.9.23.tgz#faf196ce933f1863f0e616f81ff35354ae81bcce"
-  integrity sha512-QC6TQLVPqIBzjbf/CResl1h95ic+e/ZeVWVJ/LCrbFygRh38Udynm2LOLD4diue/cRiw3WDw3U0vTA6o06tFHA==
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/@skynexui/components/-/components-1.23.0.tgz#899a3cb4483efba2bea3634ebd56690b73fc5c1d"
+  integrity sha512-y0TAbCVT97gUOLBQzuohsnaOl4U9xFXzAaXkm2Y+5gNON4IvY//JnseL5UA96jxAIPSKiY5qnzgXhmADnfR8EA==
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.36"
     "@fortawesome/fontawesome-free" "^5.15.4"

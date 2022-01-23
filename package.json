@@ -16,7 +16,7 @@
   "scripts": {
     "update:contracts": "node ./scripts/coder/coder.js && yarn lint --fix && flutter analyze",
     "setup": "yarn install && flutter pub get",
-    "predocs:dev": "yarn export:docs && node ./docs/scripts/docs/generator.js",
+    "predocs:dev": "yarn build && yarn export:docs && node ./docs/scripts/docs/generator.js",
     "docs:dev": "cd docs && yarn install && yarn dev",
     "predev": "yarn prebuild",
     "prebuild:watch": "yarn link",

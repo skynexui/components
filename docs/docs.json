@@ -15,6 +15,7 @@
       "button.mdx": "button.stories.mdx",
       "textfield.mdx": "textfield.stories.mdx",
       "icon.mdx": "icon.stories.mdx",
+      "griddisplay.mdx": "griddisplay.stories.mdx",
       "image.mdx": "image.stories.mdx"
     },
     "theme": {
