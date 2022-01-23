@@ -1,3 +1,15 @@
+# [1.23.0](https://github.com/skynexui/components/compare/v1.22.0...v1.23.0) (2022-01-23)
+
+
+### Bug Fixes
+
+* broken theme ([667fb2a](https://github.com/skynexui/components/commit/667fb2a730738538495c5b4d60fd209c5f60a43a))
+
+
+### Features
+
+* force a new release with coder applied  ([bc6a184](https://github.com/skynexui/components/commit/bc6a184cf4cfd6cf89a27084598ce22bbb36a6e7))
+
 # [1.22.0](https://github.com/skynexui/components/compare/v1.21.0...v1.22.0) (2022-01-23)
 
 
