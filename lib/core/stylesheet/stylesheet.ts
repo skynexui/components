@@ -1,6 +1,6 @@
 import { Breakpoints } from '@lib/core/breakpoints/breakpoints';
 
-type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
+export type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   // %%[CODER_START]:StyleSheet_attributes%%
