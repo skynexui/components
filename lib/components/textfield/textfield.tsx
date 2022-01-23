@@ -11,19 +11,19 @@ const textFieldColorsDefault = {
   neutral: {
     backgroundColor: theme.colors.neutral.x000,
     mainColor: theme.colors.neutral.x300,
-    mainColorHighlight: theme.colors.primary.x500,
+    mainColorHighlight: theme.colors.primary.x400,
     textColor: theme.colors.neutral.x900,
   },
   positive: {
     backgroundColor: theme.colors.neutral.x000,
     mainColor: theme.colors.positive.x300,
-    mainColorHighlight: theme.colors.positive.x500,
+    mainColorHighlight: theme.colors.positive.x400,
     textColor: theme.colors.positive.x900,
   },
   negative: {
     backgroundColor: theme.colors.neutral.x000,
     mainColor: theme.colors.negative.x300,
-    mainColorHighlight: theme.colors.negative.x500,
+    mainColorHighlight: theme.colors.negative.x400,
     textColor: theme.colors.negative.x900,
   },
 };

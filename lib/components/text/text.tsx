@@ -25,19 +25,16 @@ interface TextProps {
   children: React.ReactNode;
   styleSheet?: StyleSheet;
 }
-export function Text({
-  tag,
-  children,
-  styleSheet,
-  variant,
-  className,
-  ...props
-}: TextProps): JSX.Element {
+export const Text = React.forwardRef(function Text(
+  { tag, children, styleSheet, variant, className, ...props }: TextProps,
+  ref
+): JSX.Element {
   const { variants } = theme.typography;
   const currentVariant = variants[variant];
 
   return (
     <BoxBase
+      ref={ref}
       as={tag}
       styleSheet={{
         fontFamily: theme.typography.fontFamily,
@@ -50,7 +47,7 @@ export function Text({
       {children}
     </BoxBase>
   );
-}
+});
 
 Text.defaultProps = {
   htmlFor: '',
