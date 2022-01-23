@@ -1,0 +1,9 @@
+{
+  "breakpoints": {
+    "Breakpoints.xs": 0,
+    "Breakpoints.sm": 480,
+    "Breakpoints.md": 768,
+    "Breakpoints.lg": 992,
+    "Breakpoints.xl": 1200
+  }
+}
