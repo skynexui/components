@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/skynexui/components/compare/v1.21.0...v1.22.0) (2022-01-23)
+
+
+### Features
+
+* implement GridDisplay ([#66](https://github.com/skynexui/components/issues/66)) ([d6627f5](https://github.com/skynexui/components/commit/d6627f59e7b8f8f81748bfc40554eec26f29ae12))
+
 # [1.21.0](https://github.com/skynexui/components/compare/v1.20.0...v1.21.0) (2022-01-22)
 
 
