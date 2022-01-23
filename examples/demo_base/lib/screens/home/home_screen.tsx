@@ -44,11 +44,29 @@ export function HomeScreen() {
         paddingBottom: { xs: 100 },
       }}
     >
-      {/* <GridDisplay
-        styleSheet={{
-          backgroundColor: 'red',
-        }}
-      /> */}
+      <Text styleSheet={{
+        // width: {xs: 50},
+        height: {xs: 50},
+        backgroundColor: {xs: theme.colors.primary.x400 },
+      }}>
+        Box 01
+      </Text>
+      <Text styleSheet={{
+        // width: {xs: 50},
+        flex: {xs: 2},
+        height: {xs: 50},
+        backgroundColor: {xs: theme.colors.accent.x400 },
+      }}>
+        Box 02
+      </Text>
+      <Text styleSheet={{
+        // width: {xs: 50},
+        flex: {xs: 3},
+        height: {xs: 50},
+        backgroundColor: {xs: theme.colors.positive.x400 },
+      }}>
+        Box 03
+      </Text>
       <GlobalStyle />
     </Box >
   );
