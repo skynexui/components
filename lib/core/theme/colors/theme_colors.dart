@@ -69,7 +69,7 @@ ThemeColorSet negativeDefault = ThemeColorSet(
 );
 
 ThemeColorSet warningDefault = ThemeColorSet(
-  x050: skynexUIBaseTheme["colors"]!["warning"]!["x100"] as String,
+  x050: skynexUIBaseTheme["colors"]!["warning"]!["x050"] as String,
   x100: skynexUIBaseTheme["colors"]!["warning"]!["x100"] as String,
   x200: skynexUIBaseTheme["colors"]!["warning"]!["x200"] as String,
   x300: skynexUIBaseTheme["colors"]!["warning"]!["x300"] as String,

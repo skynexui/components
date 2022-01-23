@@ -18,7 +18,7 @@ const generators = {
     });
 
     core.applyContract(contract, `${path}/theme.dart`, ([colorName, value]) => {
-      return `"${colorName}": ${value},`;
+      return `"${colorName}": "${value}",`;
     });
   },
   Theme_colors() {

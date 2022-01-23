@@ -1,11 +1,11 @@
-const skynexUIBaseTheme = {
+Map<String, Map<String, dynamic>> skynexUIBaseTheme = {
   "breakpoints": {
 // %%[CODER_START]:Theme_breakpoints%%
-    "Breakpoints.xl": 1200,
-    "Breakpoints.lg": 992,
-    "Breakpoints.md": 768,
-    "Breakpoints.sm": 480,
-    "Breakpoints.xs": 0,
+    "Breakpoints.xl": "1200",
+    "Breakpoints.lg": "992",
+    "Breakpoints.md": "768",
+    "Breakpoints.sm": "480",
+    "Breakpoints.xs": "0",
 // %%[CODER_END]:Theme_breakpoints%%
   },
   "colors": {
