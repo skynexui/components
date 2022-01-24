@@ -5,7 +5,7 @@ The focus of this library is to provide a common "DSL" for write UI cross platfo
 
 [<img width="150px" src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" />](https://vercel.com/?utm_source=skynexui&utm_campaign=oss)
 
-![Current Version](https://img.shields.io/npm/v/@skynexui/components?color=green&label=version&cache=1) [![Flutter Package](https://img.shields.io/badge/skynexui__components-fluttter-blue)](https://pub.dev/packages/skynexui_components) [![NPM Package](https://img.shields.io/badge/@skynexui/components-npm-red)](https://www.npmjs.com/package/@skynexui/components)
+![Downloads](https://img.shields.io/npm/dw/@skynexui/components?color=orange) ![Current Version](https://img.shields.io/npm/v/@skynexui/components?color=green&label=version&cache=1) [![Flutter Package](https://img.shields.io/badge/skynexui__components-fluttter-blue)](https://pub.dev/packages/skynexui_components) [![NPM Package](https://img.shields.io/badge/@skynexui/components-npm-red)](https://www.npmjs.com/package/@skynexui/components)
 
 > ⚠️ Until version 2.0 we will have breaking changes while structuring the API.
 
