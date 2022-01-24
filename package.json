@@ -106,7 +106,7 @@
     "ts-jest": "^27.1.1",
     "tsconfig-paths-webpack-plugin": "^3.5.2",
     "typescript": "4.3.5",
-    "styled-jsx": "4.0.1",
+    "styled-jsx": "4.0.1"
   },
   "peerDependencies": {
     "next": ">= 12.x.x",
