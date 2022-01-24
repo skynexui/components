@@ -111,7 +111,7 @@
   "peerDependencies": {
     "next": ">= 12.x.x",
     "react": ">= 17.x.x",
-    "styled-jsx": ">= 4.x.x"
+    "styled-jsx": ">= 4.x.x || 5.x.x"
   },
   "release": {
     "plugins": [
