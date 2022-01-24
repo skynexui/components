@@ -9,6 +9,19 @@ export interface StyleSheet {
   right?: ResponsiveProperty<string | number> | string;
   top?: ResponsiveProperty<string | number> | string;
   position?: ResponsiveProperty<'relative' | 'absolute'> | string;
+  backgroundImage?: ResponsiveProperty<string> | string;
+  backgroundRepeat?:
+    | ResponsiveProperty<
+        | 'repeat'
+        | 'repeat-x'
+        | 'repeat-y'
+        | 'no-repeat'
+        | 'initial'
+        | 'inherit'
+      >
+    | string;
+  backgroundSize?: ResponsiveProperty<'auto' | 'cover' | 'contain'> | string;
+  backgroundBlendMode?: ResponsiveProperty<string> | string;
   boxShadowColor?: ResponsiveProperty<string> | string;
   boxShadowSpread?: ResponsiveProperty<string | number> | string;
   boxShadowBlur?: ResponsiveProperty<string | number> | string;
@@ -55,6 +68,7 @@ export interface StyleSheet {
   marginLeft?: ResponsiveProperty<number | string> | string;
   marginTop?: ResponsiveProperty<number | string> | string;
   margin?: ResponsiveProperty<number | string> | string;
+  minHeight?: ResponsiveProperty<number | string> | string;
   paddingHorizontal?: ResponsiveProperty<number | string> | string;
   paddingVertical?: ResponsiveProperty<number | string> | string;
   paddingBottom?: ResponsiveProperty<number | string> | string;
