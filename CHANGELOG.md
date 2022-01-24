@@ -1,3 +1,10 @@
+## [1.23.7](https://github.com/skynexui/components/compare/v1.23.6...v1.23.7) (2022-01-24)
+
+
+### Bug Fixes
+
+* added alt prop to Image component ([#70](https://github.com/skynexui/components/issues/70)) ([f8b0d55](https://github.com/skynexui/components/commit/f8b0d55d0f5bd5ea7c1c39a31a64ba9d70327b96))
+
 ## [1.23.6](https://github.com/skynexui/components/compare/v1.23.5...v1.23.6) (2022-01-24)
 
 

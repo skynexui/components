@@ -1,6 +1,6 @@
 name: skynexui_components
 description: A set of components based in CSS specs for make your development easier and closer to React.
-version: 1.23.6
+version: 1.23.7
 homepage: https://github.com/skynexui/components/
 
 environment:
