@@ -100,7 +100,7 @@
   },
   "flex": {
     "type": "double?",
-    "default": "defaultDoubleEmptyValue"    
+    "default": "defaultDoubleEmptyValue"
   },
   "overflowY": {
     "type": "String?",
@@ -172,6 +172,29 @@
     "hintValues": "string | number"
   },
   "bottom": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "string | number"
+  },
+  "backgroundImage": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "backgroundRepeat": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'repeat' | 'repeat-x' | 'repeat-y' | 'no-repeat'"
+  },
+  "backgroundSize": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'auto' | 'cover' | 'contain'"
+  },
+  "backgroundBlendMode": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "minHeight": {
     "type": "String?",
     "default": "defaultStringEmptyValue",
     "hintValues": "string | number"

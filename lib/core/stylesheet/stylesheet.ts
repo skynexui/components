@@ -16,8 +16,6 @@ export interface StyleSheet {
         | 'repeat-x'
         | 'repeat-y'
         | 'no-repeat'
-        | 'initial'
-        | 'inherit'
       >
     | string;
   backgroundSize?: ResponsiveProperty<'auto' | 'cover' | 'contain'> | string;
