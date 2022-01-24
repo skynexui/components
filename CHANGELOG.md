@@ -1,3 +1,10 @@
+## [1.23.3](https://github.com/skynexui/components/compare/v1.23.2...v1.23.3) (2022-01-24)
+
+
+### Bug Fixes
+
+* minor update for handle as and tags ([551fcec](https://github.com/skynexui/components/commit/551fcec125d8f0c5a7cefe9c56a8ddf5e20dad59))
+
 ## [1.23.2](https://github.com/skynexui/components/compare/v1.23.1...v1.23.2) (2022-01-24)
 
 
