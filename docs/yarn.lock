@@ -204,10 +204,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@skynexui/components@latest":
-  version "1.23.0"
-  resolved "https://registry.yarnpkg.com/@skynexui/components/-/components-1.23.0.tgz#899a3cb4483efba2bea3634ebd56690b73fc5c1d"
-  integrity sha512-y0TAbCVT97gUOLBQzuohsnaOl4U9xFXzAaXkm2Y+5gNON4IvY//JnseL5UA96jxAIPSKiY5qnzgXhmADnfR8EA==
+"@skynexui/components@1.23.2":
+  version "1.23.2"
+  resolved "https://registry.yarnpkg.com/@skynexui/components/-/components-1.23.2.tgz#026a26830897429d733355b8903b8354db6edf4c"
+  integrity sha512-QLl4GGHzQ79xlSWmBDIAlzw04ust6Ym+EymAuUzKUB8Ou7K+PcHli26nhOec5/wopbdPXTz3BplwNdKIUo4JzA==
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.36"
     "@fortawesome/fontawesome-free" "^5.15.4"
