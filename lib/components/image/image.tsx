@@ -5,6 +5,7 @@ import { BoxBase } from '@lib/components/box/box-base';
 
 interface ImageProps {
   src?: string;
+  alt?: string;
   styleSheet?: StyleSheet;
 }
 export function Image({ styleSheet, ...props }: ImageProps): JSX.Element {
@@ -24,5 +25,6 @@ export function Image({ styleSheet, ...props }: ImageProps): JSX.Element {
 
 Image.defaultProps = {
   src: '',
+  alt: '',
   styleSheet: {},
 };
