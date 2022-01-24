@@ -13,6 +13,10 @@ interface BoxProps {
     | 'header'
     | 'footer'
     | 'nav';
+  /**
+   * @deprecated use "tag" attribute instead
+  */
+  as?: string;
   children: React.ReactNode;
   className?: string;
   styleSheet?: StyleSheet;
@@ -21,9 +25,10 @@ interface BoxProps {
 
 export const Box = React.forwardRef(
   ({ tag, className, ...props }: BoxProps, ref) => {
+    const finalTag = props.as || tag;
     return (
       <BoxBase
-        as={tag}
+        as={finalTag}
         className={`${className} sknui-box`}
         {...props}
         ref={ref}

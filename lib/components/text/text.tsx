@@ -20,6 +20,10 @@ interface TextProps {
     | 'a'
     | 'strong'
     | 'label';
+  /**
+   * @deprecated use "tag" attribute instead
+  */
+  as?: string;
   htmlFor?: string;
   className?: string;
   children: React.ReactNode;
@@ -29,13 +33,14 @@ export const Text = React.forwardRef(function Text(
   { tag, children, styleSheet, variant, className, ...props }: TextProps,
   ref
 ): JSX.Element {
+  const finalTag = props.as || tag;
   const { variants } = theme.typography;
   const currentVariant = variants[variant];
 
   return (
     <BoxBase
       ref={ref}
-      as={tag}
+      as={finalTag}
       styleSheet={{
         fontFamily: theme.typography.fontFamily,
         ...currentVariant,
