@@ -1,3 +1,10 @@
+## [1.23.6](https://github.com/skynexui/components/compare/v1.23.5...v1.23.6) (2022-01-24)
+
+
+### Bug Fixes
+
+* remove styled-jsx from devDependencies ([af946c4](https://github.com/skynexui/components/commit/af946c4bf815fbe7129a63cbb746a1ebf7a4a665))
+
 ## [1.23.5](https://github.com/skynexui/components/compare/v1.23.4...v1.23.5) (2022-01-24)
 
 
