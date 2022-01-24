@@ -1,3 +1,10 @@
+## [1.23.2](https://github.com/skynexui/components/compare/v1.23.1...v1.23.2) (2022-01-24)
+
+
+### Bug Fixes
+
+* trigger a new release ([bef5d3e](https://github.com/skynexui/components/commit/bef5d3ebd254b6f0095f50b68a4b0311415b7b78))
+
 ## [1.23.1](https://github.com/skynexui/components/compare/v1.23.0...v1.23.1) (2022-01-23)
 
 
