@@ -20,6 +20,7 @@ export function ThemeGenerator() {
     <Provider theme={newTheme}>
       <Box
         styleSheet={{
+          display: 'block',
           padding: theme.space.x4,
           backgroundColor: theme.colors.neutral.x000,
           borderWidth: theme.space.xpx,
@@ -34,6 +35,7 @@ export function ThemeGenerator() {
         >
           <Box
             styleSheet={{
+              flexDirection: 'column',
               width: theme.space['x8/12'],
               padding: theme.space.x4,
               marginBottom: theme.space.x4,
@@ -53,6 +55,7 @@ export function ThemeGenerator() {
           </Box>
           <Box
             styleSheet={{
+              flexDirection: 'column',
               width: theme.space['x4/12'],
               marginLeft: theme.space.x4,
               padding: theme.space.x4,
@@ -95,7 +98,11 @@ export function ThemeGenerator() {
           </Box>
         </Box>
 
-        <Box>
+        <Box
+          styleSheet={{
+            flexDirection: 'column',
+          }}
+        >
           <Text>Theme:</Text>
           <Box>
             <pre>{JSON.stringify(newTheme, null, 2)}</pre>
