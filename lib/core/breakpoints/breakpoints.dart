@@ -1,3 +1,6 @@
+import 'package:skynexui_components/components/provider/flutter/theme.dart';
+import 'package:skynexui_components/core/theme/theme.dart';
+
 enum Breakpoints {
   xs,
   sm,
@@ -6,27 +9,27 @@ enum Breakpoints {
   xl,
 }
 
-const Map<Breakpoints, double> defaultBreakpoints = {
-  Breakpoints.xs: 0,
-  Breakpoints.sm: 480,
-  Breakpoints.md: 768,
-  Breakpoints.lg: 992,
-  Breakpoints.xl: 1200,
-};
+class ThemeBreakpoints {
+  double xs = double.parse(skynexUIBaseTheme['breakpoints']!['Breakpoints.xs']);
+  double sm = double.parse(skynexUIBaseTheme['breakpoints']!['Breakpoints.sm']);
+  double md = double.parse(skynexUIBaseTheme['breakpoints']!['Breakpoints.md']);
+  double lg = double.parse(skynexUIBaseTheme['breakpoints']!['Breakpoints.lg']);
+  double xl = double.parse(skynexUIBaseTheme['breakpoints']!['Breakpoints.xl']);
+}
 
-Breakpoints getCurrentBreakpoint(double screenWidth) {
-  if (screenWidth < 480) {
+Breakpoints getCurrentBreakpoint(double screenWidth, Theme theme) {
+  if (screenWidth < theme.breakpoints.sm) {
     return Breakpoints.xs;
   }
-  if (screenWidth < 768) {
+  if (screenWidth < theme.breakpoints.md) {
     return Breakpoints.sm;
   }
 
-  if (screenWidth < 992) {
+  if (screenWidth < theme.breakpoints.lg) {
     return Breakpoints.md;
   }
 
-  if (screenWidth < 1200) {
+  if (screenWidth < theme.breakpoints.xl) {
     return Breakpoints.lg;
   }
 

@@ -11,6 +11,10 @@ readdirSync('./dist')
     const fileLines = [];
 
     fileContentDirty.split('\n').forEach((line) => {
+      if(line.includes('.json')) {
+        const variableName = line.split(' ')[1];
+        fileLines.push(`import ${variableName} from '%META_DATA_PATH%/${variableName}.json';`);
+      }
       if (line.includes('@lib/components')) {
         fileLines.push(line.replace('@lib/components', pkg.name));
         fileLines.push('\n');

@@ -71,7 +71,7 @@ function writePages(currentData, path, depth = 0) {
 title: ${fileMap.get(currentData[key].toLowerCase())?.title}
 ---
 ${`import { Canvas, Story, ArgsTable } from '${resolvedPath}/scripts/docs/defaults.tsx'\n`}
-${fileMap.get(currentData[key]).content}
+${fileMap.get(currentData[key]).content.replaceAll('%META_DATA_PATH%', () => `${resolvedPath}/scripts/docs/metadata`)}
       `;
       writeFileSync(`${path}/${key}`, content, 'utf8');
     }

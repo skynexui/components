@@ -1,0 +1,179 @@
+{
+  "width": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "string | number"
+  },
+  "height": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "string | number"
+  },
+  "color": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "backgroundColor": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "padding": {
+    "type": "double",
+    "default": "defaultDoubleZeroValue"
+  },
+  "paddingTop": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "paddingLeft": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "paddingRight": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "paddingBottom": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "paddingVertical": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "paddingHorizontal": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "margin": {
+    "type": "double",
+    "default": "defaultDoubleZeroValue"
+  },
+  "marginTop": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "marginLeft": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "marginRight": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "marginBottom": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "marginVertical": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "marginHorizontal": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"
+  },
+  "flexDirection": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'row' | 'column'"
+  },
+  "mainAxisAlignment": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'center' |'flex-start' |'flex-end' |'spaceBetween' |'spaceAround' | 'spaceEvenly'"
+  },
+  "justifyContent": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'center' |'flex-start' |'flex-end' |'spaceBetween' |'spaceAround' | 'spaceEvenly'"
+  },
+  "crossAxisAlignment": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'stretch' |'flex-start' |'flex-end' | 'center'"
+  },
+  "alignItems": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'stretch' |'flex-start' |'flex-end' | 'center'"
+  },
+  "flex": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue"    
+  },
+  "overflowY": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'visible' | 'hidden' | 'scroll'"
+  },
+  "borderRadius": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "borderRadiusTopLeft": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "borderRadiusTopRight": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "borderRadiusBottomLeft": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "borderRadiusBottomRight": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "boxShadowOffsetX": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue",
+    "hintValues": "string | number"
+  },
+  "boxShadowOffsetY": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue",
+    "hintValues": "string | number"
+  },
+  "boxShadowBlur": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue",
+    "hintValues": "string | number"
+  },
+  "boxShadowSpread": {
+    "type": "double?",
+    "default": "defaultDoubleEmptyValue",
+    "hintValues": "string | number"
+  },
+  "boxShadowColor": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
+  },
+  "position": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "'relative' | 'absolute'"
+  },
+  "top": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "string | number"
+  },
+  "right": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "string | number"
+  },
+  "left": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "string | number"
+  },
+  "bottom": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "string | number"
+  }
+}

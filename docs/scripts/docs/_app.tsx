@@ -11,7 +11,7 @@ export default function Nextra({ Component, pageProps }: any) {
     <>
       <Script>{`
         document.querySelector('[href="https://github.com/shuding/nextra"]')
-          .setAttribute('href', 'https://github.com/skynexui/components');
+          ?.setAttribute('href', 'https://github.com/skynexui/components');
       `}</Script>
       <Component {...pageProps} />
     </>

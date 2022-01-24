@@ -36,7 +36,9 @@
     "dev:flutter": "flutter run",
     "build:storybook": "build-storybook -o dist-storybook",
     "export:types": "tsc",
-    "export:docs": "find ./lib -name '*.mdx' -exec cp -prv '{}' './dist' ';' && node ./scripts/parseDocs.js && ls -la ./dist",
+    "export:docs:mdx": "find ./lib -name '*.mdx' -exec cp -prv '{}' './dist' ';' ",
+    "export:docs:json": "find ./lib -name '*.json' -exec cp -prv '{}' './docs/scripts/docs/metadata' ';' ",
+    "export:docs": "yarn export:docs:mdx && yarn export:docs:json && node ./scripts/parseDocs.js && ls -la ./dist",
     "deploy:docs": "cd ../ && cd docs && yarn deploy:soft",
     "lint": "eslint ."
   },

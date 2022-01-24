@@ -2,7 +2,7 @@ const core = require('../core/core');
 const path = './lib/core/theme';
 
 const theme = {
-  breakpoints: require('../../../lib/core/theme/breakpoints/breakpoints.json').breakpoints,
+  breakpoints: require('../../../lib/core/breakpoints/breakpoints.json').breakpoints,
   colors: require('../../../lib/core/theme/colors/colors.json').colors,
 }
 

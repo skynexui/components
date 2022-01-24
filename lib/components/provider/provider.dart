@@ -15,7 +15,7 @@ class SkynexUIProvider extends ChangeNotifier {
 
   Breakpoints getActiveBreakpoint(BuildContext context) {
     var screenSize = MediaQuery.of(context).size.width;
-    var activeBreakpoint = getCurrentBreakpoint(screenSize);
+    var activeBreakpoint = getCurrentBreakpoint(screenSize, useTheme(context));
 
     return activeBreakpoint;
   }

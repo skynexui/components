@@ -9,6 +9,14 @@
     },
     "index.mdx": "introduction.stories.mdx",
     "components": {
+      "meta.json": {
+        "index": "What is considered the theme?",
+        "box": "Box",
+        "text": "Text",
+        "textfield": "TextField",
+        "griddisplay": "GridDisplay",
+        "image": "Image"
+      },
       "provider.mdx": "provider.stories.mdx",
       "box.mdx": "box.stories.mdx",
       "text.mdx": "text.stories.mdx",
