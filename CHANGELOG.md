@@ -1,3 +1,10 @@
+## [1.23.5](https://github.com/skynexui/components/compare/v1.23.4...v1.23.5) (2022-01-24)
+
+
+### Bug Fixes
+
+* fix styled-jsx error ([8ba074d](https://github.com/skynexui/components/commit/8ba074d3966bb0b825a53707c5a0da61162b001c))
+
 ## [1.23.4](https://github.com/skynexui/components/compare/v1.23.3...v1.23.4) (2022-01-24)
 
 
