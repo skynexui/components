@@ -35,6 +35,7 @@ export function ThemeGenerator() {
         >
           <Box
             styleSheet={{
+              display: 'flex',
               flexDirection: 'column',
               width: theme.space['x8/12'],
               padding: theme.space.x4,
@@ -55,6 +56,7 @@ export function ThemeGenerator() {
           </Box>
           <Box
             styleSheet={{
+              display: 'flex',
               flexDirection: 'column',
               width: theme.space['x4/12'],
               marginLeft: theme.space.x4,
