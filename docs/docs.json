@@ -40,7 +40,6 @@
       "breakpoints.mdx": "breakpoints.stories.mdx",
       "colors.mdx": "colors.stories.mdx",
       "space.mdx": "space.stories.mdx",
-      "icons.mdx": "icons.stories.mdx",
       "generator.mdx": "generator.stories.mdx"
     }
   }
