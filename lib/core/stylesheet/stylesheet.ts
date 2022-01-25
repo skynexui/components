@@ -4,22 +4,18 @@ export type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   // %%[CODER_START]:StyleSheet_attributes%%
+  minHeight?: ResponsiveProperty<string | number> | string;
+  backgroundBlendMode?: ResponsiveProperty<string> | string;
+  backgroundSize?: ResponsiveProperty<'auto' | 'cover' | 'contain'> | string;
+  backgroundRepeat?:
+    | ResponsiveProperty<'repeat' | 'repeat-x' | 'repeat-y' | 'no-repeat'>
+    | string;
+  backgroundImage?: ResponsiveProperty<string> | string;
   bottom?: ResponsiveProperty<string | number> | string;
   left?: ResponsiveProperty<string | number> | string;
   right?: ResponsiveProperty<string | number> | string;
   top?: ResponsiveProperty<string | number> | string;
   position?: ResponsiveProperty<'relative' | 'absolute'> | string;
-  backgroundImage?: ResponsiveProperty<string> | string;
-  backgroundRepeat?:
-    | ResponsiveProperty<
-        | 'repeat'
-        | 'repeat-x'
-        | 'repeat-y'
-        | 'no-repeat'
-      >
-    | string;
-  backgroundSize?: ResponsiveProperty<'auto' | 'cover' | 'contain'> | string;
-  backgroundBlendMode?: ResponsiveProperty<string> | string;
   boxShadowColor?: ResponsiveProperty<string> | string;
   boxShadowSpread?: ResponsiveProperty<string | number> | string;
   boxShadowBlur?: ResponsiveProperty<string | number> | string;
@@ -66,7 +62,6 @@ export interface StyleSheet {
   marginLeft?: ResponsiveProperty<number | string> | string;
   marginTop?: ResponsiveProperty<number | string> | string;
   margin?: ResponsiveProperty<number | string> | string;
-  minHeight?: ResponsiveProperty<number | string> | string;
   paddingHorizontal?: ResponsiveProperty<number | string> | string;
   paddingVertical?: ResponsiveProperty<number | string> | string;
   paddingBottom?: ResponsiveProperty<number | string> | string;

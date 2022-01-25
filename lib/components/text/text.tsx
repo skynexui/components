@@ -22,7 +22,7 @@ interface TextProps {
     | 'label';
   /**
    * @deprecated use "tag" attribute instead
-  */
+   */
   as?: string;
   htmlFor?: string;
   className?: string;

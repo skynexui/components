@@ -15,7 +15,7 @@ interface BoxProps {
     | 'nav';
   /**
    * @deprecated use "tag" attribute instead
-  */
+   */
   as?: string;
   children: React.ReactNode;
   className?: string;
