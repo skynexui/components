@@ -1,3 +1,24 @@
+## [1.23.8](https://github.com/skynexui/components/compare/v1.23.7...v1.23.8) (2022-01-25)
+
+
+### Bug Fixes
+
+* small fixes in flutter ([a653524](https://github.com/skynexui/components/commit/a653524cdc78b5229d3c675ffc8402bb3dde214b))
+
+## [1.23.7](https://github.com/skynexui/components/compare/v1.23.6...v1.23.7) (2022-01-24)
+
+
+### Bug Fixes
+
+* added alt prop to Image component ([#70](https://github.com/skynexui/components/issues/70)) ([f8b0d55](https://github.com/skynexui/components/commit/f8b0d55d0f5bd5ea7c1c39a31a64ba9d70327b96))
+
+## [1.23.6](https://github.com/skynexui/components/compare/v1.23.5...v1.23.6) (2022-01-24)
+
+
+### Bug Fixes
+
+* remove styled-jsx from devDependencies ([af946c4](https://github.com/skynexui/components/commit/af946c4bf815fbe7129a63cbb746a1ebf7a4a665))
+
 ## [1.23.5](https://github.com/skynexui/components/compare/v1.23.4...v1.23.5) (2022-01-24)
 
 

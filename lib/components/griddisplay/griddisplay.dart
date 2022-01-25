@@ -1,11 +1,11 @@
 import 'package:skynexui_components/components.dart';
 import 'package:skynexui_components/components/box/flutter/box_base_styles.dart';
 
-class GridDisplay<DataList> extends StatelessWidget {
-  final List<DataList> data;
+class GridDisplay<Data> extends StatelessWidget {
+  final List<Data> data;
   final StyleSheet styleSheet;
   final Map<Breakpoints, int> crossAxisCount;
-  final Widget Function(BuildContext, int) itemBuilder;
+  final Widget Function(BuildContext, int, Data) itemBuilder;
 
   BoxBaseStyles _boxStyles(
     StyleSheet styleSheet,
@@ -59,7 +59,11 @@ class GridDisplay<DataList> extends StatelessWidget {
             bottom: styles.paddingBottom,
           ),
           itemCount: data.length,
-          itemBuilder: itemBuilder,
+          itemBuilder: (context, index) => itemBuilder(
+            context,
+            index,
+            data[index],
+          ),
         ),
       ],
     );

@@ -4,11 +4,11 @@ import 'package:flutter/material.dart' as flutter;
 class Image extends StatelessWidget {
   final StyleSheet styleSheet;
 
-  final String data;
+  final String src;
 
-  const Image(
-    this.data, {
+  const Image({
     Key? key,
+    required this.src,
     this.styleSheet = const StyleSheet(),
   }) : super(key: key);
 
@@ -16,8 +16,11 @@ class Image extends StatelessWidget {
   Widget build(BuildContext context) {
     return Box(
       children: [
-        flutter.Text(
-          data,
+        flutter.Image.network(
+          src,
+          fit: BoxFit.contain,
+          height: 180.0,
+          width: 180.0,
         ),
       ],
     );
