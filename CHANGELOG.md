@@ -1,3 +1,10 @@
+## [1.23.9](https://github.com/skynexui/components/compare/v1.23.8...v1.23.9) (2022-01-25)
+
+
+### Bug Fixes
+
+* update description for flutter ([98ca6cb](https://github.com/skynexui/components/commit/98ca6cbb08f14e70dbf90667acba54ac930e4361))
+
 ## [1.23.8](https://github.com/skynexui/components/compare/v1.23.7...v1.23.8) (2022-01-25)
 
 
