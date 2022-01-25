@@ -18,60 +18,60 @@
     "default": "defaultStringEmptyValue"
   },
   "padding": {
-    "type": "double",
-    "default": "defaultDoubleZeroValue"
+    "type": "String",
+    "default": "defaultStringZeroValue"
   },
   "paddingTop": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   },
   "paddingLeft": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   },
   "paddingRight": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   },
   "paddingBottom": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   },
   "paddingVertical": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   },
   "paddingHorizontal": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   },
   "margin": {
-    "type": "double",
-    "default": "defaultDoubleZeroValue"
+    "type": "String",
+    "default": "defaultStringZeroValue"
   },
   "marginTop": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   },
   "marginLeft": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   },
   "marginRight": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   },
   "marginBottom": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   },
   "marginVertical": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   },
   "marginHorizontal": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"
+    "type": "String?",
+    "default": "defaultStringEmptyValue"
   },
   "flexDirection": {
     "type": "String?",
@@ -99,8 +99,8 @@
     "hintValues": "'stretch' |'flex-start' |'flex-end' | 'center'"
   },
   "flex": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue"    
+    "type": "int?",
+    "default": "defaultIntEmptyValue"    
   },
   "overflowY": {
     "type": "String?",
@@ -128,23 +128,23 @@
     "default": "defaultStringEmptyValue"
   },
   "boxShadowOffsetX": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue",
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
     "hintValues": "string | number"
   },
   "boxShadowOffsetY": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue",
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
     "hintValues": "string | number"
   },
   "boxShadowBlur": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue",
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
     "hintValues": "string | number"
   },
   "boxShadowSpread": {
-    "type": "double?",
-    "default": "defaultDoubleEmptyValue",
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
     "hintValues": "string | number"
   },
   "boxShadowColor": {

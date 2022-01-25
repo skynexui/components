@@ -44,27 +44,29 @@ class GridDisplay<Data> extends StatelessWidget {
 
     return Box(
       externalStyles: _boxStyles(styleSheet, activeBreakpoint),
-      children: [
-        GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount:
-                resolveValueForBreakpoint(crossAxisCount, activeBreakpoint),
-            crossAxisSpacing: 5,
-            mainAxisSpacing: 5,
-          ),
-          padding: EdgeInsets.only(
-            left: styles.paddingLeft,
-            right: styles.paddingRight,
-            top: styles.paddingTop,
-            bottom: styles.paddingBottom,
-          ),
-          itemCount: data.length,
-          itemBuilder: (context, index) => itemBuilder(
-            context,
-            index,
-            data[index],
-          ),
-        ),
+      children: const [
+        Text('inside'),
+        // itemBuilder(context, 1, data[1]),
+        // GridView.builder(
+        //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        //     crossAxisCount:
+        //         resolveValueForBreakpoint(crossAxisCount, activeBreakpoint),
+        //     crossAxisSpacing: 5,
+        //     mainAxisSpacing: 5,
+        //   ),
+        //   padding: EdgeInsets.only(
+        //     left: styles.paddingLeft,
+        //     right: styles.paddingRight,
+        //     top: styles.paddingTop,
+        //     bottom: styles.paddingBottom,
+        //   ),
+        //   itemCount: data.length,
+        //   itemBuilder: (context, index) => itemBuilder(
+        //     context,
+        //     index,
+        //     data[index],
+        //   ),
+        // ),
       ],
     );
   }
