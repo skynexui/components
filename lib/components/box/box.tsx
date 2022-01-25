@@ -15,7 +15,7 @@ interface BoxProps {
     | 'nav';
   /**
    * @deprecated use "tag" attribute instead
-  */
+   */
   as?: string;
   children: React.ReactNode;
   className?: string;
@@ -39,6 +39,7 @@ export const Box = React.forwardRef(
 
 Box.defaultProps = {
   tag: 'div',
+  as: '',
   styleSheet: {},
   className: '',
 };

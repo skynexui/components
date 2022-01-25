@@ -22,7 +22,7 @@ interface TextProps {
     | 'label';
   /**
    * @deprecated use "tag" attribute instead
-  */
+   */
   as?: string;
   htmlFor?: string;
   className?: string;
@@ -59,5 +59,6 @@ Text.defaultProps = {
   className: '',
   variant: 'body2',
   tag: 'span',
+  as: '',
   styleSheet: {},
 };

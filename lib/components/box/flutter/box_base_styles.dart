@@ -44,10 +44,10 @@ class BoxBaseStyles {
   dynamic color = '#000000';
   dynamic backgroundColor = 'transparent';
   dynamic padding;
-  dynamic paddingTop;
-  dynamic paddingLeft;
-  dynamic paddingRight;
-  dynamic paddingBottom;
+  double paddingTop = 0;
+  double paddingLeft = 0;
+  double paddingRight = 0;
+  double paddingBottom = 0;
   dynamic paddingVertical;
   dynamic paddingHorizontal;
   dynamic margin;
@@ -62,15 +62,15 @@ class BoxBaseStyles {
   dynamic crossAxisAlignment = 'flex-start';
   dynamic mainAxisAlignment = 'flex-start';
   dynamic overflowY;
-  dynamic borderRadius;
-  dynamic borderRadiusTopLeft;
-  dynamic borderRadiusTopRight;
-  dynamic borderRadiusBottomLeft;
-  dynamic borderRadiusBottomRight;
-  dynamic boxShadowOffsetX = 0;
-  dynamic boxShadowOffsetY = 0;
-  dynamic boxShadowBlur = 0;
-  dynamic boxShadowSpread = 0;
+  double borderRadius = 0;
+  double borderRadiusTopLeft = 0;
+  double borderRadiusTopRight = 0;
+  double borderRadiusBottomLeft = 0;
+  double borderRadiusBottomRight = 0;
+  double boxShadowOffsetX = 0;
+  double boxShadowOffsetY = 0;
+  double boxShadowBlur = 0;
+  double boxShadowSpread = 0;
   dynamic boxShadowColor;
   dynamic position;
   dynamic top;
@@ -105,11 +105,11 @@ class BoxBaseStyles {
         backgroundColor);
 
     // [margin]
-    margin = resolveValueForBreakpoint(styleSheet.margin, activeBreakpoint);
-    marginVertical =
-        resolveValueForBreakpoint(styleSheet.marginVertical, activeBreakpoint);
-    marginHorizontal = resolveValueForBreakpoint(
-        styleSheet.marginHorizontal, activeBreakpoint);
+    margin = doubleValueResolver(styleSheet.margin, margin, activeBreakpoint);
+    marginVertical = doubleValueResolver(
+        styleSheet.marginVertical, marginVertical, activeBreakpoint);
+    marginHorizontal = doubleValueResolver(
+        styleSheet.marginHorizontal, marginHorizontal, activeBreakpoint);
     marginTop =
         resolveValueForBreakpoint(styleSheet.marginTop, activeBreakpoint) ??
             marginVertical ??
@@ -127,11 +127,12 @@ class BoxBaseStyles {
             marginVertical ??
             margin;
     // [padding]
-    padding = resolveValueForBreakpoint(styleSheet.padding, activeBreakpoint);
-    paddingVertical =
-        resolveValueForBreakpoint(styleSheet.paddingVertical, activeBreakpoint);
-    paddingHorizontal = resolveValueForBreakpoint(
-        styleSheet.paddingHorizontal, activeBreakpoint);
+    padding = double.parse(
+        resolveValueForBreakpoint(styleSheet.padding, activeBreakpoint));
+    paddingVertical = doubleValueResolver(
+        styleSheet.paddingVertical, paddingVertical, activeBreakpoint);
+    paddingHorizontal = doubleValueResolver(
+        styleSheet.paddingHorizontal, paddingHorizontal, activeBreakpoint);
     paddingTop =
         resolveValueForBreakpoint(styleSheet.paddingTop, activeBreakpoint) ??
             paddingVertical ??
@@ -208,18 +209,26 @@ class BoxBaseStyles {
         : borderRadius;
 
     // [boxShadow]
-    boxShadowOffsetX = resolveValueForBreakpoint(
-            styleSheet.boxShadowOffsetX, activeBreakpoint) ??
-        boxShadowOffsetX;
-    boxShadowOffsetY = resolveValueForBreakpoint(
-            styleSheet.boxShadowOffsetY, activeBreakpoint) ??
-        boxShadowOffsetY;
-    boxShadowBlur =
-        resolveValueForBreakpoint(styleSheet.boxShadowBlur, activeBreakpoint) ??
-            boxShadowBlur;
-    boxShadowSpread = resolveValueForBreakpoint(
-            styleSheet.boxShadowSpread, activeBreakpoint) ??
-        boxShadowSpread;
+    boxShadowOffsetX = doubleValueResolver(
+      styleSheet.boxShadowOffsetX,
+      boxShadowOffsetX,
+      activeBreakpoint,
+    ) as double;
+    boxShadowOffsetY = doubleValueResolver(
+      styleSheet.boxShadowOffsetY,
+      boxShadowOffsetY,
+      activeBreakpoint,
+    ) as double;
+    boxShadowBlur = doubleValueResolver(
+      styleSheet.boxShadowBlur,
+      boxShadowBlur,
+      activeBreakpoint,
+    ) as double;
+    boxShadowSpread = doubleValueResolver(
+      styleSheet.boxShadowSpread,
+      boxShadowSpread,
+      activeBreakpoint,
+    ) as double;
     boxShadowColor = colorResolver(resolveValueForBreakpoint(
             styleSheet.boxShadowColor, activeBreakpoint) ??
         boxShadowColor);

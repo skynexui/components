@@ -9,8 +9,8 @@ class HomeScreen extends StatelessWidget {
       body: Box(
         styleSheet: StyleSheet(
           backgroundColor: {Breakpoints.xs: '#565678'},
-          margin: {Breakpoints.xs: 50},
-          padding: {Breakpoints.xs: 50},
+          margin: {Breakpoints.xs: '50'},
+          padding: {Breakpoints.xs: '50'},
         ),
         children: [
           Text('Olá pessoas!'),

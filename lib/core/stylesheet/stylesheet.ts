@@ -20,7 +20,7 @@ export interface StyleSheet {
   borderRadiusTopLeft?: ResponsiveProperty<string> | string;
   borderRadius?: ResponsiveProperty<string> | string;
   overflowY?: ResponsiveProperty<'visible' | 'hidden' | 'scroll'> | string;
-  flex?: ResponsiveProperty<number | string> | string | number;
+  flex?: ResponsiveProperty<int> | string | number;
   alignItems?:
     | ResponsiveProperty<'stretch' | 'flex-start' | 'flex-end' | 'center'>
     | string;
@@ -48,20 +48,20 @@ export interface StyleSheet {
       >
     | string;
   flexDirection?: ResponsiveProperty<'row' | 'column'> | string;
-  marginHorizontal?: ResponsiveProperty<number | string> | string;
-  marginVertical?: ResponsiveProperty<number | string> | string;
-  marginBottom?: ResponsiveProperty<number | string> | string;
-  marginRight?: ResponsiveProperty<number | string> | string;
-  marginLeft?: ResponsiveProperty<number | string> | string;
-  marginTop?: ResponsiveProperty<number | string> | string;
-  margin?: ResponsiveProperty<number | string> | string;
-  paddingHorizontal?: ResponsiveProperty<number | string> | string;
-  paddingVertical?: ResponsiveProperty<number | string> | string;
-  paddingBottom?: ResponsiveProperty<number | string> | string;
-  paddingRight?: ResponsiveProperty<number | string> | string;
-  paddingLeft?: ResponsiveProperty<number | string> | string;
-  paddingTop?: ResponsiveProperty<number | string> | string;
-  padding?: ResponsiveProperty<number | string> | string;
+  marginHorizontal?: ResponsiveProperty<string> | string;
+  marginVertical?: ResponsiveProperty<string> | string;
+  marginBottom?: ResponsiveProperty<string> | string;
+  marginRight?: ResponsiveProperty<string> | string;
+  marginLeft?: ResponsiveProperty<string> | string;
+  marginTop?: ResponsiveProperty<string> | string;
+  margin?: ResponsiveProperty<string> | string;
+  paddingHorizontal?: ResponsiveProperty<string> | string;
+  paddingVertical?: ResponsiveProperty<string> | string;
+  paddingBottom?: ResponsiveProperty<string> | string;
+  paddingRight?: ResponsiveProperty<string> | string;
+  paddingLeft?: ResponsiveProperty<string> | string;
+  paddingTop?: ResponsiveProperty<string> | string;
+  padding?: ResponsiveProperty<string> | string;
   backgroundColor?: ResponsiveProperty<string> | string;
   color?: ResponsiveProperty<string> | string;
   height?: ResponsiveProperty<string | number> | string;
