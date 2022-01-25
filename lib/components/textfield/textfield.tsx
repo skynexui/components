@@ -64,8 +64,8 @@ interface TextFieldColorSet {
 }
 interface TextFieldColors {
   neutral: TextFieldColorSet;
-  positive: TextFieldColorSet;
-  negative: TextFieldColorSet;
+  positive?: TextFieldColorSet;
+  negative?: TextFieldColorSet;
 }
 
 type TextFieldStatus = keyof TextFieldColors;
