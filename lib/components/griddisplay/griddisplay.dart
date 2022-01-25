@@ -1,11 +1,11 @@
 import 'package:skynexui_components/components.dart';
 import 'package:skynexui_components/components/box/flutter/box_base_styles.dart';
 
-class GridDisplay<Data> extends StatelessWidget {
-  final List<Data> data;
+class GridDisplay<DataItem> extends StatelessWidget {
+  final List<DataItem> data;
   final StyleSheet styleSheet;
   final Map<Breakpoints, int> crossAxisCount;
-  final Widget Function(BuildContext, int, Data) itemBuilder;
+  final Widget Function(BuildContext, int, DataItem) itemBuilder;
 
   BoxBaseStyles _boxStyles(
     StyleSheet styleSheet,
@@ -15,6 +15,7 @@ class GridDisplay<Data> extends StatelessWidget {
       activeBreakpoint: activeBreakpoint,
       styleSheet: styleSheet,
     );
+    boxStyles.flex = 1;
     boxStyles.padding = 0;
     boxStyles.paddingLeft = 0;
     boxStyles.paddingRight = 0;
@@ -44,29 +45,28 @@ class GridDisplay<Data> extends StatelessWidget {
 
     return Box(
       externalStyles: _boxStyles(styleSheet, activeBreakpoint),
-      children: const [
-        Text('inside'),
-        // itemBuilder(context, 1, data[1]),
-        // GridView.builder(
-        //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        //     crossAxisCount:
-        //         resolveValueForBreakpoint(crossAxisCount, activeBreakpoint),
-        //     crossAxisSpacing: 5,
-        //     mainAxisSpacing: 5,
-        //   ),
-        //   padding: EdgeInsets.only(
-        //     left: styles.paddingLeft,
-        //     right: styles.paddingRight,
-        //     top: styles.paddingTop,
-        //     bottom: styles.paddingBottom,
-        //   ),
-        //   itemCount: data.length,
-        //   itemBuilder: (context, index) => itemBuilder(
-        //     context,
-        //     index,
-        //     data[index],
-        //   ),
-        // ),
+      children: [
+        GridView.builder(
+          shrinkWrap: true,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount:
+                resolveValueForBreakpoint(crossAxisCount, activeBreakpoint),
+            crossAxisSpacing: 5,
+            mainAxisSpacing: 5,
+          ),
+          padding: EdgeInsets.only(
+            left: styles.paddingLeft,
+            right: styles.paddingRight,
+            top: styles.paddingTop,
+            bottom: styles.paddingBottom,
+          ),
+          itemCount: data.length,
+          itemBuilder: (context, index) => itemBuilder(
+            context,
+            index,
+            data[index],
+          ),
+        ),
       ],
     );
   }
