@@ -5,8 +5,8 @@ class GridDisplay<DataItem> extends StatelessWidget {
   final List<DataItem> data;
   final StyleSheet styleSheet;
   final Map<Breakpoints, int> crossAxisCount;
-  final Map<Breakpoints, int> crossAxisSpacing;
-  final Map<Breakpoints, int> mainAxisSpacing;
+  final Map<Breakpoints, double> crossAxisSpacing;
+  final Map<Breakpoints, double> mainAxisSpacing;
   final Widget Function(BuildContext, int, DataItem) itemBuilder;
 
   BoxBaseStyles _boxStyles(
