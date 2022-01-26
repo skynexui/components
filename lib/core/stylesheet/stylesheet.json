@@ -100,7 +100,8 @@
   },
   "flex": {
     "type": "int?",
-    "default": "defaultIntEmptyValue"    
+    "default": "defaultIntEmptyValue",
+    "hintValues": "number | string"
   },
   "overflowY": {
     "type": "String?",

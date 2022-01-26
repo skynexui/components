@@ -10,7 +10,7 @@ it('works', () => {
           xs: 'red',
         },
         padding: {
-          xs: 10,
+          xs: '10',
         },
       }}
     >

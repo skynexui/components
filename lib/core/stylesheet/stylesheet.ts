@@ -20,7 +20,7 @@ export interface StyleSheet {
   borderRadiusTopLeft?: ResponsiveProperty<string> | string;
   borderRadius?: ResponsiveProperty<string> | string;
   overflowY?: ResponsiveProperty<'visible' | 'hidden' | 'scroll'> | string;
-  flex?: ResponsiveProperty<int> | string | number;
+  flex?: ResponsiveProperty<number | string> | string | number;
   alignItems?:
     | ResponsiveProperty<'stretch' | 'flex-start' | 'flex-end' | 'center'>
     | string;
