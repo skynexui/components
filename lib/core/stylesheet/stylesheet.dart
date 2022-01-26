@@ -26,6 +26,7 @@ const Map<Breakpoints, double?> defaultDoubleEmptyValue = {
 
 class StyleSheet {
 // %%[CODER_START]:StyleSheet_attributes%%
+  final Map<Breakpoints, String?> maxHeight;
   final Map<Breakpoints, String?> minHeight;
   final Map<Breakpoints, String?> backgroundBlendMode;
   final Map<Breakpoints, String?> backgroundSize;
@@ -75,6 +76,7 @@ class StyleSheet {
 
   const StyleSheet({
 // %%[CODER_START]:StyleSheet_constructor%%
+    this.maxHeight = defaultStringEmptyValue,
     this.minHeight = defaultStringEmptyValue,
     this.backgroundBlendMode = defaultStringEmptyValue,
     this.backgroundSize = defaultStringEmptyValue,

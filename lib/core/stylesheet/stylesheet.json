@@ -198,5 +198,10 @@
     "type": "String?",
     "default": "defaultStringEmptyValue",
     "hintValues": "string | number"
+  },
+  "maxHeight": {
+    "type": "String?",
+    "default": "defaultStringEmptyValue",
+    "hintValues": "string | number"
   }
 }
