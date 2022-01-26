@@ -65,7 +65,7 @@ class Box extends StatelessWidget {
     return child;
   }
 
-  Widget withFlexible({required Widget child, required styles}) {
+  Widget withFlexible({required Widget child, required BoxBaseStyles styles}) {
     if (styles.flex != null) {
       return Expanded(
         flex: styles.flex,
