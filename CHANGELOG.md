@@ -1,3 +1,15 @@
+# [1.24.0](https://github.com/skynexui/components/compare/v1.23.9...v1.24.0) (2022-01-26)
+
+
+### Bug Fixes
+
+* broken build for flutter version ([c4bf04e](https://github.com/skynexui/components/commit/c4bf04ee4de07bbc2f4a3fda0dff0265388c7325))
+
+
+### Features
+
+* flutter broken urgent-update ([#72](https://github.com/skynexui/components/issues/72)) ([18140ba](https://github.com/skynexui/components/commit/18140ba7db65bc00f3956e17ac92af45232849e2))
+
 ## [1.23.9](https://github.com/skynexui/components/compare/v1.23.8...v1.23.9) (2022-01-25)
 
 
