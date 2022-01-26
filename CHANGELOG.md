@@ -1,3 +1,10 @@
+## [1.24.1](https://github.com/skynexui/components/compare/v1.24.0...v1.24.1) (2022-01-26)
+
+
+### Bug Fixes
+
+* bump flutter version with griddisplay ([18a117d](https://github.com/skynexui/components/commit/18a117d98ea54a1a7a3242c28d5ea52f296252a1))
+
 # [1.24.0](https://github.com/skynexui/components/compare/v1.23.9...v1.24.0) (2022-01-26)
 
 
