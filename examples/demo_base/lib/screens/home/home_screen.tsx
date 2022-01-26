@@ -37,11 +37,11 @@ export function HomeScreen() {
         backgroundColor: {
           xs: bg,
         },
-        margin: { xs: 50 },
-        paddingVertical: { xs: 50 },
-        paddingHorizontal: { xs: 50 },
+        margin: { xs: '50px' },
+        paddingVertical: { xs: '50px' },
+        paddingHorizontal: { xs: '50px' },
         // TODO: Fix padding bottom implementation to match Flutter
-        paddingBottom: { xs: 100 },
+        paddingBottom: { xs: '100px' },
       }}
     >
       <Text styleSheet={{
@@ -54,7 +54,7 @@ export function HomeScreen() {
       <Text styleSheet={{
         // width: {xs: 50},
         flex: {xs: 2},
-        height: {xs: 50},
+        height: {xs: '50px'},
         backgroundColor: {xs: theme.colors.accent.x400 },
       }}>
         Box 02
@@ -62,7 +62,7 @@ export function HomeScreen() {
       <Text styleSheet={{
         // width: {xs: 50},
         flex: {xs: 3},
-        height: {xs: 50},
+        height: {xs: '50px'},
         backgroundColor: {xs: theme.colors.positive.x400 },
       }}>
         Box 03
