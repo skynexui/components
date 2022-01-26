@@ -39,6 +39,7 @@ export const Box = React.forwardRef(
 
 Box.defaultProps = {
   tag: 'div',
+  as: '',
   styleSheet: {},
   className: '',
 };

@@ -59,5 +59,6 @@ Text.defaultProps = {
   className: '',
   variant: 'body2',
   tag: 'span',
+  as: '',
   styleSheet: {},
 };

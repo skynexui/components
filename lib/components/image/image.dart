@@ -19,8 +19,8 @@ class Image extends StatelessWidget {
         flutter.Image.network(
           src,
           fit: BoxFit.contain,
-          height: 180.0,
-          width: 180.0,
+          height: 100.0,
+          width: 100.0,
         ),
       ],
     );

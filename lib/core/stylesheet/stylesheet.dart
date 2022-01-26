@@ -38,36 +38,36 @@ class StyleSheet {
   final Map<Breakpoints, String?> top;
   final Map<Breakpoints, String?> position;
   final Map<Breakpoints, String?> boxShadowColor;
-  final Map<Breakpoints, double?> boxShadowSpread;
-  final Map<Breakpoints, double?> boxShadowBlur;
-  final Map<Breakpoints, double?> boxShadowOffsetY;
-  final Map<Breakpoints, double?> boxShadowOffsetX;
+  final Map<Breakpoints, String?> boxShadowSpread;
+  final Map<Breakpoints, String?> boxShadowBlur;
+  final Map<Breakpoints, String?> boxShadowOffsetY;
+  final Map<Breakpoints, String?> boxShadowOffsetX;
   final Map<Breakpoints, String?> borderRadiusBottomRight;
   final Map<Breakpoints, String?> borderRadiusBottomLeft;
   final Map<Breakpoints, String?> borderRadiusTopRight;
   final Map<Breakpoints, String?> borderRadiusTopLeft;
   final Map<Breakpoints, String?> borderRadius;
   final Map<Breakpoints, String?> overflowY;
-  final Map<Breakpoints, double?> flex;
+  final Map<Breakpoints, int?> flex;
   final Map<Breakpoints, String?> alignItems;
   final Map<Breakpoints, String?> crossAxisAlignment;
   final Map<Breakpoints, String?> justifyContent;
   final Map<Breakpoints, String?> mainAxisAlignment;
   final Map<Breakpoints, String?> flexDirection;
-  final Map<Breakpoints, double?> marginHorizontal;
-  final Map<Breakpoints, double?> marginVertical;
-  final Map<Breakpoints, double?> marginBottom;
-  final Map<Breakpoints, double?> marginRight;
-  final Map<Breakpoints, double?> marginLeft;
-  final Map<Breakpoints, double?> marginTop;
-  final Map<Breakpoints, double> margin;
-  final Map<Breakpoints, double?> paddingHorizontal;
-  final Map<Breakpoints, double?> paddingVertical;
-  final Map<Breakpoints, double?> paddingBottom;
-  final Map<Breakpoints, double?> paddingRight;
-  final Map<Breakpoints, double?> paddingLeft;
-  final Map<Breakpoints, double?> paddingTop;
-  final Map<Breakpoints, double> padding;
+  final Map<Breakpoints, String?> marginHorizontal;
+  final Map<Breakpoints, String?> marginVertical;
+  final Map<Breakpoints, String?> marginBottom;
+  final Map<Breakpoints, String?> marginRight;
+  final Map<Breakpoints, String?> marginLeft;
+  final Map<Breakpoints, String?> marginTop;
+  final Map<Breakpoints, String> margin;
+  final Map<Breakpoints, String?> paddingHorizontal;
+  final Map<Breakpoints, String?> paddingVertical;
+  final Map<Breakpoints, String?> paddingBottom;
+  final Map<Breakpoints, String?> paddingRight;
+  final Map<Breakpoints, String?> paddingLeft;
+  final Map<Breakpoints, String?> paddingTop;
+  final Map<Breakpoints, String> padding;
   final Map<Breakpoints, String?> backgroundColor;
   final Map<Breakpoints, String?> color;
   final Map<Breakpoints, String?> height;
@@ -88,36 +88,36 @@ class StyleSheet {
     this.top = defaultStringEmptyValue,
     this.position = defaultStringEmptyValue,
     this.boxShadowColor = defaultStringEmptyValue,
-    this.boxShadowSpread = defaultDoubleEmptyValue,
-    this.boxShadowBlur = defaultDoubleEmptyValue,
-    this.boxShadowOffsetY = defaultDoubleEmptyValue,
-    this.boxShadowOffsetX = defaultDoubleEmptyValue,
+    this.boxShadowSpread = defaultStringEmptyValue,
+    this.boxShadowBlur = defaultStringEmptyValue,
+    this.boxShadowOffsetY = defaultStringEmptyValue,
+    this.boxShadowOffsetX = defaultStringEmptyValue,
     this.borderRadiusBottomRight = defaultStringEmptyValue,
     this.borderRadiusBottomLeft = defaultStringEmptyValue,
     this.borderRadiusTopRight = defaultStringEmptyValue,
     this.borderRadiusTopLeft = defaultStringEmptyValue,
     this.borderRadius = defaultStringEmptyValue,
     this.overflowY = defaultStringEmptyValue,
-    this.flex = defaultDoubleEmptyValue,
+    this.flex = defaultIntEmptyValue,
     this.alignItems = defaultStringEmptyValue,
     this.crossAxisAlignment = defaultStringEmptyValue,
     this.justifyContent = defaultStringEmptyValue,
     this.mainAxisAlignment = defaultStringEmptyValue,
     this.flexDirection = defaultStringEmptyValue,
-    this.marginHorizontal = defaultDoubleEmptyValue,
-    this.marginVertical = defaultDoubleEmptyValue,
-    this.marginBottom = defaultDoubleEmptyValue,
-    this.marginRight = defaultDoubleEmptyValue,
-    this.marginLeft = defaultDoubleEmptyValue,
-    this.marginTop = defaultDoubleEmptyValue,
-    this.margin = defaultDoubleZeroValue,
-    this.paddingHorizontal = defaultDoubleEmptyValue,
-    this.paddingVertical = defaultDoubleEmptyValue,
-    this.paddingBottom = defaultDoubleEmptyValue,
-    this.paddingRight = defaultDoubleEmptyValue,
-    this.paddingLeft = defaultDoubleEmptyValue,
-    this.paddingTop = defaultDoubleEmptyValue,
-    this.padding = defaultDoubleZeroValue,
+    this.marginHorizontal = defaultStringEmptyValue,
+    this.marginVertical = defaultStringEmptyValue,
+    this.marginBottom = defaultStringEmptyValue,
+    this.marginRight = defaultStringEmptyValue,
+    this.marginLeft = defaultStringEmptyValue,
+    this.marginTop = defaultStringEmptyValue,
+    this.margin = defaultStringZeroValue,
+    this.paddingHorizontal = defaultStringEmptyValue,
+    this.paddingVertical = defaultStringEmptyValue,
+    this.paddingBottom = defaultStringEmptyValue,
+    this.paddingRight = defaultStringEmptyValue,
+    this.paddingLeft = defaultStringEmptyValue,
+    this.paddingTop = defaultStringEmptyValue,
+    this.padding = defaultStringZeroValue,
     this.backgroundColor = defaultStringEmptyValue,
     this.color = defaultStringEmptyValue,
     this.height = defaultStringEmptyValue,
