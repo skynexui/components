@@ -5,6 +5,8 @@ class GridDisplay<DataItem> extends StatelessWidget {
   final List<DataItem> data;
   final StyleSheet styleSheet;
   final Map<Breakpoints, int> crossAxisCount;
+  final Map<Breakpoints, int> crossAxisSpacing;
+  final Map<Breakpoints, int> mainAxisSpacing;
   final Widget Function(BuildContext, int, DataItem) itemBuilder;
 
   BoxBaseStyles _boxStyles(
@@ -32,6 +34,12 @@ class GridDisplay<DataItem> extends StatelessWidget {
     this.crossAxisCount = const {
       Breakpoints.xs: 1,
     },
+    this.crossAxisSpacing = const {
+      Breakpoints.xs: 1,
+    },
+    this.mainAxisSpacing = const {
+      Breakpoints.xs: 1,
+    },
     this.styleSheet = const StyleSheet(),
   }) : super(key: key);
 
@@ -42,6 +50,18 @@ class GridDisplay<DataItem> extends StatelessWidget {
       activeBreakpoint: activeBreakpoint,
       styleSheet: styleSheet,
     );
+    var _crossAxisCount = resolveValueForBreakpoint(
+      crossAxisCount,
+      activeBreakpoint,
+    );
+    var _crossAxisSpacing = resolveValueForBreakpoint(
+      crossAxisSpacing,
+      activeBreakpoint,
+    );
+    var _mainAxisSpacing = resolveValueForBreakpoint(
+      mainAxisSpacing,
+      activeBreakpoint,
+    );
 
     return Box(
       externalStyles: _boxStyles(styleSheet, activeBreakpoint),
@@ -49,10 +69,9 @@ class GridDisplay<DataItem> extends StatelessWidget {
         GridView.builder(
           shrinkWrap: true,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount:
-                resolveValueForBreakpoint(crossAxisCount, activeBreakpoint),
-            crossAxisSpacing: 5,
-            mainAxisSpacing: 5,
+            crossAxisCount: _crossAxisCount,
+            crossAxisSpacing: _crossAxisSpacing,
+            mainAxisSpacing: _mainAxisSpacing,
           ),
           padding: EdgeInsets.only(
             left: styles.paddingLeft,
@@ -61,11 +80,9 @@ class GridDisplay<DataItem> extends StatelessWidget {
             bottom: styles.paddingBottom,
           ),
           itemCount: data.length,
-          itemBuilder: (context, index) => itemBuilder(
-            context,
-            index,
-            data[index],
-          ),
+          itemBuilder: (context, index) {
+            return itemBuilder(context, index, data[index]);
+          },
         ),
       ],
     );
