@@ -1,3 +1,10 @@
+## [1.24.2](https://github.com/skynexui/components/compare/v1.24.1...v1.24.2) (2022-01-26)
+
+
+### Bug Fixes
+
+* flutter ([86b3751](https://github.com/skynexui/components/commit/86b375159b8023e8f26acc8977636c7e117fd767))
+
 ## [1.24.1](https://github.com/skynexui/components/compare/v1.24.0...v1.24.1) (2022-01-26)
 
 

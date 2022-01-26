@@ -3,7 +3,7 @@
   "name": "@skynexui/components",
   "description": "⚛️ Deliver UI for Web and Mobile platforms without taking care about complexity on how to style there. It's based in React and Flutter and uses the core of CSS specification to allow you to write cross platform styles.",
   "license": "MIT",
-  "version": "1.24.1",
+  "version": "1.24.2",
   "types": "dist/components.d.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
