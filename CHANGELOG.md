@@ -1,3 +1,10 @@
+## [1.24.3](https://github.com/skynexui/components/compare/v1.24.2...v1.24.3) (2022-01-30)
+
+
+### Bug Fixes
+
+* box error ([74dbbc3](https://github.com/skynexui/components/commit/74dbbc3d9045afbe35a4763e235c70cddfa0dcdb))
+
 ## [1.24.2](https://github.com/skynexui/components/compare/v1.24.1...v1.24.2) (2022-01-26)
 
 
