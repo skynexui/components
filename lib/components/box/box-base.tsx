@@ -19,7 +19,6 @@ interface BoxProps {
   className?: string;
   styleSheet?: StyleSheet | any;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  ref?: Ref<any>;
   onMouseDown?: unknown;
   onClick?: unknown;
 }
@@ -136,7 +135,6 @@ BoxBase.defaultProps = {
   target: '',
   name: '',
   id: '',
-  ref: undefined,
   onClick: undefined,
   onMouseDown: undefined,
 };
