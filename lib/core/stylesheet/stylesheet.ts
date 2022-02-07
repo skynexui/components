@@ -88,4 +88,7 @@ export interface StyleSheet {
   focus?: StyleSheet;
   hover?: StyleSheet;
   disabled?: StyleSheet;
+  // TODO: Remove this one day
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [key: string]: ResponsiveProperty<string | any> | string | any;
 }
