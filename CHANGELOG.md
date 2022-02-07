@@ -1,3 +1,10 @@
+## [1.24.4](https://github.com/skynexui/components/compare/v1.24.3...v1.24.4) (2022-02-07)
+
+
+### Bug Fixes
+
+* ts types in stylesheet ([be2d978](https://github.com/skynexui/components/commit/be2d97862b0db5eda0c5441379706692e7d7405e))
+
 ## [1.24.3](https://github.com/skynexui/components/compare/v1.24.2...v1.24.3) (2022-01-30)
 
 
