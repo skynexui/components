@@ -33,7 +33,9 @@ double? doubleValueResolver(value, defaultValue, activeBreakpoint) {
     value,
     activeBreakpoint,
   );
-  return (baseValue != null) ? double.parse(baseValue) : defaultValue;
+  return (baseValue != null)
+      ? double.parse(baseValue.replaceAll('px', ''))
+      : defaultValue;
 }
 
 class BoxBaseStyles {
@@ -44,10 +46,10 @@ class BoxBaseStyles {
   dynamic color = '#000000';
   dynamic backgroundColor = 'transparent';
   dynamic padding;
-  double paddingTop = 0;
-  double paddingLeft = 0;
-  double paddingRight = 0;
-  double paddingBottom = 0;
+  dynamic paddingTop;
+  dynamic paddingLeft;
+  dynamic paddingRight;
+  dynamic paddingBottom;
   dynamic paddingVertical;
   dynamic paddingHorizontal;
   dynamic margin;
@@ -110,45 +112,71 @@ class BoxBaseStyles {
         styleSheet.marginVertical, marginVertical, activeBreakpoint);
     marginHorizontal = doubleValueResolver(
         styleSheet.marginHorizontal, marginHorizontal, activeBreakpoint);
-    marginTop =
-        resolveValueForBreakpoint(styleSheet.marginTop, activeBreakpoint) ??
-            marginVertical ??
-            margin;
-    marginLeft =
-        resolveValueForBreakpoint(styleSheet.marginLeft, activeBreakpoint) ??
-            marginHorizontal ??
-            margin;
-    marginRight =
-        resolveValueForBreakpoint(styleSheet.marginRight, activeBreakpoint) ??
-            marginHorizontal ??
-            margin;
-    marginBottom =
-        resolveValueForBreakpoint(styleSheet.marginBottom, activeBreakpoint) ??
-            marginVertical ??
-            margin;
+    marginTop = doubleValueResolver(
+          styleSheet.marginTop,
+          marginTop,
+          activeBreakpoint,
+        ) ??
+        marginVertical ??
+        margin;
+    marginBottom = doubleValueResolver(
+          styleSheet.marginBottom,
+          marginBottom,
+          activeBreakpoint,
+        ) ??
+        marginVertical ??
+        margin;
+    marginLeft = doubleValueResolver(
+          styleSheet.marginLeft,
+          marginLeft,
+          activeBreakpoint,
+        ) ??
+        marginHorizontal ??
+        margin;
+    marginRight = doubleValueResolver(
+          styleSheet.marginRight,
+          marginRight,
+          activeBreakpoint,
+        ) ??
+        marginHorizontal ??
+        margin;
+
     // [padding]
-    padding = double.parse(
-        resolveValueForBreakpoint(styleSheet.padding, activeBreakpoint));
+    padding =
+        doubleValueResolver(styleSheet.padding, padding, activeBreakpoint);
     paddingVertical = doubleValueResolver(
         styleSheet.paddingVertical, paddingVertical, activeBreakpoint);
     paddingHorizontal = doubleValueResolver(
         styleSheet.paddingHorizontal, paddingHorizontal, activeBreakpoint);
-    paddingTop =
-        resolveValueForBreakpoint(styleSheet.paddingTop, activeBreakpoint) ??
-            paddingVertical ??
-            padding;
-    paddingLeft =
-        resolveValueForBreakpoint(styleSheet.paddingLeft, activeBreakpoint) ??
-            paddingHorizontal ??
-            padding;
-    paddingRight =
-        resolveValueForBreakpoint(styleSheet.paddingRight, activeBreakpoint) ??
-            paddingHorizontal ??
-            padding;
-    paddingBottom =
-        resolveValueForBreakpoint(styleSheet.paddingBottom, activeBreakpoint) ??
-            paddingVertical ??
-            padding;
+
+    paddingTop = doubleValueResolver(
+          styleSheet.paddingTop,
+          paddingTop,
+          activeBreakpoint,
+        ) ??
+        paddingVertical ??
+        padding;
+    paddingBottom = doubleValueResolver(
+          styleSheet.paddingBottom,
+          paddingBottom,
+          activeBreakpoint,
+        ) ??
+        paddingVertical ??
+        padding as double;
+    paddingLeft = doubleValueResolver(
+          styleSheet.paddingLeft,
+          paddingLeft,
+          activeBreakpoint,
+        ) ??
+        paddingHorizontal ??
+        padding;
+    paddingRight = doubleValueResolver(
+          styleSheet.paddingRight,
+          paddingRight,
+          activeBreakpoint,
+        ) ??
+        paddingHorizontal ??
+        padding;
 
     // [flexDirection]
     flexDirection =

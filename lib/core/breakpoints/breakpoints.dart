@@ -66,6 +66,7 @@ dynamic resolveValueForBreakpoint(
   for (var i = currentBreakpointOrder; i! >= 0; i--) {
     var breakpoint = breakpointsOrderByOrder[i];
     if (value.containsKey(breakpoint) && value[breakpoint] != null) {
+      // Remove px
       return value[breakpoint];
     }
   }
