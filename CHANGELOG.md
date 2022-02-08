@@ -1,3 +1,10 @@
+## [1.24.6](https://github.com/skynexui/components/compare/v1.24.5...v1.24.6) (2022-02-08)
+
+
+### Bug Fixes
+
+* add first tests ([75bffba](https://github.com/skynexui/components/commit/75bffbad9c0a0fcdc70ef0ce25c5cdba9cbce6de))
+
 ## [1.24.5](https://github.com/skynexui/components/compare/v1.24.4...v1.24.5) (2022-02-08)
 
 
