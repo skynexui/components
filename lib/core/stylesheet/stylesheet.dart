@@ -8,6 +8,10 @@ const Map<Breakpoints, String> defaultStringZeroValue = {
   Breakpoints.xs: '0',
 };
 
+const Map<Breakpoints, String> defaultStringZeroDoubleValue = {
+  Breakpoints.xs: '0.0',
+};
+
 const Map<Breakpoints, String?> defaultStringColorEmptyValue = {
   Breakpoints.xs: null,
 };
@@ -65,7 +69,7 @@ class StyleSheet {
   final Map<Breakpoints, String?> backgroundColor;
   final Map<Breakpoints, String?> color;
   final Map<Breakpoints, String?> height;
-  final Map<Breakpoints, String?> width; 
+  final Map<Breakpoints, String?> width;
 // %%[CODER_END]:StyleSheet_attributes%%
 
   const StyleSheet({
@@ -109,7 +113,7 @@ class StyleSheet {
     this.backgroundColor = defaultStringEmptyValue,
     this.color = defaultStringEmptyValue,
     this.height = defaultStringEmptyValue,
-    this.width = defaultStringEmptyValue, 
+    this.width = defaultStringEmptyValue,
 // %%[CODER_END]:StyleSheet_constructor%%
   });
 }

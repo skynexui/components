@@ -18,11 +18,11 @@ class GridDisplay<DataItem> extends StatelessWidget {
       styleSheet: styleSheet,
     );
     boxStyles.flex = 1;
-    boxStyles.padding = 0;
-    boxStyles.paddingLeft = 0;
-    boxStyles.paddingRight = 0;
-    boxStyles.paddingTop = 0;
-    boxStyles.paddingBottom = 0;
+    boxStyles.padding = 0.0;
+    boxStyles.paddingLeft = 0.0;
+    boxStyles.paddingRight = 0.0;
+    boxStyles.paddingTop = 0.0;
+    boxStyles.paddingBottom = 0.0;
 
     return boxStyles;
   }
