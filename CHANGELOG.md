@@ -1,3 +1,10 @@
+## [1.24.5](https://github.com/skynexui/components/compare/v1.24.4...v1.24.5) (2022-02-08)
+
+
+### Bug Fixes
+
+* needs rereview ([2c0f449](https://github.com/skynexui/components/commit/2c0f4498dea4aabd7c7a21e081a95770ef44e4df))
+
 ## [1.24.4](https://github.com/skynexui/components/compare/v1.24.3...v1.24.4) (2022-02-07)
 
 
