@@ -38,6 +38,16 @@ double? doubleValueResolver(value, defaultValue, activeBreakpoint) {
       : defaultValue;
 }
 
+int? intValueResolver(value, defaultValue, activeBreakpoint) {
+  var baseValue = resolveValueForBreakpoint(
+    value,
+    activeBreakpoint,
+  );
+  return (baseValue != null)
+      ? int.parse(baseValue.replaceAll('px', ''))
+      : defaultValue;
+}
+
 class BoxBaseStyles {
   StyleSheet styleSheet;
   Breakpoints activeBreakpoint;
@@ -64,11 +74,11 @@ class BoxBaseStyles {
   dynamic crossAxisAlignment = 'flex-start';
   dynamic mainAxisAlignment = 'flex-start';
   dynamic overflowY;
-  double borderRadius = 0;
-  double borderRadiusTopLeft = 0;
-  double borderRadiusTopRight = 0;
-  double borderRadiusBottomLeft = 0;
-  double borderRadiusBottomRight = 0;
+  dynamic borderRadius = 0.0;
+  dynamic borderRadiusTopLeft;
+  dynamic borderRadiusTopRight;
+  dynamic borderRadiusBottomLeft;
+  dynamic borderRadiusBottomRight;
   double boxShadowOffsetX = 0;
   double boxShadowOffsetY = 0;
   double boxShadowBlur = 0;
@@ -85,17 +95,17 @@ class BoxBaseStyles {
     required this.activeBreakpoint,
   }) {
     // [width]
-    var baseWidth =
-        resolveValueForBreakpoint(styleSheet.width, activeBreakpoint);
-    if (baseWidth != null) {
-      width = double.parse(baseWidth);
-    }
+    width = doubleValueResolver(
+      styleSheet.width,
+      width,
+      activeBreakpoint,
+    );
     // [height]
-    var baseHeight =
-        resolveValueForBreakpoint(styleSheet.height, activeBreakpoint);
-    if (baseHeight != null) {
-      height = double.parse(baseHeight);
-    }
+    height = doubleValueResolver(
+      styleSheet.height,
+      height,
+      activeBreakpoint,
+    );
 
     // [color]
     color = colorResolver(
@@ -207,34 +217,39 @@ class BoxBaseStyles {
         resolveValueForBreakpoint(styleSheet.overflowY, activeBreakpoint);
 
     // [borderRadius]
-    var borderRadiusValue =
-        resolveValueForBreakpoint(styleSheet.borderRadius, activeBreakpoint);
-    borderRadius =
-        (borderRadiusValue != null) ? double.parse(borderRadiusValue) : 0;
+    borderRadius = doubleValueResolver(
+      styleSheet.borderRadius,
+      borderRadius,
+      activeBreakpoint,
+    );
 
-    var borderRadiusTopLeftValue = resolveValueForBreakpoint(
-        styleSheet.borderRadiusTopLeft, activeBreakpoint);
-    borderRadiusTopLeft = (borderRadiusTopLeftValue != null)
-        ? double.parse(borderRadiusTopLeftValue)
-        : borderRadius;
+    borderRadiusTopLeft = doubleValueResolver(
+          styleSheet.borderRadiusTopLeft,
+          borderRadiusTopLeft,
+          activeBreakpoint,
+        ) ??
+        borderRadius;
 
-    var borderRadiusTopRightValue = resolveValueForBreakpoint(
-        styleSheet.borderRadiusTopRight, activeBreakpoint);
-    borderRadiusTopRight = (borderRadiusTopRightValue != null)
-        ? double.parse(borderRadiusTopRightValue)
-        : borderRadius;
+    borderRadiusTopRight = doubleValueResolver(
+          styleSheet.borderRadiusTopRight,
+          borderRadiusTopRight,
+          activeBreakpoint,
+        ) ??
+        borderRadius;
 
-    var borderRadiusBottomLeftValue = resolveValueForBreakpoint(
-        styleSheet.borderRadiusBottomLeft, activeBreakpoint);
-    borderRadiusBottomLeft = (borderRadiusBottomLeftValue != null)
-        ? double.parse(borderRadiusBottomLeftValue)
-        : borderRadius;
+    borderRadiusBottomLeft = doubleValueResolver(
+          styleSheet.borderRadiusBottomLeft,
+          borderRadiusBottomLeft,
+          activeBreakpoint,
+        ) ??
+        borderRadius;
 
-    var borderRadiusBottomRightValue = resolveValueForBreakpoint(
-        styleSheet.borderRadiusBottomRight, activeBreakpoint);
-    borderRadiusBottomRight = (borderRadiusBottomRightValue != null)
-        ? double.parse(borderRadiusBottomRightValue)
-        : borderRadius;
+    borderRadiusBottomRight = doubleValueResolver(
+          styleSheet.borderRadiusBottomRight,
+          borderRadiusBottomRight,
+          activeBreakpoint,
+        ) ??
+        borderRadius;
 
     // [boxShadow]
     boxShadowOffsetX = doubleValueResolver(
