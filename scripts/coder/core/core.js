@@ -3,23 +3,6 @@
 const pathModule = require('path');
 const fs = require('fs');
 
-const demo = `
-// %%[CODER_START]:StyleSheet_attributes%%
-final double? width;
-final double? width;
-final double? width;
-final double? width;
-final double? width;
-final double? width;
-final double? width;
-final double? width;
-final double? width;
-OLAAA
-  // %%[CODER_END]:StyleSheet_attributes%%
-  final double? width;
-  final double? height;
-`;
-
 module.exports = {
   readFile(filePath, as = 'text') {
     const output = fs.readFileSync(

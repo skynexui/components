@@ -89,6 +89,8 @@ class BoxBaseStyles {
   dynamic right;
   dynamic left;
   dynamic bottom;
+  dynamic fontWeight;
+  dynamic fontSize;
 
   BoxBaseStyles({
     required this.styleSheet,
@@ -285,5 +287,16 @@ class BoxBaseStyles {
     right = doubleValueResolver(styleSheet.right, right, activeBreakpoint);
     bottom = doubleValueResolver(styleSheet.bottom, bottom, activeBreakpoint);
     left = doubleValueResolver(styleSheet.left, left, activeBreakpoint);
+
+    // [fontSize]
+    fontSize = doubleValueResolver(
+      styleSheet.fontSize,
+      fontSize,
+      activeBreakpoint,
+    );
+
+    // TODO: Implement here
+    // [fontWeight]
+    fontWeight = FontWeight.w900;
   }
 }

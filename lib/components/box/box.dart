@@ -28,6 +28,8 @@ class Box extends StatelessWidget {
     return DefaultTextStyle.merge(
       style: TextStyle(
         color: styles.color,
+        fontSize: styles.fontSize,
+        fontWeight: styles.fontWeight,
       ),
       child: withPositioned(
         styles: styles,
