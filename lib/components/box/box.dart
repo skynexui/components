@@ -6,12 +6,14 @@ class Box extends StatelessWidget {
   final List<Widget>? children;
   final StyleSheet styleSheet;
   final BoxBaseStyles? externalStyles;
+  final VoidCallback? onPress;
 
   const Box({
     Key? key,
     this.children = const [],
     this.styleSheet = const StyleSheet(),
     this.externalStyles,
+    this.onPress,
   }) : super(key: key);
 
   @override
@@ -77,49 +79,57 @@ class Box extends StatelessWidget {
     return child;
   }
 
-  Container mainWidget(BoxBaseStyles styles) {
-    return Container(
-      width: styles.width,
-      height: styles.height,
-      margin: EdgeInsets.only(
-        bottom: styles.marginBottom,
-        left: styles.marginLeft,
-        right: styles.marginRight,
-        top: styles.marginTop,
-      ),
-      padding: EdgeInsets.only(
-        bottom: styles.paddingBottom,
-        left: styles.paddingLeft,
-        right: styles.paddingRight,
-        top: styles.paddingTop,
-      ),
-      decoration: BoxDecoration(
-        color: styles.backgroundColor,
-        boxShadow: [
-          BoxShadow(
-            color: styles.boxShadowColor,
-            spreadRadius: styles.boxShadowSpread,
-            blurRadius: styles.boxShadowBlur,
-            offset: Offset(styles.boxShadowOffsetX, styles.boxShadowOffsetY),
-          ),
-        ],
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(styles.borderRadiusTopLeft),
-          topRight: Radius.circular(styles.borderRadiusTopRight),
-          bottomLeft: Radius.circular(styles.borderRadiusBottomLeft),
-          bottomRight: Radius.circular(styles.borderRadiusBottomRight),
+  mainWidget(BoxBaseStyles styles) {
+    // GestureDetector
+    return InkWell(
+      onTap: () {
+        if (onPress != null) {
+          onPress!();
+        }
+      },
+      child: Container(
+        width: styles.width,
+        height: styles.height,
+        margin: EdgeInsets.only(
+          bottom: styles.marginBottom,
+          left: styles.marginLeft,
+          right: styles.marginRight,
+          top: styles.marginTop,
         ),
+        padding: EdgeInsets.only(
+          bottom: styles.paddingBottom,
+          left: styles.paddingLeft,
+          right: styles.paddingRight,
+          top: styles.paddingTop,
+        ),
+        decoration: BoxDecoration(
+          color: styles.backgroundColor,
+          boxShadow: [
+            BoxShadow(
+              color: styles.boxShadowColor,
+              spreadRadius: styles.boxShadowSpread,
+              blurRadius: styles.boxShadowBlur,
+              offset: Offset(styles.boxShadowOffsetX, styles.boxShadowOffsetY),
+            ),
+          ],
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(styles.borderRadiusTopLeft),
+            topRight: Radius.circular(styles.borderRadiusTopRight),
+            bottomLeft: Radius.circular(styles.borderRadiusBottomLeft),
+            bottomRight: Radius.circular(styles.borderRadiusBottomRight),
+          ),
+        ),
+        child: children!.isNotEmpty
+            ? ChildDecorator(
+                styles: styles,
+                flexDirection: styles.flexDirection,
+                position: styles.position,
+                crossAxisAlignment: styles.crossAxisAlignment,
+                mainAxisAlignment: styles.mainAxisAlignment,
+                children: children as List<Widget>,
+              )
+            : null,
       ),
-      child: children!.isNotEmpty
-          ? ChildDecorator(
-              styles: styles,
-              flexDirection: styles.flexDirection,
-              position: styles.position,
-              crossAxisAlignment: styles.crossAxisAlignment,
-              mainAxisAlignment: styles.mainAxisAlignment,
-              children: children as List<Widget>,
-            )
-          : null,
     );
   }
 }
