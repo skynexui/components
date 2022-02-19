@@ -19,9 +19,7 @@ class Image extends StatelessWidget {
       children: [
         flutter.Image.network(
           src,
-          fit: BoxFit.contain,
-          height: 100.0,
-          width: 100.0,
+          fit: BoxFit.fill,
         ),
       ],
     );
