@@ -23,6 +23,9 @@ class Text extends StatelessWidget {
     var styles = BoxBaseStyles(
       styleSheet: StyleSheet(
         color: styleSheet.color,
+        fontFamily: {
+          Breakpoints.xs: 'Open Sans',
+        },
         fontSize: {
           Breakpoints.xs: activeVariant[Breakpoints.xs]?.fontSize,
           Breakpoints.md: activeVariant[Breakpoints.md]?.fontSize,

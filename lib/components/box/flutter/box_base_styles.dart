@@ -89,7 +89,7 @@ class BoxBaseStyles {
   dynamic right;
   dynamic left;
   dynamic bottom;
-  dynamic fontWeight;
+  dynamic fontWeight = '400';
   dynamic fontSize;
 
   BoxBaseStyles({
@@ -297,6 +297,21 @@ class BoxBaseStyles {
 
     // TODO: Implement here
     // [fontWeight]
-    fontWeight = FontWeight.w900;
+    var fontWeightMap = {
+      'normal': FontWeight.normal,
+      'bold': FontWeight.bold,
+      '100': FontWeight.w100,
+      '200': FontWeight.w200,
+      '300': FontWeight.w300,
+      '400': FontWeight.w400,
+      '500': FontWeight.w500,
+      '600': FontWeight.w600,
+      '700': FontWeight.w700,
+      '800': FontWeight.w800,
+      '900': FontWeight.w900,
+    };
+    fontWeight = fontWeightMap[
+        resolveValueForBreakpoint(styleSheet.fontWeight, activeBreakpoint) ??
+            fontWeight];
   }
 }

@@ -69,11 +69,12 @@ class StyleSheet {
   final Map<Breakpoints, String?> backgroundColor;
   final Map<Breakpoints, String?> color;
   final Map<Breakpoints, String?> height;
-  final Map<Breakpoints, String?> width; 
+  final Map<Breakpoints, String?> width;
 // %%[CODER_END]:StyleSheet_attributes%%
   final Map<Breakpoints, String?> fontSize;
   final Map<Breakpoints, String?> fontWeight;
   final Map<Breakpoints, String?> letterSpacing;
+  final Map<Breakpoints, String?> fontFamily;
 
   const StyleSheet({
 // %%[CODER_START]:StyleSheet_constructor%%
@@ -116,10 +117,11 @@ class StyleSheet {
     this.backgroundColor = defaultStringEmptyValue,
     this.color = defaultStringEmptyValue,
     this.height = defaultStringEmptyValue,
-    this.width = defaultStringEmptyValue, 
+    this.width = defaultStringEmptyValue,
 // %%[CODER_END]:StyleSheet_constructor%%
     this.fontSize = defaultStringEmptyValue,
     this.fontWeight = defaultStringEmptyValue,
     this.letterSpacing = defaultStringEmptyValue,
+    this.fontFamily = defaultStringEmptyValue,
   });
 }
