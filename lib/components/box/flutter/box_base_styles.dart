@@ -295,7 +295,6 @@ class BoxBaseStyles {
       activeBreakpoint,
     );
 
-    // TODO: Implement here
     // [fontWeight]
     var fontWeightMap = {
       'normal': FontWeight.normal,
