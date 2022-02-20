@@ -24,7 +24,7 @@ class Text extends StatelessWidget {
       styleSheet: StyleSheet(
         color: styleSheet.color,
         fontFamily: {
-          Breakpoints.xs: 'Open Sans',
+          Breakpoints.xs: 'Roboto',
         },
         fontSize: {
           Breakpoints.xs: activeVariant[Breakpoints.xs]?.fontSize,
