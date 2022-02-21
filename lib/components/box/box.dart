@@ -37,10 +37,20 @@ class Box extends StatelessWidget {
         styles: styles,
         child: withFlexible(
           styles: styles,
-          child: mainWidget(styles),
+          child: withGestures(mainWidget(styles)),
         ),
       ),
     );
+  }
+
+  Widget withGestures(Widget child) {
+    if (onPress != null) {
+      return GestureDetector(
+        onTap: onPress,
+        child: child,
+      );
+    }
+    return child;
   }
 
   Widget withPositioned({required Widget child, required styles}) {
@@ -81,55 +91,48 @@ class Box extends StatelessWidget {
 
   mainWidget(BoxBaseStyles styles) {
     // GestureDetector
-    return InkWell(
-      onTap: () {
-        if (onPress != null) {
-          onPress!();
-        }
-      },
-      child: Container(
-        width: styles.width,
-        height: styles.height,
-        margin: EdgeInsets.only(
-          bottom: styles.marginBottom,
-          left: styles.marginLeft,
-          right: styles.marginRight,
-          top: styles.marginTop,
-        ),
-        padding: EdgeInsets.only(
-          bottom: styles.paddingBottom,
-          left: styles.paddingLeft,
-          right: styles.paddingRight,
-          top: styles.paddingTop,
-        ),
-        decoration: BoxDecoration(
-          color: styles.backgroundColor,
-          boxShadow: [
-            BoxShadow(
-              color: styles.boxShadowColor,
-              spreadRadius: styles.boxShadowSpread,
-              blurRadius: styles.boxShadowBlur,
-              offset: Offset(styles.boxShadowOffsetX, styles.boxShadowOffsetY),
-            ),
-          ],
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(styles.borderRadiusTopLeft),
-            topRight: Radius.circular(styles.borderRadiusTopRight),
-            bottomLeft: Radius.circular(styles.borderRadiusBottomLeft),
-            bottomRight: Radius.circular(styles.borderRadiusBottomRight),
-          ),
-        ),
-        child: children!.isNotEmpty
-            ? ChildDecorator(
-                styles: styles,
-                flexDirection: styles.flexDirection,
-                position: styles.position,
-                crossAxisAlignment: styles.crossAxisAlignment,
-                mainAxisAlignment: styles.mainAxisAlignment,
-                children: children as List<Widget>,
-              )
-            : null,
+    return Container(
+      width: styles.width,
+      height: styles.height,
+      margin: EdgeInsets.only(
+        bottom: styles.marginBottom,
+        left: styles.marginLeft,
+        right: styles.marginRight,
+        top: styles.marginTop,
       ),
+      padding: EdgeInsets.only(
+        bottom: styles.paddingBottom,
+        left: styles.paddingLeft,
+        right: styles.paddingRight,
+        top: styles.paddingTop,
+      ),
+      decoration: BoxDecoration(
+        color: styles.backgroundColor,
+        boxShadow: [
+          BoxShadow(
+            color: styles.boxShadowColor,
+            spreadRadius: styles.boxShadowSpread,
+            blurRadius: styles.boxShadowBlur,
+            offset: Offset(styles.boxShadowOffsetX, styles.boxShadowOffsetY),
+          ),
+        ],
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(styles.borderRadiusTopLeft),
+          topRight: Radius.circular(styles.borderRadiusTopRight),
+          bottomLeft: Radius.circular(styles.borderRadiusBottomLeft),
+          bottomRight: Radius.circular(styles.borderRadiusBottomRight),
+        ),
+      ),
+      child: children!.isNotEmpty
+          ? ChildDecorator(
+              styles: styles,
+              flexDirection: styles.flexDirection,
+              position: styles.position,
+              crossAxisAlignment: styles.crossAxisAlignment,
+              mainAxisAlignment: styles.mainAxisAlignment,
+              children: children as List<Widget>,
+            )
+          : null,
     );
   }
 }
