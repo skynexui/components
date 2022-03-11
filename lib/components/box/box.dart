@@ -6,12 +6,14 @@ class Box extends StatelessWidget {
   final List<Widget>? children;
   final StyleSheet styleSheet;
   final BoxBaseStyles? externalStyles;
+  final VoidCallback? onPress;
 
   const Box({
     Key? key,
     this.children = const [],
     this.styleSheet = const StyleSheet(),
     this.externalStyles,
+    this.onPress,
   }) : super(key: key);
 
   @override
@@ -28,15 +30,27 @@ class Box extends StatelessWidget {
     return DefaultTextStyle.merge(
       style: TextStyle(
         color: styles.color,
+        fontSize: styles.fontSize,
+        fontWeight: styles.fontWeight,
       ),
       child: withPositioned(
         styles: styles,
         child: withFlexible(
           styles: styles,
-          child: mainWidget(styles),
+          child: withGestures(mainWidget(styles)),
         ),
       ),
     );
+  }
+
+  Widget withGestures(Widget child) {
+    if (onPress != null) {
+      return GestureDetector(
+        onTap: onPress,
+        child: child,
+      );
+    }
+    return child;
   }
 
   Widget withPositioned({required Widget child, required styles}) {
@@ -75,7 +89,8 @@ class Box extends StatelessWidget {
     return child;
   }
 
-  Container mainWidget(BoxBaseStyles styles) {
+  mainWidget(BoxBaseStyles styles) {
+    // GestureDetector
     return Container(
       width: styles.width,
       height: styles.height,

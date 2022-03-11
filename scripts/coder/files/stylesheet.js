@@ -30,7 +30,9 @@ const generators = {
       const type = (
         types[value.type.replace('?', '')] || value.type.replace('?', '')
       ).toLowerCase();
-      return `${name}?: ResponsiveProperty<${value.hintValues || type}> | string ${name === 'flex' ? '| number' : ''};`;
+      return `${name}?: ResponsiveProperty<${
+        value.hintValues || type
+      }> | string ${name === 'flex' ? '| number' : ''};`;
     });
   },
 };

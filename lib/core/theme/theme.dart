@@ -85,5 +85,135 @@ Map<String, Map<String, dynamic>> skynexUIBaseTheme = {
 "x900": "#841003",
       }, 
 // %%[CODER_END]:Theme_colors%%
+
+    "typography": {
+// %%[CODER_START]:Theme_typography%%
+"variants": {
+        "display1": {
+            "xs": {
+                "fontSize": "48px",
+"letterSpacing": "-0.04px",
+"fontWeight": "900",
+              },
+"md": {
+                "fontSize": "48px",
+"letterSpacing": "-0.04px",
+"fontWeight": "900",
+              },
+          },
+"heading1": {
+            "xs": {
+                "fontSize": "36px",
+"letterSpacing": "-0.04px",
+"fontWeight": "900",
+              },
+"md": {
+                "fontSize": "36px",
+"letterSpacing": "-0.04px",
+"fontWeight": "900",
+              },
+          },
+"heading2": {
+            "xs": {
+                "fontSize": "24px",
+"letterSpacing": "-0.04px",
+"fontWeight": "900",
+              },
+"md": {
+                "fontSize": "24px",
+"letterSpacing": "-0.04px",
+"fontWeight": "900",
+              },
+          },
+"heading3": {
+            "xs": {
+                "fontSize": "20px",
+"letterSpacing": "-0.04px",
+"fontWeight": "bold",
+              },
+"md": {
+                "fontSize": "20px",
+"letterSpacing": "-0.04px",
+"fontWeight": "bold",
+              },
+          },
+"heading4": {
+            "xs": {
+                "fontSize": "16px",
+"letterSpacing": "-0.04px",
+"fontWeight": "bold",
+              },
+"md": {
+                "fontSize": "16px",
+"letterSpacing": "-0.04px",
+"fontWeight": "bold",
+              },
+          },
+"heading5": {
+            "xs": {
+                "fontSize": "14px",
+"letterSpacing": "-0.04px",
+"fontWeight": "bold",
+              },
+"md": {
+                "fontSize": "14px",
+"letterSpacing": "-0.04px",
+"fontWeight": "bold",
+              },
+          },
+"body1": {
+            "xs": {
+                "fontSize": "18px",
+"fontWeight": "400",
+              },
+"md": {
+                "fontSize": "18px",
+"fontWeight": "400",
+              },
+          },
+"body2": {
+            "xs": {
+                "fontSize": "16px",
+"fontWeight": "400",
+              },
+"md": {
+                "fontSize": "16px",
+"fontWeight": "400",
+              },
+          },
+"body3": {
+            "xs": {
+                "fontSize": "14px",
+"fontWeight": "400",
+              },
+"md": {
+                "fontSize": "14px",
+"fontWeight": "400",
+              },
+          },
+"body4": {
+            "xs": {
+                "fontSize": "12px",
+"fontWeight": "400",
+              },
+"md": {
+                "fontSize": "12px",
+"fontWeight": "400",
+              },
+          },
+"body5": {
+            "xs": {
+                "fontSize": "8px",
+"fontWeight": "400",
+              },
+"md": {
+                "fontSize": "8px",
+"fontWeight": "400",
+              },
+          },
+      },
+"fontFamily": "Open Sans", 
+// %%[CODER_END]:Theme_typography%%
+    }
   }
 };
