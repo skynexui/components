@@ -1,4 +1,4 @@
-# SkynexUI
+# SkynexUI:
 
 ## Why "another component library"?
 The focus of this library is to provide a common "DSL" for write UI cross platform. Doesn't matter if the platform it's mobile or web. You will think in UI based in "Text" (`<Text>`) and "Boxes" (`<Box>`) and write the styles with breakpoints based in the web CSS key value conventions.
