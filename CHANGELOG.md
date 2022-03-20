@@ -1,3 +1,11 @@
+# [1.25.0](https://github.com/skynexui/components/compare/v1.24.6...v1.25.0) (2022-03-20)
+
+
+### Features
+
+* fix broken js build ([50f2664](https://github.com/skynexui/components/commit/50f26648e7ea248f3ad0a9e3159aa9046b32d097))
+* huge update in flutter version ([#74](https://github.com/skynexui/components/issues/74)) ([238b0fa](https://github.com/skynexui/components/commit/238b0fa91a3412a7d6d5f33b5fbdc689b139c121))
+
 ## [1.24.6](https://github.com/skynexui/components/compare/v1.24.5...v1.24.6) (2022-02-08)
 
 
