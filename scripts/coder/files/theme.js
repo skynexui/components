@@ -76,6 +76,7 @@ const generators = {
           },
         };
       }, {});
+
       // console.log(output);
       return `"${variantName}": {
         ${Object.entries(output).map(([variant, value]) => {
@@ -91,6 +92,55 @@ const generators = {
           },`;
         }).join('\n')}
       },`;
+    });
+
+    core.applyContract(contract, `${path}/theme.ts`, ([variantName, value]) => {
+      if(variantName === 'fontFamily') return `"${variantName}": "${value}",`;
+
+      const output = Object.keys(value).reduce((acc, variant) => {
+        const currentItem = value[variant];
+        const props = Object.keys(currentItem);
+        // console.log(props);
+        return {
+          ...acc,
+          [variant]: {
+            xs: {
+              ...props.reduce((acc, propName) => {
+                return {
+                  ...acc,
+                  [propName]: currentItem[propName].xs,
+                }
+              }, {}),
+            },
+            md: {
+              ...props.reduce((acc, propName) => {
+                return {
+                  ...acc,
+                  [propName]: currentItem[propName].xs,
+                }
+              }, {}),
+            },
+          },
+        };
+      }, {});
+
+      // console.log(output);
+      return `"${variantName}": {
+        ${Object.entries(output).map(([variant, value]) => {
+          return `"${variant}": {
+            ${Object.entries(value).map(([propName, propValue]) => {
+              // console.log(propValue);
+              return `"${propName}": {
+                ${Object.entries(propValue).map(([propTone, propValue]) => {
+                  return `"${propTone}": "${propValue}",`;
+                }).join('\n')}
+              },`;
+            }).join('\n')}
+          },`;
+        }).join('\n')}
+      },`;
+
+      return 'oi';
     });
   },
   Theme_typography_file() {
