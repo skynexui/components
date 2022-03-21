@@ -4,6 +4,14 @@ export type ResponsiveProperty<Type> = Partial<Record<Breakpoints, Type>>;
 
 export interface StyleSheet {
   // %%[CODER_START]:StyleSheet_attributes%%
+  maxHeight?: ResponsiveProperty<string | number> | string;
+  minHeight?: ResponsiveProperty<string | number> | string;
+  backgroundBlendMode?: ResponsiveProperty<string> | string;
+  backgroundSize?: ResponsiveProperty<'auto' | 'cover' | 'contain'> | string;
+  backgroundRepeat?:
+    | ResponsiveProperty<'repeat' | 'repeat-x' | 'repeat-y' | 'no-repeat'>
+    | string;
+  backgroundImage?: ResponsiveProperty<string> | string;
   bottom?: ResponsiveProperty<string | number> | string;
   left?: ResponsiveProperty<string | number> | string;
   right?: ResponsiveProperty<string | number> | string;
